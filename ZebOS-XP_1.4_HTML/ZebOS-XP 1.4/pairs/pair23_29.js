@@ -1,0 +1,24 @@
+var pairs =
+{
+"onm_client_create":{"api":1}
+,"api":{"used":1,"struct":1}
+,"used":{"create":1}
+,"create":{"onm":1}
+,"onm":{"client":1}
+,"client":{"api":1}
+,"struct":{"onm_client":1}
+,"onm_client":{"*onm_client_create":1}
+,"*onm_client_create":{"(struct":1}
+,"(struct":{"lib_globals":1}
+,"lib_globals":{"*zg":1}
+,"*zg":{"u_int32_t":1}
+,"u_int32_t":{"debug)":1}
+,"debug)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"name":1,"none":1}
+,"name":{"callback":1,"bridge":1}
+,"callback":{"name":1}
+,"bridge":{"output":1}
+,"output":{"parameters":1}
+}
+;Search.control.loadWordPairs(pairs);

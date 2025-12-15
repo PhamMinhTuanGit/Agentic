@@ -1,0 +1,26 @@
+var pairs =
+{
+"pal_kernel_fib_create":{"function":1,"(fib_id_t":1}
+,"function":{"creates":1,"succeeds":1,"fails":1}
+,"creates":{"fib":1}
+,"fib":{"forwarding":1,"identifier":1,"output":1}
+,"forwarding":{"plane":1}
+,"plane":{"given":1}
+,"given":{"fib":1}
+,"identifier":{"api":1}
+,"api":{"call":1}
+,"call":{"result_t":1}
+,"result_t":{"pal_kernel_fib_create":1}
+,"(fib_id_t":{"fib_id)":1}
+,"fib_id)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"fib_id":1,"none":1}
+,"fib_id":{"fib":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"result_ok":1,"function":1}
+,"result_ok":{"function":1}
+,"succeeds":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

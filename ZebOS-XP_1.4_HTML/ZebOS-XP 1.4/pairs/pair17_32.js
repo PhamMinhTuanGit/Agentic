@@ -1,0 +1,23 @@
+var pairs =
+{
+"tcn-propogation":{"command":1,"(enable":1,"enable":1}
+,"command":{"enable":1,"syntax":1,"mode":1}
+,"enable":{"disable":1,"enable":1,"tcn":1}
+,"disable":{"tcn":1,"disable":1}
+,"tcn":{"(topology":1,"propagation":1}
+,"(topology":{"change":1}
+,"change":{"notification)":1}
+,"notification)":{"propagation":1}
+,"propagation":{"interconnected":1,"disable":1,"command":1}
+,"interconnected":{"ring":1}
+,"ring":{"command":1}
+,"syntax":{"tcn-propogation":1}
+,"(enable":{"disable)":1}
+,"disable)":{"parameters":1}
+,"parameters":{"enable":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1}
+,"examples":{"(config)":1}
+,"(config)":{"tcn-propogation":1}
+}
+;Search.control.loadWordPairs(pairs);

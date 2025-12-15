@@ -1,0 +1,26 @@
+var pairs =
+{
+"fib":{"multicast":1}
+,"multicast":{"callbacks":1,"route":1,"interface":1}
+,"callbacks":{"following":1,"operating":1,"description":1}
+,"following":{"table":1}
+,"table":{"displays":1}
+,"displays":{"fib":1}
+,"operating":{"systems":1}
+,"systems":{"callbacks":1}
+,"description":{"os_ipv4_mc_pim_init":1}
+,"os_ipv4_mc_pim_init":{"initialize":1}
+,"initialize":{"pim":1}
+,"pim":{"os_ipv4_mc_pim_deinit":1,"os_ipv4_mc_route_add":1}
+,"os_ipv4_mc_pim_deinit":{"deinitialize":1}
+,"deinitialize":{"pim":1}
+,"os_ipv4_mc_route_add":{"add":1}
+,"add":{"multicast":1}
+,"route":{"os_ipv4_mc_route_del":1,"os_ipv4_mc_vif_add":1}
+,"os_ipv4_mc_route_del":{"delete":1}
+,"delete":{"multicast":1}
+,"os_ipv4_mc_vif_add":{"add":1}
+,"interface":{"os_ipv4_mc_vif_del":1}
+,"os_ipv4_mc_vif_del":{"delete":1}
+}
+;Search.control.loadWordPairs(pairs);

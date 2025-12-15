@@ -1,0 +1,23 @@
+var pairs =
+{
+"rsvp_api_s2l_session_free":{"call":1,"(struct":1}
+,"call":{"deletes":1}
+,"deletes":{"p2mp":1}
+,"p2mp":{"s2l":1}
+,"s2l":{"destination":1,"session":1}
+,"destination":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"rsvp_api_s2l_session_free":1}
+,"(struct":{"rsvp_session":1}
+,"rsvp_session":{"*session)":1}
+,"*session)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"session":1,"none":1}
+,"session":{"p2mp":1,"delete":1}
+,"delete":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

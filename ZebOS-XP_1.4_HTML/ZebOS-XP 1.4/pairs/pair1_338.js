@@ -1,0 +1,21 @@
+var pairs =
+{
+"diffserv-te":{"commands":1}
+,"commands":{"chapter":1,"includes":1,"bandwidth-constraint":1}
+,"chapter":{"provides":1}
+,"provides":{"alphabetized":1}
+,"alphabetized":{"reference":1}
+,"reference":{"diffserv-traffic":1}
+,"diffserv-traffic":{"engineering":1}
+,"engineering":{"(ds-te)":1}
+,"(ds-te)":{"commands":1}
+,"includes":{"following":1}
+,"following":{"commands":1}
+,"bandwidth-constraint":{"bc-mode":1}
+,"bc-mode":{"mpls":1}
+,"mpls":{"class-type":1,"te-class":1,"dste":1}
+,"class-type":{"mpls":1}
+,"te-class":{"show":1}
+,"show":{"mpls":1}
+}
+;Search.control.loadWordPairs(pairs);

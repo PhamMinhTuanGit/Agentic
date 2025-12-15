@@ -1,0 +1,21 @@
+var pairs =
+{
+"multiple":{"mac":1}
+,"mac":{"registration":1,"addresses":1}
+,"registration":{"protocol":1}
+,"protocol":{"(mmrp)":1,"manages":1,"(gmrp)":1}
+,"(mmrp)":{"protocol":1}
+,"manages":{"multicast":1}
+,"multicast":{"group":1,"registration":1}
+,"group":{"mac":1}
+,"addresses":{"addition":1}
+,"addition":{"mmrp":1}
+,"mmrp":{"improves":1}
+,"improves":{"convergence":1}
+,"convergence":{"time":1}
+,"time":{"garp":1}
+,"garp":{"multicast":1}
+,"(gmrp)":{"defined":1}
+,"defined":{"802.1ak":1}
+}
+;Search.control.loadWordPairs(pairs);

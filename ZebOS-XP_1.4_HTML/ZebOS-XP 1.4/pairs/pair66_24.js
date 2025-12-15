@@ -1,0 +1,25 @@
+var pairs =
+{
+"show":{"pim":1,"group-to-rp":1}
+,"pim":{"mapping":1,"(vrf":1}
+,"mapping":{"command":1,"show":1,"parameter":1}
+,"command":{"show":1,"syntax":1,"mode":1}
+,"group-to-rp":{"(rendezvous":1}
+,"(rendezvous":{"point)":1}
+,"point)":{"mappings":1}
+,"mappings":{"command":1}
+,"syntax":{"show":1}
+,"(vrf":{"name":1}
+,"name":{"mapping":1,"specify":1,"vpn":1}
+,"parameter":{"vrf":1}
+,"vrf":{"vpn":1}
+,"vpn":{"routing\u002Fforwarding":1}
+,"routing\u002Fforwarding":{"instance":1}
+,"instance":{"name":1,"command":1}
+,"specify":{"name":1}
+,"mode":{"privileged":1,"exec":1,"example":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

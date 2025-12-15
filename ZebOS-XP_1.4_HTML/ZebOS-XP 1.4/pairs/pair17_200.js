@@ -1,0 +1,23 @@
+var pairs =
+{
+"appointed":{"forwarder":1}
+,"forwarder":{"information":1,"vlans":1,"responsible":1}
+,"information":{"drb":1}
+,"drb":{"designates":1}
+,"designates":{"vlan":1}
+,"vlan":{"used":1}
+,"used":{"link":1}
+,"link":{"inter-rbridge":1,"appointed":1}
+,"inter-rbridge":{"communication":1}
+,"communication":{"non-p2p":1}
+,"non-p2p":{"rbridge":1}
+,"rbridge":{"ports":1}
+,"ports":{"appoints":1}
+,"appoints":{"itself":1}
+,"itself":{"rbridges":1}
+,"rbridges":{"link":1}
+,"vlans":{"link":1}
+,"responsible":{"loop":1}
+,"loop":{"avoidance":1}
+}
+;Search.control.loadWordPairs(pairs);

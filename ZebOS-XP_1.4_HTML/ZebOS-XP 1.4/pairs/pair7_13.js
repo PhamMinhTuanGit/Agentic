@@ -1,0 +1,21 @@
+var pairs =
+{
+"disable":{"bfd":1,"disable":1}
+,"bfd":{"mpls":1,"static":1,"rsvp":1,"ldp":1}
+,"mpls":{"lsp":1,"bfd":1}
+,"lsp":{"configuration":1,"pe1":1}
+,"configuration":{"pe1":1}
+,"pe1":{"pe1":1,"configure":1,"(config)":1}
+,"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"mode":{"pe1":1}
+,"(config)":{"mpls":1,"exit":1}
+,"static":{"3.3.3.3\u002F32":1,"lsp":1}
+,"3.3.3.3\u002F32":{"disable":1}
+,"rsvp":{"tunnel-name":1,"lsp":1}
+,"tunnel-name":{"disable":1}
+,"ldp":{"3.3.3.3\u002F32":1,"lsp":1}
+,"exit":{"exit":1,"configure":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"mtu-s":{"redundancy":1,"redundant-spoke":1,"needs":1,"pseudowire":1}
+,"redundancy":{"logic":1}
+,"logic":{"diagram":1}
+,"diagram":{"follows":1}
+,"follows":{"mtu-s":1}
+,"redundant-spoke":{"circuits":1}
+,"circuits":{"pw1":1}
+,"pw1":{"pw2":1}
+,"pw2":{"pe1":1}
+,"pe1":{"pe2":1}
+,"pe2":{"respectively":1}
+,"respectively":{"mtu-s":1}
+,"needs":{"configure":1}
+,"configure":{"primary":1}
+,"primary":{"secondary":1}
+,"secondary":{"secondary":1,"supported":1}
+,"supported":{"time":1}
+,"time":{"mtu-s":1}
+,"pseudowire":{"redundancy":1}
+}
+;Search.control.loadWordPairs(pairs);

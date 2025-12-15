@@ -1,0 +1,27 @@
+var pairs =
+{
+"nsm":{"protocol":1,"uses":1,"client":1,"server":1}
+,"protocol":{"messaging":1,"communication":1,"handling":1}
+,"messaging":{"section":1}
+,"section":{"describes":1}
+,"describes":{"messages":1}
+,"messages":{"nsm":1}
+,"uses":{"communicate":1}
+,"communicate":{"modules":1}
+,"modules":{"nsm":1}
+,"communication":{"separates":1}
+,"separates":{"message":1}
+,"message":{"handling":1,"handler":1}
+,"handling":{"mechanism":1,"message":1,"serviced":1}
+,"mechanism":{"nsm":1,"handles":1}
+,"handles":{"connection":1}
+,"connection":{"protocol":1}
+,"serviced":{"respective":1}
+,"respective":{"client":1}
+,"client":{"composed":1,"nsm":1}
+,"composed":{"three":1}
+,"three":{"components":1}
+,"components":{"message":1}
+,"handler":{"nsm":1}
+}
+;Search.control.loadWordPairs(pairs);

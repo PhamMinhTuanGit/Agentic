@@ -1,0 +1,19 @@
+var pairs =
+{
+"show":{"debug":1}
+,"debug":{"ssh":1}
+,"ssh":{"server":1,"debugging":1}
+,"server":{"command":1,"parameters":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"whether":1}
+,"whether":{"ssh":1}
+,"debugging":{"enabled":1}
+,"enabled":{"command":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"examples":1}
+,"exec":{"mode":1}
+,"examples":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

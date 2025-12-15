@@ -1,0 +1,27 @@
+var pairs =
+{
+"(cvlan":{"svlan)":1}
+,"svlan)":{"vlan_id":1}
+,"vlan_id":{"oep-id":1,"specify":1,"ovc-id":1}
+,"oep-id":{"command":1,"oep_id":1}
+,"command":{"create":1,"syntax":1,"mode":1}
+,"create":{"entries":1}
+,"entries":{"oep-mapping":1}
+,"oep-mapping":{"table":1}
+,"table":{"command":1}
+,"syntax":{"(cvlan":1}
+,"oep_id":{"(cvlan":1,"parameters":1}
+,"parameters":{"vlan_id":1}
+,"specify":{"vlan_id":1,"ovc":1}
+,"ovc-id":{"specify":1}
+,"ovc":{"svlan":1}
+,"svlan":{"command":1}
+,"mode":{"oep_map_mode":1}
+,"oep_map_mode":{"example":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"interface":{"eth1":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"double":{"colon":1}
+,"colon":{"notation":1}
+,"notation":{"used":1,"address":1,"once":1}
+,"used":{"represent":1}
+,"represent":{"consecutive":1}
+,"consecutive":{"block":1}
+,"block":{"zeroes":1}
+,"zeroes":{"middle":1}
+,"middle":{"ipv6":1}
+,"ipv6":{"address":1}
+,"address":{"example":1,"fe80:0000:0000:0000:0202:b3ff:fe1e:8329":1,"shown":1}
+,"example":{"given":1}
+,"given":{"address":1}
+,"fe80:0000:0000:0000:0202:b3ff:fe1e:8329":{"double":1}
+,"shown":{"above":1}
+,"above":{"becomes":1}
+,"becomes":{"fe80":1}
+,"fe80":{":0202:b3ff:fe1e:8329":1}
+,":0202:b3ff:fe1e:8329":{"double":1}
+,"once":{"address":1}
+}
+;Search.control.loadWordPairs(pairs);

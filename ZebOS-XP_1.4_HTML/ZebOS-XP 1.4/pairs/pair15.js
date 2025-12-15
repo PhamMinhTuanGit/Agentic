@@ -1,0 +1,23 @@
+var pairs =
+{
+"configure":{"host":1,"command":1}
+,"host":{"target":1,"build":1}
+,"target":{"cross-compiling":1,"machines":1}
+,"cross-compiling":{"configure":1,"example":1}
+,"command":{"following":1}
+,"following":{"options":1}
+,"options":{"cross-compiling":1}
+,"example":{".\u002Fconfigure":1}
+,".\u002Fconfigure":{"--host=<xxx>":1,"\u005C--host=i686-redhat-linux-gnu":1}
+,"--host=<xxx>":{"--build=<xxx>":1}
+,"--build=<xxx>":{"--target=<xxx>":1}
+,"--target=<xxx>":{"<xxx>":1}
+,"<xxx>":{"represents":1}
+,"represents":{"names":1}
+,"names":{"host":1}
+,"build":{"target":1}
+,"machines":{"example":1}
+,"\u005C--host=i686-redhat-linux-gnu":{"\u005C--target=powerpc-wrs-linux-gnu":1}
+,"\u005C--target=powerpc-wrs-linux-gnu":{"\u005C--build=powerpc-wrs-linux-gnu":1}
+}
+;Search.control.loadWordPairs(pairs);

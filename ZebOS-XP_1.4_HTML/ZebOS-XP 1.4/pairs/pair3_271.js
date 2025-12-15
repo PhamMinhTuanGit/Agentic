@@ -1,0 +1,21 @@
+var pairs =
+{
+"unidirectional":{"tunnel":1,"mpls-tp":1,"lsp":1}
+,"tunnel":{"unidirectional":1,"least":1}
+,"mpls-tp":{"tunnels":1}
+,"tunnels":{"operate":1}
+,"operate":{"single":1}
+,"single":{"direction":1}
+,"direction":{"east":1}
+,"east":{"node":1}
+,"node":{"west":1,"(source":1}
+,"west":{"node":1}
+,"(source":{"destination)":1}
+,"destination)":{"unidirectional":1}
+,"least":{"protected":1}
+,"protected":{"unidirectional":1}
+,"lsp":{"referred":1,"unidirectional":1}
+,"referred":{"forward":1}
+,"forward":{"lsp":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,21 @@
+var pairs =
+{
+"topology":{"chapter":1,"provider":1}
+,"chapter":{"shows":1}
+,"shows":{"two":1}
+,"two":{"customer":1,"provider":1}
+,"customer":{"edges":1}
+,"edges":{"(ces)":1}
+,"(ces)":{"communicate":1}
+,"communicate":{"using":1}
+,"using":{"two":1}
+,"provider":{"ethernet":1}
+,"ethernet":{"bridges":1,"bridge":1}
+,"bridges":{"(pebs)":1}
+,"(pebs)":{"figure":1}
+,"figure":{"1-1":1}
+,"1-1":{"displays":1}
+,"displays":{"topology":1}
+,"bridge":{"configuration":1}
+}
+;Search.control.loadWordPairs(pairs);

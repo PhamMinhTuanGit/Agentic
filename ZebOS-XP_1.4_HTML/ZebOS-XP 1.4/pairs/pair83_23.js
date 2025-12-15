@@ -1,0 +1,24 @@
+var pairs =
+{
+"circuit":{"switching":1,"opened":1,"open":1,"parts":1,"remain":1}
+,"switching":{"network":1}
+,"network":{"dedicated":1}
+,"dedicated":{"circuit":1}
+,"opened":{"devices":1}
+,"devices":{"communicate":1,"may":1,"closed":1}
+,"communicate":{"circuit":1}
+,"open":{"devices":1,"without":1}
+,"may":{"circuit":1}
+,"parts":{"circuit":1}
+,"remain":{"open":1}
+,"without":{"information":1}
+,"information":{"transmission":1}
+,"transmission":{"unusable":1}
+,"unusable":{"devices":1}
+,"closed":{"available":1}
+,"available":{"users":1}
+,"users":{"contrast":1}
+,"contrast":{"packet":1}
+,"packet":{"switching":1}
+}
+;Search.control.loadWordPairs(pairs);

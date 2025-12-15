@@ -1,0 +1,24 @@
+var pairs =
+{
+"validation":{"nsm":1}
+,"nsm":{"trill":1}
+,"trill":{"detail":1,"details":1}
+,"detail":{"trill":1}
+,"details":{"self":1}
+,"self":{"nickname":1}
+,"nickname":{"list":1}
+,"list":{"c236":1}
+,"c236":{"8003":1}
+,"8003":{"8002":1}
+,"8002":{"8001":1}
+,"8001":{"accept":1}
+,"accept":{"non-adjacency":1}
+,"non-adjacency":{"static":1}
+,"static":{"confidence":1}
+,"confidence":{"=255":1,"=32":1}
+,"=255":{"native":1}
+,"native":{"confidence":1}
+,"=32":{"decap":1}
+,"decap":{"confidence":1}
+}
+;Search.control.loadWordPairs(pairs);

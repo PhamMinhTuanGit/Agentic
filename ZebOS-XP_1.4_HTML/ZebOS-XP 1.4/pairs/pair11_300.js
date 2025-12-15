@@ -1,0 +1,25 @@
+var pairs =
+{
+"trill_nsm_adjacency_update":{"syntax":1,"(struct":1}
+,"syntax":{"s_int32_t":1}
+,"s_int32_t":{"trill_nsm_adjacency_update":1}
+,"(struct":{"trill_neighbor":1}
+,"trill_neighbor":{"*nbr":1}
+,"*nbr":{"u_int8_t":1,"specifies":1}
+,"u_int8_t":{"flag)":1}
+,"flag)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*nbr":1,"none":1}
+,"specifies":{"pointer":1}
+,"pointer":{"trill":1,"interface":1}
+,"trill":{"instance":1}
+,"instance":{"flag":1}
+,"flag":{"specifies":1,"output":1}
+,"interface":{"flag":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"trill_api_set_err_no_nsm_cilent":1}
+,"trill_api_set_err_no_nsm_cilent":{"trill_api_set_success":1}
+}
+;Search.control.loadWordPairs(pairs);

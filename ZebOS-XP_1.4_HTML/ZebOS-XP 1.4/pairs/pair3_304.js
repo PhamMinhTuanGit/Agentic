@@ -1,0 +1,27 @@
+var pairs =
+{
+"ldp":{"signaling":1,"signal":1}
+,"signaling":{"signaling":1,"basic":1,"used":1}
+,"basic":{"tear":1}
+,"tear":{"down":1}
+,"down":{"pseudowires":1}
+,"pseudowires":{"once":1,"signaling":1,"sets":1}
+,"once":{"bgp":1}
+,"bgp":{"auto-discovery":1}
+,"auto-discovery":{"accomplished":1}
+,"accomplished":{"pair":1}
+,"pair":{"pes":1}
+,"pes":{"vc\u002Fvpls":1,"pseudowire":1}
+,"vc\u002Fvpls":{"able":1,"nsm":1,"information":1}
+,"able":{"tear":1}
+,"used":{"send":1}
+,"send":{"characteristics":1}
+,"characteristics":{"pseudowires":1}
+,"sets":{"vc\u002Fvpls":1}
+,"nsm":{"interacts":1}
+,"interacts":{"ldp":1}
+,"signal":{"vc\u002Fvpls":1}
+,"information":{"discovered":1}
+,"discovered":{"pes":1}
+}
+;Search.control.loadWordPairs(pairs);

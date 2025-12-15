@@ -1,0 +1,19 @@
+var pairs =
+{
+"setting":{"hold":1}
+,"hold":{"time":1}
+,"time":{"maximum":1}
+,"maximum":{"minimum":1}
+,"minimum":{"hold-time":1}
+,"hold-time":{"intervals":1}
+,"intervals":{"spf":1}
+,"spf":{"calculations":1}
+,"calculations":{"using":1}
+,"using":{"spf-interval-exp":1}
+,"spf-interval-exp":{"command":1}
+,"command":{"intermediate":1,"reference":1}
+,"intermediate":{"system":1}
+,"system":{"intermediate":1,"command":1}
+,"reference":{"details":1}
+}
+;Search.control.loadWordPairs(pairs);

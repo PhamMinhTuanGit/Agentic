@@ -1,0 +1,26 @@
+var pairs =
+{
+"hal_if_set_port_egress":{"function":1,"(unsigned":1}
+,"function":{"sets":1,"fails":1,"succeeds":1}
+,"sets":{"port":1}
+,"port":{"egress":1}
+,"egress":{"type":1,"port":1,"mode":1}
+,"type":{"syntax":1}
+,"syntax":{"int":1}
+,"int":{"hal_if_set_port_egress":1,"ifindex":1,"egress)":1}
+,"(unsigned":{"int":1}
+,"ifindex":{"int":1,"interface":1}
+,"egress)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ifindex":1,"none":1}
+,"interface":{"index":1}
+,"index":{"egress":1}
+,"mode":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"function":1}
+,"fails":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

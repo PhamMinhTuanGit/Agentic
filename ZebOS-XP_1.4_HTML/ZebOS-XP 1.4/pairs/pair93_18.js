@@ -1,0 +1,25 @@
+var pairs =
+{
+"common":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"(cst)":1,"protocol":1,"configurations":1}
+,"(cst)":{"topology":1}
+,"topology":{"connecting":1}
+,"connecting":{"spanning":1}
+,"protocol":{"(stp)\u002Frapid":1,"(rstp)":1}
+,"(stp)\u002Frapid":{"spanning":1}
+,"(rstp)":{"switches":1}
+,"switches":{"multiple":1}
+,"multiple":{"spanning-tree":1}
+,"spanning-tree":{"(mst)":1}
+,"(mst)":{"region":1}
+,"region":{"instances":1,"appears":1}
+,"instances":{"mst":1}
+,"mst":{"region":1}
+,"appears":{"single":1}
+,"single":{"switch":1}
+,"switch":{"spanning":1}
+,"configurations":{"outside":1}
+,"outside":{"region":1}
+}
+;Search.control.loadWordPairs(pairs);

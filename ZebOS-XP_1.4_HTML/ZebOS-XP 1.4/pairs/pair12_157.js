@@ -1,0 +1,22 @@
+var pairs =
+{
+"vpn-id":{"command":1,"<1-4294967295>":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"vpn":1}
+,"vpn":{"identifier":1}
+,"identifier":{"vpls":1}
+,"vpls":{"instance":1,"command":1,"mode":1}
+,"instance":{"command":1}
+,"syntax":{"vpn-id":1}
+,"<1-4294967295>":{"parameters":1,"specify":1}
+,"parameters":{"<1-4294967295>":1}
+,"specify":{"value":1}
+,"value":{"vpls":1}
+,"mode":{"vpls":1,"example":1}
+,"example":{"(config)":1}
+,"(config)":{"l2vpn-vpls":1}
+,"l2vpn-vpls":{"vpls2":1}
+,"vpls2":{"(config-vpls)":1}
+,"(config-vpls)":{"vpn-id":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"multiple":{"ospf":1,"instances":1}
+,"ospf":{"instances":1,"instance":1}
+,"instances":{"subnet":1,"configured":1,"feature":1}
+,"subnet":{"multiple":1,"ospf":1}
+,"configured":{"subnet":1,"interface":1}
+,"instance":{"supports":1,"instance":1,"configured":1}
+,"supports":{"separate":1}
+,"separate":{"ospfv2":1}
+,"ospfv2":{"protocol":1}
+,"protocol":{"instances":1}
+,"feature":{"adjacency":1}
+,"adjacency":{"formed":1}
+,"formed":{"received":1}
+,"received":{"packet\u2019s":1}
+,"packet\u2019s":{"instance":1}
+,"interface":{"multiple":1}
+}
+;Search.control.loadWordPairs(pairs);

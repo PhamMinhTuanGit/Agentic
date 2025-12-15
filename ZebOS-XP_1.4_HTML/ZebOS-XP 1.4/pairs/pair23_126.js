@@ -1,0 +1,19 @@
+var pairs =
+{
+"trill_vlan_inhibition_timer":{"syntax":1,"(struct":1}
+,"syntax":{"int":1}
+,"int":{"trill_vlan_inhibition_timer":1}
+,"(struct":{"thread":1}
+,"thread":{"*thread)":1,"value":1}
+,"*thread)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*thread":1,"none":1}
+,"*thread":{"specifies":1}
+,"specifies":{"pointer":1}
+,"pointer":{"thread":1}
+,"value":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

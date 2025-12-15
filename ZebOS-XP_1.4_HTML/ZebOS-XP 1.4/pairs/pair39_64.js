@@ -1,0 +1,21 @@
+var pairs =
+{
+"rbridge-traceroute":{"command":1,"name":1,"new-route":1}
+,"command":{"nickname":1,"syntax":1,"mode":1}
+,"nickname":{"trace":1,"hexadecimal":1}
+,"trace":{"route":1}
+,"route":{"command":1,"nickname":1}
+,"syntax":{"rbridge-traceroute":1}
+,"name":{"parameters":1,"nickname":1}
+,"parameters":{"name":1}
+,"hexadecimal":{"range":1}
+,"range":{"<0x0001":1}
+,"<0x0001":{"-0xffc0>":1}
+,"-0xffc0>":{"command":1}
+,"mode":{"exec":1,"privilege":1,"examples":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"examples":{"enable":1}
+,"enable":{"rbridge-traceroute":1}
+}
+;Search.control.loadWordPairs(pairs);

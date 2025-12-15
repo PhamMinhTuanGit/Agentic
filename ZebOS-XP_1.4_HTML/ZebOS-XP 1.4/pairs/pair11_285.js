@@ -1,0 +1,27 @@
+var pairs =
+{
+"rbridge5":{"show":1}
+,"show":{"trill":1}
+,"trill":{"topology":1,"paths":1}
+,"topology":{"rbridge":1}
+,"rbridge":{"instance":1}
+,"instance":{"trill":1}
+,"paths":{"campus":1}
+,"campus":{"wide":1}
+,"wide":{"rbridges":1}
+,"rbridges":{"system":1}
+,"system":{"metric":1}
+,"metric":{"next-hop":1}
+,"next-hop":{"interface":1}
+,"interface":{"snpa":1}
+,"snpa":{"aaaa.aaaa.aaaa":1}
+,"aaaa.aaaa.aaaa":{"aaaa.aaaa.aaaa":1,"eth1":1}
+,"eth1":{"5254.0000.63ab":1}
+,"5254.0000.63ab":{"bbbb.bbbb.bbbb":1,"cccc.cccc.cccc":1,"eeee.eeee.eeee":1}
+,"bbbb.bbbb.bbbb":{"cccc.cccc.cccc":1}
+,"cccc.cccc.cccc":{"eth3":1,"cccc.cccc.cccc":1}
+,"eth3":{"5254.006b.345b":1}
+,"5254.006b.345b":{"aaaa.aaaa.aaaa":1,"dddd.dddd.dddd":1}
+,"dddd.dddd.dddd":{"cccc.cccc.cccc":1}
+}
+;Search.control.loadWordPairs(pairs);

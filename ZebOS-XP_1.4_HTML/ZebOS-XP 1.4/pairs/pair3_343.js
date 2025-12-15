@@ -1,0 +1,23 @@
+var pairs =
+{
+"pim-ecmp":{"configuration":1}
+,"configuration":{"section":1,"steps":1}
+,"section":{"provides":1}
+,"provides":{"configuration":1}
+,"steps":{"configuring":1,"configure":1}
+,"configuring":{"pim":1}
+,"pim":{"ecmp":1,"routers":1,"sparse":1}
+,"ecmp":{"redirect":1}
+,"redirect":{"examples":1}
+,"examples":{"relevant":1}
+,"relevant":{"scenario":1}
+,"scenario":{"configure":1}
+,"configure":{"pim":1,"pim-sm":1}
+,"routers":{"steps":1}
+,"pim-sm":{"refer":1}
+,"refer":{"chapter":1}
+,"chapter":{"pim":1}
+,"sparse":{"mode":1}
+,"mode":{"configuration":1}
+}
+;Search.control.loadWordPairs(pairs);

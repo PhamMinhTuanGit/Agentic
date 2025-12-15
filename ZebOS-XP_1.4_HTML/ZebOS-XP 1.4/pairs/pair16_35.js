@@ -1,0 +1,23 @@
+var pairs =
+{
+"g8031":{"signal-sync":1,"configure":1}
+,"signal-sync":{"command":1,"g8031":1,"parameters":1,"(g8031-config-switching)":1}
+,"command":{"eps":1,"clear":1,"syntax":1,"mode":1}
+,"eps":{"signal-synchronize":1}
+,"signal-synchronize":{"form":1,"command":1}
+,"form":{"command":1}
+,"clear":{"signal-synchronize":1}
+,"syntax":{"g8031":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"g8031":1,"examples":1}
+,"configure":{"switching":1,"terminal":1}
+,"switching":{"mode":1,"eps-id":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"g8031":1}
+,"eps-id":{"bridge":1}
+,"bridge":{"(g8031-config-switching)":1}
+,"(g8031-config-switching)":{"g8031":1,"exit":1}
+}
+;Search.control.loadWordPairs(pairs);

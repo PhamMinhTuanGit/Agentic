@@ -1,0 +1,25 @@
+var pairs =
+{
+"logging":{"timestamp":1}
+,"timestamp":{"command":1,"granularity":1,"(microseconds":1,"milliseconds":1}
+,"command":{"logging":1,"reset":1,"syntax":1,"mode":1}
+,"granularity":{"form":1,"default":1,"milliseconds":1,"seconds":1,"(default)":1}
+,"form":{"command":1}
+,"reset":{"logging":1}
+,"default":{"(seconds)":1}
+,"(seconds)":{"command":1}
+,"syntax":{"logging":1}
+,"(microseconds":{"milliseconds":1}
+,"milliseconds":{"seconds)":1,"milliseconds":1,"granularity":1}
+,"seconds)":{"logging":1,"parameters":1}
+,"parameters":{"microseconds":1}
+,"microseconds":{"microseconds":1,"granularity":1}
+,"seconds":{"seconds":1,"granularity":1}
+,"(default)":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"logging":1}
+}
+;Search.control.loadWordPairs(pairs);

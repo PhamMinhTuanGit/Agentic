@@ -1,0 +1,19 @@
+var pairs =
+{
+"request":{"comments":1}
+,"comments":{"(rfc)":1}
+,"(rfc)":{"proposals":1}
+,"proposals":{"standards":1}
+,"standards":{"define":1}
+,"define":{"protocols":1}
+,"protocols":{"communications":1}
+,"communications":{"internet":1}
+,"internet":{"rfcs":1,"engineering":1}
+,"rfcs":{"developed":1}
+,"developed":{"published":1}
+,"published":{"internet":1}
+,"engineering":{"task":1}
+,"task":{"force":1}
+,"force":{"(ietf)":1}
+}
+;Search.control.loadWordPairs(pairs);

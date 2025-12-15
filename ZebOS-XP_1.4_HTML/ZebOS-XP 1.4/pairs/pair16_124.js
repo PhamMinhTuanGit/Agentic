@@ -1,0 +1,22 @@
+var pairs =
+{
+"nsm_mpls_route_map_cli_key_t":{"data":1}
+,"data":{"structure":1}
+,"structure":{"defined":1}
+,"defined":{"nsm\u002Fmpls\u002Fha\u002Fnsm_mpls_cal.h":1}
+,"nsm\u002Fmpls\u002Fha\u002Fnsm_mpls_cal.h":{"file":1}
+,"file":{"member":1}
+,"member":{"description":1}
+,"description":{"ent":1}
+,"ent":{"entry":1,"struct":1}
+,"entry":{"fec":1}
+,"fec":{"prefix":1,"definition":1,"nsm_mpls_route_map_cli_data_t":1}
+,"prefix":{"fec":1}
+,"definition":{"typedef":1}
+,"typedef":{"struct":1}
+,"struct":{"nsm_mpls_route_map_cli_data_t":1,"prefix":1}
+,"nsm_mpls_route_map_cli_data_t":{"{struct":1}
+,"{struct":{"fec_gen_entry":1}
+,"fec_gen_entry":{"ent":1}
+}
+;Search.control.loadWordPairs(pairs);

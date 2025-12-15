@@ -1,0 +1,24 @@
+var pairs =
+{
+"ldap-server":{"deadtime":1}
+,"deadtime":{"command":1,"period":1,"<1-1440>":1,"270":1}
+,"command":{"ldap":1,"syntax":1,"mode":1}
+,"ldap":{"server":1}
+,"server":{"deadtime":1,"skipped":1}
+,"period":{"duration":1,"zero":1,"minutes":1}
+,"duration":{"non-reachable":1}
+,"non-reachable":{"server":1}
+,"skipped":{"form":1}
+,"form":{"command":1}
+,"zero":{"command":1}
+,"syntax":{"ldap-server":1}
+,"<1-1440>":{"ldap-server":1,"parameters":1,"ldap":1}
+,"parameters":{"<1-1440>":1}
+,"minutes":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"ldap-server":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"dispatch":{"service":1}
+,"service":{"instance":1,"provisioned":1}
+,"instance":{"customer":1}
+,"customer":{"backbone":1}
+,"backbone":{"port":1}
+,"port":{"following":1,"dispatched":1}
+,"following":{"figure":1}
+,"figure":{"displays":1}
+,"displays":{"flow":1}
+,"flow":{"followed":1}
+,"followed":{"service":1}
+,"provisioned":{"customer":1}
+,"dispatched":{"forwarding":1}
+,"forwarding":{"plane":1}
+,"plane":{"dispatch":1}
+}
+;Search.control.loadWordPairs(pairs);

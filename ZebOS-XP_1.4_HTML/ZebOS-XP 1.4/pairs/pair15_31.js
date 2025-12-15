@@ -1,0 +1,23 @@
+var pairs =
+{
+"delete":{"vid":1,"secondary":1}
+,"vid":{"bridge":1,"vid":1,"((bridge":1,"vlan":1}
+,"bridge":{"command":1,"bridge":1,"<1-32>":1,"backbone":1,"(config-cfm-vlan)":1}
+,"command":{"delete":1,"syntax":1,"mode":1}
+,"secondary":{"vid":1}
+,"syntax":{"delete":1}
+,"((bridge":{"<1-32>":1}
+,"<1-32>":{"backbone)":1,"bridge":1}
+,"backbone)":{"parameters":1}
+,"parameters":{"vid":1}
+,"vlan":{"vid":1,"bridge":1,"mode":1}
+,"backbone":{"backbone":1,"bridge":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"cfm":1,"vlan":1}
+,"cfm":{"vlan":1,"configure":1}
+,"example":{"(config)":1}
+,"(config)":{"ethernet":1}
+,"ethernet":{"cfm":1}
+,"(config-cfm-vlan)":{"delete":1}
+}
+;Search.control.loadWordPairs(pairs);

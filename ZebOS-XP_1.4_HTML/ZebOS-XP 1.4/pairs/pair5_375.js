@@ -1,0 +1,25 @@
+var pairs =
+{
+"congestion":{"detection":1,"detected":1,"nbr":1}
+,"detection":{"congestion":1}
+,"detected":{"neighbor":1}
+,"neighbor":{"based":1}
+,"based":{"number":1}
+,"number":{"unacknowledged":1}
+,"unacknowledged":{"lsas":1}
+,"lsas":{"using":1}
+,"using":{"following":1}
+,"following":{"algorithm":1}
+,"algorithm":{"nbr->":1}
+,"nbr->":{"rxmt_count":1,"ack_count":1}
+,"rxmt_count":{"nbr->":1}
+,"ack_count":{"unack_count":1}
+,"unack_count":{"(unack_count":1}
+,"(unack_count":{"==75":1}
+,"==75":{"nbr":1}
+,"nbr":{"congestion":1,"=neighbor":1}
+,"=neighbor":{"rxmt":1}
+,"rxmt":{"=lsa":1}
+,"=lsa":{"retransmission":1}
+}
+;Search.control.loadWordPairs(pairs);

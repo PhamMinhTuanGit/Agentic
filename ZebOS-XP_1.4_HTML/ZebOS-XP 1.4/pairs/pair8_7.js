@@ -1,0 +1,20 @@
+var pairs =
+{
+"sdk":{"interface":1,"(software":1}
+,"interface":{"hardware":1,"configures":1}
+,"hardware":{"sdk":1,"chip":1}
+,"(software":{"development":1}
+,"development":{"kit)":1}
+,"kit)":{"interface":1}
+,"configures":{"hardware":1}
+,"chip":{"(fast":1}
+,"(fast":{"path)":1}
+,"path)":{"according":1}
+,"according":{"control":1}
+,"control":{"plane":1}
+,"plane":{"messages":1}
+,"messages":{"retrieves":1}
+,"retrieves":{"counters":1}
+,"counters":{"statistics":1}
+}
+;Search.control.loadWordPairs(pairs);

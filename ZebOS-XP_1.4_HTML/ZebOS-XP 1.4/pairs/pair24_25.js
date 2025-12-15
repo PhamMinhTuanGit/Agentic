@@ -1,0 +1,22 @@
+var pairs =
+{
+"prefix_ipv4":{"data":1}
+,"data":{"structure":1}
+,"structure":{"represents":1,"defined":1}
+,"represents":{"ipv4":1}
+,"ipv4":{"address":1}
+,"address":{"prefix":1,"family":1}
+,"prefix":{"data":1,"length":1,"address":1}
+,"defined":{"lib\u005Cprefix.h":1}
+,"lib\u005Cprefix.h":{"file":1}
+,"file":{"type":1}
+,"type":{"definition":1}
+,"definition":{"family":1}
+,"family":{"address":1,"prefixlen":1}
+,"prefixlen":{"prefix":1}
+,"length":{"pad1":1}
+,"pad1":{"padding":1}
+,"padding":{"pad2":1,"prefix":1}
+,"pad2":{"padding":1}
+}
+;Search.control.loadWordPairs(pairs);

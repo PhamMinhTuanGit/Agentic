@@ -1,0 +1,22 @@
+var pairs =
+{
+"vlan":{"classifiers":1}
+,"classifiers":{"zebos-xp":1,"define":1}
+,"zebos-xp":{"vlan":1}
+,"define":{"rules":1}
+,"rules":{"direct":1,"grouped":1}
+,"direct":{"packets":1}
+,"packets":{"selected":1}
+,"selected":{"vlans":1}
+,"vlans":{"based":1}
+,"based":{"protocol":1}
+,"protocol":{"subnet":1}
+,"subnet":{"criteria":1}
+,"criteria":{"sets":1}
+,"sets":{"rules":1}
+,"grouped":{"(one":1}
+,"(one":{"group":1}
+,"group":{"per":1}
+,"per":{"interface)":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"mld":{"snooping":1,"show":1}
+,"snooping":{"commands":1,"mld":1,"fast-leave":1,"mrouter":1,"querier":1,"report-suppression":1,"statistics":1}
+,"commands":{"chapter":1,"multicast":1}
+,"chapter":{"describes":1}
+,"describes":{"commands":1}
+,"multicast":{"listener":1}
+,"listener":{"discovery":1}
+,"discovery":{"(mld)":1}
+,"(mld)":{"snooping":1}
+,"fast-leave":{"mld":1}
+,"mrouter":{"mld":1,"show":1}
+,"querier":{"mld":1}
+,"report-suppression":{"show":1}
+,"show":{"debugging":1,"mld":1}
+,"debugging":{"mld":1}
+}
+;Search.control.loadWordPairs(pairs);

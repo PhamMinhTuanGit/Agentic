@@ -1,0 +1,20 @@
+var pairs =
+{
+"mribv6":{"mld":1}
+,"mld":{"command":1}
+,"command":{"api":1}
+,"api":{"chapter":1}
+,"chapter":{"describes":1}
+,"describes":{"functions":1}
+,"functions":{"multicast":1}
+,"multicast":{"routing":1,"listener":1}
+,"routing":{"information":1}
+,"information":{"base":1}
+,"base":{"ipv6":1}
+,"ipv6":{"(mribv6)":1}
+,"(mribv6)":{"multicast":1}
+,"listener":{"discovery":1}
+,"discovery":{"(mld)":1}
+,"(mld)":{"protocol":1}
+}
+;Search.control.loadWordPairs(pairs);

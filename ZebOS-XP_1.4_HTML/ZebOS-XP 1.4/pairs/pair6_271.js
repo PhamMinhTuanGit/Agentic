@@ -1,0 +1,23 @@
+var pairs =
+{
+"control":{"card":1,"logic":1}
+,"card":{"control":1,"(cc)":1,"local":1,"receives":1}
+,"(cc)":{"major":1}
+,"major":{"part":1}
+,"part":{"psc":1,"local":1}
+,"psc":{"protocol":1,"control":1}
+,"protocol":{"part":1}
+,"local":{"request":1}
+,"request":{"logic":1}
+,"logic":{"includes":1,"wtr":1,"control":1}
+,"includes":{"operator":1}
+,"operator":{"commands":1}
+,"commands":{"psc":1,"include":1}
+,"wtr":{"timer":1}
+,"timer":{"contained":1}
+,"contained":{"control":1}
+,"receives":{"operator":1}
+,"include":{"clear":1}
+,"clear":{"inputs":1}
+}
+;Search.control.loadWordPairs(pairs);

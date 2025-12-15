@@ -1,0 +1,20 @@
+var pairs =
+{
+"bellman-ford":{"algorithm":1}
+,"algorithm":{"used":1}
+,"used":{"distance-vector":1}
+,"distance-vector":{"routing":1}
+,"routing":{"protocols":1,"information":1}
+,"protocols":{"routing":1}
+,"information":{"protocol":1}
+,"protocol":{"(rip)":1}
+,"(rip)":{"determine":1}
+,"determine":{"best":1}
+,"best":{"path":1}
+,"path":{"routes":1}
+,"routes":{"network":1}
+,"network":{"contrast":1}
+,"contrast":{"dijkstra":1}
+,"dijkstra":{"algorithm":1}
+}
+;Search.control.loadWordPairs(pairs);

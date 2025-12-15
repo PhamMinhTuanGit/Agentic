@@ -1,0 +1,19 @@
+var pairs =
+{
+"ldp_adv_list_master":{"data":1,"{struct":1}
+,"data":{"structure":1}
+,"structure":{"supports":1}
+,"supports":{"ldp":1}
+,"ldp":{"advert-list":1}
+,"advert-list":{"master":1}
+,"master":{"defined":1}
+,"defined":{"ldpd\u002Fldpd.h":1}
+,"ldpd\u002Fldpd.h":{"file":1}
+,"file":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"ldp_adv_list_master":1,"ldp_adv_list":1}
+,"{struct":{"ldp_adv_list":1}
+,"ldp_adv_list":{"*head":1,"*tail":1}
+,"*head":{"struct":1}
+}
+;Search.control.loadWordPairs(pairs);

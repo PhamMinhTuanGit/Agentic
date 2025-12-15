@@ -1,0 +1,21 @@
+var pairs =
+{
+"label":{"pool":1}
+,"pool":{"manager":1}
+,"manager":{"manage":1,"using":1,"api":1}
+,"manage":{"rsvp":1}
+,"rsvp":{"labels":1}
+,"labels":{"rsvp-te":1}
+,"rsvp-te":{"communicates":1}
+,"communicates":{"label":1}
+,"using":{"api":1}
+,"api":{"provided":1,"tthe":1}
+,"provided":{"nsm":1}
+,"nsm":{"label":1}
+,"tthe":{"network":1}
+,"network":{"services":1}
+,"services":{"module":1}
+,"module":{"developer":1}
+,"developer":{"guide":1}
+}
+;Search.control.loadWordPairs(pairs);

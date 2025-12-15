@@ -1,0 +1,20 @@
+var pairs =
+{
+"read-write":{"thread":1}
+,"thread":{"zebos-xp":1,"bound":1}
+,"zebos-xp":{"rsvp-te":1}
+,"rsvp-te":{"uses":1,"peers":1}
+,"uses":{"separate":1}
+,"separate":{"socket":1}
+,"socket":{"send":1,"socket":1,"treated":1}
+,"send":{"receive":1}
+,"receive":{"messages":1}
+,"messages":{"rsvp-te":1}
+,"peers":{"thread":1}
+,"bound":{"unique":1}
+,"unique":{"socket":1}
+,"treated":{"unidirectional":1}
+,"unidirectional":{"mode":1}
+,"mode":{"exchange":1}
+}
+;Search.control.loadWordPairs(pairs);

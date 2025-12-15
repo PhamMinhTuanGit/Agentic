@@ -1,0 +1,20 @@
+var pairs =
+{
+"connectivity":{"fault":1,"monitoring":1}
+,"fault":{"management":1,"verification":1,"isolation":1}
+,"management":{"ethernet":1,"(cfm)":1,"(oam)":1}
+,"ethernet":{"connectivity":1,"layer":1}
+,"(cfm)":{"end-to-end":1}
+,"end-to-end":{"per-service":1}
+,"per-service":{"instance":1}
+,"instance":{"ethernet":1}
+,"layer":{"operations":1}
+,"operations":{"management":1}
+,"(oam)":{"protocol":1}
+,"protocol":{"includes":1}
+,"includes":{"proactive":1}
+,"proactive":{"connectivity":1}
+,"monitoring":{"fault":1}
+,"verification":{"fault":1}
+}
+;Search.control.loadWordPairs(pairs);

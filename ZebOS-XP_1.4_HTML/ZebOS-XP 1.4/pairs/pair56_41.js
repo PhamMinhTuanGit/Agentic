@@ -1,0 +1,23 @@
+var pairs =
+{
+"rsvp_api_trunk_unset_ingress":{"call":1,"(struct":1}
+,"call":{"unsets":1}
+,"unsets":{"ingress":1}
+,"ingress":{"address":1}
+,"address":{"given":1}
+,"given":{"trunk":1}
+,"trunk":{"syntax":1,"rsvp":1,"output":1}
+,"syntax":{"void":1}
+,"void":{"rsvp_api_trunk_unset_ingress":1}
+,"(struct":{"rsvp_trunk":1}
+,"rsvp_trunk":{"*trunk)":1}
+,"*trunk)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"trunk":1,"none":1}
+,"rsvp":{"trunk":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

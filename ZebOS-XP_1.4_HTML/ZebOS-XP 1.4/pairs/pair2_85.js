@@ -1,0 +1,19 @@
+var pairs =
+{
+"operator":{"services":1,"men":1}
+,"services":{"attributes":1,"operators":1,"exchange":1}
+,"attributes":{"service":1}
+,"service":{"model":1}
+,"model":{"enni":1}
+,"enni":{"involves":1}
+,"involves":{"purchase":1}
+,"purchase":{"services":1}
+,"operators":{"services":1}
+,"exchange":{"traffic":1}
+,"traffic":{"among":1}
+,"among":{"ennis":1}
+,"ennis":{"unis":1}
+,"unis":{"supported":1}
+,"supported":{"operator":1}
+}
+;Search.control.loadWordPairs(pairs);

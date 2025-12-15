@@ -1,0 +1,24 @@
+var pairs =
+{
+"hal_statistics_clear":{"clear":1,"(u_int32_t":1}
+,"clear":{"statistics":1}
+,"statistics":{"corresponding":1,"obtained":1,"hal_success":1}
+,"corresponding":{"port":1}
+,"port":{"given":1,"statistics":1}
+,"given":{"input":1}
+,"input":{"syntax":1,"parameters":1}
+,"syntax":{"int":1}
+,"int":{"hal_statistics_clear":1}
+,"(u_int32_t":{"port_id)":1}
+,"port_id)":{"input":1}
+,"parameters":{"port_id":1,"none":1}
+,"port_id":{"port":1}
+,"obtained":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"hal_error":1}
+,"hal_error":{"unable":1}
+,"unable":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

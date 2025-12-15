@@ -1,0 +1,26 @@
+var pairs =
+{
+"bfd_construct_mpls_packet":{"function":1,"(struct":1}
+,"function":{"constructs":1}
+,"constructs":{"bfd":1}
+,"bfd":{"packet":1,"sessions":1,"session":1}
+,"packet":{"mpls-and":1}
+,"mpls-and":{"vccv-related":1}
+,"vccv-related":{"bfd":1}
+,"sessions":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"bfd_construct_mpls_packet":1}
+,"(struct":{"bfd_session_fwd":1}
+,"bfd_session_fwd":{"*sess)":1}
+,"*sess)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*sess":1,"none":1}
+,"*sess":{"mpls-or":1}
+,"mpls-or":{"vccv-related":1}
+,"session":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

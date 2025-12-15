@@ -1,0 +1,20 @@
+var pairs =
+{
+"segment":{"routing":1}
+,"routing":{"form":1,"nodes":1}
+,"form":{"source":1}
+,"source":{"routing":1}
+,"nodes":{"links":1}
+,"links":{"represented":1}
+,"represented":{"segments":1}
+,"segments":{"path":1}
+,"path":{"particular":1}
+,"particular":{"protocol":1}
+,"protocol":{"data":1}
+,"data":{"unit":1}
+,"unit":{"(pdu)":1}
+,"(pdu)":{"needs":1}
+,"needs":{"traverse":1}
+,"traverse":{"represented":1}
+}
+;Search.control.loadWordPairs(pairs);

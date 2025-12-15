@@ -1,0 +1,23 @@
+var pairs =
+{
+"point-to-point":{"evc":1,"supports":1,"services":1}
+,"evc":{"point-to-point":1,"uni":1}
+,"supports":{"communication":1}
+,"communication":{"exactly":1}
+,"exactly":{"two":1}
+,"two":{"unis":1}
+,"unis":{"ingress":1}
+,"ingress":{"service":1}
+,"service":{"frame":1,"definition":1}
+,"frame":{"mapped":1,"uni":1,"delivers":1}
+,"mapped":{"evc":1}
+,"uni":{"map":1,"rules":1,"specific":1}
+,"map":{"ingress":1}
+,"rules":{"service":1}
+,"delivers":{"destination":1}
+,"destination":{"uni":1}
+,"specific":{"particular":1}
+,"particular":{"service":1}
+,"definition":{"point-to-point":1}
+}
+;Search.control.loadWordPairs(pairs);

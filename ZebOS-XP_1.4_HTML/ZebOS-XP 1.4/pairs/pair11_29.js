@@ -1,0 +1,24 @@
+var pairs =
+{
+"tie-breaking":{"procedure":1,"algorithm":1}
+,"procedure":{"tie-breaking":1,"behavior":1}
+,"behavior":{"per":1}
+,"per":{"rfc":1}
+,"rfc":{"4271":1}
+,"4271":{"section":1}
+,"section":{"9.1.2.2":1}
+,"9.1.2.2":{"tie-breaking":1}
+,"algorithm":{"considers":1,"terminates":1}
+,"considers":{"equally":1}
+,"equally":{"preferable":1}
+,"preferable":{"routes":1}
+,"routes":{"destination":1,"removed":1}
+,"destination":{"selects":1}
+,"selects":{"routes":1}
+,"removed":{"consideration":1}
+,"consideration":{"algorithm":1}
+,"terminates":{"route":1}
+,"route":{"remains":1}
+,"remains":{"consideration":1}
+}
+;Search.control.loadWordPairs(pairs);

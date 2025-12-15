@@ -1,0 +1,26 @@
+var pairs =
+{
+"configure":{"pim-sm":1}
+,"pim-sm":{"msdp":1,"routers":1,"rps":1}
+,"msdp":{"topology":1}
+,"topology":{"figure":1}
+,"figure":{"10-1":1}
+,"10-1":{"enable":1}
+,"enable":{"pim-sm":1}
+,"routers":{"pim":1}
+,"pim":{"domains":1,"sparse":1}
+,"domains":{"rtr-1":1}
+,"rtr-1":{"rendezvous":1}
+,"rendezvous":{"point":1}
+,"point":{"(rp)":1}
+,"(rp)":{"domain-1":1}
+,"domain-1":{"rtr-2":1}
+,"rtr-2":{"domain-2":1}
+,"domain-2":{"steps":1}
+,"steps":{"configure":1}
+,"rps":{"chapter":1}
+,"chapter":{"pim":1}
+,"sparse":{"mode":1}
+,"mode":{"configuration":1}
+}
+;Search.control.loadWordPairs(pairs);

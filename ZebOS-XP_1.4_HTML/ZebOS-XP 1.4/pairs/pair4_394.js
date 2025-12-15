@@ -1,0 +1,25 @@
+var pairs =
+{
+"primary-path":{"type":1}
+,"type":{"path":1}
+,"path":{"comes":1,"(ecmp)":1,"first":1}
+,"comes":{"equal-cost":1}
+,"equal-cost":{"multipath":1}
+,"multipath":{"path":1}
+,"(ecmp)":{"ecmp":1}
+,"ecmp":{"found":1}
+,"found":{"during":1}
+,"during":{"primary":1}
+,"primary":{"shortest":1}
+,"shortest":{"path":1}
+,"first":{"(spf)":1}
+,"(spf)":{"repair":1}
+,"repair":{"desirable":1}
+,"desirable":{"networks":1}
+,"networks":{"traffic":1}
+,"traffic":{"exceeds":1}
+,"exceeds":{"capacity":1}
+,"capacity":{"single":1}
+,"single":{"link":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"software":{"integration":1}
+,"integration":{"bfd":1}
+,"bfd":{"base":1,"client":1,"server":1}
+,"base":{"module":1}
+,"module":{"interacts":1,"using":1}
+,"interacts":{"modules":1}
+,"modules":{"nsm":1,"via":1,"connects":1}
+,"nsm":{"protocol":1}
+,"protocol":{"modules":1}
+,"via":{"bfd":1}
+,"client":{"bfd":1,"library":1}
+,"library":{"protocol":1,"bfd":1}
+,"connects":{"bfd":1}
+,"server":{"library":1}
+,"using":{"socket":1}
+,"socket":{"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

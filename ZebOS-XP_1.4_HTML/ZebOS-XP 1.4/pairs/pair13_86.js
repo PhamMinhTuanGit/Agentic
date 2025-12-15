@@ -1,0 +1,27 @@
+var pairs =
+{
+"clear":{"isis":1,"ipv4":1}
+,"isis":{"route":1,"(word":1,"local":1,"routing":1}
+,"route":{"command":1,"(redistribution":1,"redistribution":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"ipv4":{"routes":1}
+,"routes":{"command":1,"clear":1}
+,"syntax":{"clear":1}
+,"(word":{"route":1}
+,"(redistribution":{"all)":1}
+,"all)":{"parameters":1}
+,"parameters":{"word":1}
+,"word":{"routing":1}
+,"routing":{"area":1,"table.s":1}
+,"area":{"tag":1}
+,"tag":{"redistribution":1}
+,"redistribution":{"clear":1,"routes":1}
+,"local":{"redistribution":1}
+,"table.s":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"ena":1}
+,"ena":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,25 @@
+var pairs =
+{
+"show":{"ipv6":1,"bootstrap":1}
+,"ipv6":{"pim":1}
+,"pim":{"bsr-router":1,"(vrf":1}
+,"bsr-router":{"command":1,"show":1,"parameters":1}
+,"command":{"show":1,"syntax":1,"mode":1}
+,"bootstrap":{"router":1}
+,"router":{"address":1}
+,"address":{"command":1}
+,"syntax":{"show":1}
+,"(vrf":{"name":1}
+,"name":{"bsr-router":1,"specify":1,"vpn":1}
+,"parameters":{"vrf":1}
+,"vrf":{"vpn":1}
+,"vpn":{"routing\u002Fforwarding":1}
+,"routing\u002Fforwarding":{"instance":1}
+,"instance":{"name":1,"command":1}
+,"specify":{"name":1}
+,"mode":{"privileged":1,"example":1}
+,"privileged":{"exec":1}
+,"exec":{"exec":1,"mode":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

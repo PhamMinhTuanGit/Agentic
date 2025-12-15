@@ -1,0 +1,24 @@
+var pairs =
+{
+"related":{"documents":1}
+,"documents":{"guide":1,"details":1}
+,"guide":{"documents":1}
+,"details":{"commands":1}
+,"commands":{"used":1}
+,"used":{"configurations":1}
+,"configurations":{"carrier":1}
+,"carrier":{"ethernet":1}
+,"ethernet":{"command":1}
+,"command":{"reference":1}
+,"reference":{"network":1,"zebos-xp":1}
+,"network":{"services":1}
+,"services":{"module":1}
+,"module":{"command":1}
+,"zebos-xp":{"technical":1}
+,"technical":{"manuals":1}
+,"manuals":{"available":1}
+,"available":{"licensed":1}
+,"licensed":{"customers":1}
+,"customers":{"http:\u002F\u002Fwww.ipinfusion.com\u002Fsupport\u002Fdocument_list":1}
+}
+;Search.control.loadWordPairs(pairs);

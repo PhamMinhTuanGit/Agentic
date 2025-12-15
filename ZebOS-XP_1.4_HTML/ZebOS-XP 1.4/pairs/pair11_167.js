@@ -1,0 +1,26 @@
+var pairs =
+{
+"reversion-mode":{"command":1,"(revertive":1,"revertive":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"protection":1,"terminal":1}
+,"protection":{"switching":1,"group":1}
+,"switching":{"mode":1}
+,"mode":{"operation":1,"protection":1,"examples":1}
+,"operation":{"command":1,"non-revertive":1}
+,"syntax":{"reversion-mode":1}
+,"(revertive":{"non-revertive)":1}
+,"non-revertive)":{"parameters":1}
+,"parameters":{"revertive":1}
+,"revertive":{"revertive":1,"mode":1}
+,"non-revertive":{"non-revertive":1,"mode":1}
+,"group":{"mode":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mpls-tp":1}
+,"mpls-tp":{"lps":1}
+,"lps":{"protection-group":1}
+,"protection-group":{"abc":1}
+,"abc":{"(config-pg)":1}
+,"(config-pg)":{"reversion-mode":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"in-service":{"command":1,"testing":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"tesi":1}
+,"tesi":{"in-service":1}
+,"testing":{"command":1,"parameters":1}
+,"syntax":{"in-service":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"ethernet":1,"example":1}
+,"ethernet":{"cfm":1}
+,"cfm":{"pbb-te":1}
+,"pbb-te":{"mep":1}
+,"mep":{"configuration":1}
+,"configuration":{"mode":1}
+,"example":{"(config-cfm-pbb-te-mep)":1}
+,"(config-cfm-pbb-te-mep)":{"in-service":1}
+}
+;Search.control.loadWordPairs(pairs);

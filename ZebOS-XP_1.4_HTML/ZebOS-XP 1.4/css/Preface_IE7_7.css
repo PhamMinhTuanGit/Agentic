@@ -1,0 +1,140 @@
+.Alpha1 > span.WebWorks_Number
+{
+  text-indent: -18pt;
+}
+
+.Alpha1 > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Bulleted > span.WebWorks_Number
+{
+  text-indent: -18pt;
+}
+
+.Bulleted > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Bulleted1 > span.WebWorks_Number
+{
+  text-indent: -18pt;
+}
+
+.Bulleted1 > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Bulleted2 > span.WebWorks_Number
+{
+  text-indent: -18pt;
+}
+
+.Bulleted2 > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.BulletedSpaced > span.WebWorks_Number
+{
+  text-indent: -18pt;
+}
+
+.BulletedSpaced > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Footnote > span.WebWorks_Number
+{
+  text-indent: -12.000240000000001pt;
+}
+
+.Footnote > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Note > span.WebWorks_Number
+{
+  text-indent: -34.488pt;
+}
+
+.Note > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Note1 > span.WebWorks_Number
+{
+  text-indent: -36pt;
+}
+
+.Note1 > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Note2 > span.WebWorks_Number
+{
+  text-indent: -36pt;
+}
+
+.Note2 > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Note3 > span.WebWorks_Number
+{
+  text-indent: -36pt;
+}
+
+.Note3 > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Numbered > span.WebWorks_Number
+{
+  text-indent: -18pt;
+}
+
+.Numbered > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Numbered1 > span.WebWorks_Number
+{
+  text-indent: -18pt;
+}
+
+.Numbered1 > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.Numbered2 > span.WebWorks_Number
+{
+  text-indent: -18pt;
+}
+
+.Numbered2 > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+
+.NumberedSpaced > span.WebWorks_Number
+{
+  text-indent: -18pt;
+}
+
+.NumberedSpaced > span.WebWorks_Number > *
+{
+  text-indent: 0;
+}
+

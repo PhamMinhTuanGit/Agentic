@@ -1,0 +1,27 @@
+var pairs =
+{
+"multiple":{"registration":1,"mac":1}
+,"registration":{"protocols":1,"protocol":1}
+,"protocols":{"chapter":1,"(mrps)":1}
+,"chapter":{"describes":1}
+,"describes":{"multiple":1}
+,"(mrps)":{"implementation":1}
+,"implementation":{"within":1}
+,"within":{"zebos-xp":1}
+,"zebos-xp":{"including":1}
+,"including":{"multiple":1}
+,"mac":{"registration":1}
+,"protocol":{"(mmrp)":1,"(gmrp)":1}
+,"(mmrp)":{"garp":1}
+,"garp":{"multiple":1}
+,"(gmrp)":{"section":1}
+,"section":{"includes":1}
+,"includes":{"overview":1}
+,"overview":{"mrp":1}
+,"mrp":{"list":1,"features":1,"apis":1}
+,"list":{"mrp":1}
+,"features":{"description":1}
+,"description":{"supported":1}
+,"supported":{"mrp":1}
+}
+;Search.control.loadWordPairs(pairs);

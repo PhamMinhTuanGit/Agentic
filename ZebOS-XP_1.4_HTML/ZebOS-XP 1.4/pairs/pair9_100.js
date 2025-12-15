@@ -1,0 +1,25 @@
+var pairs =
+{
+"pal_tm":{"data":1,"{u_int32_t":1}
+,"data":{"structure":1}
+,"structure":{"includes":1}
+,"includes":{"elements":1}
+,"elements":{"time":1}
+,"time":{"disassembled":1}
+,"disassembled":{"defined":1}
+,"defined":{"pal\u002Fdummy\u002Fpal_time.h":1}
+,"pal\u002Fdummy\u002Fpal_time.h":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"pal_tm":1}
+,"{u_int32_t":{"tm_sec":1}
+,"tm_sec":{"u_int32_t":1}
+,"u_int32_t":{"tm_min":1,"tm_hour":1,"tm_mday":1,"tm_mon":1,"tm_year":1,"tm_wday":1,"tm_yday":1,"tm_isdst":1}
+,"tm_min":{"u_int32_t":1}
+,"tm_hour":{"u_int32_t":1}
+,"tm_mday":{"u_int32_t":1}
+,"tm_mon":{"u_int32_t":1}
+,"tm_year":{"u_int32_t":1}
+,"tm_wday":{"u_int32_t":1}
+,"tm_yday":{"u_int32_t":1}
+}
+;Search.control.loadWordPairs(pairs);

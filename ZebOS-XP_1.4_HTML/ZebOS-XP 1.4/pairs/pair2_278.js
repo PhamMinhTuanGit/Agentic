@@ -1,0 +1,23 @@
+var pairs =
+{
+"ldp":{"initialization":1,"session":1}
+,"initialization":{"finite":1,"fsm":1}
+,"finite":{"state":1}
+,"state":{"machine":1,"transition":1}
+,"machine":{"ldp":1,"(fsm)":1}
+,"session":{"establishment":1}
+,"establishment":{"procedure":1}
+,"procedure":{"implemented":1}
+,"implemented":{"finite":1}
+,"(fsm)":{"following":1}
+,"following":{"state":1}
+,"transition":{"diagram":1}
+,"diagram":{"illustrates":1}
+,"illustrates":{"possible":1}
+,"possible":{"states":1}
+,"states":{"transitions":1}
+,"transitions":{"response":1}
+,"response":{"events":1}
+,"events":{"ldp":1}
+}
+;Search.control.loadWordPairs(pairs);

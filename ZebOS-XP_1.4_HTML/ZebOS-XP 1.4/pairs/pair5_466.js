@@ -1,0 +1,26 @@
+var pairs =
+{
+"zebos2":{"(config)":1}
+,"(config)":{"interface":1,"int":1}
+,"interface":{"eth9":1,"synchronous":1,"input":1,"mode":1,"eth10":1}
+,"eth9":{"configure":1,"(config-if)":1,"layer":1}
+,"configure":{"interface":1,"eth9":1,"synchronous":1,"eth10":1}
+,"(config-if)":{"switchport":1,"synce":1,"exit":1}
+,"switchport":{"configure":1}
+,"layer":{"port":1}
+,"port":{"(config-if)":1}
+,"synce":{"enter":1}
+,"enter":{"interface":1}
+,"synchronous":{"ethernet":1,"configure":1,"mode":1}
+,"ethernet":{"mode":1}
+,"mode":{"(config-if-synce)":1,"synchronous":1,"(config-if)":1,"(config)":1}
+,"(config-if-synce)":{"mode":1,"input-source":1,"exit":1}
+,"input-source":{"configure":1}
+,"input":{"source":1}
+,"source":{"priority":1}
+,"priority":{"(config-if-synce)":1}
+,"exit":{"exit":1,"interface":1}
+,"int":{"eth10":1}
+,"eth10":{"configure":1,"(config-if)":1,"layer":1}
+}
+;Search.control.loadWordPairs(pairs);

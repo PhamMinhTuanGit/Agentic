@@ -1,0 +1,22 @@
+var pairs =
+{
+"add":{"addresses":1,"remove":1}
+,"addresses":{"vlan":1}
+,"vlan":{"interface":1,"interfaces":1}
+,"interface":{"nsm":1,"eth1.10":1}
+,"nsm":{"add":1}
+,"remove":{"addresses":1}
+,"interfaces":{"normal":1,"using":1}
+,"normal":{"interfaces":1}
+,"using":{"imish":1}
+,"imish":{"type":1}
+,"type":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth1.10":{"(config-if)":1}
+,"(config-if)":{"address":1}
+,"address":{"1.1.1.145\u002F24":1,"192.168.1.50\u002F24":1}
+,"1.1.1.145\u002F24":{"(config-if)":1}
+}
+;Search.control.loadWordPairs(pairs);

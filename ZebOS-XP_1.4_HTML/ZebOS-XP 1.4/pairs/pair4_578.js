@@ -1,0 +1,25 @@
+var pairs =
+{
+"feature":{"daemon":1,"lsr":1,"daemon-name":1,"ospfd":1}
+,"daemon":{"command":1,"specify":1,"name":1}
+,"command":{"load":1,"used":1,"syntax":1}
+,"load":{"feature":1}
+,"lsr":{"specified":1,"command":1,"first":1}
+,"specified":{"parameter":1,"command":1}
+,"parameter":{"unload":1}
+,"unload":{"features":1}
+,"features":{"lsr":1}
+,"used":{"default":1}
+,"default":{"lsr":1}
+,"syntax":{"feature":1}
+,"daemon-name":{"feature":1,"parameters":1}
+,"parameters":{"daemon":1}
+,"specify":{"daemon":1}
+,"name":{"examples":1}
+,"examples":{"(config)":1}
+,"(config)":{"lsr":1}
+,"first":{"(config-lsr)":1}
+,"(config-lsr)":{"feature":1}
+,"ospfd":{"(config-lsr)":1}
+}
+;Search.control.loadWordPairs(pairs);

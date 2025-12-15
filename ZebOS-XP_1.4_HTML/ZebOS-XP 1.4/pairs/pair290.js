@@ -1,0 +1,24 @@
+var pairs =
+{
+"openstack":{"cloud":1}
+,"cloud":{"operating":1}
+,"operating":{"system":1}
+,"system":{"controls":1}
+,"controls":{"pools":1}
+,"pools":{"compute":1}
+,"compute":{"storage":1}
+,"storage":{"networking":1}
+,"networking":{"resources":1}
+,"resources":{"data":1}
+,"data":{"center":1}
+,"center":{"users":1}
+,"users":{"manage":1}
+,"manage":{"web-based":1}
+,"web-based":{"dashboard":1}
+,"dashboard":{"command-line":1}
+,"command-line":{"tools":1}
+,"tools":{"restful":1}
+,"restful":{"api":1}
+,"api":{"neutron":1}
+}
+;Search.control.loadWordPairs(pairs);

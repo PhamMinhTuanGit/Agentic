@@ -1,0 +1,24 @@
+var pairs =
+{
+"protocol":{"module":1}
+,"module":{"connectivity":1}
+,"connectivity":{"disconnected":1}
+,"disconnected":{"vlog":1}
+,"vlog":{"daemon":1,"reconnect":1}
+,"daemon":{"tries":1}
+,"tries":{"reconnect":1}
+,"reconnect":{"using":1,"callback":1}
+,"using":{"vlog":1}
+,"callback":{"every":1}
+,"every":{"reconnect_interval":1}
+,"reconnect_interval":{"seconds)":1}
+,"seconds)":{"case":1}
+,"case":{"vlog_client":1}
+,"vlog_client":{"unable":1}
+,"unable":{"connect":1}
+,"connect":{"vlog_server":1}
+,"vlog_server":{"debug":1}
+,"debug":{"messages":1}
+,"messages":{"discarded":1}
+}
+;Search.control.loadWordPairs(pairs);

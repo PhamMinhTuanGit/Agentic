@@ -1,0 +1,19 @@
+var pairs =
+{
+"cspf":{"extensions":1,"constraint":1}
+,"extensions":{"cspf":1}
+,"constraint":{"routing":1,"based":1}
+,"routing":{"algorithm":1}
+,"algorithm":{"updated":1}
+,"updated":{"enable":1}
+,"enable":{"calculation":1}
+,"calculation":{"constraint":1}
+,"based":{"route":1}
+,"route":{"according":1}
+,"according":{"diffserv-te":1}
+,"diffserv-te":{"information":1}
+,"information":{"received":1}
+,"received":{"signalling":1}
+,"signalling":{"protocols":1}
+}
+;Search.control.loadWordPairs(pairs);

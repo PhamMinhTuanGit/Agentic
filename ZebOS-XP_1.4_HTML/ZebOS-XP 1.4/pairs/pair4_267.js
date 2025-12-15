@@ -1,0 +1,21 @@
+var pairs =
+{
+"ce2":{"(nsm)":1}
+,"(nsm)":{"configure":1}
+,"configure":{"terminal":1,"mode":1,"static":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"mode":{"(config)":1}
+,"(config)":{"route":1}
+,"route":{"100.1.1.0\u002F24":1,"destination":1}
+,"100.1.1.0\u002F24":{"200.1.1.2":1}
+,"200.1.1.2":{"configure":1}
+,"static":{"route":1}
+,"destination":{"network":1}
+,"network":{"next":1}
+,"next":{"hop":1}
+,"hop":{"connected":1}
+,"connected":{"pe1":1}
+,"pe1":{"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

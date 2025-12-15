@@ -1,0 +1,24 @@
+var pairs =
+{
+"evb":{"bridge":1}
+,"bridge":{"ecp-acktimer":1,"<1-32>":1,"identifier":1}
+,"ecp-acktimer":{"command":1,"<10-20>":1}
+,"command":{"edge":1,"syntax":1,"mode":1}
+,"edge":{"control":1}
+,"control":{"protocol":1}
+,"protocol":{"(ecp)":1}
+,"(ecp)":{"acknowledgment":1}
+,"acknowledgment":{"time":1}
+,"time":{"command":1}
+,"syntax":{"evb":1}
+,"<1-32>":{"ecp-acktimer":1,"bridge":1}
+,"<10-20>":{"parameters":1,"acknowledgment":1}
+,"parameters":{"<1-32>":1}
+,"identifier":{"<10-20>":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"evb":1}
+}
+;Search.control.loadWordPairs(pairs);

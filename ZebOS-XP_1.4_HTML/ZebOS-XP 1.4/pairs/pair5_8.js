@@ -1,0 +1,19 @@
+var pairs =
+{
+"simple":{"management":1}
+,"management":{"interface":1,"modules":1}
+,"interface":{"simple":1,"(smi)":1}
+,"(smi)":{"language":1}
+,"language":{"api":1}
+,"api":{"write":1}
+,"write":{"applications":1}
+,"applications":{"configure":1}
+,"configure":{"manage":1}
+,"manage":{"zebos-xp":1}
+,"zebos-xp":{"routing":1}
+,"routing":{"switching":1}
+,"switching":{"protocols":1}
+,"protocols":{"chapter":1}
+,"chapter":{"management":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"forwarding":{"equivalence":1,"treatment":1}
+,"equivalence":{"class":1}
+,"class":{"(fec)":1}
+,"(fec)":{"packets":1}
+,"packets":{"similar":1}
+,"similar":{"characteristics":1}
+,"characteristics":{"forwarded":1}
+,"forwarded":{"manner":1}
+,"manner":{"path":1}
+,"path":{"forwarding":1}
+,"treatment":{"using":1}
+,"using":{"multi-protocol":1}
+,"multi-protocol":{"label":1}
+,"label":{"switching":1,"fecs":1,"distribution":1}
+,"switching":{"(mpls)":1}
+,"(mpls)":{"label":1}
+,"fecs":{"defined":1,"represented":1}
+,"defined":{"label":1}
+,"distribution":{"protocol":1,"protocols":1}
+,"protocol":{"(ldp)":1}
+,"(ldp)":{"fecs":1}
+,"represented":{"label":1}
+}
+;Search.control.loadWordPairs(pairs);

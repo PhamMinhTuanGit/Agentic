@@ -1,0 +1,27 @@
+var pairs =
+{
+"lacp_unset_system_priority":{"function":1,"input":1}
+,"function":{"sets":1,"called":1}
+,"sets":{"system":1}
+,"system":{"priority":1}
+,"priority":{"default":1}
+,"default":{"value":1}
+,"value":{"(32768)":1}
+,"(32768)":{"function":1}
+,"called":{"command":1}
+,"command":{"lacp":1}
+,"lacp":{"system-priority":1}
+,"system-priority":{"syntax":1}
+,"syntax":{"include":1}
+,"include":{"lacpd\u002Flacpd.h":1}
+,"lacpd\u002Flacpd.h":{"int":1}
+,"int":{"lacp_unset_system_priority":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"values":1}
+,"values":{"always":1}
+,"always":{"result_ok":1}
+}
+;Search.control.loadWordPairs(pairs);

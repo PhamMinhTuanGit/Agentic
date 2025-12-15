@@ -1,0 +1,27 @@
+var pairs =
+{
+"neighbor":{"fall-over":1,"a.b.c.d":1,"10.10.2.9":1}
+,"fall-over":{"bfd":1}
+,"bfd":{"(rip)":1,"option":1,"neighbor":1,"parameters":1}
+,"(rip)":{"command":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"bfd":1}
+,"option":{"ipv4":1}
+,"ipv4":{"rip":1,"format":1}
+,"rip":{"peer":1,"(config-router)":1}
+,"peer":{"form":1,"command":1,"address":1}
+,"form":{"command":1}
+,"disable":{"bfd":1}
+,"syntax":{"neighbor":1}
+,"a.b.c.d":{"fall-over":1,"peer":1}
+,"parameters":{"a.b.c.d":1}
+,"address":{"ipv4":1}
+,"format":{"command":1}
+,"mode":{"router":1,"example":1}
+,"router":{"mode":1,"rip":1}
+,"example":{"(config)":1}
+,"(config)":{"router":1}
+,"(config-router)":{"neighbor":1}
+,"10.10.2.9":{"fall-over":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"trunk":{"port":1}
+,"port":{"chapter":1}
+,"chapter":{"shows":1}
+,"shows":{"configuration":1}
+,"configuration":{"enable":1}
+,"enable":{"end":1}
+,"end":{"station":1}
+,"station":{"vlan":1}
+,"vlan":{"1-10":1,"1-9":1}
+,"1-10":{"rbridge1":1}
+,"rbridge1":{"end":1}
+,"1-9":{"rbridge2":1}
+,"rbridge2":{"verification":1}
+,"verification":{"appointed":1}
+,"appointed":{"rbridges":1}
+}
+;Search.control.loadWordPairs(pairs);

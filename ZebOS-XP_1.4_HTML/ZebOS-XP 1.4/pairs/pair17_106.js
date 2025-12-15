@@ -1,0 +1,27 @@
+var pairs =
+{
+"pe2":{"(oam)":1}
+,"(oam)":{"configure":1}
+,"configure":{"terminal":1,"mode":1,"protection":1,"primary":1,"backup":1,"bfd":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"mode":{"(config)":1}
+,"(config)":{"mpls-tp":1}
+,"mpls-tp":{"protection-group":1,"bfd":1}
+,"protection-group":{"grp1":1}
+,"grp1":{"configure":1,"(config-pg)":1}
+,"protection":{"group":1}
+,"group":{"grp1":1}
+,"(config-pg)":{"primary":1,"backup":1}
+,"primary":{"meg":1}
+,"meg":{"meg1":1,"meg2":1,"(config)":1}
+,"meg1":{"me1":1,"(config-pg)":1,"me-name":1}
+,"me1":{"configure":1}
+,"backup":{"meg":1}
+,"meg2":{"me2":1,"(config)":1,"me-name":1}
+,"me2":{"configure":1}
+,"bfd":{"meg-name":1,"primary":1,"backup":1}
+,"meg-name":{"meg1":1,"meg2":1}
+,"me-name":{"me1":1,"me2":1}
+}
+;Search.control.loadWordPairs(pairs);

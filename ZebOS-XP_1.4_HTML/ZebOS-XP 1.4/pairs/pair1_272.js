@@ -1,0 +1,21 @@
+var pairs =
+{
+"virtual":{"lans":1}
+,"lans":{"chapter":1,"(vlans)":1}
+,"chapter":{"describes":1}
+,"describes":{"virtual":1}
+,"(vlans)":{"implementation":1}
+,"implementation":{"zebos-xp":1}
+,"zebos-xp":{"section":1}
+,"section":{"includes":1}
+,"includes":{"overview":1}
+,"overview":{"vlans":1}
+,"vlans":{"list":1}
+,"list":{"vlan":1}
+,"vlan":{"features":1,"functions":1}
+,"features":{"description":1}
+,"description":{"supported":1}
+,"supported":{"external":1}
+,"external":{"vlan":1}
+}
+;Search.control.loadWordPairs(pairs);

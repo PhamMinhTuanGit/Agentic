@@ -1,0 +1,22 @@
+var pairs =
+{
+"shutdown":{"lldpdu":1}
+,"lldpdu":{"special":1,"sent":1,"frame":1,"tlv":1}
+,"special":{"lldpdu":1}
+,"sent":{"port":1}
+,"port":{"disabled":1,"tlv":1}
+,"disabled":{"called":1}
+,"called":{"shutdown":1}
+,"frame":{"consists":1}
+,"consists":{"following":1}
+,"following":{"tlvs":1}
+,"tlvs":{"chassis":1}
+,"chassis":{"tlv":1}
+,"tlv":{"port":1,"ttl":1}
+,"ttl":{"tlv":1,"field":1}
+,"field":{"value":1}
+,"value":{"zero":1}
+,"zero":{"end":1}
+,"end":{"lldpdu":1}
+}
+;Search.control.loadWordPairs(pairs);

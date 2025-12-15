@@ -1,0 +1,19 @@
+var pairs =
+{
+"clear":{"mpls":1,"top":1,"ftn":1,"ilm":1}
+,"mpls":{"statistics":1}
+,"statistics":{"command":1,"(top":1,"ftn":1,"ilm":1,"top":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"syntax":{"clear":1}
+,"(top":{"ftn":1}
+,"ftn":{"ilm":1,"clear":1,"statistics":1}
+,"ilm":{"parameters":1,"clear":1,"statistics":1}
+,"parameters":{"top":1}
+,"top":{"clear":1,"level":1}
+,"level":{"statistics":1}
+,"mode":{"privileged":1,"example":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"example":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"topology":{"configuration":1}
+,"configuration":{"example":1}
+,"example":{"two":1}
+,"two":{"vlan":1}
+,"vlan":{"classifier":1,"interface":1,"configuring":1,"classifiers":1}
+,"classifier":{"rules":1}
+,"rules":{"created":1,"passed":1}
+,"created":{"direct":1}
+,"direct":{"ipv6":1}
+,"ipv6":{"packets":1}
+,"packets":{"packets":1,"sourced":1,"meet":1}
+,"sourced":{"subnet":1}
+,"subnet":{"1.1.1.1\u002F24":1}
+,"1.1.1.1\u002F24":{"vlan":1}
+,"interface":{"(fe1)":1}
+,"(fe1)":{"bridge":1}
+,"bridge":{"packets":1}
+,"meet":{"criteria":1}
+,"criteria":{"defined":1}
+,"defined":{"rules":1}
+,"passed":{"default":1}
+,"default":{"vlan":1}
+,"configuring":{"vlan":1}
+}
+;Search.control.loadWordPairs(pairs);

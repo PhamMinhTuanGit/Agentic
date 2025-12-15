@@ -1,0 +1,20 @@
+var pairs =
+{
+"split":{"horizon":1}
+,"horizon":{"technique":1,"poison":1}
+,"technique":{"routes":1}
+,"routes":{"learned":1}
+,"learned":{"interface":1}
+,"interface":{"advertised":1,"preventing":1,"unreachable":1,"prevents":1}
+,"advertised":{"interface":1}
+,"preventing":{"router":1}
+,"router":{"seeing":1}
+,"seeing":{"route":1}
+,"route":{"updates":1}
+,"updates":{"split":1}
+,"poison":{"reverse":1}
+,"reverse":{"routes":1}
+,"unreachable":{"advertised":1}
+,"prevents":{"router":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"channel":{"connecting":1,"refer":1}
+,"connecting":{"path":1}
+,"path":{"carries":1}
+,"carries":{"information":1}
+,"information":{"sending":1}
+,"sending":{"device":1}
+,"device":{"receiving":1,"channel":1}
+,"receiving":{"device":1}
+,"refer":{"physical":1}
+,"physical":{"medium":1}
+,"medium":{"(such":1}
+,"(such":{"coaxial":1}
+,"coaxial":{"cable":1}
+,"cable":{"fiber":1}
+,"fiber":{"optic":1}
+,"optic":{"cable)":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,22 @@
+var pairs =
+{
+"show":{"rsvp":1}
+,"rsvp":{"dste-info":1,"bypass":1}
+,"dste-info":{"command":1,"parameters":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"data":1}
+,"data":{"dste":1}
+,"dste":{"configuration":1}
+,"configuration":{"rsvp":1}
+,"bypass":{"session":1}
+,"session":{"command":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1}
+,"exec":{"privileged":1,"modes":1}
+,"privileged":{"exec":1}
+,"modes":{"example":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

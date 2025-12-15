@@ -1,0 +1,21 @@
+var pairs =
+{
+"log":{"global":1}
+,"global":{"administrator":1}
+,"administrator":{"launch":1}
+,"launch":{"zebos-xp":1}
+,"zebos-xp":{"daemons":1}
+,"daemons":{"(nsm":1}
+,"(nsm":{"ospfd":1}
+,"ospfd":{"bgpd":1}
+,"bgpd":{"imi)":1}
+,"imi)":{"start":1}
+,"start":{"imish":1}
+,"imish":{"enable":1}
+,"enable":{"command":1}
+,"command":{"enter":1}
+,"enter":{"privileged":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+}
+;Search.control.loadWordPairs(pairs);

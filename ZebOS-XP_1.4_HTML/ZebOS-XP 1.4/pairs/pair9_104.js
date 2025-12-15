@@ -1,0 +1,23 @@
+var pairs =
+{
+"show":{"privilege":1}
+,"privilege":{"command":1,"level":1,"levels":1,"parameters":1,"current":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"current":1}
+,"current":{"privilege":1}
+,"level":{"imish":1,"varies":1}
+,"imish":{"privilege":1}
+,"varies":{"1-15":1}
+,"1-15":{"privilege":1}
+,"levels":{"2-14":1}
+,"2-14":{"undefined":1}
+,"undefined":{"command":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"multicast":{"protocols":1,"protocol":1,"routing":1,"daemon":1}
+,"protocols":{"zebos-xp":1}
+,"zebos-xp":{"provides":1}
+,"provides":{"multicast":1}
+,"protocol":{"daemons":1,"label":1}
+,"daemons":{"layer":1}
+,"layer":{"multicast":1}
+,"routing":{"information":1}
+,"information":{"base":1}
+,"base":{"daemon":1}
+,"daemon":{"layer":1,"protocol-independent":1,"multi":1}
+,"protocol-independent":{"multicast":1}
+,"multi":{"protocol":1}
+,"label":{"switching":1}
+,"switching":{"protocols":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,25 @@
+var pairs =
+{
+"ldp":{"snmpget":1,"returns":1}
+,"snmpget":{"snmpget":1,"ldp":1,"test":1}
+,"returns":{"mplsldplsrid":1,"mplsldpentitygenericobjects":1,"mplsldplsrloopdetectioncapable":1}
+,"mplsldplsrid":{"mplsldplsrobjects":1}
+,"mplsldplsrobjects":{"snmpget":1,"snmpgetnext":1}
+,"test":{"10.10.10.10":1}
+,"10.10.10.10":{".1.3.6.1.2.1.10.1.4.1.1.1.0":1,".1.3.6.1.2.1.10.1.4.1.2.5":1}
+,".1.3.6.1.2.1.10.1.4.1.1.1.0":{"output":1,"sample":1}
+,"output":{"transmission.1.4.1.1.1.0":1,"transmission.1.4.1.2.5.1.1.3.192.168.0.42.0.0.1.16.1048575":1,"transmission.1.4.1.1.2.0":1}
+,"transmission.1.4.1.1.1.0":{"=hex":1}
+,"=hex":{"snmpwalk":1}
+,"snmpwalk":{"snmpwalk":1,"ldp":1,"test":1}
+,"mplsldpentitygenericobjects":{"mplsldpentityobjects":1}
+,"mplsldpentityobjects":{"snmpwalk":1}
+,".1.3.6.1.2.1.10.1.4.1.2.5":{"sample":1}
+,"sample":{"output":1}
+,"transmission.1.4.1.2.5.1.1.3.192.168.0.42.0.0.1.16.1048575":{"transmission.1.4.1.2.5.1.1.4.192.168.0.42.0.0.1.16.1048575":1}
+,"transmission.1.4.1.2.5.1.1.4.192.168.0.42.0.0.1.16.1048575":{"transmission.1.4.1.2.5.1.1.5.192.168.0.42.0.0.1.16.1048575":1}
+,"transmission.1.4.1.2.5.1.1.5.192.168.0.42.0.0.1.16.1048575":{"snmpgetnext":1}
+,"snmpgetnext":{"snmpgetnext":1,"ldp":1,"test":1}
+,"mplsldplsrloopdetectioncapable":{"mplsldplsrobjects":1}
+}
+;Search.control.loadWordPairs(pairs);

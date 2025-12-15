@@ -1,0 +1,22 @@
+var pairs =
+{
+"ext-tunnel-id":{"command":1,"a.b.c.d":1,"1.1.1.1":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"extended":1}
+,"extended":{"tunnel":1}
+,"tunnel":{"identifier":1}
+,"identifier":{"p2mp":1}
+,"p2mp":{"trunk":1}
+,"trunk":{"command":1,"mode":1}
+,"syntax":{"ext-tunnel-id":1}
+,"a.b.c.d":{"parameters":1,"ipv4":1}
+,"parameters":{"a.b.c.d":1}
+,"ipv4":{"address":1}
+,"address":{"value":1}
+,"value":{"trunk":1}
+,"mode":{"rsvp":1,"examples":1}
+,"rsvp":{"p2mp":1}
+,"examples":{"(config-p2mp-trunk)":1}
+,"(config-p2mp-trunk)":{"ext-tunnel-id":1}
+}
+;Search.control.loadWordPairs(pairs);

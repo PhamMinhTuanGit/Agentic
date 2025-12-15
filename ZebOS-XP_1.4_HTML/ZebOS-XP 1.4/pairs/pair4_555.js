@@ -1,0 +1,26 @@
+var pairs =
+{
+"configure":{"terminal":1,"mode":1,"address":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"interface":1}
+,"mode":{"(config)":1,"(config-if)":1}
+,"(config)":{"interface":1,"route":1}
+,"interface":{"enter":1,"mode":1,"specify":1}
+,"(config-if)":{"address":1,"exit":1}
+,"address":{"192.168.0.2\u002F32":1,"interface":1,"(config-if)":1}
+,"192.168.0.2\u002F32":{"configure":1}
+,"specify":{"32-bit":1,"destination":1}
+,"32-bit":{"mask":1}
+,"mask":{"making":1,"network":1}
+,"making":{"host":1}
+,"host":{"address":1}
+,"exit":{"exit":1,"interface":1}
+,"route":{"192.168.0.1\u002F32":1,"192.168.0.3\u002F32":1}
+,"192.168.0.1\u002F32":{"10.10.10.1":1}
+,"10.10.10.1":{"(config)":1}
+,"192.168.0.3\u002F32":{"10.10.12.3":1}
+,"10.10.12.3":{"specify":1}
+,"destination":{"mask":1}
+,"network":{"gateway":1}
+}
+;Search.control.loadWordPairs(pairs);

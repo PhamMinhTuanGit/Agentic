@@ -1,0 +1,23 @@
+var pairs =
+{
+"virtual":{"circuit":1,"circuit-related":1}
+,"circuit":{"interface":1}
+,"interface":{"apis":1}
+,"apis":{"mpls":1}
+,"mpls":{"forwarder":1}
+,"forwarder":{"package":1}
+,"package":{"provides":1}
+,"provides":{"static":1}
+,"static":{"library":1}
+,"library":{"libmpls_client.a":1}
+,"libmpls_client.a":{"linked":1}
+,"linked":{"user-space":1}
+,"user-space":{"process":1}
+,"process":{"populate":1}
+,"populate":{"virtual":1}
+,"circuit-related":{"ftn":1}
+,"ftn":{"ilm":1}
+,"ilm":{"entries":1}
+,"entries":{"mpls":1}
+}
+;Search.control.loadWordPairs(pairs);

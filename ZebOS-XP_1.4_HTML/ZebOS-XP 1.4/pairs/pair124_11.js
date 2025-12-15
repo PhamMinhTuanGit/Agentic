@@ -1,0 +1,24 @@
+var pairs =
+{
+"dijkstra":{"algorithm":1}
+,"algorithm":{"algorithm":1,"used":1}
+,"used":{"intermediate":1}
+,"intermediate":{"system":1}
+,"system":{"intermediate":1,"(is-is)":1}
+,"(is-is)":{"open":1}
+,"open":{"shortest":1}
+,"shortest":{"path":1}
+,"path":{"first":1}
+,"first":{"(ospf)":1,"(spf)":1}
+,"(ospf)":{"routing":1}
+,"routing":{"decisions":1}
+,"decisions":{"based":1}
+,"based":{"link":1}
+,"link":{"state":1}
+,"state":{"called":1}
+,"called":{"shortest":1}
+,"(spf)":{"contrast":1}
+,"contrast":{"bellman-ford":1}
+,"bellman-ford":{"algorithm":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"topology":{"diagram":1}
+,"diagram":{"shows":1}
+,"shows":{"minimum":1}
+,"minimum":{"configuration":1}
+,"configuration":{"required":1}
+,"required":{"enable":1}
+,"enable":{"ripng":1}
+,"ripng":{"interface":1,"first":1,"routing":1,"topology":1}
+,"interface":{"two":1,"ripng":1}
+,"two":{"routers":1}
+,"routers":{"connected":1}
+,"connected":{"network":1}
+,"network":{"3ffe:11":1}
+,"3ffe:11":{":\u002F64":1}
+,":\u002F64":{"enable":1}
+,"first":{"define":1}
+,"define":{"ripng":1}
+,"routing":{"process":1}
+,"process":{"enable":1}
+}
+;Search.control.loadWordPairs(pairs);

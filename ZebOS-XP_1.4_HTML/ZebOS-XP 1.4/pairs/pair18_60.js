@@ -1,0 +1,25 @@
+var pairs =
+{
+"data":{"flow":1,"attached":1}
+,"flow":{"protocol":1}
+,"protocol":{"module":1}
+,"module":{"sends":1,"vlog":1}
+,"sends":{"debug":1,"vlog":1}
+,"debug":{"messages":1,"message":1}
+,"messages":{"vlog_client":1}
+,"vlog_client":{"converts":1}
+,"converts":{"vlog_msg":1}
+,"vlog_msg":{"sends":1}
+,"vlog":{"module":1,"identifies":1,"data":1}
+,"identifies":{"forwards":1}
+,"forwards":{"debug":1}
+,"message":{"prepended":1}
+,"prepended":{"date":1}
+,"date":{"time":1}
+,"time":{"data":1}
+,"attached":{"terminal":1}
+,"terminal":{"log":1}
+,"log":{"file":1}
+,"file":{"vlog":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"overview":{"trill":1}
+,"trill":{"module":1,"functionality":1,"core":1,"interface":1,"is-is":1,"forwarding":1}
+,"module":{"runs":1,"trill":1}
+,"runs":{"separately":1}
+,"separately":{"zebos-xp":1}
+,"zebos-xp":{"trill":1}
+,"functionality":{"handled":1}
+,"handled":{"following":1}
+,"following":{"modules":1}
+,"modules":{"trill":1}
+,"core":{"trill":1}
+,"interface":{"manager":1}
+,"manager":{"(ifm)":1}
+,"(ifm)":{"trill":1}
+,"is-is":{"module":1}
+,"forwarding":{"module":1}
+}
+;Search.control.loadWordPairs(pairs);

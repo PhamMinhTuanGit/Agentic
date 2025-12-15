@@ -1,0 +1,25 @@
+var pairs =
+{
+"download":{"linux":1,"linux-3.4.44.tar.bz2":1}
+,"linux":{"zebos-xp":1,"kernel":1,"3.4.44":1,"distribution":1}
+,"zebos-xp":{"supports":1,"verified":1}
+,"supports":{"following":1}
+,"following":{"version":1}
+,"version":{"linux":1,"zebos-xp":1,"3.4.44":1}
+,"kernel":{"linux":1,"version":1,"download":1,"source":1}
+,"3.4.44":{"version":1,"linux":1,"kernel":1}
+,"verified":{"work":1}
+,"work":{"linux":1}
+,"distribution":{"cited":1}
+,"cited":{"release":1}
+,"release":{"notes":1}
+,"notes":{"version":1}
+,"linux-3.4.44.tar.bz2":{"https:\u002F\u002Fwww.kernel.org\u002Fpub\u002Flinux\u002Fkernel\u002Fv3.x\u002F":1}
+,"https:\u002F\u002Fwww.kernel.org\u002Fpub\u002Flinux\u002Fkernel\u002Fv3.x\u002F":{"untar":1}
+,"untar":{"linux":1}
+,"source":{"code":1}
+,"code":{"\u002Fusr\u002Fsrc\u002Ftar":1}
+,"\u002Fusr\u002Fsrc\u002Ftar":{"xvfj":1}
+,"xvfj":{"linux-3.4.44.tar.bz2":1}
+}
+;Search.control.loadWordPairs(pairs);

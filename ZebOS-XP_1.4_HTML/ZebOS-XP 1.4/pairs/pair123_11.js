@@ -1,0 +1,24 @@
+var pairs =
+{
+"digital":{"signature":1}
+,"signature":{"algorithm":1,"form":1,"computed":1}
+,"algorithm":{"(dsa)":1,"produces":1}
+,"(dsa)":{"asymmetric":1}
+,"asymmetric":{"cryptographic":1}
+,"cryptographic":{"algorithm":1}
+,"produces":{"digital":1}
+,"form":{"pair":1}
+,"pair":{"large":1}
+,"large":{"numbers":1}
+,"numbers":{"signature":1}
+,"computed":{"using":1}
+,"using":{"rules":1}
+,"rules":{"parameters":1}
+,"parameters":{"identity":1}
+,"identity":{"signer":1}
+,"signer":{"integrity":1}
+,"integrity":{"signed":1}
+,"signed":{"data":1}
+,"data":{"verified":1}
+}
+;Search.control.loadWordPairs(pairs);

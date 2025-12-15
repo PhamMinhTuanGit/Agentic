@@ -1,0 +1,24 @@
+var pairs =
+{
+"ping":{"output":1,"ipv6":1,"fe80":1}
+,"output":{"host":1}
+,"host":{"[[root@hsta":1}
+,"[[root@hsta":{"root]":1}
+,"root]":{"ping":1}
+,"ipv6":{"fe80":1}
+,"fe80":{":3437:30ff:fe35:a6ac":1}
+,":3437:30ff:fe35:a6ac":{"ping":1,"(fe80":1,"icmp_seq=1":1,"icmp_seq=2":1,"icmp_seq=3":1,"icmp_seq=4":1}
+,"(fe80":{":3437:30ff:fe35:a6ac)":1}
+,":3437:30ff:fe35:a6ac)":{"data":1}
+,"data":{"bytes":1}
+,"bytes":{"bytes":1,"fe80":1}
+,"icmp_seq=1":{"ttl=63":1}
+,"ttl=63":{"time=0.398":1,"time=0.230":1,"time=0.234":1}
+,"time=0.398":{"bytes":1}
+,"icmp_seq=2":{"ttl=63":1}
+,"time=0.230":{"bytes":1}
+,"icmp_seq=3":{"ttl=63":1}
+,"time=0.234":{"bytes":1}
+,"icmp_seq=4":{"ttl=63":1}
+}
+;Search.control.loadWordPairs(pairs);

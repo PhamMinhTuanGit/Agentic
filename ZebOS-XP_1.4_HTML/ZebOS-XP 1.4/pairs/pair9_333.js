@@ -1,0 +1,25 @@
+var pairs =
+{
+"adjacency":{"section":1,"multi-access":1}
+,"section":{"shows":1}
+,"shows":{"forming":1}
+,"forming":{"esadi":1}
+,"esadi":{"adjacency":1}
+,"multi-access":{"lan":1}
+,"lan":{"topology":1}
+,"topology":{"configurations":1}
+,"configurations":{"assumes":1}
+,"assumes":{"running":1}
+,"running":{"trilld":1}
+,"trilld":{"nsm":1}
+,"nsm":{"imi":1}
+,"imi":{"daemons":1}
+,"daemons":{"sure":1}
+,"sure":{"rbridge1":1}
+,"rbridge1":{"rbridge4":1}
+,"rbridge4":{"rbridge6":1}
+,"rbridge6":{"common":1}
+,"common":{"vlan":1}
+,"vlan":{"vlan":1}
+}
+;Search.control.loadWordPairs(pairs);

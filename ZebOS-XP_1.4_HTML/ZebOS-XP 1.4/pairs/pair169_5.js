@@ -1,0 +1,24 @@
+var pairs =
+{
+"gateway":{"device":1}
+,"device":{"understands":1}
+,"understands":{"converts":1}
+,"converts":{"two":1}
+,"two":{"different":1}
+,"different":{"networking":1}
+,"networking":{"models":1}
+,"models":{"transmission":1}
+,"transmission":{"control":1}
+,"control":{"protocol\u002Finternet":1}
+,"protocol\u002Finternet":{"protocol":1}
+,"protocol":{"(tcp\u002Fip)":1}
+,"(tcp\u002Fip)":{"become":1}
+,"become":{"dominant":1}
+,"dominant":{"model":1}
+,"model":{"gateways":1}
+,"gateways":{"used":1}
+,"used":{"time":1}
+,"time":{"default":1}
+,"default":{"gateway":1}
+}
+;Search.control.loadWordPairs(pairs);

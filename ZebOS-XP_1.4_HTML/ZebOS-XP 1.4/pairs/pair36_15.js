@@ -1,0 +1,26 @@
+var pairs =
+{
+"hal_hw_reg_set":{"function":1,"(u_int32_t":1}
+,"function":{"sets":1}
+,"sets":{"value":1}
+,"value":{"hardware":1,"value":1,"register":1}
+,"hardware":{"register":1}
+,"register":{"passed":1,"value":1,"output":1,"hal_success":1}
+,"passed":{"input":1}
+,"input":{"syntax":1,"parameters":1}
+,"syntax":{"int":1}
+,"int":{"hal_hw_reg_set":1}
+,"(u_int32_t":{"reg_addr":1}
+,"reg_addr":{"u_int32_t":1,"address":1}
+,"u_int32_t":{"value)":1}
+,"value)":{"input":1}
+,"parameters":{"reg_addr":1,"none":1}
+,"address":{"hardware":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"hal_error":1}
+,"hal_error":{"unable":1}
+,"unable":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

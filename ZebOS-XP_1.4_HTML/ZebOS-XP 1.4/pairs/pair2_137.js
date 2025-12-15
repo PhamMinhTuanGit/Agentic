@@ -1,0 +1,21 @@
+var pairs =
+{
+"bridge_id":{"data":1}
+,"data":{"structure":1}
+,"structure":{"represents":1,"defined":1}
+,"represents":{"bridge":1}
+,"bridge":{"priority":1,"mac":1}
+,"priority":{"bridge":1,"addr":1}
+,"mac":{"address":1}
+,"address":{"connected":1}
+,"connected":{"node":1}
+,"node":{"data":1}
+,"defined":{"lib\u002Fl2\u002Fl2lib.h":1}
+,"lib\u002Fl2\u002Fl2lib.h":{"file":1}
+,"file":{"member":1}
+,"member":{"description":1}
+,"description":{"prio":1}
+,"prio":{"bridge":1}
+,"addr":{"bridge":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"ipv6":{"pim":1}
+,"pim":{"command":1,"dense-mode":1,"(dense-mode":1,"sparse-mode":1,"sparse-dense-mode":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"ipv6":1}
+,"dense-mode":{"sparse-mode":1,"enable":1,"operation":1,"(config)":1}
+,"sparse-mode":{"sparse-dense-mode":1,"sparse-dense-mode)":1,"enable":1,"operation":1}
+,"sparse-dense-mode":{"current":1,"interface":1,"enable":1,"operation":1,"(config-if)":1}
+,"current":{"interface":1}
+,"interface":{"option":1,"command":1,"mode":1,"eth0":1}
+,"option":{"command":1}
+,"disable":{"ipv6":1}
+,"syntax":{"ipv6":1}
+,"(dense-mode":{"sparse-mode":1}
+,"sparse-dense-mode)":{"ipv6":1,"parameters":1}
+,"parameters":{"dense-mode":1}
+,"operation":{"sparse-mode":1,"sparse-dense-mode":1,"command":1}
+,"mode":{"interface":1,"examples":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"ipv6":1}
+}
+;Search.control.loadWordPairs(pairs);

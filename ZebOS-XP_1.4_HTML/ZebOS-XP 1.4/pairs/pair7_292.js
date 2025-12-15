@@ -1,0 +1,20 @@
+var pairs =
+{
+"configure":{"msdp":1}
+,"msdp":{"topology":1,"session":1,"peering":1}
+,"topology":{"figure":1}
+,"figure":{"10-1":1}
+,"10-1":{"msdp":1}
+,"session":{"established":1}
+,"established":{"rtr-1":1}
+,"rtr-1":{"rtr-2":1,"shows":1}
+,"rtr-2":{"domains":1}
+,"domains":{"following":1}
+,"following":{"sample":1}
+,"sample":{"configuration":1}
+,"configuration":{"rtr-1":1}
+,"shows":{"enable":1}
+,"enable":{"msdp":1}
+,"peering":{"rtr-1":1}
+}
+;Search.control.loadWordPairs(pairs);

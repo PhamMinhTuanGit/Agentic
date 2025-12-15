@@ -1,0 +1,22 @@
+var pairs =
+{
+"show":{"nsm":1}
+,"nsm":{"virtual-router":1,"information":1}
+,"virtual-router":{"command":1,"(brief":1,"brief":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"nsm":1,"brief":1,"connected":1}
+,"information":{"virtual":1,"detail":1,"command":1}
+,"virtual":{"router":1}
+,"router":{"command":1}
+,"syntax":{"show":1}
+,"(brief":{"detail":1}
+,"detail":{"parameters":1,"display":1}
+,"parameters":{"brief":1}
+,"brief":{"display":1,"nsm":1}
+,"connected":{"nsm":1}
+,"mode":{"privileged":1,"examples":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"examples":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

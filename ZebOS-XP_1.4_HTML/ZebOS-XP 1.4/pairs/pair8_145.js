@@ -1,0 +1,27 @@
+var pairs =
+{
+"mlag":{"command":1,"<1-65535>":1,"parameters":1}
+,"command":{"assign":1,"unassign":1,"syntax":1,"mode":1}
+,"assign":{"mc-lag":1}
+,"mc-lag":{"identifier":1,"instance":1}
+,"identifier":{"interface":1,"command":1}
+,"interface":{"interface":1,"bound":1,"dynamic":1,"command":1,"mode":1,"po1":1}
+,"bound":{"mc-lag":1}
+,"instance":{"interface":1}
+,"dynamic":{"port":1}
+,"port":{"channel":1}
+,"channel":{"form":1}
+,"form":{"command":1}
+,"unassign":{"mc-lag":1}
+,"syntax":{"mlag":1}
+,"<1-65535>":{"mlag":1,"mc-lag":1}
+,"parameters":{"<1-65535>":1}
+,"mode":{"interface":1,"example":1}
+,"example":{"config":1}
+,"config":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"po1":{"(config-if)":1}
+,"(config-if)":{"mlag":1}
+}
+;Search.control.loadWordPairs(pairs);

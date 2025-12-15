@@ -1,0 +1,23 @@
+var pairs =
+{
+"forwarding":{"information":1,"plane":1}
+,"information":{"base":1}
+,"base":{"api":1,"(fib)":1}
+,"api":{"following":1,"functions":1}
+,"following":{"subsection":1}
+,"subsection":{"includes":1}
+,"includes":{"forwarding":1}
+,"(fib)":{"functions":1}
+,"functions":{"layer":1,"functions":1,"description":1}
+,"layer":{"protocols":1}
+,"protocols":{"fib":1}
+,"fib":{"api":1,"forwarding":1}
+,"description":{"hal_fib_create":1}
+,"hal_fib_create":{"function":1}
+,"function":{"creates":1,"deletes":1}
+,"creates":{"fib":1}
+,"plane":{"hal_fib_delete":1}
+,"hal_fib_delete":{"function":1}
+,"deletes":{"fib":1}
+}
+;Search.control.loadWordPairs(pairs);

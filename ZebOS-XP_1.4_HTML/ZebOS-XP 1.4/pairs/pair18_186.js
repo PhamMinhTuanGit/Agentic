@@ -1,0 +1,20 @@
+var pairs =
+{
+"show":{"role":1}
+,"role":{"name":1,"command":1}
+,"name":{"command":1,"word":1,"dearborn":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"details":1}
+,"details":{"rules":1}
+,"rules":{"given":1}
+,"given":{"role":1}
+,"syntax":{"show":1}
+,"word":{"parameters":1,"role":1}
+,"parameters":{"word":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1}
+,"examples":{"privileged":1,"show":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+}
+;Search.control.loadWordPairs(pairs);

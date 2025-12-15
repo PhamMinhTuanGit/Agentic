@@ -1,0 +1,25 @@
+var pairs =
+{
+"show":{"evb":1}
+,"evb":{"vdp":1}
+,"vdp":{"vsi-info":1}
+,"vsi-info":{"command":1,"parameters":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"run":1}
+,"run":{"time":1}
+,"time":{"information":1}
+,"information":{"vsis":1}
+,"vsis":{"(virtual":1}
+,"(virtual":{"station":1}
+,"station":{"interfaces)":1,"command":1}
+,"interfaces)":{"learned":1}
+,"learned":{"station":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"privileged":1,"examples":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"examples":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

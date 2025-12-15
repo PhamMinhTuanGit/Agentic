@@ -1,0 +1,25 @@
+var pairs =
+{
+"dot1.x":{"tunneling":1,"dot1.x":1,"present":1,"packets":1}
+,"tunneling":{"uni":1,"xsupplicant":1}
+,"uni":{"configuration":1,"configured":1}
+,"configuration":{"topology":1}
+,"topology":{"uni":1,"dot1.x":1}
+,"configured":{"tunnel":1}
+,"tunnel":{"layer":1,"dot1.x":1}
+,"layer":{"protocol":1}
+,"protocol":{"dot1.x":1}
+,"present":{"tunneling":1}
+,"xsupplicant":{"side":1}
+,"side":{"provider":1}
+,"provider":{"network":1}
+,"network":{"authenticated":1,"customer-edge":1,"configured":1}
+,"authenticated":{"radius":1}
+,"radius":{"server":1}
+,"server":{"side":1}
+,"customer-edge":{"port":1}
+,"port":{"(uni)":1}
+,"(uni)":{"provider":1}
+,"packets":{"topology":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"nsm":{"table":1,"imi":1}
+,"table":{"check":1,"multi-access":1}
+,"check":{"section":1}
+,"section":{"shows":1}
+,"shows":{"configuration":1}
+,"configuration":{"required":1}
+,"required":{"update":1}
+,"update":{"end":1}
+,"end":{"station":1}
+,"station":{"mac":1}
+,"mac":{"address":1}
+,"address":{"nsm":1}
+,"multi-access":{"lan":1}
+,"lan":{"topology":1}
+,"topology":{"configurations":1}
+,"configurations":{"assume":1}
+,"assume":{"running":1}
+,"running":{"trilld":1}
+,"trilld":{"nsm":1}
+,"imi":{"daemons":1}
+}
+;Search.control.loadWordPairs(pairs);

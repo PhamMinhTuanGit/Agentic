@@ -1,0 +1,24 @@
+var pairs =
+{
+"ldptrapsessionup":{"call":1,"(struct":1}
+,"call":{"sends":1}
+,"sends":{"trap":1}
+,"trap":{"ldp":1}
+,"ldp":{"session":1}
+,"session":{"becomes":1,"relevant":1,"output":1}
+,"becomes":{"operational":1}
+,"operational":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"ldptrapsessionup":1}
+,"(struct":{"ldp_session":1}
+,"ldp_session":{"*session)":1}
+,"*session)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"session":1,"none":1}
+,"relevant":{"session":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

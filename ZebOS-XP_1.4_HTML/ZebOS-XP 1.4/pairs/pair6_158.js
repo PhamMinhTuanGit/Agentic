@@ -1,0 +1,25 @@
+var pairs =
+{
+"show":{"isis":1}
+,"isis":{"igp-shortcut-lsp":1,"(word":1}
+,"igp-shortcut-lsp":{"command":1,"parameters":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"is-is":1,"information":1}
+,"is-is":{"igp":1}
+,"igp":{"shortcut":1}
+,"shortcut":{"lsp":1}
+,"lsp":{"entries":1}
+,"entries":{"command":1}
+,"syntax":{"show":1}
+,"(word":{"igp-shortcut-lsp":1}
+,"parameters":{"word":1}
+,"word":{"display":1}
+,"information":{"specified":1}
+,"specified":{"instance":1}
+,"instance":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

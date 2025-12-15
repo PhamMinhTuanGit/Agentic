@@ -1,0 +1,26 @@
+var pairs =
+{
+"stopping":{"client":1}
+,"client":{"stop":1,"protocol":1}
+,"stop":{"client":1,"smi":1,"nsm":1}
+,"protocol":{"zebos_smi_client_stop":1,"temporarily":1,"later":1}
+,"zebos_smi_client_stop":{"function":1,"(azg":1}
+,"function":{"stopping":1}
+,"temporarily":{"stops":1}
+,"stops":{"delivery":1}
+,"delivery":{"incoming":1}
+,"incoming":{"messages":1}
+,"messages":{"however":1,"example":1}
+,"however":{"stopping":1}
+,"smi":{"server":1}
+,"server":{"sending":1}
+,"sending":{"messages":1}
+,"example":{"stop":1}
+,"nsm":{"client":1}
+,"(azg":{"smi_ac_nsm_module)":1}
+,"smi_ac_nsm_module)":{"restart":1}
+,"restart":{"client":1}
+,"later":{"using":1}
+,"using":{"zebos_smi_client_start":1}
+}
+;Search.control.loadWordPairs(pairs);

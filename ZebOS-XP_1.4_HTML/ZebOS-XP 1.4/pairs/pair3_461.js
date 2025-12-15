@@ -1,0 +1,20 @@
+var pairs =
+{
+"path":{"error":1}
+,"error":{"message":1}
+,"message":{"receipt":1,"prompts":1}
+,"receipt":{"path":1}
+,"prompts":{"session":1}
+,"session":{"broken":1}
+,"broken":{"down":1}
+,"down":{"state":1}
+,"state":{"transitions":1}
+,"transitions":{"non":1}
+,"non":{"existent":1}
+,"existent":{"retry":1}
+,"retry":{"timer":1}
+,"timer":{"comes":1}
+,"comes":{"play":1}
+,"play":{"configured":1}
+}
+;Search.control.loadWordPairs(pairs);

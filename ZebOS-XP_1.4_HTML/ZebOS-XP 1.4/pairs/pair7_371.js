@@ -1,0 +1,20 @@
+var pairs =
+{
+"nsm":{"inter":1,"client":1,"rip":1,"shares":1}
+,"inter":{"process":1}
+,"process":{"communication":1}
+,"communication":{"rip":1,"nsm":1}
+,"rip":{"extends":1,"nsm":1,"layer":1}
+,"extends":{"nsm":1}
+,"client":{"interface":1}
+,"interface":{"handle":1,"information":1}
+,"handle":{"inter":1}
+,"shares":{"following":1}
+,"following":{"information":1}
+,"information":{"rip":1,"redistributed":1}
+,"layer":{"interface":1}
+,"redistributed":{"routes":1}
+,"routes":{"(static":1}
+,"(static":{"ospf)":1}
+}
+;Search.control.loadWordPairs(pairs);

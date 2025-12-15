@@ -1,0 +1,21 @@
+var pairs =
+{
+"rbridge4":{"configure":1}
+,"configure":{"terminal":1,"mode":1,"enter":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"rbridge":1}
+,"mode":{"(config)":1,"(config-rb)":1}
+,"(config)":{"rbridge":1}
+,"rbridge":{"trill":1,"(1)":1,"mode":1}
+,"trill":{"specify":1}
+,"specify":{"rbridge":1}
+,"(1)":{"configure":1}
+,"(config-rb)":{"esadi":1,"exit":1}
+,"esadi":{"enable":1,"protocol":1,"instance":1}
+,"enable":{"enable":1,"esadi":1,"vlan":1}
+,"protocol":{"(config-rb)":1}
+,"instance":{"enable":1,"vlan":1}
+,"vlan":{"enable":1,"(config-rb)":1}
+,"exit":{"exit":1,"rbridge":1}
+}
+;Search.control.loadWordPairs(pairs);

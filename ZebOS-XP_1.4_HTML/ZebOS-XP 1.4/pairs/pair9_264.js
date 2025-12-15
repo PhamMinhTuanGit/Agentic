@@ -1,0 +1,19 @@
+var pairs =
+{
+"anycast":{"rendezvous":1}
+,"rendezvous":{"point":1,"points":1}
+,"point":{"zebos-xp":1}
+,"zebos-xp":{"pim":1}
+,"pim":{"implements":1,"register":1}
+,"implements":{"anycast":1}
+,"points":{"extending":1}
+,"extending":{"pim":1}
+,"register":{"mechanism":1}
+,"mechanism":{"using":1}
+,"using":{"multicast":1}
+,"multicast":{"source":1}
+,"source":{"discovery":1}
+,"discovery":{"protocol":1}
+,"protocol":{"(msdp)":1}
+}
+;Search.control.loadWordPairs(pairs);

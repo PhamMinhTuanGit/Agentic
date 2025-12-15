@@ -1,0 +1,20 @@
+var pairs =
+{
+"isis-spb":{"configuration":1,"mode":1,"bridge":1}
+,"configuration":{"bridge":1}
+,"bridge":{"command":1,"(<1-32>":1,"identifier":1,"(isis-spb-config)":1}
+,"command":{"enter":1,"syntax":1,"mode":1}
+,"enter":{"isis-spb":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"isis-spb":1,"mode":1}
+,"syntax":{"isis-spb":1}
+,"(<1-32>":{"backbone)":1}
+,"backbone)":{"parameters":1}
+,"parameters":{"<1-32>":1}
+,"<1-32>":{"bridge":1}
+,"identifier":{"backbone":1}
+,"backbone":{"backbone":1,"bridge":1}
+,"example":{"(config)":1}
+,"(config)":{"isis-spb":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"trill_update_vlan_pruning_table":{"syntax":1,"(struct":1}
+,"syntax":{"void":1}
+,"void":{"trill_update_vlan_pruning_table":1}
+,"(struct":{"trill_rtnhop":1}
+,"trill_rtnhop":{"*ir":1}
+,"*ir":{"u_int32_t":1,"specifies":1}
+,"u_int32_t":{"ifindex":1}
+,"ifindex":{"u_int16_t":1,"specifies":1}
+,"u_int16_t":{"vlan)":1}
+,"vlan)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*ir":1,"none":1}
+,"specifies":{"trill":1,"name":1}
+,"trill":{"route":1}
+,"route":{"structure":1}
+,"structure":{"ifindex":1}
+,"name":{"interface":1,"vlan":1}
+,"interface":{"vlan":1}
+,"vlan":{"specifies":1,"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+}
+;Search.control.loadWordPairs(pairs);

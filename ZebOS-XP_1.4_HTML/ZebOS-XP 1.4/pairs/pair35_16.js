@@ -1,0 +1,25 @@
+var pairs =
+{
+"rate":{"limiting":1}
+,"limiting":{"callbacks":1,"ratelimit_mcast":1,"ratelimit_dlf_bcast":1,"ratelimit_bcast_discards_get":1}
+,"callbacks":{"following":1,"callbacks":1,"description":1}
+,"following":{"table":1}
+,"table":{"displays":1}
+,"displays":{"rate":1}
+,"description":{"ratelimit_bcast":1}
+,"ratelimit_bcast":{"broadcast":1}
+,"broadcast":{"rate":1}
+,"ratelimit_mcast":{"multicast":1}
+,"multicast":{"rate":1,"ratelimit_dlf_bcast_discards_get":1}
+,"ratelimit_dlf_bcast":{"unknown":1}
+,"unknown":{"destination":1}
+,"destination":{"rate":1,"packets":1}
+,"ratelimit_bcast_discards_get":{"number":1}
+,"number":{"dropped":1}
+,"dropped":{"(rate-limited)":1}
+,"(rate-limited)":{"broadcasts":1,"multicast":1,"unknown":1}
+,"broadcasts":{"ratelimit_mcast_discards_get":1}
+,"ratelimit_mcast_discards_get":{"number":1}
+,"ratelimit_dlf_bcast_discards_get":{"number":1}
+}
+;Search.control.loadWordPairs(pairs);

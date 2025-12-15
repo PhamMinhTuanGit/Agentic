@@ -1,0 +1,27 @@
+var pairs =
+{
+"ieee8021pbbcbpservicemappingtable":{"group":1}
+,"group":{"contains":1}
+,"contains":{"configuration":1}
+,"configuration":{"settings":1}
+,"settings":{"customer":1}
+,"customer":{"backbone":1}
+,"backbone":{"ports":1}
+,"ports":{"(cbps)":1}
+,"(cbps)":{"bridge":1}
+,"bridge":{"object":1}
+,"object":{"type":1}
+,"type":{"syntax":1}
+,"syntax":{"access":1}
+,"access":{"ieee8021pbbcbpservicemappingbvid":1}
+,"ieee8021pbbcbpservicemappingbvid":{"vlanid":1}
+,"vlanid":{"read-create":1}
+,"read-create":{"ieee8021pbbcbpservicemappingdefaultbackbonedest":1,"ieee8021pbbcbpservicemappingtype":1,"ieee8021pbbcbpservicemappinglocalsid":1}
+,"ieee8021pbbcbpservicemappingdefaultbackbonedest":{"macaddress":1}
+,"macaddress":{"read-create":1}
+,"ieee8021pbbcbpservicemappingtype":{"ieee8021pbbingressegress":1}
+,"ieee8021pbbingressegress":{"read-create":1}
+,"ieee8021pbbcbpservicemappinglocalsid":{"ieee8021pbbserviceidentifierorunassigned":1}
+,"ieee8021pbbserviceidentifierorunassigned":{"read-create":1}
+}
+;Search.control.loadWordPairs(pairs);

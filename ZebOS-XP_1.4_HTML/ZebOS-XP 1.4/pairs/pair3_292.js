@@ -1,0 +1,27 @@
+var pairs =
+{
+"bc-mode":{"command":1,"mode":1,"mam":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"bandwidth":1,"terminal":1}
+,"bandwidth":{"constraint":1}
+,"constraint":{"mode":1}
+,"mode":{"current":1,"parameter":1,"bandwidth":1,"either":1,"interface":1,"default":1,"example":1}
+,"current":{"interface":1}
+,"interface":{"two":1,"mode":1,"eth0":1}
+,"two":{"different":1}
+,"different":{"modes":1}
+,"modes":{"available":1}
+,"available":{"mam":1}
+,"mam":{"rsdl":1,"mode":1}
+,"rsdl":{"command":1}
+,"syntax":{"bc-mode":1}
+,"parameter":{"mode":1}
+,"either":{"mam":1}
+,"default":{"mam":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"bc-mode":1}
+}
+;Search.control.loadWordPairs(pairs);

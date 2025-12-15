@@ -1,0 +1,21 @@
+var pairs =
+{
+"show":{"user-account":1}
+,"user-account":{"command":1,"word)":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"information":1}
+,"information":{"users":1}
+,"users":{"given":1}
+,"given":{"user":1}
+,"user":{"command":1,"name":1}
+,"syntax":{"show":1}
+,"word)":{"parameters":1}
+,"parameters":{"word":1}
+,"word":{"user":1}
+,"name":{"command":1}
+,"mode":{"privileged":1,"example":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

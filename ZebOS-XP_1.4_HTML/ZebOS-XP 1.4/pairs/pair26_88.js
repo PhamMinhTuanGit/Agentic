@@ -1,0 +1,27 @@
+var pairs =
+{
+"passive-interface":{"command":1,"ifname":1,"eth0":1}
+,"command":{"block":1,"disable":1,"syntax":1,"mode":1}
+,"block":{"rip":1}
+,"rip":{"broadcast":1,"(config-router)":1}
+,"broadcast":{"interface":1}
+,"interface":{"parameter":1,"name":1}
+,"parameter":{"command":1}
+,"disable":{"function":1}
+,"function":{"command":1}
+,"syntax":{"passive-interface":1}
+,"ifname":{"passive-interface":1,"parameters":1,"specify":1}
+,"parameters":{"ifname":1}
+,"specify":{"interface":1}
+,"name":{"default":1}
+,"default":{"disabled":1}
+,"disabled":{"command":1}
+,"mode":{"router":1,"examples":1}
+,"router":{"mode":1,"rip":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"(config-router)":{"passive-interface":1}
+}
+;Search.control.loadWordPairs(pairs);

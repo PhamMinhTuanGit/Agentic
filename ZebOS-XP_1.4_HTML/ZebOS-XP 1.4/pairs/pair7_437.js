@@ -1,0 +1,21 @@
+var pairs =
+{
+"show":{"logging":1}
+,"logging":{"logfile":1,"enabled":1,"severity":1}
+,"logfile":{"command":1,"parameters":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"whether":1}
+,"whether":{"logging":1}
+,"enabled":{"log":1}
+,"log":{"file":1}
+,"file":{"name":1}
+,"name":{"logging":1}
+,"severity":{"command":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"examples":1}
+,"exec":{"mode":1}
+,"examples":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

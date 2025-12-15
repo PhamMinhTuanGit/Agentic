@@ -1,0 +1,24 @@
+var pairs =
+{
+"smi_bridge_protocol_change_alarm":{"structure":1,"{char":1}
+,"structure":{"provides":1}
+,"provides":{"information":1}
+,"information":{"bridge":1}
+,"bridge":{"type":1,"name":1}
+,"type":{"change":1,"definition":1,"bridge":1,"topo_type":1,"enum":1}
+,"change":{"stp":1}
+,"stp":{"rstp":1}
+,"rstp":{"type":1}
+,"definition":{"brname":1,"struct":1}
+,"brname":{"bridge":1,"[smi_bridge_namsiz":1}
+,"name":{"type":1}
+,"topo_type":{"topology":1}
+,"topology":{"type":1}
+,"struct":{"smi_bridge_protocol_change_alarm":1}
+,"{char":{"brname":1}
+,"[smi_bridge_namsiz":{"enum":1}
+,"enum":{"smi_bridge_type":1,"smi_bridge_topo_type":1}
+,"smi_bridge_type":{"type":1}
+,"smi_bridge_topo_type":{"topo_type":1}
+}
+;Search.control.loadWordPairs(pairs);

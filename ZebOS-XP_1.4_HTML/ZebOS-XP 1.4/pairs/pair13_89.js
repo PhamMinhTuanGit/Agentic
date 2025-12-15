@@ -1,0 +1,19 @@
+var pairs =
+{
+"isis_restart_fail_all_overload":{"syntax":1,"(struct":1}
+,"syntax":{"void":1}
+,"void":{"isis_restart_fail_all_overload":1}
+,"(struct":{"isis_master":1}
+,"isis_master":{"*im)":1}
+,"*im)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*im":1,"none":1}
+,"*im":{"pointer":1}
+,"pointer":{"imi":1}
+,"imi":{"master":1}
+,"master":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

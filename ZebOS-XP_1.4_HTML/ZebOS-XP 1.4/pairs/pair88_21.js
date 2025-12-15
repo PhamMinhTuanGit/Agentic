@@ -1,0 +1,23 @@
+var pairs =
+{
+"collapsed":{"core":1}
+,"core":{"collapsing":1,"layer":1,"design":1}
+,"collapsing":{"core":1}
+,"layer":{"distribution":1,"layer":1,"(one":1}
+,"distribution":{"layer":1}
+,"(one":{"device)":1}
+,"device)":{"network":1}
+,"network":{"design":1}
+,"design":{"model":1,"reduces":1}
+,"model":{"collapsed":1,"small":1}
+,"reduces":{"cost":1}
+,"cost":{"maintaining":1}
+,"maintaining":{"benefits":1}
+,"benefits":{"network":1}
+,"small":{"networks":1}
+,"networks":{"grow":1}
+,"grow":{"significantly":1}
+,"significantly":{"larger":1}
+,"larger":{"time":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"user":{"configuration":1,"name":1}
+,"configuration":{"user":1,"dut":1}
+,"dut":{"configure":1}
+,"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"user":1}
+,"mode":{"(config)":1}
+,"(config)":{"username-remote":1}
+,"username-remote":{"fred_smith":1}
+,"fred_smith":{"password":1}
+,"password":{"encrypted":1,"validation":1}
+,"encrypted":{"w3g7y&6yv}":1,"password":1}
+,"w3g7y&6yv}":{"jh6&5eyiah":1}
+,"jh6&5eyiah":{"779it9iv2":1}
+,"779it9iv2":{"enter":1}
+,"name":{"encrypted":1}
+,"validation":{"commands":1}
+,"commands":{"show":1}
+,"show":{"user-account":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"if_ident":{"data":1,"{u_int32_t":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"interface":1}
+,"interface":{"index":1}
+,"index":{"functions":1}
+,"functions":{"defined":1}
+,"defined":{"lib\u002Fmpls_client\u002Fmpls_common.h":1}
+,"lib\u002Fmpls_client\u002Fmpls_common.h":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"if_ident":1}
+,"{u_int32_t":{"if_index":1}
+,"if_index":{"char":1}
+,"char":{"if_name":1}
+,"if_name":{"[interface_namsiz":1}
+}
+;Search.control.loadWordPairs(pairs);

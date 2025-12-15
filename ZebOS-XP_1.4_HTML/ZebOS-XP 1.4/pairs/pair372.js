@@ -1,0 +1,24 @@
+var pairs =
+{
+"supernetting":{"process":1}
+,"process":{"taking":1}
+,"taking":{"several":1}
+,"several":{"discrete":1}
+,"discrete":{"network":1}
+,"network":{"addresses":1}
+,"addresses":{"advertising":1}
+,"advertising":{"route":1,"254":1}
+,"route":{"example":1,"192.10.0.0\u002F16":1}
+,"example":{"organization":1}
+,"organization":{"using":1,"advertise":1}
+,"using":{"192.10.1.0\u002F24":1}
+,"192.10.1.0\u002F24":{"192.10.254.0\u002F24":1}
+,"192.10.254.0\u002F24":{"instead":1}
+,"instead":{"advertising":1}
+,"254":{"separate":1}
+,"separate":{"networks":1}
+,"networks":{"organization":1}
+,"advertise":{"single":1}
+,"single":{"route":1}
+}
+;Search.control.loadWordPairs(pairs);

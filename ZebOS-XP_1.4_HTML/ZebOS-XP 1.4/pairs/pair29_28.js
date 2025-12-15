@@ -1,0 +1,27 @@
+var pairs =
+{
+"isis_clear_counters":{"syntax":1,"(u_int32_t":1}
+,"syntax":{"int":1}
+,"int":{"isis_clear_counters":1}
+,"(u_int32_t":{"vr_id)":1}
+,"vr_id)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"vr_id":1,"none":1}
+,"vr_id":{"virtual":1,"output":1}
+,"virtual":{"router":1}
+,"router":{"default":1}
+,"default":{"value":1}
+,"value":{"non-vr":1}
+,"non-vr":{"implementation":1}
+,"implementation":{"pass":1}
+,"pass":{"vr_id":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"isis_api_set_err_vr_not_exist":1}
+,"isis_api_set_err_vr_not_exist":{"exist":1}
+,"exist":{"isis_api_set_success":1}
+,"isis_api_set_success":{"call":1}
+,"call":{"successful":1}
+}
+;Search.control.loadWordPairs(pairs);

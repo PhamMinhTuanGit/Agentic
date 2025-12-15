@@ -1,0 +1,19 @@
+var pairs =
+{
+"virtual":{"router":1}
+,"router":{"administration":1,"virtual":1,"management":1,"(vr)":1}
+,"administration":{"virtual":1,"divided":1}
+,"divided":{"two":1}
+,"two":{"entities":1}
+,"entities":{"global":1}
+,"global":{"management":1}
+,"management":{"authority":1}
+,"authority":{"(gma)":1,"(vrma)":1}
+,"(gma)":{"manages":1}
+,"manages":{"vrs":1,"single":1}
+,"vrs":{"physical":1}
+,"physical":{"router":1}
+,"(vrma)":{"manages":1}
+,"single":{"virtual":1}
+}
+;Search.control.loadWordPairs(pairs);

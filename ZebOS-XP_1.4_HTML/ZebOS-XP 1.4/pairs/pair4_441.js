@@ -1,0 +1,26 @@
+var pairs =
+{
+"class-type":{"command":1,"ct-name":1,"parameters":1,"ct0":1}
+,"command":{"diffserv":1,"remove":1,"syntax":1,"mode":1}
+,"diffserv":{"traffic":1}
+,"traffic":{"engineering":1}
+,"engineering":{"(dste)":1}
+,"(dste)":{"class":1}
+,"class":{"type":1}
+,"type":{"p2mp":1,"command":1,"name":1}
+,"p2mp":{"lsp":1}
+,"lsp":{"dste":1,"mode":1}
+,"dste":{"enabled":1,"class":1}
+,"enabled":{"parameter":1}
+,"parameter":{"command":1}
+,"remove":{"dste":1}
+,"syntax":{"class-type":1}
+,"ct-name":{"class-type":1,"class":1}
+,"parameters":{"ct-name":1}
+,"name":{"command":1}
+,"mode":{"p2mp":1,"examples":1}
+,"examples":{"(config-p2mp-lsp)":1}
+,"(config-p2mp-lsp)":{"class-type":1}
+,"ct0":{"(config-p2mp-lsp)":1}
+}
+;Search.control.loadWordPairs(pairs);

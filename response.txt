@@ -1,0 +1,198 @@
+<|im_start|>user
+How do I assign an IP address to an Ethernet interface?
+<|im_end|>
+
+<|im_start|>assistant
+
+=== Model Response ===
+To assign an IP address to an Ethernet interface in ZebOS, follow these steps:
+
+1. Enter configure terminal mode:
+   ```
+   configure terminal
+   ```
+
+2. Enter interface mode for the desired Ethernet interface (e.g., eth0):
+   ```
+   interface eth0
+   ```
+
+3. Assign an IP address and subnet mask to the interface. For example, assigning 192.168.1.1 with a subnet mask of /24:
+   ```
+   ip address 192.168.1.1/24
+   ```
+
+4. Exit interface mode:
+   ```
+   exit
+   ```
+
+5. Save the configuration to make it persistent across reboots:
+   ```
+   write memory
+   ```
+
+Verification command to check if the IP address has been assigned correctly:
+```
+show ip interface eth0 
+```
+
+This example assigns an IPv4 address, but if you need to assign an IPv6 address, use `ipv6 address` instead of `ip address`.
+
+
+
+
+<|im_start|>user
+How do I enable or disable an interface?
+<|im_end|>
+
+<|im_start|>assistant
+
+=== Model Response ===
+To enable or disable an interface, use the `no shutdown` and `shutdown` commands respectively. Below are examples for both actions using the Ethernet interface `eth0`.
+
+### Enable an Interface
+```shell
+# Enter global configuration mode
+configure terminal
+
+# Enter interface configuration mode
+interface eth0
+
+# Enable the interface
+no shutdown
+```
+
+### Disable an Interface
+```shell
+# Enter global configuration mode
+configure terminal
+
+# Enter interface configuration mode
+interface eth0
+
+# Disable the interface
+shutdown
+```
+
+### Verification Commands
+To verify if the interface is enabled or disabled, use:
+```shell
+show interfaces status
+```
+
+This command will display the operational state of all interfaces, showing whether they are up (enabled) or down (disabled).
+
+
+
+
+
+
+
+
+
+<|im_start|>user
+How do I check the current configuration?
+<|im_end|>
+
+<|im_start|>assistant
+
+=== Model Response ===
+To check the current running configuration in ZebOS, you can use the `show running-config` command. This command displays the entire running configuration of your network device.
+
+Example:
+```shell
+Router# show running-config
+```
+
+This will output the running configuration to the console, allowing you to review and verify the current settings applied to your device.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<|im_start|>user
+How do I configure multiple OSPF processes on ZebOS?
+<|im_end|>
+
+<|im_start|>assistant
+
+=== Model Response ===
+To configure multiple OSPF processes on ZebOS, follow these steps using valid CLI commands and verification procedures:
+
+---
+
+### **1. Enable Extended OSPF Multi-Instance Support**
+```bash
+configure terminal
+enable ext-ospf-multi-inst
+```
+This enables the feature required to run multiple OSPF instances on the same interface.
+
+---
+
+### **2. Assign Instance IDs to Interfaces**
+```bash
+interface eth0
+ ospf instance-id 1
+exit
+
+interface eth1
+ ospf instance-id 2
+exit
+```
+This associates `eth0` with **OSPF Instance 1** and `eth1` with **OSPF Instance 2**. Replace `eth0`/`eth1` with actual interface names.
+
+---
+
+### **3. Configure OSPF Instances**
+```bash
+router ospf 1
+ router-id 1.1.1.1
+ network 192.168.1.0/24 area 0
+exit
+
+router ospf 2
+ router-id 2.2.2.2
+ network 192.168.2.0/24 area 0
+exit
+```
+- `router ospf <instance-id>` activates the OSPF process for the specified instance.
+- Replace `192.168.1.0/24` and `192.168.2.0/24` with actual network ranges.
+
+---
+
+### **4. (Optional) Configure Redistribution Between Instances**
+```bash
+router ospf 1
+ redistribute ospf 2 subnets metric 100
+exit
+```
+This redistributes routes from **OSPF Instance 2** into **OSPF Instance 1** with a metric of 100. Adjust the metric or use `route-map` as needed.
+
+---
+
+### **5. Verify Configuration**
+```bash
+show ip ospf instance
+show ip ospf neighbor
+show ip route ospf
+```
+- `show ip ospf instance` confirms active OSPF instances and their interfaces.
+- `show ip ospf neighbor` verifies adjacency status for each instance.
+- `show ip route ospf` displays routes learned by each OSPF instance.
+
+---
+
+### **Key Notes**
+- **Instance IDs** must be unique per interface and within `0-255`.
+- Ensure interfaces are physically or logically connected to avoid adjacency issues.
+- Use `no enable ext-ospf-multi-inst` to disable multi-instance support if needed.

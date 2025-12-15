@@ -1,0 +1,19 @@
+var pairs =
+{
+"name":{"resolution":1,"easily":1,"www.ipinfusion.com":1,"service":1}
+,"resolution":{"process":1}
+,"process":{"translating":1}
+,"translating":{"address":1}
+,"address":{"name":1}
+,"easily":{"remembered":1}
+,"remembered":{"person":1}
+,"person":{"tcp\u002Fip":1}
+,"tcp\u002Fip":{"environment":1}
+,"environment":{"name":1}
+,"www.ipinfusion.com":{"translated":1}
+,"translated":{"equivalent":1}
+,"equivalent":{"domain":1}
+,"domain":{"name":1}
+,"service":{"(dns)":1}
+}
+;Search.control.loadWordPairs(pairs);

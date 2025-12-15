@@ -1,0 +1,23 @@
+var pairs =
+{
+"is-is":{"command":1,"protocol":1}
+,"command":{"api":1,"line":1}
+,"api":{"chapter":1,"supports":1}
+,"chapter":{"contains":1}
+,"contains":{"command":1}
+,"line":{"interface":1}
+,"interface":{"apis":1}
+,"apis":{"is-is":1}
+,"protocol":{"vr_id":1}
+,"vr_id":{"parameter":1}
+,"parameter":{"api":1}
+,"supports":{"virtual":1}
+,"virtual":{"router":1}
+,"router":{"(vr)":1}
+,"(vr)":{"implementation":1}
+,"implementation":{"without":1}
+,"without":{"pass":1}
+,"pass":{"value":1}
+,"value":{"vr_id":1}
+}
+;Search.control.loadWordPairs(pairs);

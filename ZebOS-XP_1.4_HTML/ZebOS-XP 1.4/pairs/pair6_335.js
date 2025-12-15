@@ -1,0 +1,23 @@
+var pairs =
+{
+"rcvaddr_index":{"data":1,"{int":1}
+,"data":{"structure":1}
+,"structure":{"combination":1}
+,"combination":{"interface":1}
+,"interface":{"index":1}
+,"index":{"mac":1,"mac_addr":1}
+,"mac":{"address":1}
+,"address":{"defined":1,"definition":1}
+,"defined":{"nsm\u002Fnsm_api.h":1}
+,"nsm\u002Fnsm_api.h":{"file":1}
+,"file":{"type":1}
+,"type":{"definition":1}
+,"definition":{"ifindex":1,"struct":1}
+,"ifindex":{"interface":1,"u_char":1}
+,"mac_addr":{"[ether_addr_len]":1}
+,"[ether_addr_len]":{"mac":1}
+,"struct":{"rcvaddr_index":1}
+,"{int":{"ifindex":1}
+,"u_char":{"mac_addr":1}
+}
+;Search.control.loadWordPairs(pairs);

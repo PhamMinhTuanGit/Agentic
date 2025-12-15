@@ -1,0 +1,19 @@
+var pairs =
+{
+"nexthop":{"tracking":1}
+,"tracking":{"nexthop":1,"used":1}
+,"used":{"notify":1}
+,"notify":{"bgp":1}
+,"bgp":{"process":1,"routes":1,"nexthop":1}
+,"process":{"asynchronously":1}
+,"asynchronously":{"whenever":1}
+,"whenever":{"change":1}
+,"change":{"igp":1}
+,"igp":{"routes":1}
+,"routes":{"reduces":1,"igp":1,"changed":1}
+,"reduces":{"convergence":1}
+,"convergence":{"time":1}
+,"time":{"bgp":1}
+,"changed":{"bgp":1}
+}
+;Search.control.loadWordPairs(pairs);

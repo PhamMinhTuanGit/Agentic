@@ -1,0 +1,25 @@
+var pairs =
+{
+"ipv6":{"pim":1}
+,"pim":{"bidir-enable":1,"option":1,"cli":1}
+,"bidir-enable":{"command":1,"ipv6":1,"parameters":1,"configure":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"bidirectional":1}
+,"bidirectional":{"pim":1}
+,"option":{"command":1}
+,"disable":{"bidirectional":1}
+,"cli":{"supported":1}
+,"supported":{"hardware":1}
+,"hardware":{"platform":1}
+,"platform":{"command":1}
+,"syntax":{"ipv6":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"global":1,"examples":1}
+,"global":{"mode":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"ipv6":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"mep":{"mpid":1,"configuration":1,"command":1,"<1-8191>":1}
+,"mpid":{"command":1,"mpid":1,"(vlan":1,"mep":1,"vlan":1}
+,"command":{"enter":1,"syntax":1,"mode":1}
+,"enter":{"ethernet":1}
+,"ethernet":{"cfm":1}
+,"cfm":{"mep":1,"configuration":1}
+,"configuration":{"mode":1}
+,"mode":{"configure":1,"ethernet":1,"example":1}
+,"configure":{"given":1}
+,"given":{"mep":1}
+,"syntax":{"mep":1}
+,"(vlan":{"vlanid":1}
+,"vlanid":{"parameters":1,"vlan":1}
+,"parameters":{"mpid":1}
+,"<1-8191>":{"vlan":1}
+,"vlan":{"vlan":1,"vlanid":1,"<1-4094>":1,"(config-cfm-mep)":1}
+,"<1-4094>":{"command":1}
+,"example":{"(config-ether-cfm)":1}
+,"(config-ether-cfm)":{"mep":1}
+}
+;Search.control.loadWordPairs(pairs);

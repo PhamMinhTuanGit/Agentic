@@ -1,0 +1,22 @@
+var pairs =
+{
+"show":{"lbm":1}
+,"lbm":{"lbr":1}
+,"lbr":{"working":1}
+,"working":{"ping":1}
+,"ping":{"ethernet":1}
+,"ethernet":{"pbb":1}
+,"pbb":{"mac":1}
+,"mac":{"5254.0002.3023":1}
+,"5254.0002.3023":{"unicast":1}
+,"unicast":{"source":1}
+,"source":{"domain-name":1}
+,"domain-name":{"md1":1}
+,"md1":{"vlan":1}
+,"vlan":{"100":1}
+,"100":{"backbone":1,"(5\u002F5)":1}
+,"backbone":{"success":1}
+,"success":{"rate":1}
+,"rate":{"100":1}
+}
+;Search.control.loadWordPairs(pairs);

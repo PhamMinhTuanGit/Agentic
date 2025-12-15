@@ -1,0 +1,19 @@
+var pairs =
+{
+"hardware":{"register":1}
+,"register":{"command":1,"addr":1,"address":1,"0x3000":1}
+,"command":{"value":1,"syntax":1,"mode":1}
+,"value":{"chip":1,"parameters":1,"value":1,"command":1}
+,"chip":{"register":1}
+,"syntax":{"hardware":1}
+,"addr":{"value":1,"register":1}
+,"parameters":{"addr":1}
+,"address":{"0xhhhh":1}
+,"0xhhhh":{"format":1}
+,"format":{"value":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"hardware":1}
+}
+;Search.control.loadWordPairs(pairs);

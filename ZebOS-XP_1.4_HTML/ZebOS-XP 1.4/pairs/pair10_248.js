@@ -1,0 +1,25 @@
+var pairs =
+{
+"embedded":{"rendezvous":1,"mechanism":1,"used":1}
+,"rendezvous":{"point":1}
+,"point":{"zebos-xp":1}
+,"zebos-xp":{"pim":1}
+,"pim":{"supports":1,"sparse":1}
+,"supports":{"embedded":1}
+,"mechanism":{"defines":1}
+,"defines":{"address":1}
+,"address":{"allocation":1,"encoded":1,"pim":1}
+,"allocation":{"policy":1}
+,"policy":{"address":1}
+,"encoded":{"multicast":1}
+,"multicast":{"group":1}
+,"group":{"address":1}
+,"sparse":{"mode":1}
+,"mode":{"configured":1}
+,"configured":{"embedded":1}
+,"used":{"specification":1}
+,"specification":{"group-to-rp":1}
+,"group-to-rp":{"mapping":1}
+,"mapping":{"mechanism":1}
+}
+;Search.control.loadWordPairs(pairs);

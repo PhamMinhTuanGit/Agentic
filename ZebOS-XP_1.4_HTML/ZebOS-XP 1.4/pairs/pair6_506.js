@@ -1,0 +1,20 @@
+var pairs =
+{
+"priority":{"example":1,"interface":1,"router":1,"higher":1,"(60)":1}
+,"example":{"shows":1}
+,"shows":{"setting":1}
+,"setting":{"priority":1}
+,"interface":{"high":1}
+,"high":{"priority":1}
+,"router":{"designated":1,"configured":1}
+,"designated":{"(dis)":1}
+,"(dis)":{"router":1}
+,"configured":{"priority":1}
+,"higher":{"default":1}
+,"default":{"priority":1}
+,"(60)":{"makes":1}
+,"makes":{"dis":1}
+,"dis":{"is-isv6":1}
+,"is-isv6":{"priority":1}
+}
+;Search.control.loadWordPairs(pairs);

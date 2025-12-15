@@ -1,0 +1,24 @@
+var pairs =
+{
+"system":{"cores":1}
+,"cores":{"command":1,"tftp-url":1,"parameters":1,"tftp":1}
+,"command":{"upload":1,"delete":1,"syntax":1,"mode":1}
+,"upload":{"core":1}
+,"core":{"dump":1}
+,"dump":{"tftp":1,"previously":1}
+,"tftp":{"server":1,"tftp:\u002F\u002Ftftp.mysite.com":1}
+,"server":{"form":1}
+,"form":{"command":1}
+,"delete":{"core":1}
+,"previously":{"uploaded":1}
+,"uploaded":{"command":1}
+,"syntax":{"system":1}
+,"tftp-url":{"system":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"privileged":1,"examples":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"examples":{"system":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"fast-reroute":{"node-protection":1}
+,"node-protection":{"command":1,"p2mp":1,"fast-reroute":1,"parameters":1,"(config-p2mp-lsp)":1}
+,"command":{"configure":1,"applicable":1,"remove":1,"syntax":1,"mode":1}
+,"configure":{"fast-reroute":1,"terminal":1}
+,"p2mp":{"lsp":1,"lsps":1,"(config-p2mp-trunk)":1}
+,"lsp":{"command":1,"mode":1}
+,"applicable":{"primary":1}
+,"primary":{"p2mp":1}
+,"lsps":{"parameter":1}
+,"parameter":{"command":1}
+,"remove":{"fast-reroute":1}
+,"syntax":{"fast-reroute":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"p2mp":1,"examples":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"rsvp-trunk":1}
+,"rsvp-trunk":{"ipv4":1}
+,"ipv4":{"p2mp":1}
+,"(config-p2mp-trunk)":{"primary-lsp":1}
+,"primary-lsp":{"(config-p2mp-lsp)":1}
+,"(config-p2mp-lsp)":{"fast-reroute":1}
+}
+;Search.control.loadWordPairs(pairs);

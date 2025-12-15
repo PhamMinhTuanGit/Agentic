@@ -1,0 +1,19 @@
+var pairs =
+{
+"data":{"structures":1}
+,"structures":{"functions":1,"described":1,"cfm_1dm_rx":1}
+,"functions":{"chapter":1}
+,"chapter":{"refer":1,"connectivity":1}
+,"refer":{"data":1}
+,"described":{"section":1}
+,"section":{"chapter":1}
+,"connectivity":{"fault":1}
+,"fault":{"management":1}
+,"management":{"data":1}
+,"cfm_1dm_rx":{"cfm_dmm":1}
+,"cfm_dmm":{"cfm_lb":1}
+,"cfm_lb":{"cfm_lm":1}
+,"cfm_lm":{"cfm_md":1}
+,"cfm_md":{"cfm_tput_reception":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"ipv6":{"option":1}
+,"option":{"flag":1}
+,"flag":{"description":1}
+,"description":{"--enable-ipv6":1}
+,"--enable-ipv6":{"enable":1}
+,"enable":{"ipv6-related":1,"ipv4-to-ipv6":1,"neighbor":1}
+,"ipv6-related":{"features":1}
+,"features":{"daemons":1}
+,"daemons":{"(default)":1,"--enable-ipv6-transit":1}
+,"(default)":{"--disable-ipv6":1,"--disable-ndd":1}
+,"--disable-ipv6":{"disable":1}
+,"disable":{"ipv6-related":1,"ipv4-to-ipv6":1,"neighbor":1}
+,"--enable-ipv6-transit":{"enable":1}
+,"ipv4-to-ipv6":{"transition":1}
+,"transition":{"--disable-ipv6-transit":1,"--enable-ndd":1}
+,"--disable-ipv6-transit":{"disable":1}
+,"--enable-ndd":{"enable":1}
+,"neighbor":{"discovery":1}
+,"discovery":{"(default)":1}
+,"--disable-ndd":{"disable":1}
+}
+;Search.control.loadWordPairs(pairs);

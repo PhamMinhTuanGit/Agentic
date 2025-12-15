@@ -1,0 +1,24 @@
+var pairs =
+{
+"ldp_api_set_admn_status":{"call":1,"(entity":1}
+,"call":{"gets":1}
+,"gets":{"administrative":1}
+,"administrative":{"status":1}
+,"status":{"ldp":1}
+,"ldp":{"entity":1}
+,"entity":{"syntax":1,"ldp":1,"intval":1,"return":1}
+,"syntax":{"static":1}
+,"static":{"int":1}
+,"int":{"ldp_api_set_admn_status":1}
+,"(entity":{"intval)":1}
+,"intval)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"entity":1}
+,"intval":{"xxxxx":1}
+,"xxxxx":{"output":1}
+,"output":{"parameters":1}
+,"return":{"values":1}
+,"values":{"ldp_success":1}
+,"ldp_success":{"ldp_false":1}
+}
+;Search.control.loadWordPairs(pairs);

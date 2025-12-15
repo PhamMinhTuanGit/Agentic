@@ -1,0 +1,19 @@
+var pairs =
+{
+"bgp":{"peer":1,"speaker":1,"peers":1,"session":1}
+,"peer":{"remote":1}
+,"remote":{"border":1}
+,"border":{"gateway":1}
+,"gateway":{"protocol":1}
+,"protocol":{"(bgp)":1}
+,"(bgp)":{"speaker":1}
+,"speaker":{"established":1,"bgp":1}
+,"established":{"neighbor":1}
+,"neighbor":{"local":1}
+,"local":{"bgp":1}
+,"peers":{"directly":1}
+,"directly":{"connected":1}
+,"connected":{"share":1}
+,"share":{"bgp":1}
+}
+;Search.control.loadWordPairs(pairs);

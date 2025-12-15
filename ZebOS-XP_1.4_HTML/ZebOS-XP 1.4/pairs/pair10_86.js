@@ -1,0 +1,20 @@
+var pairs =
+{
+"nsm":{"client":1,"occurs":1}
+,"client":{"disconnect":1,"installs":1,"calls":1}
+,"disconnect":{"handling":1,"handler":1,"occurs":1}
+,"handling":{"elmi-nsm":1}
+,"elmi-nsm":{"client":1}
+,"installs":{"disconnect":1}
+,"handler":{"library":1,"disconnect":1,"registered":1}
+,"library":{"elmi":1}
+,"elmi":{"client":1}
+,"calls":{"disconnect":1}
+,"occurs":{"disconnect":1}
+,"registered":{"reconnection":1}
+,"reconnection":{"initiated":1}
+,"initiated":{"loss":1}
+,"loss":{"connection":1}
+,"connection":{"nsm":1}
+}
+;Search.control.loadWordPairs(pairs);

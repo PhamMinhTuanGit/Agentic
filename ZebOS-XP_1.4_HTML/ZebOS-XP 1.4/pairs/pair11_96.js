@@ -1,0 +1,26 @@
+var pairs =
+{
+"telnet":{"command":1,"session":1,"word":1,"2.2.2.2":1}
+,"command":{"open":1,"syntax":1,"mode":1}
+,"open":{"telnet":1}
+,"session":{"command":1}
+,"syntax":{"telnet":1}
+,"word":{"telnet":1,"port":1,"specify":1}
+,"port":{"parameters":1,"specify":1,"number":1}
+,"parameters":{"word":1}
+,"specify":{"address":1,"tcp":1}
+,"address":{"hostname":1}
+,"hostname":{"remote":1}
+,"remote":{"system":1}
+,"system":{"port":1}
+,"tcp":{"port":1}
+,"number":{"command":1}
+,"mode":{"privileged":1,"example":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"example":{"telnet":1}
+,"2.2.2.2":{"2602":1}
+,"2602":{"trying":1}
+,"trying":{"telnet":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"group":{"mapping":1}
+,"mapping":{"zebos-xp":1,"(rfc":1}
+,"zebos-xp":{"pim":1}
+,"pim":{"supports":1}
+,"supports":{"group":1}
+,"(rfc":{"6226)":1}
+,"6226)":{"algorithm":1}
+,"algorithm":{"used":1}
+,"used":{"choose":1}
+,"choose":{"several":1}
+,"several":{"group-to-rp":1}
+,"group-to-rp":{"mappings":1}
+,"mappings":{"specific":1}
+,"specific":{"multicast":1}
+,"multicast":{"group":1}
+}
+;Search.control.loadWordPairs(pairs);

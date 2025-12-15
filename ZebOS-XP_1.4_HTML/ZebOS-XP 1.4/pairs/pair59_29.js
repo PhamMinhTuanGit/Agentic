@@ -1,0 +1,25 @@
+var pairs =
+{
+"maximum-area":{"command":1,"<1-4294967294>":1,"parameters":1}
+,"command":{"configure":1,"disable":1,"syntax":1,"mode":1}
+,"configure":{"maximum":1,"terminal":1}
+,"maximum":{"number":1}
+,"number":{"ospf":1}
+,"ospf":{"areas":1,"100":1}
+,"areas":{"parameter":1,"command":1}
+,"parameter":{"command":1}
+,"disable":{"limit":1}
+,"limit":{"command":1}
+,"syntax":{"maximum-area":1}
+,"<1-4294967294>":{"maximum-area":1,"specify":1}
+,"parameters":{"<1-4294967294>":1}
+,"specify":{"maximum":1}
+,"mode":{"router":1,"examples":1}
+,"router":{"mode":1,"ospf":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"100":{"(config-router)":1}
+,"(config-router)":{"maximum-area":1}
+}
+;Search.control.loadWordPairs(pairs);

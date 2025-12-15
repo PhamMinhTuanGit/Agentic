@@ -1,0 +1,20 @@
+var pairs =
+{
+"show":{"ldp":1}
+,"ldp":{"ms-pw":1,"lsp":1}
+,"ms-pw":{"command":1,"name":1,"new-123":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"multi-segment":1}
+,"multi-segment":{"pseudowire":1}
+,"pseudowire":{"information":1,"name":1}
+,"information":{"ldp":1}
+,"lsp":{"command":1}
+,"syntax":{"show":1}
+,"name":{"parameter":1,"display":1,"command":1}
+,"parameter":{"name":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,25 @@
+var pairs =
+{
+"ieee8021isidtoviptable":{"group":1}
+,"group":{"contains":1}
+,"contains":{"service":1}
+,"service":{"instance":1}
+,"instance":{"ids":1,"ports":1}
+,"ids":{"virtual":1}
+,"virtual":{"instance":1}
+,"ports":{"(isid-vip)":1}
+,"(isid-vip)":{"cross":1}
+,"cross":{"references":1}
+,"references":{"bridge":1}
+,"bridge":{"object":1}
+,"object":{"type":1}
+,"type":{"syntax":1}
+,"syntax":{"access":1}
+,"access":{"ieee8021pbbisidtovipcomponentid":1}
+,"ieee8021pbbisidtovipcomponentid":{"ieee8021pbbcomponentidentifier":1}
+,"ieee8021pbbcomponentidentifier":{"read-only":1}
+,"read-only":{"ieee8021pbbisidtovipport":1}
+,"ieee8021pbbisidtovipport":{"ieee8021bridgeportnumber":1}
+,"ieee8021bridgeportnumber":{"read-only":1}
+}
+;Search.control.loadWordPairs(pairs);

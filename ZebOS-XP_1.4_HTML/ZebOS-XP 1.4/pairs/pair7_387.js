@@ -1,0 +1,21 @@
+var pairs =
+{
+"disconnect":{"rsvp-te":1}
+,"rsvp-te":{"disconnects":1}
+,"disconnects":{"cspf":1}
+,"cspf":{"module":1}
+,"module":{"cleans":1}
+,"cleans":{"internal":1}
+,"internal":{"structures":1}
+,"structures":{"void":1}
+,"void":{"rsvp_cspf_deinit":1}
+,"rsvp_cspf_deinit":{"(u_char":1}
+,"(u_char":{"free_sessions)":1}
+,"free_sessions)":{"installed":1}
+,"installed":{"forwarder":1}
+,"forwarder":{"event":1}
+,"event":{"failure":1}
+,"failure":{"protected":1}
+,"protected":{"lsp":1}
+}
+;Search.control.loadWordPairs(pairs);

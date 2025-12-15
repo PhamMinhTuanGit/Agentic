@@ -1,0 +1,25 @@
+var pairs =
+{
+"system":{"behavior":1}
+,"behavior":{"defined":1,"elmi":1,"includes":1}
+,"defined":{"procedure":1}
+,"procedure":{"system":1}
+,"elmi":{"triggers":1,"module\u2019s":1}
+,"triggers":{"message":1}
+,"message":{"carried":1}
+,"carried":{"module":1}
+,"module":{"procedures":1}
+,"procedures":{"characterized":1}
+,"characterized":{"messages":1}
+,"messages":{"exchanged":1,"received":1}
+,"exchanged":{"uni":1}
+,"uni":{"behavior":1}
+,"includes":{"following":1}
+,"following":{"events":1}
+,"events":{"men":1}
+,"men":{"elmi":1}
+,"module\u2019s":{"messages":1}
+,"received":{"uni-c":1}
+,"uni-c":{"uni-n":1}
+}
+;Search.control.loadWordPairs(pairs);

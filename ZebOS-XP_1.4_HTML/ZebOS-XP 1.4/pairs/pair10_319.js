@@ -1,0 +1,20 @@
+var pairs =
+{
+"max-ecmp-path":{"command":1,"(<1-100>)":1,"parameters":1}
+,"command":{"maximum":1,"syntax":1,"mode":1}
+,"maximum":{"neighbor":1}
+,"neighbor":{"count":1}
+,"count":{"broadcast":1,"command":1}
+,"broadcast":{"link":1}
+,"link":{"command":1,"default":1}
+,"default":{"(4)":1}
+,"(4)":{"command":1}
+,"syntax":{"max-ecmp-path":1}
+,"(<1-100>)":{"max-ecmp-path":1}
+,"parameters":{"<1-100>":1}
+,"<1-100>":{"maximum":1}
+,"mode":{"privileged":1,"example":1}
+,"privileged":{"mode":1}
+,"example":{"max-ecmp-path":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"portal-address":{"command":1,"mac":1,"5254.0059.424f":1}
+,"command":{"mac":1,"syntax":1,"mode":1}
+,"mac":{"address":1,"parameters":1,"mac":1}
+,"address":{"portal":1,"hhhh.hhhh.hhhh":1}
+,"portal":{"system":1}
+,"system":{"command":1}
+,"syntax":{"portal-address":1}
+,"parameters":{"mac":1}
+,"hhhh.hhhh.hhhh":{"format":1}
+,"format":{"values":1}
+,"values":{"0000.0000.0000":1}
+,"0000.0000.0000":{"ffff.ffff.ffff":1}
+,"ffff.ffff.ffff":{"valid":1}
+,"valid":{"command":1}
+,"mode":{"mlag":1,"example":1}
+,"mlag":{"mode":1,"configuration":1}
+,"example":{"config":1}
+,"config":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mlag":1}
+,"configuration":{"(config-mlag)":1}
+,"(config-mlag)":{"portal-address":1}
+}
+;Search.control.loadWordPairs(pairs);

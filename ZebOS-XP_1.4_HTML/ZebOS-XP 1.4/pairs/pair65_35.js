@@ -1,0 +1,22 @@
+var pairs =
+{
+"bgp":{"neighbor":1,"neighbors":1}
+,"neighbor":{"device":1}
+,"device":{"network":1}
+,"network":{"running":1}
+,"running":{"border":1}
+,"border":{"gateway":1}
+,"gateway":{"protocol":1}
+,"protocol":{"(bgp)":1}
+,"(bgp)":{"two":1}
+,"two":{"types":1}
+,"types":{"bgp":1}
+,"neighbors":{"internal":1,"autonomous":1,"different":1}
+,"internal":{"neighbors":1}
+,"autonomous":{"system":1,"systems":1}
+,"system":{"(as)":1}
+,"(as)":{"external":1}
+,"external":{"neighbors":1}
+,"different":{"autonomous":1}
+}
+;Search.control.loadWordPairs(pairs);

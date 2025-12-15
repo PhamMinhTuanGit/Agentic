@@ -1,0 +1,27 @@
+var pairs =
+{
+"evpl":{"evp-lan":1}
+,"evp-lan":{"evp-tree":1}
+,"evp-tree":{"services":1}
+,"services":{"destination":1}
+,"destination":{"mac":1}
+,"mac":{"address":1}
+,"address":{"l2cp":1}
+,"l2cp":{"action":1}
+,"action":{"epl":1}
+,"epl":{"ep-tre":1}
+,"ep-tre":{"ep-lan":1}
+,"ep-lan":{"01-80-c2-00-00-01":1}
+,"01-80-c2-00-00-01":{"01-80-c2-00-00-0f":1}
+,"01-80-c2-00-00-0f":{"tunnel":1}
+,"tunnel":{"(additional":1}
+,"(additional":{"requirements":1}
+,"requirements":{"may":1}
+,"may":{"apply":1}
+,"apply":{"per":1}
+,"per":{"sub-section":1}
+,"sub-section":{"8.1.2":1}
+,"8.1.2":{"8.1.4":1}
+,"8.1.4":{"8.1.6)":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,22 @@
+var pairs =
+{
+"mrib_snmp_api_vif_index":{"structure":1,"{u_int32_t":1}
+,"structure":{"used":1}
+,"used":{"provide":1}
+,"provide":{"interface":1}
+,"interface":{"index":1}
+,"index":{"information":1}
+,"information":{"access":1}
+,"access":{"ipmroutinterfacetable":1}
+,"ipmroutinterfacetable":{"entries":1}
+,"entries":{"resides":1}
+,"resides":{"mribd\u002Fmrib_snmp_api.h":1}
+,"mribd\u002Fmrib_snmp_api.h":{"file":1}
+,"file":{"struct":1}
+,"struct":{"mrib_snmp_api_vif_index":1}
+,"{u_int32_t":{"len":1}
+,"len":{"u_int32_t":1}
+,"u_int32_t":{"ip_version":1,"ifindex":1}
+,"ip_version":{"u_int32_t":1}
+}
+;Search.control.loadWordPairs(pairs);

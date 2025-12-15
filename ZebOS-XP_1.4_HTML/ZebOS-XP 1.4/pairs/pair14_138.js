@@ -1,0 +1,22 @@
+var pairs =
+{
+"meg":{"end":1}
+,"end":{"point":1}
+,"point":{"(mep)":1}
+,"(mep)":{"capable":1}
+,"capable":{"initiating":1}
+,"initiating":{"(source":1}
+,"(source":{"mep)":1}
+,"mep)":{"terminating":1,"oam":1}
+,"terminating":{"(sink":1}
+,"(sink":{"mep)":1}
+,"oam":{"packets":1}
+,"packets":{"fault":1}
+,"fault":{"management":1}
+,"management":{"performance":1}
+,"performance":{"monitoring":1}
+,"monitoring":{"meps":1}
+,"meps":{"define":1}
+,"define":{"boundaries":1}
+}
+;Search.control.loadWordPairs(pairs);

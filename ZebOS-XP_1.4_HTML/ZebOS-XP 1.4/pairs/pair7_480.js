@@ -1,0 +1,19 @@
+var pairs =
+{
+"maximum":{"link":1}
+,"link":{"bandwidth":1}
+,"bandwidth":{"reservable":1,"following":1}
+,"reservable":{"bandwidth":1}
+,"following":{"example":1,"configuration":1}
+,"example":{"router":1}
+,"router":{"l1\u002Fl2":1,"enabling":1,"following":1}
+,"l1\u002Fl2":{"router":1}
+,"enabling":{"mpls-te":1}
+,"mpls-te":{"level-1":1,"topology":1}
+,"level-1":{"level-2":1}
+,"level-2":{"router":1}
+,"configuration":{"given":1}
+,"given":{"&r3":1}
+,"&r3":{"mpls-te":1}
+}
+;Search.control.loadWordPairs(pairs);

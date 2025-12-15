@@ -1,0 +1,21 @@
+var pairs =
+{
+"fault":{"management":1,"server":1,"messages":1}
+,"management":{"works":1}
+,"works":{"bring":1}
+,"bring":{"down":1}
+,"down":{"physical":1}
+,"physical":{"interface":1,"setup":1}
+,"interface":{"connected":1}
+,"connected":{"(transit)":1,"hub":1}
+,"(transit)":{"create":1}
+,"create":{"fault":1}
+,"server":{"layer":1}
+,"layer":{"server":1,"nodes":1}
+,"nodes":{"connected":1}
+,"hub":{"receive":1}
+,"receive":{"fault":1}
+,"messages":{"working":1}
+,"working":{"physical":1}
+}
+;Search.control.loadWordPairs(pairs);

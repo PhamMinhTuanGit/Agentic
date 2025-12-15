@@ -1,0 +1,26 @@
+var pairs =
+{
+"availability":{"amount":1,"often":1,"equates":1}
+,"amount":{"time":1}
+,"time":{"system":1,"periods":1}
+,"system":{"available":1,"expected":1}
+,"available":{"during":1,"availability":1,"time":1}
+,"during":{"time":1}
+,"periods":{"expected":1}
+,"expected":{"available":1}
+,"often":{"measured":1}
+,"measured":{"percentage":1}
+,"percentage":{"elapsed":1}
+,"elapsed":{"year":1}
+,"year":{"example":1,"(0.0005":1}
+,"example":{"99.95":1}
+,"99.95":{"availability":1}
+,"equates":{"4.38":1}
+,"4.38":{"hours":1}
+,"hours":{"downtime":1}
+,"downtime":{"year":1}
+,"(0.0005":{"*365":1}
+,"*365":{"*24=4.38)":1}
+,"*24=4.38)":{"system":1}
+}
+;Search.control.loadWordPairs(pairs);

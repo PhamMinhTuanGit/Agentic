@@ -1,0 +1,24 @@
+var pairs =
+{
+"pal_kernel_route_scan":{"function":1,"input":1}
+,"function":{"scans":1,"succeeds":1,"fails":1}
+,"scans":{"kernel":1}
+,"kernel":{"routing":1}
+,"routing":{"table":1}
+,"table":{"loads":1}
+,"loads":{"routes":1}
+,"routes":{"rib":1}
+,"rib":{"api":1}
+,"api":{"call":1}
+,"call":{"result_t":1}
+,"result_t":{"pal_kernel_route_scan":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"value":1}
+,"value":{"result_ok":1,"function":1}
+,"result_ok":{"function":1}
+,"succeeds":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

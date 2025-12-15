@@ -1,0 +1,19 @@
+var pairs =
+{
+"contents":{"guide":1}
+,"guide":{"contains":1}
+,"contains":{"chapters":1}
+,"chapters":{"chapter":1}
+,"chapter":{"overview":1,"process":1,"data":1,"pim4":1,"pim6":1}
+,"overview":{"chapter":1}
+,"process":{"flow":1}
+,"flow":{"chapter":1}
+,"data":{"structures":1}
+,"structures":{"messages":1}
+,"messages":{"chapter":1}
+,"pim4":{"command":1}
+,"command":{"api":1}
+,"api":{"chapter":1}
+,"pim6":{"command":1}
+}
+;Search.control.loadWordPairs(pairs);

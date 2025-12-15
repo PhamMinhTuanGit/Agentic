@@ -1,0 +1,24 @@
+var pairs =
+{
+"bridge":{"protocol":1,"edge":1,"(evb)":1,"<1-32>":1,"identifier":1,"svlan-evb":1}
+,"protocol":{"command":1,"(svlan-evb":1}
+,"command":{"bridge":1,"syntax":1,"mode":1}
+,"edge":{"virtual":1}
+,"virtual":{"bridge":1}
+,"(evb)":{"command":1}
+,"syntax":{"bridge":1}
+,"<1-32>":{"protocol":1,"bridge":1}
+,"(svlan-evb":{"evb)":1}
+,"evb)":{"parameters":1}
+,"parameters":{"<1-32>":1}
+,"identifier":{"svlan-evb":1}
+,"svlan-evb":{"svlan-aware":1}
+,"svlan-aware":{"evb":1}
+,"evb":{"evb":1,"command":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"bridge":1}
+}
+;Search.control.loadWordPairs(pairs);

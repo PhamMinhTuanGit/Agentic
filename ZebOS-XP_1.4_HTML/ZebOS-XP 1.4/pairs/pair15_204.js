@@ -1,0 +1,22 @@
+var pairs =
+{
+"rsvp_api_delete_p2mp_trunk":{"call":1,"(struct":1}
+,"call":{"deletes":1}
+,"deletes":{"configured":1}
+,"configured":{"p2mp":1}
+,"p2mp":{"trunk":1}
+,"trunk":{"syntax":1,"p2mp":1,"delete":1}
+,"syntax":{"void":1}
+,"void":{"rsvp_api_delete_p2mp_trunk":1}
+,"(struct":{"rsvp_trunk":1}
+,"rsvp_trunk":{"*trunk)":1}
+,"*trunk)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"trunk":1,"none":1}
+,"delete":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

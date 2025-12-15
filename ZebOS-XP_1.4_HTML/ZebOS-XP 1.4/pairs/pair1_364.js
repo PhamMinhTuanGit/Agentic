@@ -1,0 +1,22 @@
+var pairs =
+{
+"mpls":{"pseudowire":1,"pseudowires":1,"mib":1}
+,"pseudowire":{"mib":1}
+,"mib":{"api":1,"table":1}
+,"api":{"chapter":1}
+,"chapter":{"describes":1}
+,"describes":{"management":1}
+,"management":{"information":1}
+,"information":{"base":1}
+,"base":{"(mib)":1}
+,"(mib)":{"support":1}
+,"support":{"mpls":1}
+,"pseudowires":{"nsm":1}
+,"nsm":{"contains":1}
+,"contains":{"functions":1}
+,"functions":{"pseudo-wire":1}
+,"pseudo-wire":{"mpls":1}
+,"table":{"entries":1}
+,"entries":{"zebos-xp":1}
+}
+;Search.control.loadWordPairs(pairs);

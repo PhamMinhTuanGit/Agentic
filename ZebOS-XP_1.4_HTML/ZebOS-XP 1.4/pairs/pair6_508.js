@@ -1,0 +1,25 @@
+var pairs =
+{
+"enable":{"bgp":1}
+,"bgp":{"different":1,"interface":1}
+,"different":{"autonomous":1}
+,"autonomous":{"systems":1,"system":1}
+,"systems":{"example":1,"two":1}
+,"example":{"shows":1}
+,"shows":{"minimum":1}
+,"minimum":{"configuration":1}
+,"configuration":{"required":1}
+,"required":{"enabling":1}
+,"enabling":{"bgp":1}
+,"interface":{"routers":1}
+,"routers":{"belong":1,"different":1}
+,"belong":{"different":1}
+,"two":{"routers":1}
+,"system":{"as200":1}
+,"as200":{"as300":1}
+,"as300":{"connecting":1}
+,"connecting":{"network":1}
+,"network":{"10.10.10.0\u002F24":1}
+,"10.10.10.0\u002F24":{"routers":1}
+}
+;Search.control.loadWordPairs(pairs);

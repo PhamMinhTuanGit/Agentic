@@ -1,0 +1,20 @@
+var pairs =
+{
+"dns":{"client":1}
+,"client":{"configuration":1}
+,"configuration":{"overview":1}
+,"overview":{"dhcp":1}
+,"dhcp":{"relay":1,"broadcast":1,"server":1}
+,"relay":{"feature":1}
+,"feature":{"designed":1}
+,"designed":{"forward":1}
+,"forward":{"dhcp":1}
+,"broadcast":{"requests":1}
+,"requests":{"unicast":1}
+,"unicast":{"packets":1}
+,"packets":{"configured":1}
+,"configured":{"dhcp":1}
+,"server":{"servers":1}
+,"servers":{"redundancy":1}
+}
+;Search.control.loadWordPairs(pairs);

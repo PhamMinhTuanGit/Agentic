@@ -1,0 +1,22 @@
+var pairs =
+{
+"fec-to-nhlfe":{"(ftn)":1}
+,"(ftn)":{"map":1}
+,"map":{"multi-protocol":1}
+,"multi-protocol":{"label":1}
+,"label":{"switching":1,"forwarding":1}
+,"switching":{"(mpls)":1}
+,"(mpls)":{"mapping":1}
+,"mapping":{"forwarding":1}
+,"forwarding":{"equivalence":1,"entry":1}
+,"equivalence":{"class":1}
+,"class":{"(fec)":1}
+,"(fec)":{"incoming":1}
+,"incoming":{"packets":1}
+,"packets":{"corresponding":1}
+,"corresponding":{"next":1}
+,"next":{"hop":1}
+,"hop":{"label":1}
+,"entry":{"(nhlfe)":1}
+}
+;Search.control.loadWordPairs(pairs);

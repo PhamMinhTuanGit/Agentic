@@ -1,0 +1,23 @@
+var pairs =
+{
+"mpls-tp":{"y.1731":1}
+,"y.1731":{"oam":1}
+,"oam":{"configuration":1,"(operation":1}
+,"configuration":{"chapter":1,"examples":1}
+,"chapter":{"provides":1}
+,"provides":{"configuration":1}
+,"examples":{"itu-t":1}
+,"itu-t":{"y.1731":1}
+,"(operation":{"administration":1}
+,"administration":{"maintenance)":1}
+,"maintenance)":{"defines":1}
+,"defines":{"protocols":1}
+,"protocols":{"procedures":1}
+,"procedures":{"maintain":1}
+,"maintain":{"diagnose":1}
+,"diagnose":{"connectivity":1}
+,"connectivity":{"faults":1}
+,"faults":{"maintenance":1}
+,"maintenance":{"domain":1}
+}
+;Search.control.loadWordPairs(pairs);

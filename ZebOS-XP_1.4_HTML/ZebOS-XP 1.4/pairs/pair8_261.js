@@ -1,0 +1,27 @@
+var pairs =
+{
+"description":{"command":1,"interface":1,"line":1,"parameter":1,"connected":1}
+,"command":{"assign":1,"syntax":1,"mode":1}
+,"assign":{"description":1}
+,"interface":{"parameter":1,"description":1,"mode":1,"eth1":1}
+,"parameter":{"remove":1,"line":1}
+,"remove":{"interface":1}
+,"syntax":{"description":1}
+,"line":{"description":1,"interface":1}
+,"mode":{"interface":1,"examples":1}
+,"examples":{"following":1}
+,"following":{"example":1}
+,"example":{"provides":1}
+,"provides":{"information":1}
+,"information":{"connecting":1}
+,"connecting":{"router":1}
+,"router":{"interface":1,"configure":1,"(config)":1,"(config-if)":1}
+,"eth1":{"router":1}
+,"configure":{"terminal":1}
+,"terminal":{"router":1}
+,"(config)":{"interface":1}
+,"(config-if)":{"description":1}
+,"connected":{"zenith\u0027s":1}
+,"zenith\u0027s":{"fas2\u002F0":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"rbridge-ping-timeout":{"command":1,"interval":1,"parameters":1}
+,"command":{"ping":1,"syntax":1,"mode":1}
+,"ping":{"timeout":1,"response":1}
+,"timeout":{"value":1,"interval":1}
+,"value":{"command":1}
+,"syntax":{"rbridge-ping-timeout":1}
+,"interval":{"<1-65535>":1,"specify":1,"seconds":1,"12345":1}
+,"<1-65535>":{"rbridge-ping-timeout":1}
+,"parameters":{"interval":1}
+,"specify":{"time":1,"actual":1}
+,"time":{"wait":1}
+,"wait":{"ping":1}
+,"response":{"<-65535>":1}
+,"<-65535>":{"specify":1}
+,"actual":{"timeout":1}
+,"seconds":{"command":1}
+,"mode":{"exec":1,"privilege":1,"examples":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"examples":{"enable":1}
+,"enable":{"rbridge-ping-timeout":1}
+,"12345":{"rbridge-ping-timeout":1}
+}
+;Search.control.loadWordPairs(pairs);

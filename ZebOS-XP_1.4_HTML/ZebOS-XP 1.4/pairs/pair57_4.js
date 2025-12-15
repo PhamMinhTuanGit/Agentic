@@ -1,0 +1,27 @@
+var pairs =
+{
+"show":{"ethernet":1}
+,"ethernet":{"cfm":1}
+,"cfm":{"traceroute-cache":1,"maintenance-points":1}
+,"traceroute-cache":{"command":1,"(bridge":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"information":1}
+,"information":{"traceroute":1}
+,"traceroute":{"cache":1}
+,"cache":{"command":1}
+,"syntax":{"show":1}
+,"(bridge":{"<1-32>":1}
+,"<1-32>":{"parameters":1,"specify":1}
+,"parameters":{"bridge":1}
+,"bridge":{"specify":1,"<1-32>":1,"command":1}
+,"specify":{"bridge":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"show":1}
+,"maintenance-points":{"remote":1}
+,"remote":{"domain":1}
+,"domain":{"mpid":1}
+,"mpid":{"bridge":1}
+}
+;Search.control.loadWordPairs(pairs);

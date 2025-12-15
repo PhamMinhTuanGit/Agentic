@@ -1,0 +1,19 @@
+var pairs =
+{
+"quantized":{"congestion":1}
+,"congestion":{"notification":1,"point":1}
+,"notification":{"configuration":1,"priority":1}
+,"configuration":{"chapter":1}
+,"chapter":{"shows":1}
+,"shows":{"enable":1}
+,"enable":{"qcn":1,"congestion":1}
+,"qcn":{"bridge":1}
+,"bridge":{"interface":1}
+,"interface":{"enable":1}
+,"priority":{"value":1}
+,"value":{"(cnpv)":1}
+,"(cnpv)":{"create":1}
+,"create":{"congestion":1}
+,"point":{"(cp)":1}
+}
+;Search.control.loadWordPairs(pairs);

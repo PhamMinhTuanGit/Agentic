@@ -1,0 +1,27 @@
+var pairs =
+{
+"bfd":{"all-interfaces":1,"command":1}
+,"all-interfaces":{"command":1,"bfd":1,"parameters":1,"(config)":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"bidirectional":1}
+,"bidirectional":{"forwarding":1}
+,"forwarding":{"detection":1}
+,"detection":{"(bfd)":1}
+,"(bfd)":{"interfaces":1}
+,"interfaces":{"form":1}
+,"form":{"command":1}
+,"disable":{"bfd":1}
+,"syntax":{"bfd":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"router":1,"examples":1}
+,"router":{"mode":1,"ospf":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"ospf":{"100":1}
+,"100":{"(config-router)":1}
+,"(config-router)":{"bfd":1}
+}
+;Search.control.loadWordPairs(pairs);

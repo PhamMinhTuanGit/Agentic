@@ -1,0 +1,23 @@
+var pairs =
+{
+"isis_ism_timer_set":{"syntax":1,"(struct":1}
+,"syntax":{"void":1}
+,"void":{"isis_ism_timer_set":1}
+,"(struct":{"isis_if_level":1}
+,"isis_if_level":{"*ifl":1}
+,"*ifl":{"int":1,"pointer":1}
+,"int":{"event)":1}
+,"event)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*ifl":1,"none":1}
+,"pointer":{"parent":1,"event":1}
+,"parent":{"interface":1}
+,"interface":{"level":1}
+,"level":{"event":1}
+,"event":{"pointer":1,"callback":1}
+,"callback":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

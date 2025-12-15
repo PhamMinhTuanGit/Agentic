@@ -1,0 +1,23 @@
+var pairs =
+{
+"miscellaneous":{"configuration":1}
+,"configuration":{"port":1}
+,"port":{"state":1,"trunk":1,"(no":1,"enabled)":1,"type":1}
+,"state":{"information":1}
+,"information":{"show":1,"whether":1}
+,"show":{"nsm":1}
+,"nsm":{"trill":1}
+,"trill":{"portinfo":1,"access":1}
+,"portinfo":{"command":1}
+,"command":{"validates":1}
+,"validates":{"port":1}
+,"whether":{"port":1}
+,"trunk":{"access":1}
+,"access":{"universal":1,"port":1}
+,"universal":{"port":1}
+,"(no":{"trill":1}
+,"enabled)":{"whether":1}
+,"type":{"inhibited":1}
+,"inhibited":{"uninhibited":1}
+}
+;Search.control.loadWordPairs(pairs);

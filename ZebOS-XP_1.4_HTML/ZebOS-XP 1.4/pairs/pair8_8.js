@@ -1,0 +1,22 @@
+var pairs =
+{
+"lightweight":{"directory":1}
+,"directory":{"access":1,"information":1}
+,"access":{"protocol":1}
+,"protocol":{"lightweight":1,"(ldap)":1}
+,"(ldap)":{"accesses":1}
+,"accesses":{"maintains":1}
+,"maintains":{"distributed":1}
+,"distributed":{"directory":1}
+,"information":{"services":1}
+,"services":{"network":1}
+,"network":{"ldap":1}
+,"ldap":{"specified":1,"provides":1}
+,"specified":{"rfc":1}
+,"rfc":{"4511":1}
+,"4511":{"zebos-xp":1}
+,"zebos-xp":{"ldap":1}
+,"provides":{"authentication":1}
+,"authentication":{"services":1}
+}
+;Search.control.loadWordPairs(pairs);

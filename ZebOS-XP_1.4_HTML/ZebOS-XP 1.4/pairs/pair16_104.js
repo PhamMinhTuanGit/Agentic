@@ -1,0 +1,20 @@
+var pairs =
+{
+"pe2":{"configure":1}
+,"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"mode":{"(config)":1}
+,"(config)":{"mpls":1,"exit":1}
+,"mpls":{"l2-circuit":1}
+,"l2-circuit":{"test":1}
+,"test":{"100":1,"(config)":1}
+,"100":{"1.2.3.4":1}
+,"1.2.3.4":{"control-word":1}
+,"control-word":{"manual":1}
+,"manual":{"remove":1}
+,"remove":{"named":1}
+,"named":{"test":1}
+,"exit":{"exit":1,"configure":1}
+}
+;Search.control.loadWordPairs(pairs);

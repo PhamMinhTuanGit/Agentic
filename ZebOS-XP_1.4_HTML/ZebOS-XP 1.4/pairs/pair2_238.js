@@ -1,0 +1,22 @@
+var pairs =
+{
+"topology":{"shown":1}
+,"shown":{"figure":1}
+,"figure":{"12-16":1}
+,"12-16":{"switch":1}
+,"switch":{"switch":1,"share":1,"switches":1,"even":1,"down":1,"reach":1}
+,"share":{"common":1}
+,"common":{"endpoint":1}
+,"endpoint":{"switch":1}
+,"switches":{"single":1}
+,"single":{"logical":1}
+,"logical":{"switch":1}
+,"even":{"switch":1}
+,"down":{"exists":1}
+,"exists":{"path":1}
+,"path":{"switch":1}
+,"reach":{"destinations":1}
+,"destinations":{"mc-lag":1}
+,"mc-lag":{"topology":1}
+}
+;Search.control.loadWordPairs(pairs);

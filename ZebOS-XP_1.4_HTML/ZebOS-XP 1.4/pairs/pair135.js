@@ -1,0 +1,26 @@
+var pairs =
+{
+"hal_ipv4_uc_deinit":{"function":1,"(unsigned":1}
+,"function":{"deinitializes":1,"fails":1,"succeeds":1}
+,"deinitializes":{"ipv4":1}
+,"ipv4":{"unicast":1}
+,"unicast":{"table":1}
+,"table":{"specified":1}
+,"specified":{"fib":1}
+,"fib":{"syntax":1,"fib":1,"output":1}
+,"syntax":{"int":1}
+,"int":{"hal_ipv4_uc_deinit":1}
+,"(unsigned":{"short":1}
+,"short":{"fib)":1}
+,"fib)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"fib":1,"none":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"hal_ip_fib_not_exist":1}
+,"hal_ip_fib_not_exist":{"function":1}
+,"fails":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

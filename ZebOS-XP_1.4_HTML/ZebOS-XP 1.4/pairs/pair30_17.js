@@ -1,0 +1,21 @@
+var pairs =
+{
+"definition":{"struct":1}
+,"struct":{"stream":1}
+,"stream":{"{struct":1,"*next":1}
+,"{struct":{"stream":1}
+,"*next":{"u_char":1}
+,"u_char":{"*data":1}
+,"*data":{"\u002F*put":1}
+,"\u002F*put":{"pointer":1}
+,"pointer":{"*\u002Fu_int32_t":1}
+,"*\u002Fu_int32_t":{"putp":1,"getp":1,"endp":1,"size":1}
+,"putp":{"\u002F*get":1}
+,"\u002F*get":{"pointer":1}
+,"getp":{"\u002F*end":1}
+,"\u002F*end":{"pointer":1}
+,"endp":{"\u002F*data":1}
+,"\u002F*data":{"size":1}
+,"size":{"*\u002Fu_int32_t":1}
+}
+;Search.control.loadWordPairs(pairs);

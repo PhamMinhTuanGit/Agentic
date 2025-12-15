@@ -1,0 +1,21 @@
+var pairs =
+{
+"show":{"logging":1}
+,"logging":{"last":1}
+,"last":{"command":1,"(<1-9999>)":1,"100":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"lines":1,"end":1}
+,"lines":{"end":1,"display":1}
+,"end":{"log":1}
+,"log":{"file":1}
+,"file":{"command":1}
+,"syntax":{"show":1}
+,"(<1-9999>)":{"parameters":1}
+,"parameters":{"<1-9999>":1}
+,"<1-9999>":{"number":1}
+,"number":{"lines":1}
+,"mode":{"exec":1,"examples":1}
+,"exec":{"mode":1}
+,"examples":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

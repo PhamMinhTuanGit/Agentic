@@ -1,0 +1,25 @@
+var pairs =
+{
+"label":{"generation":1,"20-bit":1}
+,"generation":{"ldp":1}
+,"ldp":{"label":1}
+,"20-bit":{"number":1}
+,"number":{"lsr":1}
+,"lsr":{"uses":1,"creates":1}
+,"uses":{"forward":1}
+,"forward":{"packet":1}
+,"packet":{"destination":1}
+,"destination":{"lsr":1}
+,"creates":{"new":1}
+,"new":{"fec":1,"labels":1}
+,"fec":{"router":1}
+,"router":{"generates":1,"keeps":1}
+,"generates":{"new":1}
+,"labels":{"distributes":1,"database":1}
+,"distributes":{"peers":1}
+,"peers":{"router":1}
+,"keeps":{"incoming":1}
+,"incoming":{"outgoing":1}
+,"outgoing":{"labels":1}
+}
+;Search.control.loadWordPairs(pairs);

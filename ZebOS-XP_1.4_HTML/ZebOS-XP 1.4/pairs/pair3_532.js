@@ -1,0 +1,19 @@
+var pairs =
+{
+"feature":{"telnet":1}
+,"telnet":{"command":1,"server":1,"feature":1,"parameters":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"telnet":1}
+,"server":{"form":1,"command":1}
+,"form":{"command":1}
+,"disable":{"telnet":1}
+,"syntax":{"feature":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"feature":1}
+}
+;Search.control.loadWordPairs(pairs);

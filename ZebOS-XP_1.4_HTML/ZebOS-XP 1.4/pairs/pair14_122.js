@@ -1,0 +1,20 @@
+var pairs =
+{
+"connect":{"pes":1}
+,"pes":{"using":1}
+,"using":{"ebgp":1}
+,"ebgp":{"multihop":1,"configured":1}
+,"multihop":{"example":1,"connection":1}
+,"example":{"routers":1}
+,"routers":{"directly":1,"routers":1,"configured":1}
+,"directly":{"connected":1}
+,"connected":{"using":1}
+,"connection":{"ebgp":1,"multihop":1,"work":1}
+,"configured":{"ce-pe":1,"ebgp":1}
+,"ce-pe":{"routers":1}
+,"work":{"igp":1}
+,"igp":{"protocol":1}
+,"protocol":{"run":1}
+,"run":{"pe1-p-pe2":1}
+}
+;Search.control.loadWordPairs(pairs);

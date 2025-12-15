@@ -1,0 +1,24 @@
+var pairs =
+{
+"optimization":{"zebos-xp":1,"includes":1,"congestion":1,"controlled":1}
+,"zebos-xp":{"ospf":1}
+,"ospf":{"optimization":1}
+,"includes":{"support":1}
+,"support":{"following":1}
+,"following":{"features":1,"sections":1}
+,"features":{"spf":1,"described":1}
+,"spf":{"calculation":1,"exponential":1}
+,"calculation":{"optimization":1,"spf":1}
+,"congestion":{"detection":1}
+,"detection":{"avoidance":1}
+,"avoidance":{"maxage":1}
+,"maxage":{"walker":1}
+,"walker":{"optimization":1}
+,"controlled":{"incremental":1}
+,"incremental":{"spf":1}
+,"exponential":{"hold-time":1}
+,"hold-time":{"backoff":1}
+,"backoff":{"features":1}
+,"described":{"following":1}
+}
+;Search.control.loadWordPairs(pairs);

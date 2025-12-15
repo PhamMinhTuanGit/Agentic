@@ -1,0 +1,19 @@
+var pairs =
+{
+"troubleshooting":{"pim":1}
+,"pim":{"chapter":1,"issues":1}
+,"chapter":{"contains":1}
+,"contains":{"steps":1}
+,"steps":{"resolving":1}
+,"resolving":{"pim":1}
+,"issues":{"protocol":1}
+,"protocol":{"independent":1}
+,"independent":{"multicasting":1}
+,"multicasting":{"command":1}
+,"command":{"reference":1}
+,"reference":{"details":1}
+,"details":{"commands":1}
+,"commands":{"used":1}
+,"used":{"chapter":1}
+}
+;Search.control.loadWordPairs(pairs);

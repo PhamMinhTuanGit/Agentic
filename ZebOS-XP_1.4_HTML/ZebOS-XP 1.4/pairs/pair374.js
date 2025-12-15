@@ -1,0 +1,19 @@
+var pairs =
+{
+"synchronous":{"ethernet":1}
+,"ethernet":{"(synce)":1,"network":1,"provides":1}
+,"(synce)":{"sonet\u002Fsdh\u002Fpdh-based":1}
+,"sonet\u002Fsdh\u002Fpdh-based":{"synchronization":1}
+,"synchronization":{"used":1,"time":1}
+,"used":{"synchronize":1}
+,"synchronize":{"send":1}
+,"send":{"frequency":1}
+,"frequency":{"information":1,"synchronization":1}
+,"information":{"devices":1}
+,"devices":{"ethernet":1}
+,"network":{"synchronous":1}
+,"provides":{"frequency":1}
+,"time":{"phase":1}
+,"phase":{"synchronization":1}
+}
+;Search.control.loadWordPairs(pairs);

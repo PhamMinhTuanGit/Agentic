@@ -1,0 +1,22 @@
+var pairs =
+{
+"supported":{"topologies":1}
+,"topologies":{"zebos-xp":1,"portal":1}
+,"zebos-xp":{"supports":1}
+,"supports":{"types":1}
+,"types":{"mc-lag":1}
+,"mc-lag":{"topologies":1}
+,"portal":{"portal":1,"system":1,"link":1,"systems":1}
+,"system":{"intra":1}
+,"intra":{"portal":1}
+,"link":{"(ipl)":1}
+,"(ipl)":{"portal":1}
+,"systems":{"single":1,"two":1,"connected":1}
+,"single":{"ipl":1}
+,"ipl":{"portal":1}
+,"two":{"ipls":1}
+,"ipls":{"portal":1}
+,"connected":{"ring":1}
+,"ring":{"ipls":1}
+}
+;Search.control.loadWordPairs(pairs);

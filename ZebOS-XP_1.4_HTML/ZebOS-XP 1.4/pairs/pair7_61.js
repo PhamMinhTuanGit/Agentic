@@ -1,0 +1,19 @@
+var pairs =
+{
+"validation":{"check":1}
+,"check":{"convergence":1}
+,"convergence":{"cfm":1}
+,"cfm":{"bridges":1,"maintenance-points":1}
+,"bridges":{"level":1}
+,"level":{"vlan":1}
+,"vlan":{"bridge":1}
+,"bridge":{"using":1}
+,"using":{"following":1}
+,"following":{"command":1}
+,"command":{"show":1}
+,"show":{"ethernet":1}
+,"ethernet":{"cfm":1}
+,"maintenance-points":{"remote":1}
+,"remote":{"level":1}
+}
+;Search.control.loadWordPairs(pairs);

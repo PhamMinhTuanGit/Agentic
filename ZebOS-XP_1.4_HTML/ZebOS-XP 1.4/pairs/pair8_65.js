@@ -1,0 +1,27 @@
+var pairs =
+{
+"pbb-te":{"configure":1,"esp":1}
+,"configure":{"esp":1,"mode":1}
+,"esp":{"command":1,"(ethernet":1,"tesi":1,"provisioning":1}
+,"command":{"enter":1,"syntax":1,"mode":1}
+,"enter":{"pbb-te":1,"tesi":1}
+,"(ethernet":{"switched":1}
+,"switched":{"path)":1}
+,"path)":{"configure":1}
+,"mode":{"command":1,"interface":1,"examples":1,"(config)":1}
+,"syntax":{"pbb-te":1}
+,"tesi":{"tesid":1,"command":1,"(pbb-te-esp-if-config)":1}
+,"tesid":{"parameters":1,"enter":1}
+,"parameters":{"tesid":1}
+,"interface":{"mode":1}
+,"examples":{"following":1}
+,"following":{"example":1}
+,"example":{"enters":1}
+,"enters":{"pbb-te":1}
+,"provisioning":{"mode":1}
+,"(config)":{"int":1}
+,"int":{"cbp.1":1}
+,"cbp.1":{"(config-if)":1}
+,"(config-if)":{"pbb-te":1}
+}
+;Search.control.loadWordPairs(pairs);

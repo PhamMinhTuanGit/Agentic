@@ -1,0 +1,27 @@
+var pairs =
+{
+"co-routed":{"tunnel":1,"bidirectional":1}
+,"tunnel":{"co-routed":1,"least":1,"maintains":1}
+,"least":{"bidirectional":1}
+,"bidirectional":{"lsp":1,"tunnel":1}
+,"lsp":{"bidirectional":1,"forward":1,"co-routed":1}
+,"forward":{"component":1,"reverse":1}
+,"component":{"reverse":1,"components":1}
+,"reverse":{"component":1,"components":1}
+,"components":{"traverse":1,"lsp":1}
+,"traverse":{"nodes":1}
+,"nodes":{"links":1}
+,"links":{"either":1}
+,"either":{"direction":1}
+,"direction":{"end":1}
+,"end":{"end":1,"east":1}
+,"east":{"node":1}
+,"node":{"west":1,"(source":1,"path":1}
+,"west":{"node":1}
+,"(source":{"destination)":1}
+,"destination)":{"node":1}
+,"path":{"co-routed":1}
+,"maintains":{"binding":1}
+,"binding":{"forward":1}
+}
+;Search.control.loadWordPairs(pairs);

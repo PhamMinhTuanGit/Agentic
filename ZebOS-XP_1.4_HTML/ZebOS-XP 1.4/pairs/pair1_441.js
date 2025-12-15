@@ -1,0 +1,19 @@
+var pairs =
+{
+"mib-ii":{"api":1}
+,"api":{"chapter":1}
+,"chapter":{"describes":1}
+,"describes":{"support":1}
+,"support":{"rfc":1}
+,"rfc":{"1213":1}
+,"1213":{"(management":1}
+,"(management":{"information":1}
+,"information":{"base":1}
+,"base":{"network":1}
+,"network":{"management":1}
+,"management":{"tcp\u002Fip-based":1}
+,"tcp\u002Fip-based":{"internets":1}
+,"internets":{"mib-ii)":1}
+,"mib-ii)":{"nsm":1}
+}
+;Search.control.loadWordPairs(pairs);

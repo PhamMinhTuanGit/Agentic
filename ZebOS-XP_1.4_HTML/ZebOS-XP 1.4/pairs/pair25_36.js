@@ -1,0 +1,22 @@
+var pairs =
+{
+"isis_overload_set":{"call":1,"(struct":1}
+,"call":{"sets":1}
+,"sets":{"isis":1}
+,"isis":{"overload":1,"*top)":1,"structure":1}
+,"overload":{"feature":1}
+,"feature":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"isis_overload_set":1}
+,"(struct":{"isis":1}
+,"*top)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*top":1,"none":1}
+,"*top":{"represents":1}
+,"represents":{"isis":1}
+,"structure":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+}
+;Search.control.loadWordPairs(pairs);

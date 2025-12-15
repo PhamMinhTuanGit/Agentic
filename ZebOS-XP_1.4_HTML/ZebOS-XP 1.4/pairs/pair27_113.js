@@ -1,0 +1,24 @@
+var pairs =
+{
+"bgp4":{"graceful":1}
+,"graceful":{"restart":1}
+,"restart":{"using":1,"data-forwarding":1}
+,"using":{"bgp":1}
+,"bgp":{"graceful":1}
+,"data-forwarding":{"plane":1}
+,"plane":{"router":1,"(which":1}
+,"router":{"continue":1}
+,"continue":{"process":1}
+,"process":{"forward":1}
+,"forward":{"packets":1}
+,"packets":{"even":1}
+,"even":{"control":1}
+,"control":{"plane":1}
+,"(which":{"responsible":1}
+,"responsible":{"determining":1}
+,"determining":{"best":1}
+,"best":{"paths)":1}
+,"paths)":{"fails":1}
+,"fails":{"bgp4":1}
+}
+;Search.control.loadWordPairs(pairs);

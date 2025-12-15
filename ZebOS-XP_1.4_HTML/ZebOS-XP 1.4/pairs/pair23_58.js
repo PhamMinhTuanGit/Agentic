@@ -1,0 +1,20 @@
+var pairs =
+{
+"remove":{"vc-mode":1}
+,"vc-mode":{"standby":1}
+,"standby":{"configuration":1,"vlan":1}
+,"configuration":{"pe2":1}
+,"pe2":{"configure":1}
+,"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"interface":1}
+,"mode":{"(config)":1,"(config-if)":1}
+,"(config)":{"interface":1}
+,"interface":{"eth1":1,"mode":1}
+,"eth1":{"enter":1}
+,"(config-if)":{"vc-mode":1,"exit":1}
+,"vlan":{"100":1}
+,"100":{"remove":1,"(config-if)":1}
+,"exit":{"exit":1,"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

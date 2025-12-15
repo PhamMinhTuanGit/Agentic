@@ -1,0 +1,23 @@
+var pairs =
+{
+"topology":{"mpls":1,"primary":1}
+,"mpls":{"ring":1}
+,"ring":{"protection":1}
+,"protection":{"switching":1}
+,"switching":{"topology":1}
+,"primary":{"tunnel":1}
+,"tunnel":{"connection":1,"connections":1}
+,"connection":{"pe1":1}
+,"pe1":{"(e1)---(e1)":1}
+,"(e1)---(e1)":{"(e2)---(e1)":1}
+,"(e2)---(e1)":{"(e4)---(e1)":1}
+,"(e4)---(e1)":{"(e4)---(e2)":1,"(e2)-----(e1)":1}
+,"(e4)---(e2)":{"(e3)---(e1)":1}
+,"(e3)---(e1)":{"pe2":1,"(e4)---(e1)":1}
+,"pe2":{"backup":1}
+,"backup":{"tunnel":1}
+,"connections":{"(e3)---(e2)":1}
+,"(e3)---(e2)":{"(e3)---(e2)":1,"(e3)---(e1)":1}
+,"(e2)-----(e1)":{"(e2)---(e4)":1}
+}
+;Search.control.loadWordPairs(pairs);

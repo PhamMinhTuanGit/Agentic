@@ -1,0 +1,23 @@
+var pairs =
+{
+"radio":{"access":1}
+,"access":{"network":1}
+,"network":{"(ran)":1,"addition":1,"provides":1}
+,"(ran)":{"air":1}
+,"air":{"interface":1}
+,"interface":{"base":1}
+,"base":{"station":1}
+,"station":{"technology":1}
+,"technology":{"cellular":1}
+,"cellular":{"network":1,"system":1}
+,"addition":{"ran":1}
+,"ran":{"entire":1}
+,"entire":{"cellular":1}
+,"system":{"includes":1}
+,"includes":{"core":1}
+,"core":{"network":1}
+,"provides":{"backbone":1}
+,"backbone":{"services":1}
+,"services":{"cellphones":1}
+}
+;Search.control.loadWordPairs(pairs);

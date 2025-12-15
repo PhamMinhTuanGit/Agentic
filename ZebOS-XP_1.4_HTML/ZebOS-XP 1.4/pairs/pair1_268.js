@@ -1,0 +1,21 @@
+var pairs =
+{
+"rapid":{"per-vlan":1}
+,"per-vlan":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"plus":1}
+,"plus":{"chapter":1,"(rpvst":1}
+,"chapter":{"describes":1,"includes":1}
+,"describes":{"rapid":1}
+,"(rpvst":{"implementation":1}
+,"implementation":{"zebos-xp":1}
+,"zebos-xp":{"chapter":1}
+,"includes":{"overview":1}
+,"overview":{"rpvst":1}
+,"rpvst":{"list":1,"features":1,"functions":1}
+,"list":{"rpvst":1}
+,"features":{"description":1}
+,"description":{"supported":1}
+,"supported":{"rpvst":1}
+}
+;Search.control.loadWordPairs(pairs);

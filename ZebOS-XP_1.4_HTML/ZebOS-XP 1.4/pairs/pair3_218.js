@@ -1,0 +1,21 @@
+var pairs =
+{
+"clear":{"lacp":1,"counters":1}
+,"lacp":{"command":1,"aggregators":1,"aggregator":1,"<1-65535>":1,"counters":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"counters":{"lacp":1,"clear":1,"parameters":1}
+,"aggregators":{"given":1}
+,"given":{"lacp":1}
+,"aggregator":{"command":1}
+,"syntax":{"clear":1}
+,"<1-65535>":{"counters":1,"clears":1}
+,"parameters":{"<1-65535>":1}
+,"clears":{"channel-group":1}
+,"channel-group":{"number":1}
+,"number":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

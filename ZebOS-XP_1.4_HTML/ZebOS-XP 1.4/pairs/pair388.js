@@ -1,0 +1,25 @@
+var pairs =
+{
+"tunneling":{"method":1,"used":1}
+,"method":{"transporting":1}
+,"transporting":{"data":1}
+,"data":{"protocol":1}
+,"protocol":{"encapsulating":1,"tunneling":1}
+,"encapsulating":{"protocol":1}
+,"used":{"reasons":1}
+,"reasons":{"incompatibility":1}
+,"incompatibility":{"implementation":1}
+,"implementation":{"simplification":1}
+,"simplification":{"security":1}
+,"security":{"example":1}
+,"example":{"tunnel":1}
+,"tunnel":{"lets":1}
+,"lets":{"remote":1}
+,"remote":{"vpn":1}
+,"vpn":{"client":1}
+,"client":{"encrypted":1}
+,"encrypted":{"access":1}
+,"access":{"private":1}
+,"private":{"network":1}
+}
+;Search.control.loadWordPairs(pairs);

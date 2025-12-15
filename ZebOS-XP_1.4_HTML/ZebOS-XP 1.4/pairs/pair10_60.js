@@ -1,0 +1,19 @@
+var pairs =
+{
+"profile":{"name":1,"command":1,"prof_1":1}
+,"name":{"command":1,"profilename":1}
+,"command":{"associate":1,"syntax":1,"mode":1}
+,"associate":{"erp":1}
+,"erp":{"instance":1}
+,"instance":{"profile":1}
+,"syntax":{"profile":1}
+,"profilename":{"parameters":1,"profile":1}
+,"parameters":{"profilename":1}
+,"mode":{"g.8032":1,"examples":1}
+,"g.8032":{"configure":1}
+,"configure":{"switch":1}
+,"switch":{"mode":1}
+,"examples":{"(g8032-config-switch)":1}
+,"(g8032-config-switch)":{"profile":1}
+}
+;Search.control.loadWordPairs(pairs);

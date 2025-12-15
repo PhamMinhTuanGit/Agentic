@@ -1,0 +1,20 @@
+var pairs =
+{
+"segment":{"routing":1}
+,"routing":{"commands":1,"command":1}
+,"commands":{"chapter":1}
+,"chapter":{"describes":1}
+,"describes":{"segment":1}
+,"command":{"prefix-sid":1}
+,"prefix-sid":{"value":1}
+,"value":{"segment-routing":1}
+,"segment-routing":{"mpls":1,"announce-list":1,"capability":1,"prefix-sid":1}
+,"mpls":{"segment-routing-static":1}
+,"segment-routing-static":{"segment-routing-static":1,"edge-node":1}
+,"edge-node":{"show":1}
+,"show":{"ospf":1}
+,"ospf":{"segment-routing":1}
+,"announce-list":{"show":1}
+,"capability":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

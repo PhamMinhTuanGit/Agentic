@@ -1,0 +1,20 @@
+var pairs =
+{
+"trill":{"is-is":1}
+,"is-is":{"commands":1}
+,"commands":{"chapter":1,"commands":1,"used":1}
+,"chapter":{"describes":1}
+,"describes":{"trill":1}
+,"used":{"configuring":1}
+,"configuring":{"interface":1}
+,"interface":{"trill-isis":1}
+,"trill-isis":{"csnp-interval":1,"hello-interval":1,"hello-multiplier":1,"lsp-interval":1,"metric":1,"port-priority":1,"retransmit-interval":1}
+,"csnp-interval":{"trill-isis":1}
+,"hello-interval":{"trill-isis":1,"minimal":1}
+,"minimal":{"trill-isis":1}
+,"hello-multiplier":{"trill-isis":1}
+,"lsp-interval":{"trill-isis":1}
+,"metric":{"trill-isis":1}
+,"port-priority":{"trill-isis":1}
+}
+;Search.control.loadWordPairs(pairs);

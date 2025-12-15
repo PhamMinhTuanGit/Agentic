@@ -1,0 +1,25 @@
+var pairs =
+{
+"ssh":{"client":1,"ipv4":1,"server":1,"root@10.10.10.1":1}
+,"client":{"session":1,"supports":1,"ssh":1}
+,"session":{"dut":1}
+,"dut":{"acting":1}
+,"acting":{"ssh":1}
+,"supports":{"ssh":1}
+,"ipv4":{"ipv6":1,"address":1}
+,"ipv6":{"sessions":1,"address":1}
+,"sessions":{"login":1}
+,"login":{"remote":1}
+,"remote":{"machine":1}
+,"machine":{"ssh":1,"using":1}
+,"server":{"host":1}
+,"host":{"configuration":1}
+,"configuration":{"ssh":1}
+,"root@10.10.10.1":{"logging":1}
+,"logging":{"remote":1}
+,"using":{"ipv4":1,"ipv6":1}
+,"address":{"ssh6":1}
+,"ssh6":{"root@3ffe":1}
+,"root@3ffe":{"logging":1}
+}
+;Search.control.loadWordPairs(pairs);

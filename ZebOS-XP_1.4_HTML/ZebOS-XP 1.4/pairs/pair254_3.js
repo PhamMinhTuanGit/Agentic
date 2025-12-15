@@ -1,0 +1,22 @@
+var pairs =
+{
+"multicast":{"listener":1,"group":1}
+,"listener":{"discovery":1}
+,"discovery":{"(mld)":1}
+,"(mld)":{"ipv6":1}
+,"ipv6":{"protocol":1}
+,"protocol":{"allows":1,"(igmp)":1}
+,"allows":{"hosts":1}
+,"hosts":{"add":1}
+,"add":{"remove":1}
+,"remove":{"themselves":1}
+,"themselves":{"multicast":1}
+,"group":{"defined":1,"management":1}
+,"defined":{"rfc":1}
+,"rfc":{"3810":1}
+,"3810":{"internet":1}
+,"internet":{"group":1}
+,"management":{"protocol":1}
+,"(igmp)":{"multicast":1}
+}
+;Search.control.loadWordPairs(pairs);

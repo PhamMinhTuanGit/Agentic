@@ -1,0 +1,26 @@
+var pairs =
+{
+"router":{"bgp":1}
+,"bgp":{"command":1,"process":1,"<1-65535>":1,"<1-4294967295>":1,"(config-router)":1}
+,"command":{"start":1,"disable":1,"syntax":1,"mode":1}
+,"start":{"bgp":1}
+,"process":{"parameter":1,"command":1,"autonomous":1}
+,"parameter":{"command":1}
+,"disable":{"existing":1}
+,"existing":{"routing":1}
+,"routing":{"process":1}
+,"syntax":{"router":1}
+,"<1-65535>":{"router":1,"associate":1}
+,"<1-4294967295>":{"router":1,"parameters":1,"associate":1}
+,"parameters":{"<1-65535>":1}
+,"associate":{"routing":1}
+,"autonomous":{"system":1}
+,"system":{"number":1}
+,"number":{"<1-4294967295>":1,"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+}
+;Search.control.loadWordPairs(pairs);

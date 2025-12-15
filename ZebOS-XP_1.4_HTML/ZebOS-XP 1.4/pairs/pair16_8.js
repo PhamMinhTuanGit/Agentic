@@ -1,0 +1,24 @@
+var pairs =
+{
+"interfaces":{"bfd":1,"management":1}
+,"bfd":{"module":1,"distribution":1}
+,"module":{"interacts":1,"interfaces":1}
+,"interacts":{"external":1}
+,"external":{"modules":1}
+,"modules":{"shown":1}
+,"shown":{"diagram":1}
+,"diagram":{"follows":1}
+,"follows":{"main":1}
+,"main":{"interfaces":1}
+,"management":{"(snmp\u002Fcli)":1}
+,"(snmp\u002Fcli)":{"application":1}
+,"application":{"protocol":1}
+,"protocol":{"(s)":1}
+,"(s)":{"bfd":1}
+,"distribution":{"layer":1}
+,"layer":{"nsm":1}
+,"nsm":{"apis":1}
+,"apis":{"hal\u002Fpal":1,"bfd":1}
+,"hal\u002Fpal":{"apis":1}
+}
+;Search.control.loadWordPairs(pairs);

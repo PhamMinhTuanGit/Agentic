@@ -1,0 +1,19 @@
+var pairs =
+{
+"remote":{"monitoring":1}
+,"monitoring":{"remote":1,"(rmon":1,"management":1}
+,"(rmon":{"defined":1}
+,"defined":{"rfc":1}
+,"rfc":{"rfc":1,"2819)":1}
+,"2819)":{"provides":1}
+,"provides":{"remote":1}
+,"management":{"network":1}
+,"network":{"devices":1,"information":1}
+,"devices":{"enables":1,"communicate":1}
+,"enables":{"devices":1}
+,"communicate":{"exchange":1}
+,"exchange":{"network":1}
+,"information":{"chapter":1}
+,"chapter":{"remote":1}
+}
+;Search.control.loadWordPairs(pairs);

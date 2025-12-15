@@ -1,0 +1,25 @@
+var pairs =
+{
+"contents":{"guide":1}
+,"guide":{"contains":1}
+,"contains":{"chapters":1}
+,"chapters":{"appendices":1}
+,"appendices":{"chapter":1}
+,"chapter":{"ethernet":1,"system":1,"data":1,"elmi":1}
+,"ethernet":{"local":1}
+,"local":{"management":1}
+,"management":{"interface":1}
+,"interface":{"chapter":1}
+,"system":{"architecture":1,"messaging":1,"services":1}
+,"architecture":{"chapter":1}
+,"messaging":{"chapter":1,"details":1}
+,"data":{"structures":1}
+,"structures":{"chapter":1}
+,"elmi":{"command":1,"module":1}
+,"command":{"api":1}
+,"api":{"chapter":1,"appendix":1}
+,"module":{"api":1}
+,"appendix":{"system":1}
+,"details":{"appendix":1}
+}
+;Search.control.loadWordPairs(pairs);

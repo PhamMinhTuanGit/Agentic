@@ -1,0 +1,19 @@
+var pairs =
+{
+"best":{"effort":1}
+,"effort":{"traffic":1}
+,"traffic":{"class":1}
+,"class":{"network":1,"assigned":1}
+,"network":{"forwards":1}
+,"forwards":{"packets":1}
+,"packets":{"possible":1,"explicitly":1}
+,"possible":{"reasonable":1,"default":1}
+,"reasonable":{"time":1}
+,"time":{"possible":1}
+,"default":{"packets":1}
+,"explicitly":{"assigned":1}
+,"assigned":{"specific":1,"best-effort":1}
+,"specific":{"traffic":1}
+,"best-effort":{"class":1}
+}
+;Search.control.loadWordPairs(pairs);

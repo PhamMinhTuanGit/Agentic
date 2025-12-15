@@ -1,0 +1,26 @@
+var pairs =
+{
+"show":{"beb":1}
+,"beb":{"service":1}
+,"service":{"command":1,"instance":1,"(name":1,"name":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"information":1}
+,"information":{"related":1}
+,"related":{"specific":1}
+,"specific":{"backbone":1}
+,"backbone":{"service":1}
+,"instance":{"command":1,"word":1,"<1-16777214>":1}
+,"syntax":{"show":1}
+,"(name":{"word":1}
+,"word":{"<1-16777214>":1,"specify":1}
+,"<1-16777214>":{"parameters":1,"specify":1}
+,"parameters":{"name":1}
+,"name":{"name":1,"service":1,"customer1":1}
+,"specify":{"name":1,"ethernet":1}
+,"ethernet":{"service":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

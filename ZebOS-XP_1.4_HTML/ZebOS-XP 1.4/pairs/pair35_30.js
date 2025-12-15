@@ -1,0 +1,27 @@
+var pairs =
+{
+"ldp_snmp_api_set_fec_stor_type":{"call":1,"(s_int32_t":1}
+,"call":{"sets":1}
+,"sets":{"fec":1}
+,"fec":{"storage":1,"entry":1}
+,"storage":{"type":1}
+,"type":{"snmp":1,"shadow_entry":1}
+,"snmp":{"fec":1}
+,"entry":{"syntax":1,"output":1,"return":1}
+,"syntax":{"int":1}
+,"int":{"ldp_snmp_api_set_fec_stor_type":1}
+,"(s_int32_t":{"stortype":1}
+,"stortype":{"struct":1,"value":1}
+,"struct":{"snmp_mplsfecentry_t":1}
+,"snmp_mplsfecentry_t":{"*shadow_entry)":1}
+,"*shadow_entry)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"stortype":1,"shadow_entry":1}
+,"value":{"storage":1}
+,"shadow_entry":{"snmp":1}
+,"output":{"parameters":1}
+,"return":{"values":1}
+,"values":{"ldp_success":1}
+,"ldp_success":{"ldp_error":1}
+}
+;Search.control.loadWordPairs(pairs);

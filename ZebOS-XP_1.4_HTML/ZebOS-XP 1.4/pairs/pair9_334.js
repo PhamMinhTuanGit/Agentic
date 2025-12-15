@@ -1,0 +1,19 @@
+var pairs =
+{
+"validation":{"nsm":1}
+,"nsm":{"trill":1}
+,"trill":{"portinfo":1}
+,"portinfo":{"port":1}
+,"port":{"mode":1}
+,"mode":{"information":1}
+,"information":{"ifname":1}
+,"ifname":{"ifindex":1}
+,"ifindex":{"port_state":1}
+,"port_state":{"port_type":1}
+,"port_type":{"eth1":1}
+,"eth1":{"0000003":1}
+,"0000003":{"uninhibited":1}
+,"uninhibited":{"access":1}
+,"access":{"port":1}
+}
+;Search.control.loadWordPairs(pairs);

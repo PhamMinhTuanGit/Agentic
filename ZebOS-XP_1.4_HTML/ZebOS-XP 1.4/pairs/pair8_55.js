@@ -1,0 +1,27 @@
+var pairs =
+{
+"validation":{"show":1}
+,"show":{"ethernet":1}
+,"ethernet":{"cfm":1}
+,"cfm":{"maintenance-points":1}
+,"maintenance-points":{"remote":1}
+,"remote":{"domain":1,"mac":1}
+,"domain":{"test":1}
+,"test":{"vlan":1}
+,"vlan":{"bridge":1,"active":1}
+,"bridge":{"mpid":1}
+,"mpid":{"level":1}
+,"level":{"vlan":1}
+,"active":{"remote":1}
+,"mac":{"rdi":1}
+,"rdi":{"flags":1}
+,"flags":{"--------------------------------------------------------------------------------20":1,"--------------------------------------------------------------------------------10":1}
+,"--------------------------------------------------------------------------------20":{"0008.a16c.eecd":1}
+,"0008.a16c.eecd":{"false":1}
+,"false":{"configured":1}
+,"configured":{"ce1":1,"ce2":1}
+,"ce1":{"show":1}
+,"--------------------------------------------------------------------------------10":{"00d0.b7ba.db76":1}
+,"00d0.b7ba.db76":{"false":1}
+}
+;Search.control.loadWordPairs(pairs);

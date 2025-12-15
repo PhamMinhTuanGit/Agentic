@@ -1,0 +1,19 @@
+var pairs =
+{
+"client\u002Fserver":{"architecture":1}
+,"architecture":{"computing":1,"distributes":1}
+,"computing":{"architecture":1}
+,"distributes":{"processing":1}
+,"processing":{"clients":1}
+,"clients":{"servers":1}
+,"servers":{"network":1}
+,"network":{"client":1}
+,"client":{"program":1}
+,"program":{"makes":1}
+,"makes":{"service":1}
+,"service":{"request":1}
+,"request":{"server":1}
+,"server":{"fulfils":1}
+,"fulfils":{"request":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"user-to-network":{"interface":1}
+,"interface":{"(uni)":1}
+,"(uni)":{"physical":1}
+,"physical":{"interface\u002Fdemarcation":1}
+,"interface\u002Fdemarcation":{"service":1}
+,"service":{"provider":1,"start":1}
+,"provider":{"subscriber":1}
+,"subscriber":{"service":1}
+,"start":{"end":1}
+,"end":{"point":1}
+,"point":{"two":1}
+,"two":{"types":1}
+,"types":{"uni":1}
+,"uni":{"uni-c":1}
+,"uni-c":{"customer-side":1}
+,"customer-side":{"processes":1}
+,"processes":{"uni-n":1}
+,"uni-n":{"network-side":1}
+,"network-side":{"processes":1}
+}
+;Search.control.loadWordPairs(pairs);

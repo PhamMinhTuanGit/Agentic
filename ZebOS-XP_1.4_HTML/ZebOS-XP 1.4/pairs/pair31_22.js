@@ -1,0 +1,22 @@
+var pairs =
+{
+"igmp":{"snooping":1,"(internet":1}
+,"snooping":{"callbacks":1,"disable_igmp_snooping":1,"enable_igmp_snooping_port":1,"port":1}
+,"callbacks":{"following":1,"callbacks":1,"description":1}
+,"following":{"table":1}
+,"table":{"displays":1}
+,"displays":{"igmp":1}
+,"(internet":{"group":1}
+,"group":{"management":1}
+,"management":{"protocol)":1}
+,"protocol)":{"callbacks":1}
+,"description":{"enable_igmp_snooping":1}
+,"enable_igmp_snooping":{"enable":1}
+,"enable":{"igmp":1}
+,"disable_igmp_snooping":{"disable":1}
+,"disable":{"igmp":1}
+,"enable_igmp_snooping_port":{"enable":1}
+,"port":{"disable_igmp_snooping_port":1}
+,"disable_igmp_snooping_port":{"disable":1}
+}
+;Search.control.loadWordPairs(pairs);

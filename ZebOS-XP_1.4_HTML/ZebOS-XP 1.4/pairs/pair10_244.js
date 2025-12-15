@@ -1,0 +1,25 @@
+var pairs =
+{
+"virtual":{"neighbor":1}
+,"neighbor":{"table":1}
+,"table":{"ospfv3nbrtable":1}
+,"ospfv3nbrtable":{"attribute":1}
+,"attribute":{"syntax":1}
+,"syntax":{"access":1}
+,"access":{"function":1}
+,"function":{"ospfv3virtnbrifinstid":1}
+,"ospfv3virtnbrifinstid":{"integer":1}
+,"integer":{"read":1}
+,"read":{"ospf6_get_virt_nbr_ifinstid":1,"ospf6_get_virt_nbr_restart_helper_status":1,"ospf6_get_virt_nbr_restart_helper_age":1,"ospf6_get_virt_nbr_restart_helper_exit_reason":1}
+,"ospf6_get_virt_nbr_ifinstid":{"ospf6_get_next_virt_nbr_ifinstid":1}
+,"ospf6_get_next_virt_nbr_ifinstid":{"ospfv3virtnbrrestarthelperstatus":1}
+,"ospfv3virtnbrrestarthelperstatus":{"integer":1}
+,"ospf6_get_virt_nbr_restart_helper_status":{"ospf6_get_next_virt_nbr_restart_helper_status":1}
+,"ospf6_get_next_virt_nbr_restart_helper_status":{"ospfv3virtnbrrestarthelperage":1}
+,"ospfv3virtnbrrestarthelperage":{"integer":1}
+,"ospf6_get_virt_nbr_restart_helper_age":{"ospf6_get_next_virt_nbr_restart_helper_age":1}
+,"ospf6_get_next_virt_nbr_restart_helper_age":{"ospfv3virtnbrrestarthelperexitreason":1}
+,"ospfv3virtnbrrestarthelperexitreason":{"integer":1}
+,"ospf6_get_virt_nbr_restart_helper_exit_reason":{"ospf6_get_next_virt_nbr_restart_helper_exit_reason":1}
+}
+;Search.control.loadWordPairs(pairs);

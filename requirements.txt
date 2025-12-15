@@ -1,0 +1,4 @@
+llama-index
+chromadb
+llama-index-retrievers-bm25
+dotenv

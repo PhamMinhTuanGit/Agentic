@@ -1,0 +1,21 @@
+var pairs =
+{
+"deleting":{"rpt)":1}
+,"rpt)":{"state":1,"becomes":1,"states":1}
+,"state":{"rpt)":1,"deleted":1,"exist":1}
+,"deleted":{"exists":1}
+,"exists":{"following":1}
+,"following":{"become":1}
+,"become":{"true":1}
+,"true":{"state":1}
+,"exist":{"prunedesired":1}
+,"prunedesired":{"rpt)":1}
+,"becomes":{"false":1}
+,"false":{"rpt":1,"downstream":1}
+,"rpt":{"joindesired":1}
+,"joindesired":{"(g)":1}
+,"(g)":{"becomes":1}
+,"downstream":{"rpt)":1}
+,"states":{"freed":1}
+}
+;Search.control.loadWordPairs(pairs);

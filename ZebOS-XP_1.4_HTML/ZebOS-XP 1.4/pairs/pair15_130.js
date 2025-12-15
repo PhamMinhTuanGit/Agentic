@@ -1,0 +1,19 @@
+var pairs =
+{
+"maintenance":{"entity":1,"monitoring":1}
+,"entity":{"(me)":1}
+,"(me)":{"portion":1}
+,"portion":{"transport":1}
+,"transport":{"path":1}
+,"path":{"requires":1}
+,"requires":{"management":1}
+,"management":{"bounded":1}
+,"bounded":{"two":1}
+,"two":{"points":1}
+,"points":{"(meps)":1,"maintenance":1}
+,"(meps)":{"relationship":1}
+,"relationship":{"points":1}
+,"monitoring":{"operations":1}
+,"operations":{"applied":1}
+}
+;Search.control.loadWordPairs(pairs);

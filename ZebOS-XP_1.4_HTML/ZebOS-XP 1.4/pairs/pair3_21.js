@@ -1,0 +1,19 @@
+var pairs =
+{
+"bfd":{"disable":1,"sessions":1}
+,"disable":{"command":1,"bfd":1,"parameters":1}
+,"command":{"disable":1,"syntax":1,"mode":1}
+,"sessions":{"interface":1}
+,"interface":{"command":1,"mode":1,"eth1":1}
+,"syntax":{"bfd":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"interface":1,"example":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth1":{"(config-if)":1}
+,"(config-if)":{"bfd":1}
+}
+;Search.control.loadWordPairs(pairs);

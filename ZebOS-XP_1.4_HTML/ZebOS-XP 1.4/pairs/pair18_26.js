@@ -1,0 +1,27 @@
+var pairs =
+{
+"switchport":{"beb":1}
+,"beb":{"pip":1}
+,"pip":{"command":1,"interface":1,"backbone-source-mac":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"default":1,"terminal":1}
+,"default":{"backbone":1}
+,"backbone":{"source":1}
+,"source":{"mac":1}
+,"mac":{"address":1,"parameters":1,"specify":1}
+,"address":{"pip":1,"mac":1,"hhhh.hhhh.hhhh":1}
+,"interface":{"command":1,"mode":1,"eth0":1}
+,"syntax":{"switchport":1}
+,"backbone-source-mac":{"mac":1,"1111.1111.111":1}
+,"parameters":{"backbone-source-mac":1}
+,"specify":{"mac":1}
+,"hhhh.hhhh.hhhh":{"format":1}
+,"format":{"command":1}
+,"mode":{"interface":1,"examples":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"switchport":1}
+}
+;Search.control.loadWordPairs(pairs);

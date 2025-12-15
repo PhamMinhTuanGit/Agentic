@@ -1,0 +1,22 @@
+var pairs =
+{
+"pe2":{"(oam)":1}
+,"(oam)":{"configure":1}
+,"configure":{"terminal":1,"mode":1,"meg":1,"service":1,"name":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"mode":{"(config)":1}
+,"(config)":{"ietf":1}
+,"ietf":{"meg":1}
+,"meg":{"meg-1":1,"name":1}
+,"meg-1":{"configure":1,"(config-ietf-meg)":1}
+,"name":{"meg-1":1,"me-1":1}
+,"(config-ietf-meg)":{"service":1,"me-1":1}
+,"service":{"type":1,"tunnel":1}
+,"type":{"tunnel":1}
+,"tunnel":{"configure":1,"(config-ietf-meg)":1,"tnl1":1}
+,"me-1":{"tunnel":1,"(config-ietf-me)":1}
+,"(config-ietf-me)":{"service":1}
+,"tnl1":{"configure":1,"associated":1}
+}
+;Search.control.loadWordPairs(pairs);

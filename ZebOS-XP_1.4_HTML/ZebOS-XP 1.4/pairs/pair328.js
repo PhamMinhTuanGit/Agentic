@@ -1,0 +1,25 @@
+var pairs =
+{
+"remote":{"monitoring":1}
+,"monitoring":{"(rmon)":1,"networked":1}
+,"(rmon)":{"management":1}
+,"management":{"information":1}
+,"information":{"base":1}
+,"base":{"(mib)":1}
+,"(mib)":{"specification":1}
+,"specification":{"defines":1,"provides":1}
+,"defines":{"functions":1}
+,"functions":{"remotely":1}
+,"remotely":{"monitoring":1}
+,"networked":{"devices":1}
+,"devices":{"rmon":1}
+,"rmon":{"specification":1}
+,"provides":{"problem":1}
+,"problem":{"detection":1}
+,"detection":{"reporting":1}
+,"reporting":{"capabilities":1}
+,"capabilities":{"defined":1}
+,"defined":{"rfc":1}
+,"rfc":{"2819":1}
+}
+;Search.control.loadWordPairs(pairs);

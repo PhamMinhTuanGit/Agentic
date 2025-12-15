@@ -1,0 +1,20 @@
+var pairs =
+{
+"route-record":{"command":1,"route-record":1,"parameters":1,"(config-p2mp-lsp)":1}
+,"command":{"record":1,"stop":1,"syntax":1,"mode":1}
+,"record":{"route":1}
+,"route":{"path":1}
+,"path":{"parameter":1,"command":1}
+,"parameter":{"command":1}
+,"stop":{"recording":1}
+,"recording":{"route":1}
+,"syntax":{"route-record":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"p2mp":1,"examples":1}
+,"p2mp":{"lsp":1}
+,"lsp":{"mode":1}
+,"examples":{"(config-p2mp-lsp)":1}
+,"(config-p2mp-lsp)":{"route-record":1}
+}
+;Search.control.loadWordPairs(pairs);

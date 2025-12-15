@@ -1,0 +1,22 @@
+var pairs =
+{
+"imi":{"inter":1,"client":1,"rip":1,"module":1}
+,"inter":{"process":1}
+,"process":{"communication":1}
+,"communication":{"rip":1,"imi":1}
+,"rip":{"extends":1,"ipc":1,"established":1,"module":1,"imi":1}
+,"extends":{"imi":1}
+,"client":{"interface":1}
+,"interface":{"handle":1}
+,"handle":{"inter":1}
+,"ipc":{"imi":1}
+,"established":{"exchange":1}
+,"exchange":{"following":1}
+,"following":{"information":1}
+,"information":{"cli":1}
+,"cli":{"configuration":1}
+,"configuration":{"imi":1,"rip":1}
+,"module":{"result":1}
+,"result":{"cli":1}
+}
+;Search.control.loadWordPairs(pairs);

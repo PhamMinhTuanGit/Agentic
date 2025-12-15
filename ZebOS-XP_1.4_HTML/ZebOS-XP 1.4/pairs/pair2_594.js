@@ -1,0 +1,19 @@
+var pairs =
+{
+"dhcp":{"relay":1}
+,"relay":{"command":1,"agent":1,"dhcp":1,"parameters":1,"configure":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"dhcp":1}
+,"agent":{"form":1,"command":1}
+,"form":{"command":1}
+,"disable":{"dhcp":1}
+,"syntax":{"dhcp":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"dhcp":1}
+}
+;Search.control.loadWordPairs(pairs);

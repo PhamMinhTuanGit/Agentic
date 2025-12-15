@@ -1,0 +1,26 @@
+var pairs =
+{
+"topology":{"routers":1}
+,"routers":{"running":1}
+,"running":{"rip":1}
+,"rip":{"exchanging":1,"packet":1}
+,"exchanging":{"routing":1}
+,"routing":{"updates":1}
+,"updates":{"configure":1,"define":1}
+,"configure":{"single-key":1}
+,"single-key":{"authentication":1,"topology":1}
+,"authentication":{"specify":1,"mode":1}
+,"specify":{"interface":1,"authentication":1}
+,"interface":{"define":1,"next":1,"string":1}
+,"define":{"key":1,"password":1}
+,"key":{"password":1}
+,"password":{"interface":1,"exchange":1,"authentication":1}
+,"next":{"specify":1}
+,"mode":{"receiving":1,"single-key":1}
+,"receiving":{"rip":1}
+,"packet":{"specified":1}
+,"specified":{"interface":1}
+,"string":{"password":1}
+,"exchange":{"updates":1}
+}
+;Search.control.loadWordPairs(pairs);

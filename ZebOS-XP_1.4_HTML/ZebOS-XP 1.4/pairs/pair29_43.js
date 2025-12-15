@@ -1,0 +1,21 @@
+var pairs =
+{
+"mpls":{"lsp-model":1,"lsp":1}
+,"lsp-model":{"command":1,"pipe":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"mpls":1,"mode":1,"terminal":1}
+,"lsp":{"model":1}
+,"model":{"pipe":1,"uniform":1,"configuration":1}
+,"pipe":{"parameter":1,"mpls":1,"configure":1}
+,"parameter":{"command":1,"none":1}
+,"uniform":{"command":1,"default":1}
+,"syntax":{"mpls":1}
+,"none":{"default":1}
+,"default":{"uniform":1,"model":1}
+,"configuration":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mpls":1}
+}
+;Search.control.loadWordPairs(pairs);

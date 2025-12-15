@@ -1,0 +1,27 @@
+var pairs =
+{
+"pal_kernel_fib_delete":{"function":1,"(fib_id_t":1}
+,"function":{"deletes":1,"succeeds":1}
+,"deletes":{"fib":1}
+,"fib":{"forwarding":1,"syntax":1,"fib":1,"identifier":1}
+,"forwarding":{"plane":1}
+,"plane":{"given":1}
+,"given":{"fib":1}
+,"syntax":{"result_t":1}
+,"result_t":{"pal_kernel_fib_delete":1}
+,"(fib_id_t":{"fib)":1}
+,"fib)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"fib":1,"none":1}
+,"identifier":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"result_ok":1}
+,"result_ok":{"function":1}
+,"succeeds":{"result_error":1}
+,"result_error":{"generic":1}
+,"generic":{"error":1}
+,"error":{"occurs":1}
+}
+;Search.control.loadWordPairs(pairs);

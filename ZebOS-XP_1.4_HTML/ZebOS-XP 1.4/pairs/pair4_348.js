@@ -1,0 +1,23 @@
+var pairs =
+{
+"include":{"file":1}
+,"file":{"igmp.h":1,"required":1}
+,"igmp.h":{"file":1}
+,"required":{"included":1}
+,"included":{"*.c":1}
+,"*.c":{"files":1}
+,"files":{"outside":1}
+,"outside":{"lib\u002Figmp\u002Fdirectory":1}
+,"lib\u002Figmp\u002Fdirectory":{"igmp-related":1}
+,"igmp-related":{"functionality":1}
+,"functionality":{"referenced":1}
+,"referenced":{"function":1}
+,"function":{"declaration":1}
+,"declaration":{"functions":1}
+,"functions":{"chapter":1}
+,"chapter":{"made":1}
+,"made":{"available":1}
+,"available":{"including":1}
+,"including":{"igmp.h":1}
+}
+;Search.control.loadWordPairs(pairs);

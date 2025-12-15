@@ -1,0 +1,27 @@
+var pairs =
+{
+"host":{"configure":1}
+,"configure":{"terminal":1,"mode":1,"ipv6":1,"static":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"interface":1}
+,"mode":{"(config)":1,"eth0":1}
+,"(config)":{"interface":1,"ipv6":1}
+,"interface":{"eth0":1,"mode":1,"eth2":1}
+,"eth0":{"enter":1,"(config-if)":1,"network":1}
+,"(config-if)":{"ipv6":1,"exit":1}
+,"ipv6":{"address":1,"route":1}
+,"address":{"fe80":1,"interface":1}
+,"fe80":{":3037:3aff:fe3a:3a11\u002F64":1,":3037:3aff:fe3a:3a32":1}
+,":3037:3aff:fe3a:3a11\u002F64":{"configure":1}
+,"network":{"(config-if)":1}
+,"exit":{"exit":1,"interface":1}
+,"route":{"5ffe:14:14:14":1,"reach":1}
+,"5ffe:14:14:14":{":\u002F64":1}
+,":\u002F64":{"fe80":1}
+,":3037:3aff:fe3a:3a32":{"configure":1}
+,"static":{"route":1}
+,"reach":{"interface":1}
+,"eth2":{"virtual":1}
+,"virtual":{"ipv6":1}
+}
+;Search.control.loadWordPairs(pairs);

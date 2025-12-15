@@ -1,0 +1,24 @@
+var pairs =
+{
+"validation":{"nsm":1}
+,"nsm":{"trill":1}
+,"trill":{"rpf":1}
+,"rpf":{"reverse":1}
+,"reverse":{"path":1}
+,"path":{"forwarding":1}
+,"forwarding":{"info":1}
+,"info":{"dtree":1}
+,"dtree":{"ingress_nkname":1}
+,"ingress_nkname":{"ifindex":1}
+,"ifindex":{"ifname":1}
+,"ifname":{"8003":1}
+,"8003":{"7001":1,"7002":1,"8001":1,"0000003":1,"8002":1}
+,"7001":{"0000003":1}
+,"0000003":{"eth1":1}
+,"eth1":{"8003":1,"8002":1,"003":1}
+,"7002":{"0000003":1}
+,"8002":{"8001":1,"8002":1,"0000003":1,"8003":1}
+,"8001":{"0000003":1}
+,"003":{"0000003":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"nsm_mpls_ilm_msg_data_t":{"data":1,"{struct":1}
+,"data":{"structure":1,"mapped_ilm":1}
+,"structure":{"defined":1}
+,"defined":{"nsm\u002Fmpls\u002Fha\u002Fnsm_mpls_cal.h":1}
+,"nsm\u002Fmpls\u002Fha\u002Fnsm_mpls_cal.h":{"file":1}
+,"file":{"member":1}
+,"member":{"description":1}
+,"description":{"ha_data":1}
+,"ha_data":{"high":1,"bool_t":1}
+,"high":{"availability":1}
+,"availability":{"data":1}
+,"mapped_ilm":{"mapped":1,"bool_t":1}
+,"mapped":{"ilm":1}
+,"ilm":{"config":1}
+,"config":{"configuration":1,"nsm_mpls_ilm_msg_data_t":1}
+,"configuration":{"definition":1}
+,"definition":{"typedef":1}
+,"typedef":{"struct":1}
+,"struct":{"nsm_mpls_ilm_msg_data_t":1}
+,"{struct":{"ilm_add_gen_data":1}
+,"ilm_add_gen_data":{"ha_data":1}
+,"bool_t":{"mapped_ilm":1,"config":1}
+}
+;Search.control.loadWordPairs(pairs);

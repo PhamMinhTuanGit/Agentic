@@ -1,0 +1,26 @@
+var pairs =
+{
+"totally":{"stubby":1}
+,"stubby":{"areas":1,"area":1}
+,"areas":{"totally":1,"external":1}
+,"area":{"shown":1}
+,"shown":{"figure":1}
+,"figure":{"1-4":1}
+,"1-4":{"routers":1}
+,"routers":{"maintain":1}
+,"maintain":{"information":1}
+,"information":{"link-state":1}
+,"link-state":{"database":1}
+,"database":{"intra-area":1}
+,"intra-area":{"routes":1}
+,"routes":{"default":1}
+,"default":{"route":1}
+,"route":{"addresses":1,"(address":1}
+,"addresses":{"areas":1}
+,"external":{"networks":1}
+,"networks":{"injected":1}
+,"injected":{"default":1}
+,"(address":{"0.0.0.0)":1}
+,"0.0.0.0)":{"totally":1}
+}
+;Search.control.loadWordPairs(pairs);

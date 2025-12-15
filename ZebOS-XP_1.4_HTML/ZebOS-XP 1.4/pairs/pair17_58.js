@@ -1,0 +1,20 @@
+var pairs =
+{
+"hsl_nh_entry_list_node":{"data":1,"{struct":1,"*next":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"nexthop":1}
+,"nexthop":{"entry":1}
+,"entry":{"list":1}
+,"list":{"nodes":1}
+,"nodes":{"defined":1}
+,"defined":{"libhsl\u002Fl3\u002Fhsl_fib.h":1}
+,"libhsl\u002Fl3\u002Fhsl_fib.h":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"hsl_nh_entry_list_node":1}
+,"{struct":{"hsl_nh_entry":1}
+,"hsl_nh_entry":{"*entry":1}
+,"*entry":{"struct":1}
+}
+;Search.control.loadWordPairs(pairs);

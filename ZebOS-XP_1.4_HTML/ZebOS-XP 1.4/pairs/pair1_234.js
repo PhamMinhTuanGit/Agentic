@@ -1,0 +1,22 @@
+var pairs =
+{
+"rstp":{"configuration":1,"provides":1}
+,"configuration":{"chapter":1,"rstp":1}
+,"chapter":{"contains":1}
+,"contains":{"complete":1}
+,"complete":{"sample":1}
+,"sample":{"rapid":1}
+,"rapid":{"spanning":1,"convergence":1}
+,"spanning":{"tree":1}
+,"tree":{"protocol":1,"speeds":1,"change":1}
+,"protocol":{"(rstp)":1}
+,"(rstp)":{"configuration":1}
+,"provides":{"rapid":1}
+,"convergence":{"spanning":1}
+,"speeds":{"reconfiguration":1}
+,"reconfiguration":{"tree":1}
+,"change":{"using":1}
+,"using":{"alternate":1}
+,"alternate":{"ports":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"pal_kernel_l2_ipv6_resolve":{"function":1,"(u_int32_t":1}
+,"function":{"resolves":1}
+,"resolves":{"ipv6":1}
+,"ipv6":{"address":1}
+,"address":{"layer":1,"api":1,"resolve":1,"output":1}
+,"layer":{"address":1}
+,"api":{"call":1}
+,"call":{"result_t":1}
+,"result_t":{"pal_kernel_l2_ipv6_resolve":1}
+,"(u_int32_t":{"instance)":1}
+,"instance)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"instance":1,"l2_addr":1,"none":1}
+,"instance":{"instance":1,"ip_addr":1}
+,"ip_addr":{"ipv6":1}
+,"resolve":{"output":1}
+,"output":{"parameters":1}
+,"l2_addr":{"pointer":1}
+,"pointer":{"layer":1}
+,"none":{"result":1}
+,"result":{"value":1}
+,"value":{"platform":1}
+,"platform":{"dependent":1}
+}
+;Search.control.loadWordPairs(pairs);

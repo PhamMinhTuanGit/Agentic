@@ -1,0 +1,22 @@
+var pairs =
+{
+"routing":{"switching":1}
+,"switching":{"layer":1}
+,"layer":{"layer":1,"switches":1}
+,"switches":{"similar":1}
+,"similar":{"high-level":1}
+,"high-level":{"look":1}
+,"look":{"packet":1}
+,"packet":{"headers":1,"towards":1,"closer":1}
+,"headers":{"steer":1}
+,"steer":{"packet":1}
+,"towards":{"destination":1}
+,"destination":{"port":1}
+,"port":{"therefore":1}
+,"therefore":{"passed":1}
+,"passed":{"switch":1}
+,"switch":{"router":1}
+,"router":{"packet":1}
+,"closer":{"destination":1}
+}
+;Search.control.loadWordPairs(pairs);

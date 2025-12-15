@@ -1,0 +1,25 @@
+var pairs =
+{
+"configure":{"terminal":1,"mode":1,"status":1,"label-switching":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"router":1,"interface":1}
+,"mode":{"(config)":1,"(config-router)":1,"(config-if)":1}
+,"(config)":{"router":1,"interface":1,"exit":1}
+,"router":{"ldp":1}
+,"ldp":{"enter":1,"mode":1,"(config-if)":1}
+,"(config-router)":{"pw-status-tlv":1,"exit":1}
+,"pw-status-tlv":{"configure":1}
+,"status":{"tlv":1,"signaling":1}
+,"tlv":{"status":1}
+,"signaling":{"(config-router)":1}
+,"exit":{"exit":1,"router":1,"interface":1,"configure":1}
+,"interface":{"eth1":1,"mode":1,"eth2":1}
+,"eth1":{"enter":1}
+,"(config-if)":{"label-switching":1,"enable-ldp":1,"exit":1}
+,"label-switching":{"configure":1,"(config-if)":1}
+,"enable-ldp":{"ipv4":1}
+,"ipv4":{"enable":1}
+,"enable":{"ldp":1}
+,"eth2":{"enter":1}
+}
+;Search.control.loadWordPairs(pairs);

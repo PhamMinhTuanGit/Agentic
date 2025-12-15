@@ -1,0 +1,10 @@
+var pairs =
+{
+"contents":{"guide":1}
+,"guide":{"contains":1}
+,"contains":{"chapter":1}
+,"chapter":{"chapter":1,"common":1}
+,"common":{"data":1}
+,"data":{"structures":1}
+}
+;Search.control.loadWordPairs(pairs);

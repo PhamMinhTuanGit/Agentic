@@ -1,0 +1,22 @@
+var pairs =
+{
+"clear":{"counters":1,"urpf":1}
+,"counters":{"command":1,"<ifname>":1,"eth2":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"urpf":{"statistics":1}
+,"statistics":{"interface":1}
+,"interface":{"ipv4\u002Fipv6use":1,"command":1}
+,"ipv4\u002Fipv6use":{"parameter":1}
+,"parameter":{"remove":1,"ifname":1}
+,"remove":{"maximum":1}
+,"maximum":{"bandwidth":1}
+,"bandwidth":{"command":1}
+,"syntax":{"clear":1}
+,"<ifname>":{"parameter":1}
+,"ifname":{"name":1}
+,"name":{"interface":1}
+,"mode":{"exec":1,"example":1}
+,"exec":{"mode":1}
+,"example":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

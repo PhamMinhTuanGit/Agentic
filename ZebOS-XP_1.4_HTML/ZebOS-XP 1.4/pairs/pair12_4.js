@@ -1,0 +1,26 @@
+var pairs =
+{
+"pim-sm":{"snmpget":1,"join\u002Fprune":1}
+,"snmpget":{"following":1,"test":1}
+,"following":{"command":1}
+,"command":{"gets":1,"sets":1,"walks":1}
+,"gets":{"value":1}
+,"value":{"pimjoinpruneinterval":1}
+,"pimjoinpruneinterval":{"default":1}
+,"default":{"interval":1}
+,"interval":{"pim-sm":1}
+,"join\u002Fprune":{"messages":1}
+,"messages":{"sent":1}
+,"sent":{"snmpget":1,"snmpset":1}
+,"test":{"10.10.10.50":1}
+,"10.10.10.50":{".1.3.6.1.3.61.1.1.1.0":1,"1.3.6.1.3.61.1.1.2":1}
+,".1.3.6.1.3.61.1.1.1.0":{"snmpset":1,"snmpwalk":1}
+,"snmpset":{"following":1,"test":1}
+,"sets":{"value":1}
+,"snmpwalk":{"following":1,"test":1}
+,"walks":{"pim":1}
+,"pim":{"interface":1}
+,"interface":{"table":1}
+,"table":{"snmpwalk":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"tunnel":{"modes":1,"mode":1}
+,"modes":{"table":1,"mpls-tp":1,"tunnel":1}
+,"table":{"4-1":1}
+,"4-1":{"lists":1}
+,"lists":{"tunnel":1}
+,"mpls-tp":{"tunnel":1}
+,"mode":{"ingress":1}
+,"ingress":{"transit":1}
+,"transit":{"egress":1}
+,"egress":{"forward":1}
+,"forward":{"path":1}
+,"path":{"reverse":1,"forward":1,"unidirectional":1}
+,"reverse":{"path":1}
+,"unidirectional":{"nhlfe":1}
+,"nhlfe":{"n\u002Fa":1,"ilm":1,"associated":1}
+,"n\u002Fa":{"ilm":1,"co-routed":1}
+,"ilm":{"n\u002Fa":1,"ilm":1,"nhlfe":1}
+,"co-routed":{"nhlfe":1}
+,"associated":{"nhlfe":1}
+}
+;Search.control.loadWordPairs(pairs);

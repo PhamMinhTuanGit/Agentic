@@ -1,0 +1,26 @@
+var pairs =
+{
+"trill":{"bpdu-handling":1,"parameter":1}
+,"bpdu-handling":{"command":1,"feature":1,"enable":1,"disabled":1}
+,"command":{"enable":1,"reset":1,"syntax":1,"mode":1}
+,"enable":{"bpdu-handling":1,"trill":1,"parameters":1,"specify":1,"configure":1}
+,"feature":{"interface":1}
+,"interface":{"trill":1,"mode":1,"eth1":1}
+,"parameter":{"command":1}
+,"reset":{"configuration":1}
+,"configuration":{"default":1}
+,"default":{"value":1,"bpdu-handling":1,"examples":1}
+,"value":{"command":1}
+,"syntax":{"trill":1}
+,"parameters":{"enable":1}
+,"specify":{"enable":1}
+,"mode":{"interface":1,"default":1}
+,"disabled":{"default":1}
+,"examples":{"enable":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth1":{"(config-if)":1}
+,"(config-if)":{"trill":1}
+}
+;Search.control.loadWordPairs(pairs);

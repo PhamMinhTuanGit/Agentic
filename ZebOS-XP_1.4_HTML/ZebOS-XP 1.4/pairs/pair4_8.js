@@ -1,0 +1,22 @@
+var pairs =
+{
+"contents":{"document":1}
+,"document":{"contains":1}
+,"contains":{"chapters":1}
+,"chapters":{"appendices":1}
+,"appendices":{"chapter":1}
+,"chapter":{"zebos-xp":1,"zebic":1,"zebha":1,"management":1}
+,"zebos-xp":{"architecture":1,"key":1,"abstraction":1,"versus":1}
+,"architecture":{"chapter":1}
+,"key":{"features":1}
+,"features":{"chapter":1}
+,"abstraction":{"layers":1}
+,"layers":{"chapter":1}
+,"zebic":{"chapter":1}
+,"zebha":{"chapter":1}
+,"management":{"modules":1}
+,"modules":{"chapter":1}
+,"versus":{"zebos":1}
+,"zebos":{"7.10.x":1}
+}
+;Search.control.loadWordPairs(pairs);

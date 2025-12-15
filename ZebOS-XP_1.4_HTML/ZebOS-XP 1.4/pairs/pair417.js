@@ -1,0 +1,19 @@
+var pairs =
+{
+"wide":{"area":1}
+,"area":{"network":1,"larger":1}
+,"network":{"(wan)":1,"provides":1,"(lan)":1}
+,"(wan)":{"network":1}
+,"provides":{"communication":1}
+,"communication":{"services":1,"facilities":1}
+,"services":{"geographic":1}
+,"geographic":{"area":1}
+,"larger":{"served":1}
+,"served":{"local":1}
+,"local":{"area":1}
+,"(lan)":{"may":1}
+,"may":{"provide":1}
+,"provide":{"public":1}
+,"public":{"communication":1}
+}
+;Search.control.loadWordPairs(pairs);

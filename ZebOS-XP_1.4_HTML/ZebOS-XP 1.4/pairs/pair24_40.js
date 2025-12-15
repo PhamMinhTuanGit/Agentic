@@ -1,0 +1,26 @@
+var pairs =
+{
+"radius-server":{"key":1}
+,"key":{"command":1,"radius":1,"key":1,"radius-server":1,"parameter":1,"specify":1,"shared":1,"ipi":1}
+,"command":{"shared":1,"undo":1,"syntax":1,"mode":1}
+,"shared":{"secret":1,"among":1}
+,"secret":{"key":1}
+,"radius":{"server":1}
+,"server":{"client":1,"802.1x":1}
+,"client":{"form":1,"command":1}
+,"form":{"command":1}
+,"undo":{"configuration":1}
+,"configuration":{"command":1}
+,"syntax":{"radius-server":1}
+,"parameter":{"key":1}
+,"specify":{"secret":1}
+,"among":{"radius":1}
+,"802.1x":{"client":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"radius-server":1}
+,"ipi":{"configure":1}
+}
+;Search.control.loadWordPairs(pairs);

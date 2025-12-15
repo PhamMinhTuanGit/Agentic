@@ -1,0 +1,22 @@
+var pairs =
+{
+"bgp_peer_delete":{"function":1,"(struct":1}
+,"function":{"deletes":1,"successful":1}
+,"deletes":{"specified":1}
+,"specified":{"peer":1}
+,"peer":{"syntax":1,"bgp":1,"output":1}
+,"syntax":{"s_int32_t":1}
+,"s_int32_t":{"bgp_peer_delete":1}
+,"(struct":{"bgp_peer":1}
+,"bgp_peer":{"*peer)":1}
+,"*peer)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"peer":1,"none":1}
+,"bgp":{"peer":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"bgp_api_set_success":1}
+,"bgp_api_set_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

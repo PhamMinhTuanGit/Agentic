@@ -1,0 +1,20 @@
+var pairs =
+{
+"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"p2mp":1}
+,"p2mp":{"tunnel":1,"trunk":1,"(config-p2mp-trunk)":1}
+,"tunnel":{"ingress":1}
+,"ingress":{"command":1}
+,"syntax":{"a.b.c.d":1}
+,"a.b.c.d":{"parameters":1,"ipv4":1}
+,"parameters":{"a.b.c.d":1}
+,"ipv4":{"address":1,"p2mp":1}
+,"address":{"tunnel":1}
+,"mode":{"p2mp":1,"examples":1}
+,"trunk":{"mode":1}
+,"examples":{"(config)":1}
+,"(config)":{"rsvp-trunk":1}
+,"rsvp-trunk":{"ipv4":1}
+,"(config-p2mp-trunk)":{"1.1.1.1":1}
+}
+;Search.control.loadWordPairs(pairs);

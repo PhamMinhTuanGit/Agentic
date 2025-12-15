@@ -1,0 +1,25 @@
+var pairs =
+{
+"hello-receipt":{"command":1,"hello-receipt":1,"parameters":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"receipt":1}
+,"receipt":{"hello":1}
+,"hello":{"messages":1}
+,"messages":{"peers":1,"command":1}
+,"peers":{"parameter":1}
+,"parameter":{"command":1}
+,"disable":{"exchange":1}
+,"exchange":{"hello":1}
+,"syntax":{"hello-receipt":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"router":1,"examples":1}
+,"router":{"mode":1,"rsvp":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"rsvp":{"(config-router)":1}
+,"(config-router)":{"hello-receipt":1}
+}
+;Search.control.loadWordPairs(pairs);

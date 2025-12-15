@@ -1,0 +1,24 @@
+var pairs =
+{
+"ldp_api_interface_enable_multicast_hellos":{"call":1,"(struct":1}
+,"call":{"enables":1}
+,"enables":{"multicast":1}
+,"multicast":{"hellos":1}
+,"hellos":{"specified":1}
+,"specified":{"interface":1}
+,"interface":{"syntax":1,"output":1}
+,"syntax":{"void":1}
+,"void":{"ldp_api_interface_enable_multicast_hellos":1}
+,"(struct":{"ldp_interface":1}
+,"ldp_interface":{"*ldpif)":1}
+,"*ldpif)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ldpif":1,"none":1}
+,"ldpif":{"ldp":1}
+,"ldp":{"interface":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

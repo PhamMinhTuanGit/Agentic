@@ -1,0 +1,20 @@
+var pairs =
+{
+"mribv4":{"igmp":1}
+,"igmp":{"command":1}
+,"command":{"api":1}
+,"api":{"chapter":1,"multicast":1}
+,"chapter":{"describes":1}
+,"describes":{"command":1}
+,"multicast":{"routing":1}
+,"routing":{"information":1}
+,"information":{"base":1}
+,"base":{"ipv4":1}
+,"ipv4":{"(mribv4)":1}
+,"(mribv4)":{"internet":1}
+,"internet":{"group":1}
+,"group":{"management":1}
+,"management":{"protocol":1}
+,"protocol":{"(igmp)":1}
+}
+;Search.control.loadWordPairs(pairs);

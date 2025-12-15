@@ -1,0 +1,20 @@
+var pairs =
+{
+"log":{"administrator":1}
+,"administrator":{"log":1,"using":1}
+,"using":{"following":1}
+,"following":{"two":1,"command":1,"imish":1}
+,"two":{"methods":1}
+,"methods":{"gma":1}
+,"gma":{"run":1}
+,"run":{"following":1}
+,"command":{"login":1}
+,"login":{"virtual-router":1}
+,"virtual-router":{"vr1":1}
+,"vr1":{"unix":1}
+,"unix":{"shell":1}
+,"shell":{"type":1}
+,"type":{"following":1}
+,"imish":{"vr1":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"ospf":{"router":1,"mode":1}
+,"router":{"router":1,"given":1,"ospf":1,"type":1}
+,"given":{"router":1}
+,"mode":{"information":1}
+,"information":{"sent":1}
+,"sent":{"bgp":1}
+,"bgp":{"via":1,"sends":1}
+,"via":{"nsm":1}
+,"nsm":{"bgp":1}
+,"sends":{"attribute":1}
+,"attribute":{"extended-community":1,"remote":1}
+,"extended-community":{"attribute":1}
+,"remote":{"type":1}
+,"type":{"0x0107":1,"extended":1,"0x8001":1}
+,"0x0107":{"type":1}
+,"extended":{"community":1}
+,"community":{"ospf":1}
+,"0x8001":{"used":1}
+,"used":{"backward":1}
+,"backward":{"compatibility":1}
+,"compatibility":{"treated":1}
+,"treated":{"0x0107":1}
+}
+;Search.control.loadWordPairs(pairs);

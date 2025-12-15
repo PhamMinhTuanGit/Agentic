@@ -1,0 +1,23 @@
+var pairs =
+{
+"pe3":{"-rsvp-te":1}
+,"-rsvp-te":{"(config)":1}
+,"(config)":{"router":1,"interface":1}
+,"router":{"rsvp":1,"mode":1}
+,"rsvp":{"enter":1}
+,"enter":{"router":1,"interface":1}
+,"mode":{"(config-router)":1,"(config)":1,"(config-if)":1}
+,"(config-router)":{"exit":1}
+,"exit":{"exit":1,"router":1,"interface":1}
+,"interface":{"eth1":1,"mode":1,"(eth1)":1,"eth2":1,"(eth2)":1}
+,"eth1":{"enter":1}
+,"(config-if)":{"enable-rsvp":1,"exit":1}
+,"enable-rsvp":{"enable":1}
+,"enable":{"rsvp-te":1}
+,"rsvp-te":{"specified":1}
+,"specified":{"interface":1}
+,"(eth1)":{"(config-if)":1}
+,"eth2":{"enter":1}
+,"(eth2)":{"(config-if)":1}
+}
+;Search.control.loadWordPairs(pairs);

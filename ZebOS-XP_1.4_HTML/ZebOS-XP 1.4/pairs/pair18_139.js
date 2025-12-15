@@ -1,0 +1,25 @@
+var pairs =
+{
+"pvlan":{"messages":1}
+,"messages":{"message":1}
+,"message":{"constant":1}
+,"constant":{"source":1}
+,"source":{"nsm_msg_pvlan_configure":1}
+,"nsm_msg_pvlan_configure":{"nsm":1}
+,"nsm":{"sends":1}
+,"sends":{"protocols":1}
+,"protocols":{"adding":1,"making":1,"associating":1}
+,"adding":{"private":1}
+,"private":{"vlan":1}
+,"vlan":{"nsm_msg_pvlan_port_host_associate":1,"private":1}
+,"nsm_msg_pvlan_port_host_associate":{"nsm":1}
+,"making":{"layer2":1}
+,"layer2":{"port":1}
+,"port":{"host":1,"promiscuous":1,"nsm_msg_pvlan_secondary_vlan_associate":1}
+,"host":{"port":1}
+,"promiscuous":{"port":1}
+,"nsm_msg_pvlan_secondary_vlan_associate":{"nsm":1}
+,"associating":{"secondary":1}
+,"secondary":{"vlan":1}
+}
+;Search.control.loadWordPairs(pairs);

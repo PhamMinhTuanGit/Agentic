@@ -1,0 +1,24 @@
+var pairs =
+{
+"customer":{"edge":1}
+,"edge":{"(ce)":1,"(pe)":1}
+,"(ce)":{"device":1}
+,"device":{"provides":1,"inbound":1}
+,"provides":{"interface":1}
+,"interface":{"local":1}
+,"local":{"area":1}
+,"area":{"network":1}
+,"network":{"(lan)":1,"outbound":1}
+,"(lan)":{"enterprise":1}
+,"enterprise":{"service":1}
+,"service":{"provider":1}
+,"provider":{"core":1,"edge":1}
+,"core":{"network":1}
+,"outbound":{"packets":1}
+,"packets":{"lan":1,"forwarded":1}
+,"lan":{"forwarded":1}
+,"forwarded":{"provider":1}
+,"(pe)":{"device":1}
+,"inbound":{"packets":1}
+}
+;Search.control.loadWordPairs(pairs);

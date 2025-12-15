@@ -1,0 +1,19 @@
+var pairs =
+{
+"te-mstid":{"te-mst":1,"identifies":1}
+,"te-mst":{"special":1}
+,"special":{"value":1}
+,"value":{"(0xffe)":1}
+,"(0xffe)":{"multiple":1}
+,"multiple":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"(mst)":1,"protocol":1}
+,"(mst)":{"mst":1}
+,"mst":{"configuration":1,"instance":1}
+,"configuration":{"table":1}
+,"table":{"te-mstid":1}
+,"identifies":{"mst":1}
+,"instance":{"controlled":1}
+,"controlled":{"spanning":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"interface":1}
+,"mode":{"(config)":1,"(config-if)":1}
+,"(config)":{"interface":1,"route":1}
+,"interface":{"eth1":1,"mode":1,"(config-if)":1,"(config)":1}
+,"eth1":{"enter":1}
+,"(config-if)":{"address":1,"exit":1}
+,"address":{"4.4.4.2\u002F24":1,"interface":1}
+,"4.4.4.2\u002F24":{"assign":1}
+,"assign":{"address":1}
+,"exit":{"exit":1,"interface":1}
+,"route":{"1.1.1.0\u002F24":1,"direct":1,"2.2.2.0\u002F24":1,"3.3.3.0\u002F24":1}
+,"1.1.1.0\u002F24":{"4.4.4.1":1}
+,"4.4.4.1":{"create":1}
+,"create":{"static":1}
+,"static":{"route":1}
+,"direct":{"traffic":1}
+,"traffic":{"destination":1}
+,"destination":{"specified":1}
+,"specified":{"interface":1}
+,"2.2.2.0\u002F24":{"4.4.4.1":1}
+,"3.3.3.0\u002F24":{"4.4.4.1":1}
+}
+;Search.control.loadWordPairs(pairs);

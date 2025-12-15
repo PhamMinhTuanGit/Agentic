@@ -1,0 +1,27 @@
+var pairs =
+{
+"description":{"command":1,"virtual":1,"line":1,"parameters":1,"vr1":1,"(config-vr)":1}
+,"command":{"assign":1,"syntax":1,"mode":1}
+,"assign":{"description":1}
+,"virtual":{"router":1}
+,"router":{"instance":1,"description":1}
+,"instance":{"parameter":1}
+,"parameter":{"remove":1}
+,"remove":{"description":1}
+,"syntax":{"description":1}
+,"line":{"description":1,"virtual":1}
+,"parameters":{"line":1}
+,"mode":{"mode":1,"examples":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"virtual-router":1}
+,"virtual-router":{"vr1":1}
+,"vr1":{"(config-vr)":1,"created":1}
+,"(config-vr)":{"description":1,"exit":1}
+,"created":{"cli":1}
+,"cli":{"testing":1}
+,"testing":{"(config-vr)":1}
+,"exit":{"(config)":1}
+}
+;Search.control.loadWordPairs(pairs);

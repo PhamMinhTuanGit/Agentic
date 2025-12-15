@@ -1,0 +1,20 @@
+var pairs =
+{
+"switching":{"types":1,"type":1,"traffic":1}
+,"types":{"mrps":1}
+,"mrps":{"mechanism":1}
+,"mechanism":{"supports":1}
+,"supports":{"bi-directional":1}
+,"bi-directional":{"protection":1,"switching":1}
+,"protection":{"switching":1,"lsps\u002Ftunnels":1}
+,"type":{"bi-directional":1}
+,"traffic":{"passing":1}
+,"passing":{"directions":1}
+,"directions":{"monitored":1}
+,"monitored":{"mpls-tp":1}
+,"mpls-tp":{"section":1}
+,"section":{"layer":1}
+,"layer":{"switched":1}
+,"switched":{"protection":1}
+}
+;Search.control.loadWordPairs(pairs);

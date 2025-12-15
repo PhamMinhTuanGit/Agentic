@@ -1,0 +1,23 @@
+var pairs =
+{
+"hal_port_mirror_direction":{"port":1,"{hal_port_mirror_disable":1}
+,"port":{"mirroring":1}
+,"mirroring":{"direction":1}
+,"direction":{"enumeration":1}
+,"enumeration":{"data":1}
+,"data":{"structure":1}
+,"structure":{"defined":1}
+,"defined":{"hal\u002Fhal_if.h":1}
+,"hal\u002Fhal_if.h":{"definition":1}
+,"definition":{"enum":1}
+,"enum":{"hal_port_mirror_direction":1}
+,"{hal_port_mirror_disable":{"hal_port_mirror_direction_receive":1}
+,"hal_port_mirror_direction_receive":{"=(1":1}
+,"=(1":{"<<0)":1,"<<1)":1}
+,"<<0)":{"hal_port_mirror_direction_transmit":1}
+,"hal_port_mirror_direction_transmit":{"=(1":1}
+,"<<1)":{"hal_port_mirror_direction_both":1}
+,"hal_port_mirror_direction_both":{"=(hal_port_mirror_direction_receive":1}
+,"=(hal_port_mirror_direction_receive":{"hal_port_mirror_direction_transmit)":1}
+}
+;Search.control.loadWordPairs(pairs);

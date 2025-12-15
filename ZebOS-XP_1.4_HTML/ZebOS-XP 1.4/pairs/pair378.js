@@ -1,0 +1,23 @@
+var pairs =
+{
+"throughput":{"average":1,"measured":1}
+,"average":{"rate":1}
+,"rate":{"successful":1,"latency":1}
+,"successful":{"delivery":1}
+,"delivery":{"data":1}
+,"data":{"packets":1}
+,"packets":{"communication":1,"per":1}
+,"communication":{"link":1}
+,"link":{"throughput":1}
+,"measured":{"bits":1}
+,"bits":{"per":1}
+,"per":{"second":1,"time":1}
+,"second":{"data":1,"sometimes":1}
+,"sometimes":{"data":1}
+,"time":{"slot":1}
+,"slot":{"line":1}
+,"line":{"rate":1}
+,"latency":{"wire":1}
+,"wire":{"speed":1}
+}
+;Search.control.loadWordPairs(pairs);

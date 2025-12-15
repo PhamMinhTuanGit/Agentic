@@ -1,0 +1,21 @@
+var pairs =
+{
+"diffserv-te":{"configuration":1,"network":1}
+,"configuration":{"chapter":1,"diffserv-te":1}
+,"chapter":{"contains":1}
+,"contains":{"step-by-step":1}
+,"step-by-step":{"configuration":1}
+,"network":{"services":1}
+,"services":{"module":1}
+,"module":{"command":1}
+,"command":{"reference":1}
+,"reference":{"resource":1,"details":1}
+,"resource":{"reservation":1}
+,"reservation":{"protocol":1}
+,"protocol":{"-traffic":1}
+,"-traffic":{"engineering":1}
+,"engineering":{"command":1}
+,"details":{"commands":1}
+,"commands":{"used":1}
+}
+;Search.control.loadWordPairs(pairs);

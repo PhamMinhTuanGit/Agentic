@@ -1,0 +1,19 @@
+var pairs =
+{
+"command":{"negation":1,"assigns":1,"removes":1}
+,"negation":{"commands":1}
+,"commands":{"form":1}
+,"form":{"resets":1}
+,"resets":{"feature":1}
+,"feature":{"default":1,"example":1}
+,"default":{"value":1}
+,"value":{"disables":1}
+,"disables":{"feature":1}
+,"example":{"address":1}
+,"address":{"command":1,"interface":1}
+,"assigns":{"ipv4":1}
+,"ipv4":{"address":1}
+,"interface":{"address":1}
+,"removes":{"ipv4":1}
+}
+;Search.control.loadWordPairs(pairs);

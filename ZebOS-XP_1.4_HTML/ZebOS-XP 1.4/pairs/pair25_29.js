@@ -1,0 +1,27 @@
+var pairs =
+{
+"hal_ipv4uc_nexthop":{"data":1,"{unsigned":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"ipv4":1}
+,"ipv4":{"unicast":1}
+,"unicast":{"nexthop":1}
+,"nexthop":{"entries":1}
+,"entries":{"defined":1}
+,"defined":{"hal\u002Fl3\u002Fhal_l3.h":1}
+,"hal\u002Fl3\u002Fhal_l3.h":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"hal_ipv4uc_nexthop":1,"hal_in4_addr":1}
+,"{unsigned":{"int":1}
+,"int":{"enum":1,"egressifindex":1}
+,"enum":{"hal_ipuc_nexthop_type":1}
+,"hal_ipuc_nexthop_type":{"type":1}
+,"type":{"unsigned":1}
+,"unsigned":{"int":1}
+,"egressifindex":{"char":1}
+,"char":{"*egressifname":1}
+,"*egressifname":{"struct":1}
+,"hal_in4_addr":{"nexthopip":1}
+}
+;Search.control.loadWordPairs(pairs);

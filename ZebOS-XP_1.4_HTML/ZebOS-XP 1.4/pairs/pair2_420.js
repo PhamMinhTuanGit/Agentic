@@ -1,0 +1,25 @@
+var pairs =
+{
+"address":{"command":1,"policy":1,"[a.b.c.d]":1,"10.12.11.2":1}
+,"command":{"peer":1,"unset":1,"syntax":1,"mode":1}
+,"peer":{"address":1}
+,"policy":{"form":1,"configuration":1,"(config-isakmp)":1}
+,"form":{"command":1}
+,"unset":{"peer":1}
+,"syntax":{"address":1}
+,"[a.b.c.d]":{"address":1,"parameters":1}
+,"parameters":{"a.b.c.d":1}
+,"a.b.c.d":{"specify":1}
+,"specify":{"peer":1}
+,"mode":{"isakmp":1,"(config-isakmp)":1}
+,"isakmp":{"policy":1}
+,"configuration":{"mode":1}
+,"(config-isakmp)":{"example":1,"address":1,"exit":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"crypto":1}
+,"crypto":{"isakmp":1}
+,"10.12.11.2":{"(config-isakmp)":1}
+}
+;Search.control.loadWordPairs(pairs);

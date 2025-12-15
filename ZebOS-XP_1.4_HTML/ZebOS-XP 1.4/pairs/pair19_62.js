@@ -1,0 +1,26 @@
+var pairs =
+{
+"ipv4":{"routing":1}
+,"routing":{"table":1,"information":1}
+,"table":{"whenever":1,"building":1,"is-is":1}
+,"whenever":{"lsp":1}
+,"lsp":{"database":1}
+,"database":{"updated":1}
+,"updated":{"level":1}
+,"level":{"triggers":1}
+,"triggers":{"perform":1}
+,"perform":{"spf":1}
+,"spf":{"calculation":1}
+,"calculation":{"result":1}
+,"result":{"generates":1}
+,"generates":{"routing":1}
+,"information":{"stores":1,"nsm":1}
+,"stores":{"ipv4":1}
+,"building":{"routing":1}
+,"is-is":{"sends":1}
+,"sends":{"ipv4":1}
+,"nsm":{"install":1}
+,"install":{"routes":1}
+,"routes":{"fib":1}
+}
+;Search.control.loadWordPairs(pairs);

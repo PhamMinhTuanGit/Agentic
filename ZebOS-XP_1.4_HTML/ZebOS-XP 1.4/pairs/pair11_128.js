@@ -1,0 +1,27 @@
+var pairs =
+{
+"nsm_cvlan_reg_tab_delete":{"function":1,"(struct":1}
+,"function":{"deletes":1}
+,"deletes":{"cvlan":1}
+,"cvlan":{"registration":1}
+,"registration":{"table":1}
+,"table":{"bridge":1,"deleted":1,"output":1}
+,"bridge":{"syntax":1,"bridge":1,"cvlan":1}
+,"syntax":{"void":1}
+,"void":{"nsm_cvlan_reg_tab_delete":1}
+,"(struct":{"nsm_bridge":1}
+,"nsm_bridge":{"*bridge":1}
+,"*bridge":{"char":1}
+,"char":{"*cvlan_reg_tab_name)":1}
+,"*cvlan_reg_tab_name)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"bridge":1,"none":1}
+,"deleted":{"cvlan_reg_tab_name":1}
+,"cvlan_reg_tab_name":{"name":1}
+,"name":{"cvlan":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

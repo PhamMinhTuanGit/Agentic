@@ -1,0 +1,23 @@
+var pairs =
+{
+"messages":{"following":1,"exchanged":1}
+,"following":{"messages":1}
+,"exchanged":{"bfd":1}
+,"bfd":{"client":1,"nsm":1}
+,"client":{"bfd":1}
+,"nsm":{"management":1,"static":1}
+,"management":{"interface":1}
+,"interface":{"bfd_session_add":1,"nsm_bfd_static_session_invalid_op":1}
+,"bfd_session_add":{"bfd_session":1}
+,"bfd_session":{"del":1}
+,"del":{"bfd_session_rem":1}
+,"bfd_session_rem":{"bfd_session_disable":1}
+,"bfd_session_disable":{"bfd_session_no_disable":1}
+,"bfd_session_no_disable":{"following":1}
+,"static":{"interface":1}
+,"nsm_bfd_static_session_invalid_op":{"nsm_bfd_static_session_add":1}
+,"nsm_bfd_static_session_add":{"nsm_bfd_static_session_del":1}
+,"nsm_bfd_static_session_del":{"nsm_bfd_static_session_rem":1}
+,"nsm_bfd_static_session_rem":{"nsm_bfd_static_session_admin_del":1}
+}
+;Search.control.loadWordPairs(pairs);

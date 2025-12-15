@@ -1,0 +1,26 @@
+var pairs =
+{
+"open":{"network":1}
+,"network":{"foundation":1}
+,"foundation":{"(onf)":1}
+,"(onf)":{"non-profit":1}
+,"non-profit":{"organization":1}
+,"organization":{"responsible":1}
+,"responsible":{"development":1,"commercialization":1}
+,"development":{"standardization":1}
+,"standardization":{"software":1}
+,"software":{"architecture":1}
+,"architecture":{"supports":1}
+,"supports":{"software-defined":1}
+,"software-defined":{"networking":1}
+,"networking":{"(sdn)":1}
+,"(sdn)":{"onf":1}
+,"onf":{"responsible":1}
+,"commercialization":{"promotion":1}
+,"promotion":{"sdn":1}
+,"sdn":{"concept":1}
+,"concept":{"underlying":1}
+,"underlying":{"technologies":1}
+,"technologies":{"https:\u002F\u002Fwww.opennetworking.org\u002F":1}
+}
+;Search.control.loadWordPairs(pairs);

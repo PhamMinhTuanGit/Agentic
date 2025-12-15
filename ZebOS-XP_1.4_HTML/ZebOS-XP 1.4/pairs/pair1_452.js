@@ -1,0 +1,23 @@
+var pairs =
+{
+"cspf-te":{"commands":1}
+,"commands":{"chapter":1,"includes":1,"capability":1}
+,"chapter":{"provides":1}
+,"provides":{"alphabetized":1}
+,"alphabetized":{"reference":1}
+,"reference":{"cspf-te":1}
+,"includes":{"following":1}
+,"following":{"commands":1}
+,"capability":{"cspf":1}
+,"cspf":{"default-retry-interval":1,"tie-break":1,"show":1,"ipv6":1,"lsp":1}
+,"default-retry-interval":{"cspf":1}
+,"tie-break":{"debug":1}
+,"debug":{"cspf":1}
+,"show":{"cspf":1,"debugging":1,"ospf":1,"ipv6":1}
+,"ipv6":{"lsp":1,"cspf":1,"ospf":1}
+,"lsp":{"show":1}
+,"debugging":{"cspf":1,"ipv6":1}
+,"ospf":{"te-database":1}
+,"te-database":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

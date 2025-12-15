@@ -1,0 +1,27 @@
+var pairs =
+{
+"hsl_eth_tx_drv_netpool":{"data":1,"{int":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"ethernet":1}
+,"ethernet":{"transmit":1}
+,"transmit":{"netpool":1}
+,"netpool":{"functions":1}
+,"functions":{"defined":1}
+,"defined":{"hsl\u002Fbroadcom\u002Fvxworks\u002Fl3\u002Fhsl_eth_drv.h":1}
+,"hsl\u002Fbroadcom\u002Fvxworks\u002Fl3\u002Fhsl_eth_drv.h":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"hsl_eth_tx_drv_netpool":1}
+,"{int":{"initialized":1}
+,"initialized":{"\u002F*initialized":1}
+,"\u002F*initialized":{"*\u002Fm_cl_config":1}
+,"*\u002Fm_cl_config":{"blks":1}
+,"blks":{"\u002F*num":1}
+,"\u002F*num":{"cl_desc":1}
+,"cl_desc":{"cl_pool_id":1}
+,"cl_pool_id":{"clpool_id":1}
+,"clpool_id":{"net_pool_id":1}
+,"net_pool_id":{"netpool_id":1}
+}
+;Search.control.loadWordPairs(pairs);

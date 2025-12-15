@@ -1,0 +1,21 @@
+var pairs =
+{
+"satop":{"pseudowire":1}
+,"pseudowire":{"creation":1,"provider":1}
+,"creation":{"procedure":1}
+,"procedure":{"show":1}
+,"show":{"establish":1}
+,"establish":{"pseudowire":1}
+,"provider":{"edge":1}
+,"edge":{"routers":1}
+,"routers":{"configuration":1}
+,"configuration":{"assumes":1}
+,"assumes":{"running":1}
+,"running":{"ospfd":1}
+,"ospfd":{"ldpd":1}
+,"ldpd":{"mstpd":1}
+,"mstpd":{"nsm":1}
+,"nsm":{"imi":1}
+,"imi":{"daemons":1}
+}
+;Search.control.loadWordPairs(pairs);

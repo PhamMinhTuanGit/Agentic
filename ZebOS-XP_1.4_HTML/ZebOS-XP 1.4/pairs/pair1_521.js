@@ -1,0 +1,23 @@
+var pairs =
+{
+"differentiated":{"services":1}
+,"services":{"commands":1,"(diffserv)":1}
+,"commands":{"chapter":1,"map-route":1}
+,"chapter":{"describes":1}
+,"describes":{"rsvp":1}
+,"rsvp":{"differentiated":1,"diffserv-info":1}
+,"(diffserv)":{"commands":1}
+,"map-route":{"a.b.c.d":1,"x:x":1}
+,"a.b.c.d":{"map-route":1}
+,"x:x":{":x:x":1}
+,":x:x":{"override-diffserv":1}
+,"override-diffserv":{"primary":1}
+,"primary":{"class-to-exp-bit":1,"elsp-preconfigured":1,"elsp-signaled":1,"llsp":1}
+,"class-to-exp-bit":{"primary":1,"secondary":1}
+,"elsp-preconfigured":{"primary":1,"secondary":1}
+,"elsp-signaled":{"primary":1,"secondary":1}
+,"llsp":{"secondary":1,"show":1}
+,"secondary":{"class-to-exp-bit":1,"elsp-preconfigured":1,"elsp-signaled":1,"llsp":1}
+,"show":{"rsvp":1}
+}
+;Search.control.loadWordPairs(pairs);

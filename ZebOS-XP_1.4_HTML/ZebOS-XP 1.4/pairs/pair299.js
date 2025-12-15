@@ -1,0 +1,22 @@
+var pairs =
+{
+"penultimate":{"hop":1}
+,"hop":{"popping":1}
+,"popping":{"(php)":1}
+,"(php)":{"technique":1}
+,"technique":{"outermost":1}
+,"outermost":{"label":1}
+,"label":{"multi-protocol":1,"switching":1,"switch":1,"edge":1}
+,"multi-protocol":{"label":1}
+,"switching":{"(mpls)":1}
+,"(mpls)":{"packet":1}
+,"packet":{"removed":1,"passed":1}
+,"removed":{"label":1}
+,"switch":{"router":1}
+,"router":{"(lsr)":1,"(ler)":1}
+,"(lsr)":{"packet":1}
+,"passed":{"adjacent":1}
+,"adjacent":{"label":1}
+,"edge":{"router":1}
+}
+;Search.control.loadWordPairs(pairs);

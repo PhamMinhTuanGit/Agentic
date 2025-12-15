@@ -1,0 +1,22 @@
+var pairs =
+{
+"exterior":{"gateway":1}
+,"gateway":{"protocol":1}
+,"protocol":{"(egp)":1,"border":1,"(bgp)":1,"(igp)":1}
+,"(egp)":{"interdomain":1}
+,"interdomain":{"protocol":1}
+,"border":{"gateway":1}
+,"(bgp)":{"used":1}
+,"used":{"exchange":1}
+,"exchange":{"network":1}
+,"network":{"reachability":1}
+,"reachability":{"information":1}
+,"information":{"autonomous":1}
+,"autonomous":{"system":1}
+,"system":{"(as)":1}
+,"(as)":{"instances":1}
+,"instances":{"contrast":1}
+,"contrast":{"interior":1}
+,"interior":{"gateway":1}
+}
+;Search.control.loadWordPairs(pairs);

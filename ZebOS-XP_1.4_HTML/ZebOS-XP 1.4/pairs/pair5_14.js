@@ -1,0 +1,27 @@
+var pairs =
+{
+"enabling":{"bfd":1}
+,"bfd":{"authentication":1,"session":1}
+,"authentication":{"single-hop":1,"enabled":1,"type":1,"bfd":1}
+,"single-hop":{"ipv4":1}
+,"ipv4":{"using":1}
+,"using":{"key-id":1,"single":1,"above":1}
+,"key-id":{"example":1}
+,"example":{"bfd":1}
+,"session":{"configured":1,"authentication":1,"using":1}
+,"configured":{"using":1}
+,"single":{"key":1}
+,"key":{"(using":1}
+,"(using":{"key-id)":1}
+,"key-id)":{"once":1}
+,"once":{"bfd":1}
+,"enabled":{"routers":1}
+,"routers":{"authentication":1}
+,"type":{"keyed-md5":1,"identical":1,"side":1}
+,"keyed-md5":{"enable":1}
+,"enable":{"authentication":1}
+,"above":{"mentioned":1}
+,"mentioned":{"authentication":1}
+,"identical":{"authentication":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"validation":{"ping":1}
+,"ping":{"ce1":1,"mpls-tp":1}
+,"ce1":{"reach":1}
+,"reach":{"ce2":1}
+,"ce2":{"network":1}
+,"network":{"ping":1,"pe1":1}
+,"mpls-tp":{"tunnel":1}
+,"tunnel":{"reach":1,"200.1.1.0\u002F24":1}
+,"pe1":{"show":1}
+,"show":{"mpls":1}
+,"mpls":{"mapped-routes":1}
+,"mapped-routes":{"mapped-route":1}
+,"mapped-route":{"ipv4":1}
+,"ipv4":{"fec":1}
+,"fec":{"mpls-tp":1}
+,"200.1.1.0\u002F24":{"n\u002Fa":1}
+,"n\u002Fa":{"tnl1":1}
+,"tnl1":{"pe2":1}
+,"pe2":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

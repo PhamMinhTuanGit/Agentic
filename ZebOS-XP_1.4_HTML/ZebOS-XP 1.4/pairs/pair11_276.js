@@ -1,0 +1,22 @@
+var pairs =
+{
+"show":{"running-config":1}
+,"running-config":{"ldap":1}
+,"ldap":{"command":1,"settings":1,"server":1,"parameters":1}
+,"command":{"display":1,"ldap":1,"command":1,"syntax":1,"mode":1}
+,"display":{"ldap":1}
+,"settings":{"running":1}
+,"running":{"configuration":1}
+,"configuration":{"give":1}
+,"give":{"command":1}
+,"server":{"enabled":1}
+,"enabled":{"feature":1}
+,"feature":{"ldap":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"examples":1}
+,"exec":{"mode":1}
+,"examples":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

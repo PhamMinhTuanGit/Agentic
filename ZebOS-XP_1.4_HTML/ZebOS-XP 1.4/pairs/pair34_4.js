@@ -1,0 +1,27 @@
+var pairs =
+{
+"show":{"bgp":1}
+,"bgp":{"scan":1,"instance":1,"nexthop":1,"connected":1}
+,"scan":{"command":1,"status":1,"parameters":1,"bgp":1,"running":1,"interval":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"bgp":1}
+,"status":{"command":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"privileged":1,"exec":1,"example":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"example":{"show":1}
+,"running":{"bgp":1}
+,"interval":{"bgp":1}
+,"instance":{"default":1}
+,"default":{"current":1}
+,"current":{"bgp":1}
+,"nexthop":{"cache":1}
+,"cache":{"bgp":1}
+,"connected":{"route":1}
+,"route":{"10.10.10.0\u002F24":1}
+,"10.10.10.0\u002F24":{"10.10.11.0\u002F24":1}
+}
+;Search.control.loadWordPairs(pairs);

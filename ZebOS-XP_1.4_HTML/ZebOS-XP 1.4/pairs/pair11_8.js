@@ -1,0 +1,19 @@
+var pairs =
+{
+"secure":{"shell":1,"data":1,"network":1}
+,"shell":{"secure":1,"(ssh)":1}
+,"(ssh)":{"cryptographic":1}
+,"cryptographic":{"protocol":1}
+,"protocol":{"secure":1}
+,"data":{"communication":1}
+,"communication":{"remote":1}
+,"remote":{"login":1,"command":1}
+,"login":{"remote":1}
+,"command":{"execution":1}
+,"execution":{"secure":1}
+,"network":{"services":1}
+,"services":{"two":1}
+,"two":{"networked":1}
+,"networked":{"computers":1}
+}
+;Search.control.loadWordPairs(pairs);

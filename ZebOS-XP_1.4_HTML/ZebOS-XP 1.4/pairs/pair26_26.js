@@ -1,0 +1,20 @@
+var pairs =
+{
+"hal_port_info":{"data":1,"{unsigned":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"port":1}
+,"port":{"information":1}
+,"information":{"defined":1}
+,"defined":{"hal\u002Fl2\u002Fhal_l2.h":1}
+,"hal\u002Fl2\u002Fhal_l2.h":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"hal_port_info":1}
+,"{unsigned":{"short":1}
+,"short":{"port_id":1}
+,"port_id":{"unsigned":1}
+,"unsigned":{"char":1}
+,"char":{"state":1}
+}
+;Search.control.loadWordPairs(pairs);

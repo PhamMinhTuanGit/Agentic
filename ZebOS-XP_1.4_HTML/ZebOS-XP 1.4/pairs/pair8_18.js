@@ -1,0 +1,25 @@
+var pairs =
+{
+"bfd_storage_type":{"bfd_storage_type":1,"enumeration":1,"{st_other":1}
+,"enumeration":{"defines":1}
+,"defines":{"bfd":1}
+,"bfd":{"storage":1}
+,"storage":{"types":1,"st_volatile":1,"type":1,"permanent":1,"read":1}
+,"types":{"constant":1}
+,"constant":{"description":1}
+,"description":{"st_other":1}
+,"st_other":{"storage":1}
+,"st_volatile":{"storage":1,"st_nonvolatile":1}
+,"type":{"volatile":1,"nonvolatile":1}
+,"volatile":{"st_nonvolatile":1}
+,"st_nonvolatile":{"storage":1,"st_permanent":1}
+,"nonvolatile":{"st_permanent":1}
+,"st_permanent":{"storage":1,"st_readonly":1}
+,"permanent":{"st_readonly":1}
+,"st_readonly":{"storage":1}
+,"read":{"definition":1}
+,"definition":{"enum":1}
+,"enum":{"bfd_storage_type":1}
+,"{st_other":{"st_volatile":1}
+}
+;Search.control.loadWordPairs(pairs);

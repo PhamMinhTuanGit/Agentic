@@ -1,0 +1,26 @@
+var pairs =
+{
+"rsvp_api_p2mp_session_set_bandwidth":{"call":1,"(struct":1}
+,"call":{"sets":1}
+,"sets":{"bandwidth":1}
+,"bandwidth":{"value":1,"bandwidth":1,"(float":1}
+,"value":{"p2mp":1,"none":1}
+,"p2mp":{"session":1}
+,"session":{"syntax":1,"bandwidth":1}
+,"syntax":{"void":1}
+,"void":{"rsvp_api_p2mp_session_set_bandwidth":1}
+,"(struct":{"rsvp_p2mp_session":1}
+,"rsvp_p2mp_session":{"*orig_session":1}
+,"*orig_session":{"float32_t":1}
+,"float32_t":{"bandwidth)":1}
+,"bandwidth)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"orig_session":1,"none":1}
+,"orig_session":{"p2mp":1}
+,"(float":{"value)":1}
+,"value)":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

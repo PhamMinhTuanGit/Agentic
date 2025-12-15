@@ -1,0 +1,25 @@
+var pairs =
+{
+"elmi_enable_port":{"invokes":1,"(struct":1}
+,"invokes":{"whenever":1}
+,"whenever":{"user":1}
+,"user":{"enables":1}
+,"enables":{"elmi":1}
+,"elmi":{"port":1}
+,"port":{"api":1}
+,"api":{"s_int32_t":1}
+,"s_int32_t":{"elmi_enable_port":1}
+,"(struct":{"elmi_bridge":1}
+,"elmi_bridge":{"*br":1}
+,"*br":{"struct":1}
+,"struct":{"interface":1}
+,"interface":{"*ifp)":1,"structure":1}
+,"*ifp)":{"input":1}
+,"input":{"parameter":1}
+,"parameter":{"ifp":1,"none":1}
+,"ifp":{"reference":1}
+,"reference":{"interface":1}
+,"structure":{"output":1}
+,"output":{"parameter":1}
+}
+;Search.control.loadWordPairs(pairs);

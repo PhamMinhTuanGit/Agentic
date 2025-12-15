@@ -1,0 +1,21 @@
+var pairs =
+{
+"pal_in4_addr":{"data":1,"{u_int32_t":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"ipv4":1}
+,"ipv4":{"address":1}
+,"address":{"functions":1,"32-byte":1}
+,"functions":{"defined":1}
+,"defined":{"pal\u002Fdummy\u002Fpal_types.h":1}
+,"pal\u002Fdummy\u002Fpal_types.h":{"file":1}
+,"file":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"pal_in4_addr":1}
+,"{u_int32_t":{"s_addr":1}
+,"s_addr":{"\u002F\u002Fipv4":1}
+,"\u002F\u002Fipv4":{"address":1}
+,"32-byte":{"format":1}
+}
+;Search.control.loadWordPairs(pairs);

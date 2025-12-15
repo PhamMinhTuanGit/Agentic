@@ -1,0 +1,24 @@
+var pairs =
+{
+"mvrp":{"applicant":1}
+,"applicant":{"command":1,"state":1,"active":1}
+,"command":{"mvrp":1,"syntax":1,"mode":1}
+,"state":{"command":1,"active":1,"normal":1,"sets":1,"applicant":1,"if_name":1}
+,"syntax":{"mvrp":1}
+,"active":{"if_name":1,"sets":1,"state":1,"eth1":1}
+,"if_name":{"mvrp":1,"parameters":1,"adds":1}
+,"normal":{"if_name":1,"sets":1,"state":1,"command":1,"eth1":1}
+,"parameters":{"state":1}
+,"sets":{"state":1,"active":1,"normal":1}
+,"adds":{"name":1}
+,"name":{"interface":1}
+,"interface":{"default":1}
+,"default":{"default":1,"mvrp":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mvrp":1}
+,"eth1":{"configure":1}
+}
+;Search.control.loadWordPairs(pairs);

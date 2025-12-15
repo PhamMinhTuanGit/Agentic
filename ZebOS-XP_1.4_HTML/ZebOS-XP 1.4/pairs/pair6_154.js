@@ -1,0 +1,25 @@
+var pairs =
+{
+"ipv6":{"transition":1,"packets":1}
+,"transition":{"-gre":1,"similar":1}
+,"-gre":{"tunnel":1}
+,"tunnel":{"configuring":1,"ipv6":1,"route":1}
+,"configuring":{"gre":1,"configured":1}
+,"gre":{"(generic":1,"tunnel":1}
+,"(generic":{"routing":1}
+,"routing":{"encapsulation)":1}
+,"encapsulation)":{"tunnel":1}
+,"similar":{"configuring":1}
+,"configured":{"tunnel.to":1,"two":1}
+,"tunnel.to":{"configure":1}
+,"configure":{"gre":1}
+,"route":{"statically":1}
+,"statically":{"configured":1}
+,"two":{"routers":1}
+,"routers":{"enable":1}
+,"enable":{"forwarding":1}
+,"forwarding":{"ipv6":1}
+,"packets":{"ipv4":1}
+,"ipv4":{"network":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"hal_ipv4_mc_pim_init":{"function":1,"(int":1}
+,"function":{"initializes":1,"fails":1,"succeeds":1}
+,"initializes":{"pim":1}
+,"pim":{"routing":1}
+,"routing":{"specified":1}
+,"specified":{"fib":1}
+,"fib":{"syntax":1,"fib":1,"output":1}
+,"syntax":{"int":1}
+,"int":{"hal_ipv4_mc_pim_init":1}
+,"(int":{"fib)":1}
+,"fib)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"fib":1,"none":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"hal_ip_fib_not_exist":1}
+,"hal_ip_fib_not_exist":{"function":1}
+,"fails":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

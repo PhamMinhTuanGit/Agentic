@@ -1,0 +1,22 @@
+var pairs =
+{
+"ldp_api_delete_ldp_entity":{"call":1,"(struct":1}
+,"call":{"deletes":1}
+,"deletes":{"ldp":1}
+,"ldp":{"entity":1}
+,"entity":{"syntax":1,"ldp":1,"output":1,"deleted":1,"successfully":1}
+,"syntax":{"int":1}
+,"int":{"ldp_api_delete_ldp_entity":1}
+,"(struct":{"ldp_entity":1}
+,"ldp_entity":{"*entity)":1}
+,"*entity)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"entity":1,"none":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"entity":1}
+,"deleted":{"entity":1}
+,"successfully":{"deleted":1}
+}
+;Search.control.loadWordPairs(pairs);

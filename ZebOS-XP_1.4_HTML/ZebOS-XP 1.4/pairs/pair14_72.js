@@ -1,0 +1,26 @@
+var pairs =
+{
+"hal_in6_addr":{"data":1,"{union":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"ipv6":1}
+,"ipv6":{"address":1}
+,"address":{"functions":1}
+,"functions":{"defined":1}
+,"defined":{"hal\u002Fhal_types.h":1}
+,"hal\u002Fhal_types.h":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"hal_in6_addr":1}
+,"{union":{"{u_int8_t":1}
+,"{u_int8_t":{"u6_addr8":1}
+,"u6_addr8":{"[16]":1}
+,"[16]":{"u_int16_t":1}
+,"u_int16_t":{"u6_addr16":1}
+,"u6_addr16":{"[8]":1}
+,"[8]":{"u_int32_t":1}
+,"u_int32_t":{"u6_addr32":1}
+,"u6_addr32":{"[4]":1}
+,"[4]":{"in6_u":1}
+}
+;Search.control.loadWordPairs(pairs);

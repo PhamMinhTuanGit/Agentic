@@ -1,0 +1,24 @@
+var pairs =
+{
+"backhaul":{"part":1}
+,"part":{"hierarchical":1,"network":1}
+,"hierarchical":{"network":1}
+,"network":{"connects":1,"core":1,"wireless":1,"transports":1,"routes":1}
+,"connects":{"small":1}
+,"small":{"subnetworks":1}
+,"subnetworks":{"edge":1}
+,"edge":{"network":1}
+,"core":{"backbone":1,"network":1}
+,"backbone":{"network":1}
+,"wireless":{"backhaul":1}
+,"transports":{"traffic":1}
+,"traffic":{"cellular":1}
+,"cellular":{"base":1}
+,"base":{"station":1}
+,"station":{"core":1}
+,"routes":{"switches":1}
+,"switches":{"voice":1}
+,"voice":{"data":1}
+,"data":{"traffic":1}
+}
+;Search.control.loadWordPairs(pairs);

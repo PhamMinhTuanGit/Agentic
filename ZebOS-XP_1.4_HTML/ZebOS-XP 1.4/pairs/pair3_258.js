@@ -1,0 +1,25 @@
+var pairs =
+{
+"topology":{"example":1}
+,"example":{"ip-ip":1}
+,"ip-ip":{"tunnel":1,"packet":1,"mpls":1}
+,"tunnel":{"created":1,"mpls":1}
+,"created":{"router1":1,"router2":1}
+,"router1":{"router6":1}
+,"router6":{"within":1}
+,"within":{"ip-ip":1}
+,"mpls":{"tunnel":1,"domain":1,"header":1,"tunnels":1}
+,"router2":{"router5":1,"ingress":1,"adds":1}
+,"router5":{"router2":1,"egress":1,"router5":1,"removes":1}
+,"ingress":{"router":1}
+,"router":{"router5":1,"mpls":1}
+,"egress":{"router":1}
+,"domain":{"packet":1,"router2":1,"router5":1}
+,"packet":{"enters":1,"packet":1,"leaves":1,"ip-ip":1}
+,"enters":{"mpls":1}
+,"adds":{"mpls":1}
+,"header":{"ip-ip":1}
+,"leaves":{"mpls":1}
+,"removes":{"mpls":1}
+}
+;Search.control.loadWordPairs(pairs);

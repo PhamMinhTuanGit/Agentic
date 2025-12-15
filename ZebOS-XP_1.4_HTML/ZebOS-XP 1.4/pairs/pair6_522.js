@@ -1,0 +1,21 @@
+var pairs =
+{
+"mac-address":{"used":1,"mac":1,"1234.1234.1234":1}
+,"used":{"command":1}
+,"command":{"mac":1,"syntax":1,"mode":1}
+,"mac":{"address":1,"mac-address":1,"parameters":1,"specify":1}
+,"address":{"lsr":1,"command":1}
+,"lsr":{"parameter":1,"command":1,"mode":1,"first":1}
+,"parameter":{"remove":1}
+,"remove":{"mac":1}
+,"syntax":{"mac-address":1}
+,"parameters":{"mac":1}
+,"specify":{"mac":1}
+,"mode":{"lsr":1,"examples":1}
+,"examples":{"(config)":1}
+,"(config)":{"lsr":1}
+,"first":{"(config-lsr)":1}
+,"(config-lsr)":{"mac-address":1}
+,"1234.1234.1234":{"(config)":1}
+}
+;Search.control.loadWordPairs(pairs);

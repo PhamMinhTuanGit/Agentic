@@ -1,0 +1,27 @@
+var pairs =
+{
+"host":{"computer":1,"usually":1}
+,"computer":{"connected":1,"system":1}
+,"connected":{"network":1}
+,"network":{"assigned":1,"similar":1}
+,"assigned":{"layer":1}
+,"layer":{"(l3)":1}
+,"(l3)":{"address":1}
+,"address":{"provides":1}
+,"provides":{"access":1}
+,"access":{"point":1}
+,"point":{"network":1}
+,"similar":{"node":1}
+,"node":{"except":1,"generally":1}
+,"except":{"host":1}
+,"usually":{"implies":1}
+,"implies":{"computer":1}
+,"system":{"whereas":1}
+,"whereas":{"node":1}
+,"generally":{"applies":1}
+,"applies":{"networked":1}
+,"networked":{"device":1}
+,"device":{"router":1}
+,"router":{"switch":1}
+}
+;Search.control.loadWordPairs(pairs);

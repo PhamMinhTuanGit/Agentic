@@ -1,0 +1,19 @@
+var pairs =
+{
+"topology":{"change":1}
+,"change":{"notification":1}
+,"notification":{"(tcn)":1}
+,"(tcn)":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"protocol":1}
+,"protocol":{"(stp)":1,"data":1}
+,"(stp)":{"bridge":1}
+,"bridge":{"protocol":1}
+,"data":{"unit":1}
+,"unit":{"(bpdu)":1}
+,"(bpdu)":{"switch":1}
+,"switch":{"sends":1}
+,"sends":{"signal":1}
+,"signal":{"topology":1}
+}
+;Search.control.loadWordPairs(pairs);

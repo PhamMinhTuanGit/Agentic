@@ -1,0 +1,21 @@
+var pairs =
+{
+"topology":{"topology":1,"shown":1}
+,"shown":{"figure":1}
+,"figure":{"1-1":1}
+,"1-1":{"zebos2":1}
+,"zebos2":{"select":1}
+,"select":{"clock":1}
+,"clock":{"source":1}
+,"source":{"zebos1":1}
+,"zebos1":{"zebos3":1}
+,"zebos3":{"selection":1}
+,"selection":{"based":1}
+,"based":{"quality":1}
+,"quality":{"level":1}
+,"level":{"priority":1}
+,"priority":{"selecting":1}
+,"selecting":{"frequency":1}
+,"frequency":{"source":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,22 @@
+var pairs =
+{
+"portal-system-number":{"command":1,"<1-3>":1}
+,"command":{"portal":1,"syntax":1,"mode":1}
+,"portal":{"system":1,"command":1}
+,"system":{"number":1,"portal":1}
+,"number":{"uniquely":1,"command":1}
+,"uniquely":{"identifies":1}
+,"identifies":{"system":1}
+,"syntax":{"portal-system-number":1}
+,"<1-3>":{"parameters":1,"portal":1}
+,"parameters":{"<1-3>":1}
+,"mode":{"mlag":1,"example":1}
+,"mlag":{"mode":1,"configuration":1}
+,"example":{"config":1}
+,"config":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mlag":1}
+,"configuration":{"(config-mlag)":1}
+,"(config-mlag)":{"portal-system-number":1}
+}
+;Search.control.loadWordPairs(pairs);

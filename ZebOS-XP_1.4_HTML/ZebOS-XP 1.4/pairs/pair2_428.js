@@ -1,0 +1,22 @@
+var pairs =
+{
+"overview":{"rfc":1}
+,"rfc":{"2863":1}
+,"2863":{"defines":1}
+,"defines":{"variables":1}
+,"variables":{"supported":1}
+,"supported":{"nsm":1}
+,"nsm":{"object":1}
+,"object":{"type":1}
+,"type":{"syntax":1}
+,"syntax":{"access":1}
+,"access":{"functions":1}
+,"functions":{"ifrcvaddressstatus":1}
+,"ifrcvaddressstatus":{"rowstatus":1}
+,"rowstatus":{"read-create":1}
+,"read-create":{"nsm_get_rcvaddress_status":1,"nsm_get_rcvaddress_type":1}
+,"nsm_get_rcvaddress_status":{"ifrcvaddresstype":1}
+,"ifrcvaddresstype":{"integer":1}
+,"integer":{"read-create":1}
+}
+;Search.control.loadWordPairs(pairs);

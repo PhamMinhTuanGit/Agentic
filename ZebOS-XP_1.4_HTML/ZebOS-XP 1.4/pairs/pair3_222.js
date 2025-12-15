@@ -1,0 +1,24 @@
+var pairs =
+{
+"mmrp":{"disable":1,"globally":1,"ports":1,"disabled":1}
+,"disable":{"command":1,"mmrp":1,"bridge":1,"vlan":1}
+,"command":{"disable":1,"syntax":1,"mode":1}
+,"globally":{"default":1}
+,"default":{"bridge":1,"mmrp":1,"command":1}
+,"bridge":{"command":1,"bridge_name":1,"identifier":1}
+,"ports":{"bridge":1}
+,"syntax":{"mmrp":1}
+,"bridge_name":{"mmrp":1,"vlan":1,"bridge":1}
+,"vlan":{"vlanid":1,"identifier":1}
+,"vlanid":{"mmrp":1,"parameters":1,"vlan":1}
+,"parameters":{"bridge_name":1}
+,"identifier":{"vlanid":1,"<1-4094>":1}
+,"<1-4094>":{"default":1}
+,"disabled":{"default":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mmrp":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,25 @@
+var pairs =
+{
+"tunnel":{"source":1,"(config-if)":1,"mode":1,"destination":1}
+,"source":{"command":1,"address":1,"a.b.c.d":1,"parameter":1,"10.11.2.1":1}
+,"command":{"specify":1,"syntax":1,"mode":1}
+,"specify":{"tunnel":1}
+,"address":{"ipv4":1,"command":1}
+,"ipv4":{"portion":1,"tunnel":1}
+,"portion":{"parameter":1}
+,"parameter":{"undo":1,"a.b.c.d":1}
+,"undo":{"tunnel":1}
+,"syntax":{"tunnel":1}
+,"a.b.c.d":{"tunnel":1,"ipv4":1}
+,"mode":{"interface":1,"examples":1,"gre":1}
+,"interface":{"mode":1,"tunnel":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"(config-if)":{"tunnel":1}
+,"gre":{"(config-if)":1}
+,"destination":{"10.10.1.1":1}
+,"10.10.1.1":{"(config-if)":1}
+}
+;Search.control.loadWordPairs(pairs);

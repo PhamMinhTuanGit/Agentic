@@ -1,0 +1,24 @@
+var pairs =
+{
+"vlan-pruning":{"command":1,"vlan-pruning":1,"parameters":1,"(config-rb)":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"vlan":1,"configure":1}
+,"vlan":{"pruning":1}
+,"pruning":{"parameter":1,"command":1}
+,"parameter":{"command":1}
+,"disable":{"vlan":1}
+,"syntax":{"vlan-pruning":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"rbridge":1,"examples":1}
+,"rbridge":{"mode":1,"trill":1}
+,"examples":{"enable":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"bridge":1,"rbridge":1}
+,"bridge":{"protocol":1}
+,"protocol":{"trill":1}
+,"trill":{"(config)":1,"(config-rb)":1}
+,"(config-rb)":{"vlan-pruning":1}
+}
+;Search.control.loadWordPairs(pairs);

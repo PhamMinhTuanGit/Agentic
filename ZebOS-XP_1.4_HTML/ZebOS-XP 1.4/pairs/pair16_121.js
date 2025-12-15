@@ -1,0 +1,23 @@
+var pairs =
+{
+"meg":{"intermediate":1,"meps":1}
+,"intermediate":{"point":1}
+,"point":{"(mip)":1}
+,"(mip)":{"mip":1}
+,"mip":{"terminates":1,"may":1,"generates":1,"resides":1}
+,"terminates":{"processes":1}
+,"processes":{"oam":1}
+,"oam":{"packets":1}
+,"packets":{"sent":1,"response":1,"mip":1}
+,"sent":{"particular":1}
+,"particular":{"mip":1}
+,"may":{"generate":1}
+,"generate":{"oam":1}
+,"response":{"received":1}
+,"received":{"oam":1}
+,"generates":{"unsolicited":1}
+,"unsolicited":{"oam":1}
+,"resides":{"within":1}
+,"within":{"meg":1}
+}
+;Search.control.loadWordPairs(pairs);

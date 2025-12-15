@@ -1,0 +1,20 @@
+var pairs =
+{
+"rsvp-te":{"protocol":1}
+,"protocol":{"extensions":1,"extended":1}
+,"extensions":{"rsvp-te":1}
+,"extended":{"support":1}
+,"support":{"following":1}
+,"following":{"fast":1}
+,"fast":{"reroute":1}
+,"reroute":{"object":1}
+,"object":{"detour":1,"session":1}
+,"detour":{"object":1}
+,"session":{"attribute":1}
+,"attribute":{"flags":1}
+,"flags":{"rro":1}
+,"rro":{"ipv4\u002Fipv6":1}
+,"ipv4\u002Fipv6":{"subobject":1}
+,"subobject":{"flags":1}
+}
+;Search.control.loadWordPairs(pairs);

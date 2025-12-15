@@ -1,0 +1,27 @@
+var pairs =
+{
+"ce-pe":{"interaction":1,"route":1}
+,"interaction":{"devices":1}
+,"devices":{"learn":1}
+,"learn":{"advertise":1}
+,"advertise":{"routes":1}
+,"routes":{"sites":1,"learned":1}
+,"sites":{"vpns":1}
+,"vpns":{"zebos-xp":1}
+,"zebos-xp":{"bgp":1}
+,"bgp":{"ospf":1,"installs":1}
+,"ospf":{"rip":1}
+,"rip":{"used":1}
+,"used":{"ce-pe":1}
+,"route":{"exchange":1}
+,"exchange":{"bgp":1}
+,"installs":{"routes":1}
+,"learned":{"corresponding":1}
+,"corresponding":{"vrf":1}
+,"vrf":{"table":1}
+,"table":{"site":1}
+,"site":{"based":1}
+,"based":{"incoming":1}
+,"incoming":{"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

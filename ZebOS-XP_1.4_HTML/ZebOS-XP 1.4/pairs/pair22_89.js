@@ -1,0 +1,26 @@
+var pairs =
+{
+"router-id":{"command":1,"a.b.c.d":1,"(a.b.c.d":1,"123.12.3.123":1}
+,"command":{"add":1,"disable":1,"syntax":1,"mode":1}
+,"add":{"router":1}
+,"router":{"identifier":1}
+,"identifier":{"system":1,"address":1}
+,"system":{"form":1,"command":1}
+,"form":{"command":1}
+,"disable":{"function":1}
+,"function":{"command":1}
+,"syntax":{"router-id":1}
+,"a.b.c.d":{"router-id":1,"specifies":1}
+,"(a.b.c.d":{"parameters":1}
+,"parameters":{"a.b.c.d":1}
+,"specifies":{"router":1}
+,"address":{"format":1}
+,"format":{"system":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router-id":1}
+,"123.12.3.123":{"(config)":1}
+}
+;Search.control.loadWordPairs(pairs);

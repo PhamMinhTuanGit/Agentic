@@ -1,0 +1,24 @@
+var pairs =
+{
+"exit-pbb-te-esp-mode":{"command":1,"parameters":1,"(config-if)":1}
+,"command":{"exit":1,"syntax":1,"mode":1}
+,"exit":{"pbb-te":1}
+,"pbb-te":{"esp":1,"configure":1}
+,"esp":{"(ethernet":1,"provisioning":1}
+,"(ethernet":{"switched":1}
+,"switched":{"path)":1}
+,"path)":{"configure":1}
+,"configure":{"mode":1,"switching":1}
+,"mode":{"command":1,"pbb-te":1,"examples":1,"(pbb-te-esp-if-config)":1}
+,"syntax":{"exit-pbb-te-esp-mode":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"switching":{"mode":1}
+,"examples":{"following":1}
+,"following":{"example":1}
+,"example":{"enters":1}
+,"enters":{"pbb-te":1}
+,"provisioning":{"mode":1}
+,"(pbb-te-esp-if-config)":{"exit-pbb-te-esp-mode":1}
+}
+;Search.control.loadWordPairs(pairs);

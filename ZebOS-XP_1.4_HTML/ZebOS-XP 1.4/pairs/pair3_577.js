@@ -1,0 +1,20 @@
+var pairs =
+{
+"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"router":1}
+,"mode":{"(config)":1,"(config-router)":1}
+,"(config)":{"router":1}
+,"router":{"rip":1,"mode":1}
+,"rip":{"define":1,"routing":1,"process":1}
+,"define":{"rip":1}
+,"routing":{"process":1}
+,"process":{"enter":1}
+,"(config-router)":{"network":1}
+,"network":{"10.10.10.0\u002F24":1,"10.10.11.0\u002F24":1}
+,"10.10.10.0\u002F24":{"(config-router)":1}
+,"10.10.11.0\u002F24":{"associate":1}
+,"associate":{"networks":1}
+,"networks":{"rip":1}
+}
+;Search.control.loadWordPairs(pairs);

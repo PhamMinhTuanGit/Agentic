@@ -1,0 +1,21 @@
+var pairs =
+{
+"dot1x":{"system-auth-ctrl":1}
+,"system-auth-ctrl":{"command":1,"dot1x":1,"parameters":1}
+,"command":{"enable":1,"syntax":1,"mode":1}
+,"enable":{"globally":1}
+,"globally":{"authentication":1}
+,"authentication":{"parameter":1,"command":1,"default":1}
+,"parameter":{"disable":1}
+,"disable":{"globally":1}
+,"syntax":{"dot1x":1}
+,"parameters":{"none":1}
+,"none":{"default":1}
+,"default":{"authentication":1,"command":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"dot1x":1}
+}
+;Search.control.loadWordPairs(pairs);

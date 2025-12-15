@@ -1,0 +1,26 @@
+var pairs =
+{
+"show":{"mpls-tp":1}
+,"mpls-tp":{"summary":1}
+,"summary":{"command":1,"parameters":1,"total":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"continuity-check":1}
+,"continuity-check":{"summary":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"privilege":1,"examples":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"examples":{"show":1}
+,"total":{"number":1}
+,"number":{"sessions":1}
+,"sessions":{"configured":1}
+,"configured":{"------------------------------------------------------------------------------meg-name":1}
+,"------------------------------------------------------------------------------meg-name":{"mp-id":1}
+,"mp-id":{"ccm-interval":1}
+,"ccm-interval":{"oper":1}
+,"oper":{"status":1}
+,"status":{"------------------------------------------------------------------------------inairtel\u002Fmeg":1}
+}
+;Search.control.loadWordPairs(pairs);

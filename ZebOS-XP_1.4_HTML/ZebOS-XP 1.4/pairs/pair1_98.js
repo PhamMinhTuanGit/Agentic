@@ -1,0 +1,26 @@
+var pairs =
+{
+"g.8032":{"erps":1,"ethernet":1}
+,"erps":{"version":1}
+,"version":{"chapter":1,"refers":1,"supported":1}
+,"chapter":{"contains":1}
+,"contains":{"complete":1}
+,"complete":{"sample":1}
+,"sample":{"configuration":1}
+,"configuration":{"g.8032":1}
+,"ethernet":{"ring":1}
+,"ring":{"protection":1}
+,"protection":{"switching":1}
+,"switching":{"(erps)":1}
+,"(erps)":{"version":1}
+,"refers":{"itu-t":1}
+,"itu-t":{"recommendation":1}
+,"recommendation":{"g.8032\u002Fy.1344":1}
+,"g.8032\u002Fy.1344":{"published":1}
+,"published":{"february":1}
+,"february":{"2012":1}
+,"2012":{"erps":1}
+,"supported":{"zebic":1}
+,"zebic":{"releases":1}
+}
+;Search.control.loadWordPairs(pairs);

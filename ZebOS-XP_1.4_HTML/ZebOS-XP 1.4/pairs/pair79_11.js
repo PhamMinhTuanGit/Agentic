@@ -1,0 +1,20 @@
+var pairs =
+{
+"ldp_api_create_ldp_instance":{"call":1,"input":1}
+,"call":{"creates":1}
+,"creates":{"ldp":1}
+,"ldp":{"instance":1}
+,"instance":{"syntax":1,"successfully":1,"created":1}
+,"syntax":{"ldp_api_create_ldp_instance":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"values":1}
+,"values":{"ldp_success":1}
+,"ldp_success":{"instance":1}
+,"successfully":{"created":1}
+,"created":{"ldp_error":1}
+,"ldp_error":{"instance":1}
+}
+;Search.control.loadWordPairs(pairs);

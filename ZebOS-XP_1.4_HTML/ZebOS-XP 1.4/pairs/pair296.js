@@ -1,0 +1,20 @@
+var pairs =
+{
+"path":{"computation":1,"route":1}
+,"computation":{"element":1}
+,"element":{"(pce)":1}
+,"(pce)":{"entity":1}
+,"entity":{"(component":1}
+,"(component":{"application":1}
+,"application":{"server)":1}
+,"server)":{"compute":1}
+,"compute":{"network":1}
+,"network":{"path":1,"graph":1}
+,"route":{"based":1}
+,"based":{"network":1}
+,"graph":{"constraints":1}
+,"constraints":{"(see":1}
+,"(see":{"rfc":1}
+,"rfc":{"4655)":1}
+}
+;Search.control.loadWordPairs(pairs);

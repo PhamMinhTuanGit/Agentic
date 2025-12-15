@@ -1,0 +1,26 @@
+var pairs =
+{
+"rate":{"limiting":1}
+,"limiting":{"messages":1,"hal_msg_ratelimit_deinit":1,"hal_msg_ratelimit_bcast":1,"hal_msg_ratelimit_bcast_discards_get":1,"hal_msg_ratelimit_mcast_discards_get":1,"hal_msg_ratelimit_dlf_bcast_discards_get":1}
+,"messages":{"message":1}
+,"message":{"message":1,"hal_msg_ratelimit_init":1}
+,"hal_msg_ratelimit_init":{"initialize":1}
+,"initialize":{"rate":1}
+,"hal_msg_ratelimit_deinit":{"de-initialize":1}
+,"de-initialize":{"rate":1}
+,"hal_msg_ratelimit_bcast":{"enable":1}
+,"enable":{"broadcast":1,"multicast":1,"unicast":1}
+,"broadcast":{"rate":1,"discards":1}
+,"hal_msg_ratelimit_bcast_discards_get":{"number":1}
+,"number":{"broadcast":1,"multicast":1,"unicast":1}
+,"discards":{"hal_msg_ratelimit_mcast":1,"hal_msg_ratelimit_dlf_bcast":1}
+,"hal_msg_ratelimit_mcast":{"enable":1}
+,"multicast":{"rate":1,"discards":1}
+,"hal_msg_ratelimit_mcast_discards_get":{"number":1}
+,"hal_msg_ratelimit_dlf_bcast":{"enable":1}
+,"unicast":{"unknown":1}
+,"unknown":{"destination":1}
+,"destination":{"rate":1,"discards":1}
+,"hal_msg_ratelimit_dlf_bcast_discards_get":{"number":1}
+}
+;Search.control.loadWordPairs(pairs);

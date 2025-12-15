@@ -1,0 +1,24 @@
+var pairs =
+{
+"validation":{"checking":1}
+,"checking":{"esadi":1}
+,"esadi":{"adjacency":1,"instance":1}
+,"adjacency":{"rbridge1":1,"rbridge4":1,"rbridge6":1}
+,"rbridge1":{"show":1}
+,"show":{"trill":1}
+,"trill":{"esadi":1}
+,"instance":{"vlan":1}
+,"vlan":{"esadi-priority":1}
+,"esadi-priority":{"csnp-timer":1}
+,"csnp-timer":{"state":1}
+,"state":{"confidence":1}
+,"confidence":{"drb-system-id":1}
+,"drb-system-id":{"--------------------------------------------------------------------------------1":1}
+,"--------------------------------------------------------------------------------1":{"non-drb":1,"esadi-drb":1}
+,"non-drb":{"ffff.ffff.ffff":1}
+,"ffff.ffff.ffff":{"non-drb":1,"checking":1,"esadi-drb":1}
+,"rbridge4":{"show":1}
+,"rbridge6":{"show":1}
+,"esadi-drb":{"ffff.ffff.ffff":1}
+}
+;Search.control.loadWordPairs(pairs);

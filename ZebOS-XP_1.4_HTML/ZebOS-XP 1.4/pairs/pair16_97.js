@@ -1,0 +1,26 @@
+var pairs =
+{
+"ldp_api_get_tcp_port":{"call":1,"input":1}
+,"call":{"gets":1}
+,"gets":{"transmission":1}
+,"transmission":{"control":1}
+,"control":{"protocol":1}
+,"protocol":{"(tcp)":1}
+,"(tcp)":{"port":1}
+,"port":{"used":1}
+,"used":{"ldp":1}
+,"ldp":{"syntax":1,"supports":1}
+,"syntax":{"u_int16_t":1}
+,"u_int16_t":{"ldp_api_get_tcp_port":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"value":1}
+,"value":{"ldp_default_port_tcp":1}
+,"ldp_default_port_tcp":{"tcp":1}
+,"tcp":{"port":1}
+,"supports":{"default":1}
+,"default":{"tcp":1}
+}
+;Search.control.loadWordPairs(pairs);

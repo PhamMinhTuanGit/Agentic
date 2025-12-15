@@ -1,0 +1,27 @@
+var pairs =
+{
+"graceful-restart":{"restart-time":1}
+,"restart-time":{"command":1,"<1-4294967295>":1,"parameters":1,"555":1}
+,"command":{"restart":1,"reset":1,"syntax":1,"mode":1}
+,"restart":{"time":1,"configuration":1}
+,"time":{"rsvp-te":1,"command":1,"value":1}
+,"rsvp-te":{"graceful":1}
+,"graceful":{"restart":1}
+,"configuration":{"parameter":1}
+,"parameter":{"command":1}
+,"reset":{"restart":1}
+,"syntax":{"graceful-restart":1}
+,"<1-4294967295>":{"graceful-restart":1,"restart":1}
+,"parameters":{"<1-4294967295>":1}
+,"value":{"milliseconds":1}
+,"milliseconds":{"command":1}
+,"mode":{"router":1,"example":1}
+,"router":{"mode":1,"rsvp":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"rsvp":{"(config-router)":1}
+,"(config-router)":{"graceful-restart":1}
+}
+;Search.control.loadWordPairs(pairs);

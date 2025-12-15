@@ -1,0 +1,21 @@
+var pairs =
+{
+"ospf":{"route":1}
+,"route":{"type":1}
+,"type":{"ospf":1,"propagates":1,"information":1,"0x0306":1,"extended-community":1,"type":1,"0x8000":1}
+,"propagates":{"ospf":1}
+,"information":{"across":1}
+,"across":{"mp-ibgp":1}
+,"mp-ibgp":{"backbone":1}
+,"backbone":{"type":1}
+,"0x0306":{"opaque":1}
+,"opaque":{"type":1}
+,"extended-community":{"attribute":1}
+,"attribute":{"ospf":1}
+,"0x8000":{"used":1}
+,"used":{"backward":1}
+,"backward":{"compatibility":1}
+,"compatibility":{"treated":1}
+,"treated":{"0x0306":1}
+}
+;Search.control.loadWordPairs(pairs);

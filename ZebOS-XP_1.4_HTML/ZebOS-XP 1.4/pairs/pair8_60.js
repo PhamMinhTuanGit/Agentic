@@ -1,0 +1,24 @@
+var pairs =
+{
+"lldp":{"disable":1,"agent":1}
+,"disable":{"command":1,"admin":1,"parameters":1,"(lldp-agent)":1}
+,"command":{"disable":1,"syntax":1,"mode":1}
+,"admin":{"status":1}
+,"status":{"lldp":1}
+,"agent":{"port":1,"mode":1}
+,"port":{"command":1}
+,"syntax":{"lldp":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"lldp":1,"examples":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"int":1}
+,"int":{"eth0":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"lldp-agent":1}
+,"lldp-agent":{"(lldp-agent)":1}
+,"(lldp-agent)":{"lldp":1,"exit":1}
+}
+;Search.control.loadWordPairs(pairs);

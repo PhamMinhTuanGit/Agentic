@@ -1,0 +1,26 @@
+var pairs =
+{
+"trill_accept_nonadj":{"syntax":1,"(struct":1}
+,"syntax":{"s_int32_t":1}
+,"s_int32_t":{"trill_accept_nonadj":1}
+,"(struct":{"trill":1}
+,"trill":{"*top":1,"instance":1}
+,"*top":{"bool_t":1,"specifies":1}
+,"bool_t":{"flag)":1}
+,"flag)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*top":1,"none":1}
+,"specifies":{"pointer":1}
+,"pointer":{"trill":1,"interface":1}
+,"instance":{"flag":1}
+,"flag":{"specifies":1,"output":1}
+,"interface":{"flag":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"trill_api_set_err_no_nsm_cilent":1}
+,"trill_api_set_err_no_nsm_cilent":{"trill_err_memory_alloc_failure":1}
+,"trill_err_memory_alloc_failure":{"trill_api_set_err_nsm_send_failed":1}
+,"trill_api_set_err_nsm_send_failed":{"trill_api_set_success":1}
+}
+;Search.control.loadWordPairs(pairs);

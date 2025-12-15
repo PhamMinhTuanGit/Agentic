@@ -1,0 +1,25 @@
+var pairs =
+{
+"broadcast-interface-disjoint":{"type":1}
+,"type":{"path":1}
+,"path":{"connected":1,"protected":1,"different":1,"computed":1,"next-hop":1}
+,"connected":{"broadcast":1}
+,"broadcast":{"network":1,"interfaces":1}
+,"network":{"repair":1}
+,"repair":{"paths":1,"path":1}
+,"paths":{"protect":1}
+,"protect":{"links":1}
+,"links":{"repair":1}
+,"protected":{"primary":1,"link":1}
+,"primary":{"path":1}
+,"different":{"next-hop":1,"router":1}
+,"next-hop":{"interfaces":1,"gateways":1}
+,"interfaces":{"however":1,"repair":1}
+,"however":{"broadcast":1}
+,"computed":{"via":1}
+,"via":{"interface":1}
+,"interface":{"primary":1}
+,"gateways":{"different":1}
+,"router":{"protected":1}
+}
+;Search.control.loadWordPairs(pairs);

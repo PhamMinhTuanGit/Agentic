@@ -1,0 +1,26 @@
+var pairs =
+{
+"pw-status-tlv":{"command":1,"pw-status-tlv":1,"parameters":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"status":1}
+,"status":{"tlv":1,"option":1,"command":1}
+,"tlv":{"signal":1}
+,"signal":{"pseudowire":1}
+,"pseudowire":{"status":1}
+,"option":{"command":1}
+,"disable":{"status":1}
+,"syntax":{"pw-status-tlv":1}
+,"parameters":{"none":1}
+,"none":{"default":1}
+,"default":{"disabled":1}
+,"disabled":{"command":1}
+,"mode":{"router":1,"example":1}
+,"router":{"mode":1,"ldp":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"ldp":{"(config-router)":1}
+,"(config-router)":{"pw-status-tlv":1}
+}
+;Search.control.loadWordPairs(pairs);

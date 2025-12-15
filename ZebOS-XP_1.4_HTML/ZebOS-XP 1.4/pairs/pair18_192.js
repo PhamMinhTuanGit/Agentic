@@ -1,0 +1,20 @@
+var pairs =
+{
+"lsp":{"database":1}
+,"database":{"lsp":1,"core":1}
+,"core":{"trill":1}
+,"trill":{"routing":1}
+,"routing":{"link-state":1}
+,"link-state":{"information":1}
+,"information":{"known":1}
+,"known":{"link":1}
+,"link":{"state":1}
+,"state":{"pdu":1}
+,"pdu":{"advertised":1}
+,"advertised":{"neighbors":1}
+,"neighbors":{"domain":1}
+,"domain":{"area":1}
+,"area":{"stored":1}
+,"stored":{"database":1}
+}
+;Search.control.loadWordPairs(pairs);

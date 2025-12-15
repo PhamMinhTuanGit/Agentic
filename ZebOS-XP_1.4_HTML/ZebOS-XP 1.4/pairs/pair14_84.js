@@ -1,0 +1,21 @@
+var pairs =
+{
+"isis_restart_level_triggered_check":{"syntax":1,"(struct":1}
+,"syntax":{"void":1}
+,"void":{"isis_restart_level_triggered_check":1}
+,"(struct":{"isis_level":1}
+,"isis_level":{"*il)":1}
+,"*il)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*il":1,"none":1}
+,"*il":{"pointer":1}
+,"pointer":{"level":1}
+,"level":{"context":1}
+,"context":{"is-is":1}
+,"is-is":{"instance":1}
+,"instance":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

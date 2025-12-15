@@ -1,0 +1,25 @@
+var pairs =
+{
+"duplex":{"command":1,"mode":1,"(half":1,"parameter":1,"auto":1}
+,"command":{"duplex":1,"syntax":1,"mode":1}
+,"mode":{"interface":1,"command":1,"examples":1}
+,"interface":{"parameter":1,"half-duplex":1,"full-duplex":1,"auto-negotiate":1,"mode":1,"eth0":1}
+,"parameter":{"remove":1,"half":1}
+,"remove":{"duplex":1}
+,"syntax":{"duplex":1}
+,"(half":{"full":1}
+,"full":{"auto)":1,"interface":1}
+,"auto)":{"duplex":1}
+,"half":{"interface":1}
+,"half-duplex":{"full":1}
+,"full-duplex":{"auto":1}
+,"auto":{"interface":1,"(config-if)":1}
+,"auto-negotiate":{"command":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"duplex":1}
+}
+;Search.control.loadWordPairs(pairs);

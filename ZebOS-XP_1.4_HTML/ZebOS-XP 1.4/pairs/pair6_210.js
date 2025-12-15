@@ -1,0 +1,19 @@
+var pairs =
+{
+"graceful":{"restart":1}
+,"restart":{"mechanism":1,"operation":1,"capable":1}
+,"mechanism":{"following":1}
+,"following":{"section":1,"behavior":1}
+,"section":{"describes":1}
+,"describes":{"graceful":1}
+,"operation":{"respect":1}
+,"respect":{"restarting":1}
+,"restarting":{"router":1}
+,"router":{"peer":1,"session":1}
+,"peer":{"router":1}
+,"session":{"consideration":1}
+,"consideration":{"restart":1}
+,"capable":{"described":1}
+,"described":{"following":1}
+}
+;Search.control.loadWordPairs(pairs);

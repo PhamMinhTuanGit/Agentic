@@ -1,0 +1,19 @@
+var pairs =
+{
+"data":{"structures":1,"structure":1}
+,"structures":{"chapter":1,"nsm_master":1,"developer":1}
+,"chapter":{"describes":1}
+,"describes":{"bfd":1}
+,"bfd":{"data":1,"functions":1}
+,"nsm_master":{"data":1}
+,"structure":{"common":1}
+,"common":{"zebos-xp":1,"data":1}
+,"zebos-xp":{"protocols":1}
+,"protocols":{"used":1}
+,"used":{"bfd":1}
+,"functions":{"common":1}
+,"developer":{"guide":1}
+,"guide":{"description":1}
+,"description":{"data":1}
+}
+;Search.control.loadWordPairs(pairs);

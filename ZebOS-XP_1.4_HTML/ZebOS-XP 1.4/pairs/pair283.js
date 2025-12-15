@@ -1,0 +1,22 @@
+var pairs =
+{
+"hal_vlan_classifier_init":{"function":1,"input":1}
+,"function":{"initializes":1,"fails":1,"succeeds":1}
+,"initializes":{"vlan":1}
+,"vlan":{"classifier":1}
+,"classifier":{"hardware":1}
+,"hardware":{"layer":1}
+,"layer":{"syntax":1}
+,"syntax":{"int":1}
+,"int":{"hal_vlan_classifier_init":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"value":1}
+,"value":{"hal_err_vlan_classifier_init":1}
+,"hal_err_vlan_classifier_init":{"function":1}
+,"fails":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

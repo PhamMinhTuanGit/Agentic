@@ -1,0 +1,21 @@
+var pairs =
+{
+"contents":{"document":1}
+,"document":{"contains":1}
+,"contains":{"chapters":1}
+,"chapters":{"appendices":1}
+,"appendices":{"chapter":1}
+,"chapter":{"zebos-xp":1,"data":1,"mpls":1,"ftn":1}
+,"zebos-xp":{"mpls":1}
+,"mpls":{"forwarder":1,"data":1}
+,"forwarder":{"chapter":1}
+,"data":{"structures":1,"link":1}
+,"structures":{"chapter":1}
+,"link":{"module":1}
+,"module":{"chapter":1}
+,"ftn":{"vrf":1}
+,"vrf":{"label":1}
+,"label":{"interface":1}
+,"interface":{"apis":1}
+}
+;Search.control.loadWordPairs(pairs);

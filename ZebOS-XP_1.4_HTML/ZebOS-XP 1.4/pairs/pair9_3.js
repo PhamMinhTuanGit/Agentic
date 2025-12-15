@@ -1,0 +1,22 @@
+var pairs =
+{
+"is-is":{"option":1,"daemon":1,"multi-topology":1}
+,"option":{"flag":1}
+,"flag":{"description":1}
+,"description":{"--enable-isisd":1}
+,"--enable-isisd":{"build":1}
+,"build":{"is-is":1,"is-is6":1}
+,"daemon":{"(default":1,"--enable-isis6d":1,"--enable-multi-topology":1}
+,"(default":{"linux)":1}
+,"linux)":{"--disable-isisd":1,"--disable-isis6d":1}
+,"--disable-isisd":{"build":1}
+,"--enable-isis6d":{"build":1}
+,"is-is6":{"daemon":1}
+,"--disable-isis6d":{"build":1}
+,"--enable-multi-topology":{"enable":1}
+,"enable":{"is-is":1}
+,"multi-topology":{"support":1}
+,"support":{"--disable-multi-topology":1,"(default)":1}
+,"--disable-multi-topology":{"enable":1}
+}
+;Search.control.loadWordPairs(pairs);

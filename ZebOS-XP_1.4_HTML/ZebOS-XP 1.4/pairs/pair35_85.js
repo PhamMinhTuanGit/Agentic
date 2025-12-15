@@ -1,0 +1,24 @@
+var pairs =
+{
+"administrative":{"distance":1}
+,"distance":{"reliable":1,"255":1,"installed":1}
+,"reliable":{"source":1}
+,"source":{"route":1,"routes":1}
+,"route":{"considered":1,"preference":1}
+,"considered":{"lower":1}
+,"lower":{"value":1}
+,"value":{"preferred":1,"administrative":1}
+,"preferred":{"higher":1}
+,"higher":{"value":1}
+,"255":{"indicates":1}
+,"indicates":{"confidence":1}
+,"confidence":{"source":1}
+,"routes":{"distance":1}
+,"installed":{"routing":1}
+,"routing":{"information":1}
+,"information":{"base":1}
+,"base":{"(rib)":1}
+,"(rib)":{"called":1}
+,"called":{"route":1}
+}
+;Search.control.loadWordPairs(pairs);

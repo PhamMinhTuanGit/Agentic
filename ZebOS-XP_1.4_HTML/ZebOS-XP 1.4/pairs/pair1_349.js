@@ -1,0 +1,26 @@
+var pairs =
+{
+"virtual":{"private":1}
+,"private":{"lan":1,"network":1}
+,"lan":{"service":1}
+,"service":{"virtual":1,"(vpls)":1}
+,"(vpls)":{"provide":1}
+,"provide":{"ethernet-based":1}
+,"ethernet-based":{"multipoint-to-multipoint":1}
+,"multipoint-to-multipoint":{"communication":1}
+,"communication":{"ip\u002Fmpls":1}
+,"ip\u002Fmpls":{"networks":1}
+,"networks":{"vpls":1}
+,"vpls":{"virtual":1}
+,"network":{"(vpn)":1}
+,"(vpn)":{"technology":1}
+,"technology":{"supports":1}
+,"supports":{"any-to-any":1,"point-to-point":1}
+,"any-to-any":{"connectivity":1}
+,"connectivity":{"contrast":1}
+,"contrast":{"l2tpv3":1}
+,"l2tpv3":{"supports":1}
+,"point-to-point":{"layer":1}
+,"layer":{"tunnels":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,25 @@
+var pairs =
+{
+"rtp-header":{"command":1,"rtp-header":1,"parameters":1,"(config)":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"rtp":1,"terminal":1}
+,"rtp":{"(real-time":1}
+,"(real-time":{"transport":1}
+,"transport":{"protocol)":1}
+,"protocol)":{"header":1}
+,"header":{"parameter":1}
+,"parameter":{"remove":1}
+,"remove":{"remove":1,"configuration":1}
+,"configuration":{"command":1}
+,"syntax":{"rtp-header":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"interface":1,"example":1}
+,"interface":{"tdm":1}
+,"tdm":{"mode":1,"(config-if)":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"(config-if)":{"rtp-header":1}
+}
+;Search.control.loadWordPairs(pairs);

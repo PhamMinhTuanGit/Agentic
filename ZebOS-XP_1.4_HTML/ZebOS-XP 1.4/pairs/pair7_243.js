@@ -1,0 +1,24 @@
+var pairs =
+{
+"mpls":{"bandwidth-class":1}
+,"bandwidth-class":{"command":1,"mode":1,"name":1,"new-bc":1}
+,"command":{"create":1,"changes":1,"mode":1,"remove":1,"syntax":1}
+,"create":{"new":1}
+,"new":{"bandwidth":1}
+,"bandwidth":{"class":1}
+,"class":{"name":1,"command":1}
+,"name":{"using":1,"command":1,"mpls":1,"parameter":1,"name":1,"bandwidth":1}
+,"using":{"command":1}
+,"changes":{"command":1}
+,"mode":{"bandwidth-class":1,"parameter":1,"configure":1,"examples":1}
+,"parameter":{"command":1,"name":1}
+,"remove":{"bandwidth":1}
+,"syntax":{"mpls":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mpls":1}
+,"new-bc":{"(config-mpls-bw)":1}
+,"(config-mpls-bw)":{"(config)":1}
+}
+;Search.control.loadWordPairs(pairs);

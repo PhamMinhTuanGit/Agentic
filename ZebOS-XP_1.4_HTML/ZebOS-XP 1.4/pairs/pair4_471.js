@@ -1,0 +1,22 @@
+var pairs =
+{
+"contents":{"guide":1}
+,"guide":{"contains":1}
+,"contains":{"chapters":1}
+,"chapters":{"chapter":1}
+,"chapter":{"shortest":1,"spb":1,"spbm":1,"spbv":1}
+,"shortest":{"path":1}
+,"path":{"bridging":1}
+,"bridging":{"-mac":1,"-vid":1}
+,"-mac":{"configuration":1}
+,"configuration":{"chapter":1}
+,"spb":{"mst":1}
+,"mst":{"configuration":1}
+,"spbm":{"layer":1}
+,"layer":{"vpn":1}
+,"vpn":{"configuration":1}
+,"-vid":{"configuration":1}
+,"spbv":{"cfm":1}
+,"cfm":{"configuration":1}
+}
+;Search.control.loadWordPairs(pairs);

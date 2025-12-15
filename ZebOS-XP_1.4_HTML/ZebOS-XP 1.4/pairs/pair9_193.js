@@ -1,0 +1,20 @@
+var pairs =
+{
+"distributed":{"layer":1}
+,"layer":{"distributed":1,"apis":1,"message":1}
+,"apis":{"message":1}
+,"message":{"used":1}
+,"used":{"send":1,"distributed":1}
+,"send":{"\u002Freceive":1,"configuration":1}
+,"\u002Freceive":{"information":1}
+,"information":{"line":1,"control":1}
+,"line":{"card":1}
+,"card":{"control":1,"specific":1,"line":1}
+,"control":{"card":1}
+,"specific":{"data":1}
+,"data":{"structure":1,"fsm":1}
+,"structure":{"message":1}
+,"configuration":{"data":1}
+,"fsm":{"information":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"pal_kernel_if_get_mtu":{"function":1,"(struct":1}
+,"function":{"gets":1}
+,"gets":{"interface":1}
+,"interface":{"maximum":1,"*ifp)":1,"output":1}
+,"maximum":{"transmission":1}
+,"transmission":{"unit":1}
+,"unit":{"(mtu)":1}
+,"(mtu)":{"api":1}
+,"api":{"call":1}
+,"call":{"result_t":1}
+,"result_t":{"pal_kernel_if_get_mtu":1}
+,"(struct":{"interface":1}
+,"*ifp)":{"input":1}
+,"input":{"parameter":1}
+,"parameter":{"ifp":1}
+,"ifp":{"pointer":1}
+,"pointer":{"interface":1}
+,"output":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"result":1}
+,"result":{"value":1}
+,"value":{"platform":1}
+,"platform":{"dependent":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"domain":{"representation":1}
+,"representation":{"subset":1}
+,"subset":{"network":1}
+,"network":{"used":1}
+,"used":{"addressing":1}
+,"addressing":{"administrative":1}
+,"administrative":{"purposes":1}
+,"purposes":{"refers":1}
+,"refers":{"collection":1}
+,"collection":{"routers":1}
+,"routers":{"common":1}
+,"common":{"interior":1}
+,"interior":{"gateway":1}
+,"gateway":{"protocol":1}
+,"protocol":{"(igp)":1}
+,"(igp)":{"area":1}
+,"area":{"autonomous":1}
+,"autonomous":{"system":1}
+,"system":{"(as)":1}
+}
+;Search.control.loadWordPairs(pairs);

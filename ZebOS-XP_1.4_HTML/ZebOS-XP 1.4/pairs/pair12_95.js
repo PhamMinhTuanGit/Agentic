@@ -1,0 +1,21 @@
+var pairs =
+{
+"clear":{"clns":1,"neighbor":1}
+,"clns":{"is-neighbors":1}
+,"is-neighbors":{"command":1,"system-id":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"neighbor":{"adjacencies":1,"system":1}
+,"adjacencies":{"command":1}
+,"syntax":{"clear":1}
+,"system-id":{"parameters":1,"neighbor":1}
+,"parameters":{"system-id":1}
+,"system":{"xxxx.xxxx.xxxx":1}
+,"xxxx.xxxx.xxxx":{"format":1}
+,"format":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"ena":1}
+,"ena":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,25 @@
+var pairs =
+{
+"linking":{"smi":1}
+,"smi":{"shared":1,"client":1}
+,"shared":{"library":1,"object":1}
+,"library":{"build":1,"platform\u002Flinux\u002Fbin\u002Fsmi.so":1,"production":1}
+,"build":{"zebos-xp":1}
+,"zebos-xp":{"smi":1}
+,"client":{"created":1,"application":1}
+,"created":{"dynamically":1}
+,"dynamically":{"linked":1}
+,"linked":{"object":1}
+,"object":{"library":1,"management":1}
+,"platform\u002Flinux\u002Fbin\u002Fsmi.so":{"link":1}
+,"link":{"client":1}
+,"application":{"smi.so":1}
+,"smi.so":{"library":1,"using":1}
+,"production":{"environment":1}
+,"environment":{"need":1}
+,"need":{"smi.so":1}
+,"using":{"standard":1}
+,"standard":{"shared":1}
+,"management":{"techniques":1}
+}
+;Search.control.loadWordPairs(pairs);

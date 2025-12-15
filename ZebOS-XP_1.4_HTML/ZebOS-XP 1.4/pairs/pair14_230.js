@@ -1,0 +1,21 @@
+var pairs =
+{
+"copy":{"ftp":1,"running":1}
+,"ftp":{"running-config":1,"server":1}
+,"running-config":{"(interactive)":1,"parameters":1}
+,"(interactive)":{"command":1}
+,"command":{"copy":1,"syntax":1,"mode":1}
+,"running":{"configuration":1}
+,"configuration":{"ftp":1}
+,"server":{"local":1}
+,"local":{"device":1}
+,"device":{"command":1}
+,"syntax":{"copy":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"privileged":1,"examples":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"examples":{"copy":1}
+}
+;Search.control.loadWordPairs(pairs);

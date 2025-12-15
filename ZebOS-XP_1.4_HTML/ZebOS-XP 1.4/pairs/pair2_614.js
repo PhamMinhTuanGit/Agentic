@@ -1,0 +1,27 @@
+var pairs =
+{
+"topology":{"trill":1}
+,"trill":{"bpdu":1}
+,"bpdu":{"handling":1}
+,"handling":{"configuration":1}
+,"configuration":{"assumes":1,"done":1}
+,"assumes":{"running":1}
+,"running":{"trilld":1}
+,"trilld":{"nsm":1}
+,"nsm":{"imi":1}
+,"imi":{"daemons":1}
+,"daemons":{"rbridges":1,"bridges":1}
+,"rbridges":{"mstpd":1}
+,"mstpd":{"nsm":1}
+,"bridges":{"normal":1,"zebos-xp":1}
+,"normal":{"stp\u002Frstp\u002Fmstp":1}
+,"stp\u002Frstp\u002Fmstp":{"configuration":1}
+,"done":{"intermediate":1}
+,"intermediate":{"bridges":1}
+,"zebos-xp":{"bridging":1}
+,"bridging":{"commands":1}
+,"commands":{"layer":1}
+,"layer":{"command":1}
+,"command":{"reference":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"message":{"types":1,"reservation":1,"path":1,"hello":1}
+,"types":{"following":1}
+,"following":{"messages":1}
+,"messages":{"used":1}
+,"used":{"zebos-xp":1}
+,"zebos-xp":{"rsvp-te":1}
+,"rsvp-te":{"path":1}
+,"path":{"(path)":1,"tear":1,"error":1}
+,"(path)":{"message":1}
+,"reservation":{"(resv)":1,"tear":1,"error":1,"confirmation":1}
+,"(resv)":{"message":1}
+,"tear":{"(ptear)":1,"(rtear)":1}
+,"(ptear)":{"message":1}
+,"(rtear)":{"message":1}
+,"error":{"(perr)":1,"(rerr)":1}
+,"(perr)":{"message":1}
+,"(rerr)":{"message":1}
+,"confirmation":{"(rconf)":1}
+,"(rconf)":{"message":1}
+,"hello":{"message":1}
+}
+;Search.control.loadWordPairs(pairs);

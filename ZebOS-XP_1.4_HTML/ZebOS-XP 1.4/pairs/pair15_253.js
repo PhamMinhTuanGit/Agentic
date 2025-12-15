@@ -1,0 +1,21 @@
+var pairs =
+{
+"replying":{"arp":1}
+,"arp":{"requests":1}
+,"requests":{"virtual":1}
+,"virtual":{"address":1,"router":1,"mac":1}
+,"address":{"vrrp":1,"virtual":1,"setting":1}
+,"vrrp":{"router":1}
+,"router":{"functioning":1,"reply":1}
+,"functioning":{"master":1}
+,"master":{"virtual":1}
+,"reply":{"arp":1}
+,"mac":{"address":1,"causes":1,"forwarded":1}
+,"setting":{"interface":1}
+,"interface":{"mac":1}
+,"causes":{"packets":1}
+,"packets":{"addressed":1}
+,"addressed":{"virtual":1}
+,"forwarded":{"correctly":1}
+}
+;Search.control.loadWordPairs(pairs);

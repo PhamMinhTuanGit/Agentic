@@ -1,0 +1,24 @@
+var pairs =
+{
+"protocol":{"relays":1}
+,"relays":{"elmi":1,"following":1}
+,"elmi":{"module":1}
+,"module":{"relays":1}
+,"following":{"information":1}
+,"information":{"uni-n":1}
+,"uni-n":{"uni-c":1}
+,"uni-c":{"notification":1}
+,"notification":{"addition\u002Fdeletion":1,"availability":1}
+,"addition\u002Fdeletion":{"evc":1}
+,"evc":{"(active":1,"communication":1,"attributes":1}
+,"(active":{"active":1}
+,"active":{"partially":1}
+,"partially":{"active)":1}
+,"active)":{"notification":1}
+,"availability":{"state":1}
+,"state":{"configured":1}
+,"configured":{"evc":1}
+,"communication":{"uni":1}
+,"uni":{"evc":1}
+}
+;Search.control.loadWordPairs(pairs);

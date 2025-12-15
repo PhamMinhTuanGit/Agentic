@@ -1,0 +1,22 @@
+var pairs =
+{
+"network":{"time":1,"computers":1}
+,"time":{"protocol":1,"(utc)":1}
+,"protocol":{"network":1,"(ntp)":1}
+,"(ntp)":{"used":1}
+,"used":{"synchronize":1}
+,"synchronize":{"computer":1}
+,"computer":{"clock":1}
+,"clock":{"times":1}
+,"times":{"network":1,"millisecond":1}
+,"computers":{"ntp":1}
+,"ntp":{"uses":1}
+,"uses":{"coordinated":1}
+,"coordinated":{"universal":1}
+,"universal":{"time":1}
+,"(utc)":{"synchronize":1}
+,"millisecond":{"sometimes":1}
+,"sometimes":{"fraction":1}
+,"fraction":{"millisecond":1}
+}
+;Search.control.loadWordPairs(pairs);

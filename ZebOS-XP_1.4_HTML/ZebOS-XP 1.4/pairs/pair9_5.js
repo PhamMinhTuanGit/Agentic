@@ -1,0 +1,25 @@
+var pairs =
+{
+"is-is":{"snmpget":1}
+,"snmpget":{"following":1,"test":1}
+,"following":{"command":1}
+,"command":{"gets":1,"walks":1}
+,"gets":{"value":1}
+,"value":{"isissysinstance":1}
+,"isissysinstance":{"isissystable":1}
+,"isissystable":{"snmpget":1,"snmpwalk":1}
+,"test":{"10.10.10.50":1,"10.10.10.68":1}
+,"10.10.10.50":{".1.3.6.1.3.37.1.1.1.1.1.1":1,".1.3.6.1.3.37.1.1":1}
+,".1.3.6.1.3.37.1.1.1.1.1.1":{"snmpwalk":1}
+,"snmpwalk":{"following":1,"test":1}
+,"walks":{"isissystable":1}
+,".1.3.6.1.3.37.1.1":{"snmpset":1}
+,"snmpset":{"management":1,"isissystype":1,"test":1}
+,"management":{"station":1}
+,"station":{"execute":1}
+,"execute":{"snmpset":1}
+,"isissystype":{"level-2-only":1}
+,"level-2-only":{"snmpset":1}
+,"10.10.10.68":{".1.3.6.1.3.37.1.1.1.1.3.1":1}
+}
+;Search.control.loadWordPairs(pairs);

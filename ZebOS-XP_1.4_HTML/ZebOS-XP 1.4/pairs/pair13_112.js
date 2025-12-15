@@ -1,0 +1,26 @@
+var pairs =
+{
+"gmrp_vlan_table":{"structure":1,"{struct":1}
+,"structure":{"contains":1,"defined":1}
+,"contains":{"array":1}
+,"array":{"vlans":1}
+,"vlans":{"associated":1}
+,"associated":{"gmrp":1}
+,"gmrp":{"application":1}
+,"application":{"data":1}
+,"data":{"structure":1}
+,"defined":{"nsm\u002Fl2\u002Fgarp\u002Fgmrp.h":1}
+,"nsm\u002Fl2\u002Fgarp\u002Fgmrp.h":{"member":1}
+,"member":{"definition":1}
+,"definition":{"gmrp_vlan":1,"struct":1}
+,"gmrp_vlan":{"holds":1,"*gmrp_vlan":1}
+,"holds":{"vlan":1}
+,"vlan":{"information":1}
+,"information":{"(array":1}
+,"(array":{"nsm_vlan_max":1}
+,"nsm_vlan_max":{"definition":1}
+,"struct":{"gmrp_vlan_table":1}
+,"{struct":{"gmrp_vlan":1}
+,"*gmrp_vlan":{"[nsm_vlan_max":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,22 @@
+var pairs =
+{
+"gvrp":{"configuration":1,"(garp":1}
+,"configuration":{"gvrp":1}
+,"(garp":{"vlan":1}
+,"vlan":{"registration":1,"information":1}
+,"registration":{"protocol)":1}
+,"protocol)":{"allows":1}
+,"allows":{"exchange":1}
+,"exchange":{"vlan":1}
+,"information":{"switches":1}
+,"switches":{"network":1}
+,"network":{"switch":1,"learn":1}
+,"switch":{"manually":1}
+,"manually":{"configured":1}
+,"configured":{"multiple":1}
+,"multiple":{"vlans":1}
+,"vlans":{"switches":1,"dynamically":1}
+,"learn":{"vlans":1}
+,"dynamically":{"gvrp":1}
+}
+;Search.control.loadWordPairs(pairs);

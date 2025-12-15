@@ -1,0 +1,26 @@
+var pairs =
+{
+"unicast":{"route":1,"inner":1}
+,"route":{"information":1}
+,"information":{"known-unicast":1}
+,"known-unicast":{"frames":1}
+,"frames":{"unicast":1,"forwarded":1}
+,"inner":{"mac":1}
+,"mac":{"destination":1,"address":1}
+,"destination":{"address":1,"mac":1}
+,"address":{"(inner.macda)":1,"frame\u0027s":1}
+,"(inner.macda)":{"ingress":1}
+,"ingress":{"rbridge":1}
+,"rbridge":{"knows":1,"destination":1,"hop":1,"topology":1}
+,"knows":{"egress":1}
+,"egress":{"rbridge":1}
+,"frame\u0027s":{"vlan":1}
+,"vlan":{"frames":1}
+,"forwarded":{"rbridge":1}
+,"hop":{"rbridge":1,"egress":1}
+,"topology":{"configuration":1}
+,"configuration":{"chapter":1}
+,"chapter":{"multicast":1}
+,"multicast":{"oam":1}
+}
+;Search.control.loadWordPairs(pairs);

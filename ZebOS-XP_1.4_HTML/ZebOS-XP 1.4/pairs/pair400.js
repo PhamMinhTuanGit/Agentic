@@ -1,0 +1,21 @@
+var pairs =
+{
+"virtual":{"port":1,"ethernet":1,"switches":1,"ports":1}
+,"port":{"port":1,"vswitch":1}
+,"vswitch":{"(virtual":1}
+,"(virtual":{"switch)":1}
+,"switch)":{"virtual":1}
+,"ethernet":{"adapters":1}
+,"adapters":{"physical":1}
+,"physical":{"uplinks":1}
+,"uplinks":{"attached":1}
+,"attached":{"during":1}
+,"during":{"creation":1}
+,"creation":{"virtual":1}
+,"switches":{"typically":1}
+,"typically":{"configured":1}
+,"configured":{"specific":1}
+,"specific":{"number":1}
+,"number":{"virtual":1}
+}
+;Search.control.loadWordPairs(pairs);

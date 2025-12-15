@@ -1,0 +1,27 @@
+var pairs =
+{
+"pseudo-root":{"identity":1}
+,"identity":{"pseudo-root":1,"determines":1,"root":1}
+,"determines":{"open":1}
+,"open":{"l2gp":1}
+,"l2gp":{"l2gp":1,"configured":1,"important":1,"determined":1}
+,"configured":{"best":1}
+,"best":{"pseudo-root":1}
+,"root":{"port":1}
+,"port":{"state":1,"path":1}
+,"state":{"forwarding":1,"discarding":1}
+,"forwarding":{"others":1}
+,"others":{"l2gps":1}
+,"l2gps":{"designated":1}
+,"designated":{"ports":1}
+,"ports":{"state":1}
+,"discarding":{"thus":1}
+,"thus":{"port":1}
+,"path":{"cost":1}
+,"cost":{"value":1}
+,"value":{"l2gp":1}
+,"important":{"open":1}
+,"determined":{"configuring":1}
+,"configuring":{"pseudo-root":1}
+}
+;Search.control.loadWordPairs(pairs);

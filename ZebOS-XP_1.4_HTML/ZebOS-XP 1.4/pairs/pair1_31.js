@@ -1,0 +1,27 @@
+var pairs =
+{
+"protocol":{"commands":1,"modules":1}
+,"commands":{"bfd":1,"used":1,"area":1}
+,"bfd":{"chapter":1,"functionality":1,"all-interfaces":1,"debug":1,"ospf":1,"isis":1,"neighbor":1,"(bgp)":1,"(rip)":1}
+,"chapter":{"describes":1}
+,"describes":{"commands":1}
+,"used":{"manage":1}
+,"manage":{"bfd":1}
+,"functionality":{"ospf":1}
+,"ospf":{"is-is":1,"bfd":1}
+,"is-is":{"bgp":1}
+,"bgp":{"protocol":1,"bfd":1}
+,"modules":{"includes":1}
+,"includes":{"following":1}
+,"following":{"commands":1}
+,"area":{"virtual-link":1}
+,"virtual-link":{"bfd":1}
+,"all-interfaces":{"debug":1}
+,"debug":{"bgp":1,"isis":1,"ospf":1,"rip":1}
+,"isis":{"bfd":1}
+,"rip":{"bfd":1}
+,"neighbor":{"fall-over":1}
+,"fall-over":{"bfd":1}
+,"(bgp)":{"neighbor":1}
+}
+;Search.control.loadWordPairs(pairs);

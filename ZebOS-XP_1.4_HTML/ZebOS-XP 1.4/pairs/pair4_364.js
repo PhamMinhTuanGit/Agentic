@@ -1,0 +1,20 @@
+var pairs =
+{
+"clear":{"crypto":1}
+,"crypto":{"isakmp":1}
+,"isakmp":{"command":1,"parameters":1}
+,"command":{"reset":1,"syntax":1,"mode":1}
+,"reset":{"active":1}
+,"active":{"ike":1}
+,"ike":{"connections":1}
+,"connections":{"exec":1}
+,"exec":{"configuration":1,"mode":1}
+,"configuration":{"mode":1}
+,"mode":{"command":1,"exec":1,"example":1}
+,"syntax":{"clear":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"example":{"zebos":1}
+,"zebos":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

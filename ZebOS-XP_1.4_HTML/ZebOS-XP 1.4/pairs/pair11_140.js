@@ -1,0 +1,19 @@
+var pairs =
+{
+"configure":{"ldp":1}
+,"ldp":{"enable-ldp":1,"ipv4":1,"ipv6":1}
+,"enable-ldp":{"ipv4":1,"ipv6":1}
+,"ipv4":{"enable-ldp":1,"ldp":1,"enables":1,"interface":1,"used":1}
+,"ipv6":{"command":1,"specified":1,"enables":1,"interface":1}
+,"command":{"used":1,"enable-ldp":1}
+,"used":{"enable":1}
+,"enable":{"ldp":1}
+,"specified":{"interface":1}
+,"interface":{"follows":1,"enable-ldp":1,"examples":1}
+,"follows":{"enable-ldp":1}
+,"enables":{"ipv4":1,"ipv6":1}
+,"examples":{"covered":1}
+,"covered":{"section":1}
+,"section":{"command":1}
+}
+;Search.control.loadWordPairs(pairs);

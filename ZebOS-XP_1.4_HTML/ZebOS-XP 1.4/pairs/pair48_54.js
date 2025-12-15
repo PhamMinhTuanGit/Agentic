@@ -1,0 +1,25 @@
+var pairs =
+{
+"trill":{"pseudonode":1}
+,"pseudonode":{"command":1,"flag":1,"enable":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"pseudonode":1,"trill":1,"parameters":1,"configure":1,"(config-if)":1}
+,"flag":{"interface":1}
+,"interface":{"parameter":1,"mode":1,"eth1":1}
+,"parameter":{"command":1}
+,"disable":{"function":1}
+,"function":{"command":1}
+,"syntax":{"trill":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"interface":1,"default":1}
+,"default":{"disabled":1}
+,"disabled":{"examples":1}
+,"examples":{"enable":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth1":{"(config-if)":1}
+,"(config-if)":{"trill":1}
+}
+;Search.control.loadWordPairs(pairs);

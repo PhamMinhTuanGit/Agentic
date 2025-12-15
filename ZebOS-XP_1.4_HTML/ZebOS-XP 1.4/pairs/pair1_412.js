@@ -1,0 +1,21 @@
+var pairs =
+{
+"igmp":{"snooping":1}
+,"snooping":{"command":1,"functions":1}
+,"command":{"api":1}
+,"api":{"chapter":1}
+,"chapter":{"describes":1}
+,"describes":{"internet":1}
+,"internet":{"group":1}
+,"group":{"management":1}
+,"management":{"protocol":1}
+,"protocol":{"(igmp)":1}
+,"(igmp)":{"snooping":1}
+,"functions":{"zebos-xp":1}
+,"zebos-xp":{"l2mribd":1}
+,"l2mribd":{"process":1}
+,"process":{"maintains":1}
+,"maintains":{"snooping-related":1}
+,"snooping-related":{"functionality":1}
+}
+;Search.control.loadWordPairs(pairs);

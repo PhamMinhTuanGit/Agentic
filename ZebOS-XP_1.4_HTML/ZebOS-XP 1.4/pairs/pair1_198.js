@@ -1,0 +1,19 @@
+var pairs =
+{
+"hybrid":{"switch":1}
+,"switch":{"router":1,"layer":1}
+,"router":{"configuration":1,"solution":1,"hybrid":1,"based":1}
+,"configuration":{"chapter":1}
+,"chapter":{"describes":1}
+,"describes":{"various":1}
+,"various":{"configurations":1}
+,"configurations":{"done":1}
+,"done":{"hybrid":1}
+,"solution":{"zebos-xp":1}
+,"zebos-xp":{"configured":1}
+,"configured":{"layer":1}
+,"layer":{"switch":1,"router":1}
+,"based":{"compilation":1}
+,"compilation":{"flags":1}
+}
+;Search.control.loadWordPairs(pairs);

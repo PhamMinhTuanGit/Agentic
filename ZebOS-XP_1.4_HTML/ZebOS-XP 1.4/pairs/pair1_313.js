@@ -1,0 +1,19 @@
+var pairs =
+{
+"multi-segment":{"pseudowire":1,"pseudowires":1}
+,"pseudowire":{"configuration":1}
+,"configuration":{"chapter":1}
+,"chapter":{"contains":1}
+,"contains":{"configurations":1}
+,"configurations":{"multi-segment":1}
+,"pseudowires":{"(ms-pw)":1}
+,"(ms-pw)":{"details":1}
+,"details":{"commands":1}
+,"commands":{"used":1}
+,"used":{"label":1}
+,"label":{"distribution":1}
+,"distribution":{"protocol":1}
+,"protocol":{"command":1}
+,"command":{"reference":1}
+}
+;Search.control.loadWordPairs(pairs);

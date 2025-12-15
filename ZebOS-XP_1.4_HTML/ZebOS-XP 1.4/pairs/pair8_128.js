@@ -1,0 +1,22 @@
+var pairs =
+{
+"isis_cspf_finish":{"function":1,"(struct":1}
+,"function":{"cleans":1}
+,"cleans":{"cspf":1}
+,"cspf":{"server":1}
+,"server":{"syntax":1}
+,"syntax":{"int":1}
+,"int":{"isis_cspf_finish":1}
+,"(struct":{"isis":1}
+,"isis":{"*top)":1,"instance":1}
+,"*top)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"top":1,"none":1}
+,"top":{"isis":1}
+,"instance":{"lookup":1}
+,"lookup":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"isis":{"retransmit-interval":1,"uses":1}
+,"retransmit-interval":{"command":1,"<0-65535>":1,"parameters":1,"(config-if)":1}
+,"command":{"lsp":1,"syntax":1,"mode":1}
+,"lsp":{"retransmission":1,"seconds":1}
+,"retransmission":{"interval":1,"lsp":1}
+,"interval":{"parameter":1,"default":1,"retransmission":1,"seconds":1}
+,"parameter":{"interval":1}
+,"default":{"command":1,"default":1,"isis":1}
+,"syntax":{"isis":1}
+,"<0-65535>":{"isis":1,"specify":1}
+,"parameters":{"<0-65535>":1}
+,"specify":{"interval":1}
+,"seconds":{"default":1,"command":1}
+,"uses":{"interval":1}
+,"mode":{"interface":1,"examples":1}
+,"interface":{"mode":1,"eth0":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"isis":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"topology":{"example":1}
+,"example":{"links":1}
+,"links":{"configured":1,"assigned":1}
+,"configured":{"two":1}
+,"two":{"switches":1}
+,"switches":{"three":1}
+,"three":{"links":1}
+,"assigned":{"administrative":1}
+,"administrative":{"key":1}
+,"key":{"(1)":1}
+,"(1)":{"aggregate":1}
+,"aggregate":{"form":1}
+,"form":{"single":1}
+,"single":{"channel":1}
+,"channel":{"viewed":1}
+,"viewed":{"stp":1}
+,"stp":{"interface":1}
+,"interface":{"lacp":1}
+,"lacp":{"topology":1}
+}
+;Search.control.loadWordPairs(pairs);

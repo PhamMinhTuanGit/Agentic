@@ -1,0 +1,22 @@
+var pairs =
+{
+"supported":{"tables":1}
+,"tables":{"following":1,"described":1}
+,"following":{"tables":1}
+,"described":{"chapter":1}
+,"chapter":{"general":1}
+,"general":{"variables":1}
+,"variables":{"parameters":1}
+,"parameters":{"apply":1}
+,"apply":{"globally":1}
+,"globally":{"router\u0027s":1}
+,"router\u0027s":{"bgp":1}
+,"bgp":{"process":1,"peer":1}
+,"process":{"peer":1}
+,"peer":{"contains":1,"information":1}
+,"contains":{"entry":1}
+,"entry":{"per":1}
+,"per":{"bgp":1}
+,"information":{"bgp":1}
+}
+;Search.control.loadWordPairs(pairs);

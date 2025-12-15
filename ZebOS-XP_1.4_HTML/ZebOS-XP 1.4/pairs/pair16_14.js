@@ -1,0 +1,24 @@
+var pairs =
+{
+"bgp":{"confederation":1,"100":1}
+,"confederation":{"identifier":1,"number":1}
+,"identifier":{"command":1,"parameter":1,"<1-65535>":1}
+,"command":{"specify":1,"remove":1,"syntax":1,"mode":1}
+,"specify":{"bgp":1}
+,"parameter":{"command":1,"<1-65535>":1}
+,"remove":{"bgp":1}
+,"syntax":{"bgp":1}
+,"<1-65535>":{"bgp":1,"routing":1}
+,"routing":{"domain":1}
+,"domain":{"confederation":1}
+,"number":{"command":1}
+,"mode":{"router":1,"examples":1}
+,"router":{"mode":1,"bgp":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"100":{"(config-router)":1}
+,"(config-router)":{"bgp":1}
+}
+;Search.control.loadWordPairs(pairs);

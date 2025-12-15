@@ -1,0 +1,24 @@
+var pairs =
+{
+"bfd":{"hal\u002Fpal":1,"packets":1}
+,"hal\u002Fpal":{"layer":1}
+,"layer":{"bfd":1,"api":1,"exposing":1,"currently":1}
+,"api":{"layer":1}
+,"exposing":{"apis":1}
+,"apis":{"send":1}
+,"send":{"bfd":1}
+,"packets":{"hardware":1,"interface":1}
+,"hardware":{"appropriate":1,"module":1}
+,"appropriate":{"encapsulations":1}
+,"encapsulations":{"layer":1}
+,"currently":{"serves":1,"populated":1}
+,"serves":{"send":1}
+,"interface":{"session":1}
+,"session":{"peer":1}
+,"peer":{"support":1}
+,"support":{"hardware":1}
+,"module":{"pal":1,"currently":1}
+,"pal":{"module":1}
+,"populated":{"defined":1}
+}
+;Search.control.loadWordPairs(pairs);

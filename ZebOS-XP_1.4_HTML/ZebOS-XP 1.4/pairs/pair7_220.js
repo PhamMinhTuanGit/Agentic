@@ -1,0 +1,21 @@
+var pairs =
+{
+"step":{"enable":1}
+,"enable":{"ospf":1}
+,"ospf":{"routing":1,"networks":1,"100":1}
+,"routing":{"configure":1,"process":1}
+,"configure":{"ospf":1}
+,"process":{"enable":1}
+,"networks":{"lsr":1}
+,"lsr":{"mpls":1}
+,"mpls":{"cloud":1}
+,"cloud":{"r1-ospf":1}
+,"r1-ospf":{"router":1}
+,"router":{"ospf":1}
+,"100":{"network":1}
+,"network":{"172.168.1.0\u002F24":1,"192.168.0.1\u002F32":1}
+,"172.168.1.0\u002F24":{"area":1}
+,"area":{"network":1}
+,"192.168.0.1\u002F32":{"area":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"multiple":{"ospf":1}
+,"ospf":{"instances":1}
+,"instances":{"single":1,"sent":1}
+,"single":{"interface":1}
+,"interface":{"zebos-xp":1,"differentiating":1,"packet":1}
+,"zebos-xp":{"supports":1}
+,"supports":{"multiple":1}
+,"differentiating":{"packets":1}
+,"packets":{"various":1}
+,"various":{"instances":1}
+,"sent":{"received":1}
+,"received":{"interface":1}
+,"packet":{"header":1}
+,"header":{"authentication":1}
+,"authentication":{"type":1}
+,"type":{"field":1}
+,"field":{"divided":1}
+,"divided":{"instance":1}
+,"instance":{"authentication":1}
+}
+;Search.control.loadWordPairs(pairs);

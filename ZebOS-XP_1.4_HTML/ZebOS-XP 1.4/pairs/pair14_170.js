@@ -1,0 +1,25 @@
+var pairs =
+{
+"address":{"dhcp":1,"interface":1,"10.10.10.50\u002F24":1,"10.10.11.50\u002F24":1}
+,"dhcp":{"command":1,"client":1,"address":1,"parameters":1}
+,"command":{"specify":1,"remove":1,"syntax":1,"mode":1}
+,"specify":{"dhcp":1}
+,"client":{"used":1}
+,"used":{"obtain":1}
+,"obtain":{"address":1}
+,"interface":{"parameter":1,"command":1,"mode":1,"eth0":1}
+,"parameter":{"command":1}
+,"remove":{"address":1}
+,"syntax":{"address":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"interface":1,"examples":1}
+,"examples":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"address":1}
+,"10.10.10.50\u002F24":{"(config-if)":1}
+,"10.10.11.50\u002F24":{"secondary":1}
+,"secondary":{"(config-if)":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"show":{"ltm":1}
+,"ltm":{"ltr":1}
+,"ltr":{"working":1}
+,"working":{"traceroute":1}
+,"traceroute":{"pbb":1}
+,"pbb":{"ethernet":1}
+,"ethernet":{"5254.0002.3023":1}
+,"5254.0002.3023":{"domain-name":1,"rlyhit":1}
+,"domain-name":{"md1":1}
+,"md1":{"vlan":1}
+,"vlan":{"100":1}
+,"100":{"backbone":1}
+,"backbone":{"source":1}
+,"source":{"mac":1}
+,"mac":{"hops":1}
+,"hops":{"relay-action":1}
+,"relay-action":{"5254.00cf.ae36":1}
+,"5254.00cf.ae36":{"rlyfdb":1}
+,"rlyfdb":{"5254.001e.5b61":1,"5254.0002.3023":1,"5254.0008.9001":1}
+,"5254.001e.5b61":{"rlyfdb":1}
+,"rlyhit":{"5254.0004.43e4":1}
+,"5254.0004.43e4":{"rlyfdb":1}
+,"5254.0008.9001":{"rlyfdb":1}
+}
+;Search.control.loadWordPairs(pairs);

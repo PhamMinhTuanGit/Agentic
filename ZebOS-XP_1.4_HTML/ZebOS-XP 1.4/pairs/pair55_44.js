@@ -1,0 +1,24 @@
+var pairs =
+{
+"rsvp_p2mp_session_class_type_del":{"call":1,"(struct":1}
+,"call":{"removes":1}
+,"removes":{"configured":1}
+,"configured":{"class":1}
+,"class":{"type":1}
+,"type":{"p2mp":1}
+,"p2mp":{"session":1}
+,"session":{"syntax":1,"output":1}
+,"syntax":{"void":1}
+,"void":{"rsvp_p2mp_session_class_type_del":1}
+,"(struct":{"rsvp_p2mp_session":1}
+,"rsvp_p2mp_session":{"*orig_session)":1}
+,"*orig_session)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"orig_session":1,"none":1}
+,"orig_session":{"p2mp":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

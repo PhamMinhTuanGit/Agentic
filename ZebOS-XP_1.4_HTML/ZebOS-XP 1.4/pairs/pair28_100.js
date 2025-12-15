@@ -1,0 +1,23 @@
+var pairs =
+{
+"show":{"trill":1}
+,"trill":{"l2mcast":1,"multicast":1}
+,"l2mcast":{"command":1,"parameters":1,"rbridge":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"trill":1}
+,"multicast":{"table":1}
+,"table":{"information":1}
+,"information":{"command":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"privilege":1,"example":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"example":{"show":1}
+,"rbridge":{"instance":1}
+,"instance":{"vlan":1}
+,"vlan":{"mac":1}
+,"mac":{"tsup-173":1}
+}
+;Search.control.loadWordPairs(pairs);

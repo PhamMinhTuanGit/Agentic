@@ -1,0 +1,27 @@
+var pairs =
+{
+"peer":{"bgpversion":1}
+,"bgpversion":{"attribute":1}
+,"attribute":{"syntax":1}
+,"syntax":{"access":1}
+,"access":{"function":1}
+,"function":{"bgppeeradminstatus":1}
+,"bgppeeradminstatus":{"integer":1}
+,"integer":{"read-write":1}
+,"read-write":{"bgp_set_peer_admin_status":1,"bgp_get_peer_local_addr":1,"bgp_set_next_peer_connect_retry_interval":1,"bgp_set_peer_hold_time_configured":1,"bgp_set_peer_keep_alive_configured":1,"bgp_set_peer_min_route_advertisement_interval":1}
+,"bgp_set_peer_admin_status":{"bgppeerlocaladdr":1}
+,"bgppeerlocaladdr":{"integer":1}
+,"bgp_get_peer_local_addr":{"bgppeerconnectretryinterval":1}
+,"bgppeerconnectretryinterval":{"integer32":1}
+,"integer32":{"read-write":1,"read-only":1}
+,"bgp_set_next_peer_connect_retry_interval":{"bgppeerholdtime":1}
+,"bgppeerholdtime":{"integer32":1}
+,"read-only":{"bgp_get_peer_hold_time":1}
+,"bgp_get_peer_hold_time":{"bgppeerholdtimeconfigured":1}
+,"bgppeerholdtimeconfigured":{"integer32":1}
+,"bgp_set_peer_hold_time_configured":{"bgppeerkeepaliveconfigured":1}
+,"bgppeerkeepaliveconfigured":{"integer32":1}
+,"bgp_set_peer_keep_alive_configured":{"bgppeerminrouteadvertisementinterval":1}
+,"bgppeerminrouteadvertisementinterval":{"integer32":1}
+}
+;Search.control.loadWordPairs(pairs);

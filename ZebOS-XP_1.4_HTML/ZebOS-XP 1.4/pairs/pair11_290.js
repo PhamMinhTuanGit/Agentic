@@ -1,0 +1,20 @@
+var pairs =
+{
+"validation":{"(config-if)":1}
+,"(config-if)":{"show":1}
+,"show":{"nsm":1}
+,"nsm":{"tril":1}
+,"tril":{"port":1}
+,"port":{"port":1,"mode":1}
+,"mode":{"information":1}
+,"information":{"ifname":1}
+,"ifname":{"ifindex":1}
+,"ifindex":{"port_state":1}
+,"port_state":{"port_type":1}
+,"port_type":{"eth1":1}
+,"eth1":{"0000003":1}
+,"0000003":{"inhibited":1}
+,"inhibited":{"universal":1}
+,"universal":{"port":1}
+}
+;Search.control.loadWordPairs(pairs);

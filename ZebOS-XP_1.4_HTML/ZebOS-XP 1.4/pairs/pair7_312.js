@@ -1,0 +1,26 @@
+var pairs =
+{
+"clear":{"ipv6":1}
+,"ipv6":{"prefix-list":1,"interface":1}
+,"prefix-list":{"command":1,"entries":1,"clear":1,"word":1,"x:x":1,"list1":1}
+,"command":{"reset":1,"syntax":1,"mode":1}
+,"reset":{"hit":1}
+,"hit":{"count":1}
+,"count":{"zero":1}
+,"zero":{"prefix-list":1}
+,"entries":{"ipv6":1}
+,"interface":{"command":1}
+,"syntax":{"clear":1}
+,"word":{"clear":1,"x:x":1,"specify":1}
+,"x:x":{":x:x\u002Fm":1}
+,":x:x\u002Fm":{"parameters":1,"prefix":1}
+,"parameters":{"word":1}
+,"specify":{"name":1}
+,"name":{"prefix-list":1}
+,"prefix":{"length":1}
+,"length":{"command":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1}
+,"example":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

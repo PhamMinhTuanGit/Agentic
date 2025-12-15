@@ -1,0 +1,20 @@
+var pairs =
+{
+"software":{"integration":1}
+,"integration":{"elmi":1}
+,"elmi":{"module":1,"client":1,"server":1,"base":1}
+,"module":{"interacts":1,"using":1}
+,"interacts":{"modules":1}
+,"modules":{"nsm":1,"via":1,"connects":1}
+,"nsm":{"protocol":1}
+,"protocol":{"modules":1}
+,"via":{"elmi":1}
+,"client":{"elmi":1,"library":1}
+,"library":{"protocol":1,"elmi":1}
+,"connects":{"elmi":1}
+,"server":{"library":1}
+,"base":{"module":1}
+,"using":{"socket":1}
+,"socket":{"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

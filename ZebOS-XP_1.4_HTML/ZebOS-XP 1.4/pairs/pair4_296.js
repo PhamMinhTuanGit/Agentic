@@ -1,0 +1,22 @@
+var pairs =
+{
+"mpls-tp":{"tunnels":1,"framework":1}
+,"tunnels":{"three":1,"supported":1}
+,"three":{"types":1}
+,"types":{"tunnels":1}
+,"supported":{"mpls-tp":1}
+,"framework":{"unidirectional":1}
+,"unidirectional":{"tunnel":1}
+,"tunnel":{"co-routed":1,"associated":1,"lsps":1}
+,"co-routed":{"bidirectional":1}
+,"bidirectional":{"tunnel":1}
+,"associated":{"bidirectional":1}
+,"lsps":{"hold":1}
+,"hold":{"transport":1}
+,"transport":{"paths":1}
+,"paths":{"comprise":1}
+,"comprise":{"mpls":1}
+,"mpls":{"forwarding":1}
+,"forwarding":{"information":1}
+}
+;Search.control.loadWordPairs(pairs);

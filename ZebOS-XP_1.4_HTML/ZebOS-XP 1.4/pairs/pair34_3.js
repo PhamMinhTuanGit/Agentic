@@ -1,0 +1,26 @@
+var pairs =
+{
+"bgp":{"rfc1771-path-select":1}
+,"rfc1771-path-select":{"command":1,"bgp":1,"parameters":1}
+,"command":{"rfc":1,"revert":1,"syntax":1,"mode":1}
+,"rfc":{"1771":1}
+,"1771":{"compatible":1}
+,"compatible":{"path":1}
+,"path":{"selection":1}
+,"selection":{"parameter":1,"mechanism":1}
+,"parameter":{"command":1}
+,"revert":{"setting":1}
+,"setting":{"command":1}
+,"syntax":{"bgp":1}
+,"parameters":{"none":1}
+,"none":{"default":1}
+,"default":{"standard":1}
+,"standard":{"compatible":1}
+,"mechanism":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"bgp":1}
+}
+;Search.control.loadWordPairs(pairs);

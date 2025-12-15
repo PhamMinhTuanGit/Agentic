@@ -1,0 +1,21 @@
+var pairs =
+{
+"debug":{"snmp-server":1}
+,"snmp-server":{"command":1,"debug":1,"parameters":1}
+,"command":{"display":1,"stop":1,"syntax":1,"mode":1}
+,"display":{"snmp":1}
+,"snmp":{"debugging":1}
+,"debugging":{"information":1}
+,"information":{"form":1,"command":1}
+,"form":{"command":1}
+,"stop":{"displaying":1}
+,"displaying":{"snmp":1}
+,"syntax":{"debug":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"example":1}
+,"exec":{"configure":1}
+,"configure":{"mode":1}
+,"example":{"debug":1}
+}
+;Search.control.loadWordPairs(pairs);

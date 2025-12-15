@@ -1,0 +1,23 @@
+var pairs =
+{
+"vrf":{"command":1,"instance":1,"word":1,"ipi":1}
+,"command":{"assign":1,"remove":1,"syntax":1,"mode":1,"example":1}
+,"assign":{"vpn":1}
+,"vpn":{"routing":1}
+,"routing":{"forwarding":1}
+,"forwarding":{"(vrf)":1}
+,"(vrf)":{"instance":1}
+,"instance":{"option":1,"command":1}
+,"option":{"command":1}
+,"remove":{"vrf":1}
+,"syntax":{"vrf":1}
+,"word":{"vrf":1,"parameter":1,"name":1}
+,"parameter":{"word":1}
+,"name":{"vrf":1}
+,"mode":{"configure":1,"command":1}
+,"configure":{"mode":1}
+,"example":{"(config)":1}
+,"(config)":{"vrf":1}
+,"ipi":{"(config-vrf)":1}
+}
+;Search.control.loadWordPairs(pairs);

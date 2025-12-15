@@ -1,0 +1,26 @@
+var pairs =
+{
+"bandwidth":{"group":1,"groups":1}
+,"group":{"constraints":1}
+,"constraints":{"configure":1,"level-1":1,"participating":1}
+,"configure":{"bandwidth":1,"support":1,"required":1}
+,"level-1":{"level-2":1}
+,"level-2":{"l1-l2":1}
+,"l1-l2":{"configure":1}
+,"support":{"required":1}
+,"required":{"mpls":1,"bandwidth":1}
+,"mpls":{"dste":1,"configuration":1}
+,"dste":{"groups":1,"done":1}
+,"groups":{"nsm":1,"constraints":1}
+,"nsm":{"participating":1}
+,"participating":{"routers":1,"interfaces":1}
+,"routers":{"configure":1}
+,"interfaces":{"configuration":1}
+,"configuration":{"assumes":1,"dste":1,"mpls-te":1}
+,"assumes":{"basic":1}
+,"basic":{"mpls":1}
+,"done":{"prior":1}
+,"prior":{"configuration":1}
+,"mpls-te":{"topology":1}
+}
+;Search.control.loadWordPairs(pairs);

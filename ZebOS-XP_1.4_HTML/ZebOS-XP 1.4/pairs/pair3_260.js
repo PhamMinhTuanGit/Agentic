@@ -1,0 +1,24 @@
+var pairs =
+{
+"requirements":{"fully":1}
+,"fully":{"implement":1}
+,"implement":{"zebos-xp":1}
+,"zebos-xp":{"mpls":1}
+,"mpls":{"layer-3":1,"forwarder":1}
+,"layer-3":{"vpn":1}
+,"vpn":{"solution":1,"extensions":1}
+,"solution":{"following":1}
+,"following":{"modules":1}
+,"modules":{"required":1}
+,"required":{"network":1}
+,"network":{"services":1}
+,"services":{"module":1}
+,"module":{"bgp":1,"mpls":1,"ospfv2":1}
+,"bgp":{"protocol":1}
+,"protocol":{"vpn":1}
+,"extensions":{"ldp":1}
+,"ldp":{"module":1}
+,"forwarder":{"module":1}
+,"ospfv2":{"rip":1}
+}
+;Search.control.loadWordPairs(pairs);

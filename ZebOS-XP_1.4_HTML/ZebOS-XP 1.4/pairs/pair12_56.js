@@ -1,0 +1,19 @@
+var pairs =
+{
+"cfm":{"processes":1}
+,"processes":{"connectivity":1,"identify":1}
+,"connectivity":{"fault":1}
+,"fault":{"management":1}
+,"management":{"uses":1}
+,"uses":{"following":1}
+,"following":{"processes":1}
+,"identify":{"verify":1}
+,"verify":{"submit":1}
+,"submit":{"notifications":1}
+,"notifications":{"faults":1}
+,"faults":{"occurred":1}
+,"occurred":{"bridged":1}
+,"bridged":{"lan":1}
+,"lan":{"configured":1}
+}
+;Search.control.loadWordPairs(pairs);

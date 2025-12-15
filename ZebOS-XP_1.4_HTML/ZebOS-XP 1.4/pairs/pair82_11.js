@@ -1,0 +1,20 @@
+var pairs =
+{
+"ldp_api_router_id_unset":{"call":1,"(struct":1}
+,"call":{"unsets":1}
+,"unsets":{"router":1}
+,"router":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"ldp_api_router_id_unset":1}
+,"(struct":{"ldp":1}
+,"ldp":{"*ldp)":1,"ldp":1,"instance":1}
+,"*ldp)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ldp":1,"none":1}
+,"instance":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

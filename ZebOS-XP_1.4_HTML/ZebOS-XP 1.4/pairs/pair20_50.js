@@ -1,0 +1,21 @@
+var pairs =
+{
+"hsl_route_table":{"data":1,"{struct":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"routing":1}
+,"routing":{"table":1}
+,"table":{"functions":1}
+,"functions":{"defined":1}
+,"defined":{"libhsl\u002Fcommon\u002Fhsl_table.h":1}
+,"libhsl\u002Fcommon\u002Fhsl_table.h":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"hsl_route_table":1}
+,"{struct":{"hsl_route_node":1}
+,"hsl_route_node":{"*top":1}
+,"*top":{"\u002F*table":1}
+,"\u002F*table":{"identifier":1}
+,"identifier":{"*\u002Fu_int32_t":1}
+}
+;Search.control.loadWordPairs(pairs);

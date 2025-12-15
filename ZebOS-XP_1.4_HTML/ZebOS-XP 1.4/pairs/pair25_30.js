@@ -1,0 +1,22 @@
+var pairs =
+{
+"hsl":{"callbacks":1}
+,"callbacks":{"hsl":1,"form":1,"corresponding":1,"described":1}
+,"form":{"separation":1}
+,"separation":{"among":1}
+,"among":{"hardware":1}
+,"hardware":{"operating":1}
+,"operating":{"system":1}
+,"system":{"control":1}
+,"control":{"plane":1}
+,"plane":{"software":1}
+,"software":{"callbacks":1}
+,"corresponding":{"api":1,"callbacks":1}
+,"api":{"functions":1}
+,"functions":{"hal":1}
+,"hal":{"function":1}
+,"function":{"trigger":1}
+,"trigger":{"corresponding":1}
+,"described":{"subsection":1}
+}
+;Search.control.loadWordPairs(pairs);

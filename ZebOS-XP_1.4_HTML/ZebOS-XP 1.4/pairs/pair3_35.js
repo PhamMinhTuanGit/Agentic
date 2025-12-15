@@ -1,0 +1,23 @@
+var pairs =
+{
+"authentication":{"types":1}
+,"types":{"following":1,"provides":1}
+,"following":{"authentication":1}
+,"provides":{"level":1}
+,"level":{"security":1}
+,"security":{"varies":1}
+,"varies":{"based":1}
+,"based":{"desired":1}
+,"desired":{"type":1}
+,"type":{"chosen":1,"meticulous":1}
+,"chosen":{"simple":1}
+,"simple":{"password":1}
+,"password":{"weakest":1,"keyed\u002Fmeticulous":1}
+,"weakest":{"type":1}
+,"meticulous":{"sha1":1}
+,"sha1":{"strongest":1}
+,"strongest":{"simple":1}
+,"keyed\u002Fmeticulous":{"md5":1,"sha1":1}
+,"md5":{"keyed\u002Fmeticulous":1}
+}
+;Search.control.loadWordPairs(pairs);

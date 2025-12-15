@@ -1,0 +1,23 @@
+var pairs =
+{
+"rbridge3":{"show":1}
+,"show":{"trill":1}
+,"trill":{"pruning":1}
+,"pruning":{"multicast":1,"information":1}
+,"multicast":{"rbridge":1,"pruning":1}
+,"rbridge":{"instance":1}
+,"instance":{"multicast":1}
+,"information":{"d-trees":1}
+,"d-trees":{"d-tree":1}
+,"d-tree":{"vlanid":1}
+,"vlanid":{"multicast-mac":1}
+,"multicast-mac":{"port_list":1}
+,"port_list":{"7003":1,"8001":1,"8002":1}
+,"7003":{"01:00:5e:01:01:02":1}
+,"01:00:5e:01:01:02":{"eth1":1,"eth2":1}
+,"eth1":{"d-tree":1}
+,"8001":{"01:00:5e:01:01:02":1}
+,"eth2":{"d-tree":1}
+,"8002":{"01:00:5e:01:01:02":1}
+}
+;Search.control.loadWordPairs(pairs);

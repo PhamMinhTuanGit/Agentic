@@ -1,0 +1,22 @@
+var pairs =
+{
+"ais":{"interval":1,"transmission":1}
+,"interval":{"command":1,"tx_interval":1,"seconds":1}
+,"command":{"ais":1,"syntax":1,"mode":1}
+,"transmission":{"interval":1}
+,"syntax":{"ais":1}
+,"tx_interval":{"parameters":1,"enter":1}
+,"parameters":{"tx_interval":1}
+,"enter":{"transmission":1}
+,"seconds":{"<1-60>":1}
+,"<1-60>":{"command":1}
+,"mode":{"ethernet":1,"example":1}
+,"ethernet":{"cfm":1}
+,"cfm":{"pbb-te":1}
+,"pbb-te":{"mep":1}
+,"mep":{"configuration":1}
+,"configuration":{"mode":1}
+,"example":{"(config-cfm-pbb-te-mep)":1}
+,"(config-cfm-pbb-te-mep)":{"ais":1}
+}
+;Search.control.loadWordPairs(pairs);

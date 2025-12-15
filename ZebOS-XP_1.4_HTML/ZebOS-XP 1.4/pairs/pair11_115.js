@@ -1,0 +1,26 @@
+var pairs =
+{
+"spanning-tree":{"rpvst":1}
+,"rpvst":{"configuration":1}
+,"configuration":{"command":1,"mode":1,"parameters":1,"(config-rpvst":1}
+,"command":{"put":1,"rpvst":1,"syntax":1,"mode":1}
+,"put":{"terminal":1}
+,"terminal":{"rpvst":1,"(config)":1}
+,"mode":{"creating":1,"internally":1,"configure":1,"example":1}
+,"creating":{"bridge":1}
+,"bridge":{"adding":1,"command":1}
+,"adding":{"vlan":1}
+,"vlan":{"bridge":1,"command":1}
+,"internally":{"rstp":1}
+,"rstp":{"instance":1}
+,"instance":{"created":1}
+,"created":{"configured":1}
+,"configured":{"vlan":1}
+,"syntax":{"spanning-tree":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"(config)":{"spanning-tree":1}
+}
+;Search.control.loadWordPairs(pairs);

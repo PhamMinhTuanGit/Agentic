@@ -1,0 +1,19 @@
+var pairs =
+{
+"reservation":{"error":1,"releases":1}
+,"error":{"(rerr)":1,"reservation":1}
+,"(rerr)":{"message":1}
+,"message":{"rerr":1,"may":1,"denotes":1}
+,"rerr":{"message":1}
+,"may":{"initiated":1}
+,"initiated":{"ingress":1}
+,"ingress":{"intermediate":1}
+,"intermediate":{"node":1}
+,"node":{"message":1}
+,"denotes":{"error":1}
+,"releases":{"resources":1}
+,"resources":{"nodes":1}
+,"nodes":{"encounters":1}
+,"encounters":{"egress":1}
+}
+;Search.control.loadWordPairs(pairs);

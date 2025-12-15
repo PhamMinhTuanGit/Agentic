@@ -1,0 +1,27 @@
+var pairs =
+{
+"hal_ipv6_mc_delete_mfc":{"function":1,"(struct":1}
+,"function":{"deletes":1,"succeeds":1}
+,"deletes":{"mfc":1}
+,"mfc":{"entry":1}
+,"entry":{"syntax":1}
+,"syntax":{"iint":1}
+,"iint":{"hal_ipv6_mc_delete_mfc":1}
+,"(struct":{"hal_in6_addr":1}
+,"hal_in6_addr":{"*source":1,"*group)":1}
+,"*source":{"struct":1}
+,"struct":{"hal_in6_addr":1}
+,"*group)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"source":1,"none":1}
+,"source":{"source":1,"address":1}
+,"address":{"group":1,"output":1}
+,"group":{"group":1,"address":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"hal_ipv6_mc_mfc_notexists":1}
+,"hal_ipv6_mc_mfc_notexists":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

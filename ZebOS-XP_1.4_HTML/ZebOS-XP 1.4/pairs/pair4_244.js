@@ -1,0 +1,22 @@
+var pairs =
+{
+"mplsfectable":{"object":1}
+,"object":{"type":1}
+,"type":{"syntax":1}
+,"syntax":{"access":1}
+,"access":{"functions":1}
+,"functions":{"mplsfectype":1}
+,"mplsfectype":{"read-write":1}
+,"read-write":{"ldp_snmp_api_get_fec":1,"ldp_snmp_api_set_fec_addr_type":1,"ldp_snmp_api_set_fec_addr":1,"ldp_snmp_api_set_fec_addr_prefix_length":1,"ldp_snmp_api_set_fec_stor_type":1,"ldp_snmp_api_set_fec_row_status":1}
+,"ldp_snmp_api_get_fec":{"mplsfecaddrtype":1}
+,"mplsfecaddrtype":{"read-write":1}
+,"ldp_snmp_api_set_fec_addr_type":{"mplsfecaddr":1}
+,"mplsfecaddr":{"read-write":1}
+,"ldp_snmp_api_set_fec_addr":{"mplsfecaddrprefixlength":1}
+,"mplsfecaddrprefixlength":{"read-write":1}
+,"ldp_snmp_api_set_fec_addr_prefix_length":{"mplsfecstoragetype":1}
+,"mplsfecstoragetype":{"read-write":1}
+,"ldp_snmp_api_set_fec_stor_type":{"mplsfecrowstatus":1}
+,"mplsfecrowstatus":{"read-write":1}
+}
+;Search.control.loadWordPairs(pairs);

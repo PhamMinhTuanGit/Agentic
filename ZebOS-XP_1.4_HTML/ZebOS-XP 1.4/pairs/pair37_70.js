@@ -1,0 +1,24 @@
+var pairs =
+{
+"rbridge-ping-interval":{"command":1,"interval":1,"parameters":1}
+,"command":{"ping":1,"syntax":1,"mode":1}
+,"ping":{"interval":1,"packets":1}
+,"interval":{"command":1,"rbridge-ping-interval":1,"specify":1,"sending":1,"seconds":1,"12345":1}
+,"syntax":{"rbridge-ping-interval":1}
+,"parameters":{"interval":1}
+,"specify":{"time":1,"actual":1}
+,"time":{"interval":1}
+,"sending":{"successive":1}
+,"successive":{"ping":1}
+,"packets":{"<1-65535>":1}
+,"<1-65535>":{"specify":1}
+,"actual":{"ping":1}
+,"seconds":{"command":1}
+,"mode":{"exec":1,"privilege":1,"examples":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"examples":{"enable":1}
+,"enable":{"rbridge-ping-interval":1}
+,"12345":{"rbridge-ping-interval":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"api":{"function":1}
+,"function":{"description":1}
+,"description":{"mstp_api_get_bridge_l2gp_pathcost_control":1}
+,"mstp_api_get_bridge_l2gp_pathcost_control":{"gets":1}
+,"gets":{"setting":1,"status":1,"pseudo-root":1}
+,"setting":{"l2gp":1}
+,"l2gp":{"non-zero":1}
+,"non-zero":{"path":1}
+,"path":{"cost":1}
+,"cost":{"feature":1}
+,"feature":{"mstp_api_set_bridge_l2gp_pathcost_control":1,"mstp_api_get_isl2gp":1}
+,"mstp_api_set_bridge_l2gp_pathcost_control":{"sets":1}
+,"sets":{"l2gp":1,"status":1,"pseudo-root":1}
+,"mstp_api_get_isl2gp":{"gets":1}
+,"status":{"isl2gp":1}
+,"isl2gp":{"object":1}
+,"object":{"mstp_api_set_isl2gp":1,"mstp_api_get_l2gp_pseudorootid":1}
+,"mstp_api_set_isl2gp":{"sets":1}
+,"mstp_api_get_l2gp_pseudorootid":{"gets":1}
+,"pseudo-root":{"identifier":1}
+,"identifier":{"mstp_api_set_l2gp_pseudorootid":1}
+,"mstp_api_set_l2gp_pseudorootid":{"sets":1}
+}
+;Search.control.loadWordPairs(pairs);

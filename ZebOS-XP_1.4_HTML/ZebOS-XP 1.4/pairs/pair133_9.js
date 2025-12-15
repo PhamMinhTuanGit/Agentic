@@ -1,0 +1,27 @@
+var pairs =
+{
+"dynamic":{"address":1,"host":1}
+,"address":{"address":1,"assigned":1,"device":1,"simply":1,"previous":1}
+,"assigned":{"device":1}
+,"device":{"network":1,"client":1,"(such":1}
+,"network":{"regard":1}
+,"regard":{"matching":1}
+,"matching":{"specific":1}
+,"specific":{"address":1}
+,"client":{"device":1}
+,"(such":{"laptop)":1}
+,"laptop)":{"given":1}
+,"given":{"dynamic":1}
+,"simply":{"receives":1}
+,"receives":{"pool":1}
+,"pool":{"available":1}
+,"available":{"addresses":1}
+,"addresses":{"allocated":1}
+,"allocated":{"address":1}
+,"previous":{"connections":1}
+,"connections":{"dynamic":1}
+,"host":{"configuration":1}
+,"configuration":{"protocol":1}
+,"protocol":{"(dhcp)":1}
+}
+;Search.control.loadWordPairs(pairs);

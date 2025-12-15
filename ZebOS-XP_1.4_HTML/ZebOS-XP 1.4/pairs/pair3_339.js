@@ -1,0 +1,20 @@
+var pairs =
+{
+"pim-sm":{"configuration":1,"refer":1}
+,"configuration":{"steps":1,"enabling":1}
+,"steps":{"configure":1}
+,"configure":{"pim-sm":1,"terminal":1,"mode":1}
+,"refer":{"pim":1}
+,"pim":{"sparse":1,"bidir-enable":1}
+,"sparse":{"mode":1}
+,"mode":{"configuration":1,"(config)":1}
+,"enabling":{"bidir-pim":1}
+,"bidir-pim":{"configure":1,"(config)":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"(config)":{"pim":1,"exit":1}
+,"bidir-enable":{"enable":1}
+,"enable":{"bidir-pim":1}
+,"exit":{"exit":1,"configure":1}
+}
+;Search.control.loadWordPairs(pairs);

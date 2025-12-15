@@ -1,0 +1,26 @@
+var pairs =
+{
+"hardware":{"hardware":1,"command":1,"register":1}
+,"command":{"value":1,"supported":1,"syntax":1,"mode":1,"hardware":1}
+,"value":{"register":1,"parameters":1}
+,"register":{"command":1,"addr":1,"specify":1,"address":1,"1.1.1.1":1}
+,"supported":{"zebic":1}
+,"zebic":{"releases":1}
+,"releases":{"command":1}
+,"syntax":{"hardware":1}
+,"addr":{"hardware":1,"value":1}
+,"parameters":{"register":1}
+,"specify":{"value":1,"register":1}
+,"address":{"0xhhhh":1}
+,"0xhhhh":{"format":1}
+,"format":{"specify":1,"command":1}
+,"mode":{"exec":1,"privilege":1,"example":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"example":{"sample":1}
+,"sample":{"output":1}
+,"output":{"hardware":1}
+,"1.1.1.1":{"new":1}
+,"new":{"hardware":1}
+}
+;Search.control.loadWordPairs(pairs);

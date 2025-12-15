@@ -1,0 +1,23 @@
+var pairs =
+{
+"portal-priority":{"command":1,"<1-65535>":1}
+,"command":{"portal":1,"remove":1,"syntax":1,"mode":1}
+,"portal":{"priority":1}
+,"priority":{"form":1,"command":1}
+,"form":{"command":1}
+,"remove":{"portal":1}
+,"syntax":{"portal-priority":1}
+,"<1-65535>":{"port-channel":1,"portal":1}
+,"port-channel":{"load-balance":1}
+,"load-balance":{"parameters":1}
+,"parameters":{"<1-65535>":1}
+,"mode":{"mlag":1,"example":1}
+,"mlag":{"mode":1,"configuration":1}
+,"example":{"config":1}
+,"config":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mlag":1}
+,"configuration":{"(config-mlag)":1}
+,"(config-mlag)":{"portal-priority":1}
+}
+;Search.control.loadWordPairs(pairs);

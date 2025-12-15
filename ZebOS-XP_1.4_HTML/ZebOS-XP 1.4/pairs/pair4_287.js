@@ -1,0 +1,26 @@
+var pairs =
+{
+"vc-id":{"command":1,"<1-4294967295>":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"identifier":1}
+,"identifier":{"mpls":1}
+,"mpls":{"layer":1,"layer-2":1}
+,"layer":{"virtual":1}
+,"virtual":{"circuit":1}
+,"circuit":{"command":1}
+,"syntax":{"vc-id":1}
+,"<1-4294967295>":{"parameters":1,"specify":1}
+,"parameters":{"<1-4294967295>":1}
+,"specify":{"mpls":1}
+,"layer-2":{"virtual":1}
+,"mode":{"vpws":1,"example":1}
+,"vpws":{"mode":1}
+,"example":{"(config)":1}
+,"(config)":{"l2vpn-vpws":1}
+,"l2vpn-vpws":{"vpws1":1}
+,"vpws1":{"(config-vpws)":1}
+,"(config-vpws)":{"protocol":1,"vc-id":1}
+,"protocol":{"ldp":1}
+,"ldp":{"(config-vpws)":1}
+}
+;Search.control.loadWordPairs(pairs);

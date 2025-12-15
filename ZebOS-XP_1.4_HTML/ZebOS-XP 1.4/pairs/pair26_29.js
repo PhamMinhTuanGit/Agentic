@@ -1,0 +1,26 @@
+var pairs =
+{
+"hal_igmp_snooping_enable":{"api":1,"(char":1}
+,"api":{"enables":1}
+,"enables":{"igmp":1}
+,"igmp":{"snooping":1}
+,"snooping":{"bridge":1}
+,"bridge":{"syntax":1,"name":1,"enabled":1}
+,"syntax":{"int":1}
+,"int":{"hal_igmp_snooping_enable":1}
+,"(char":{"*bridge_name)":1}
+,"*bridge_name)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"bridge_name":1,"none":1}
+,"bridge_name":{"bridge":1}
+,"name":{"moutput":1}
+,"moutput":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"hal_err_igmp_snooping_enable":1}
+,"hal_err_igmp_snooping_enable":{"igmp":1}
+,"enabled":{"hal_success":1}
+,"hal_success":{"function":1}
+,"function":{"succeeds":1}
+}
+;Search.control.loadWordPairs(pairs);

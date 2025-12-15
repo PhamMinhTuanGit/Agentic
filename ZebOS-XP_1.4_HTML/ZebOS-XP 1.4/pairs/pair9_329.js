@@ -1,0 +1,24 @@
+var pairs =
+{
+"rbridge1":{"show":1}
+,"show":{"trill":1}
+,"trill":{"rpfinfo":1,"rpf":1}
+,"rpfinfo":{"rbridge":1}
+,"rbridge":{"instance":1}
+,"instance":{"trill":1}
+,"rpf":{"table":1}
+,"table":{"dtree_name":1}
+,"dtree_name":{"ingress_nickname":1}
+,"ingress_nickname":{"if_index":1}
+,"if_index":{"if_name":1}
+,"if_name":{"7002":1}
+,"7002":{"6003":1,"0003":1}
+,"6003":{"0003":1,"0004":1}
+,"0003":{"eth1":1}
+,"eth1":{"8002":1,"8003":1}
+,"8002":{"6003":1,"7002":1}
+,"0004":{"eth2":1}
+,"eth2":{"8002":1,"8003":1}
+,"8003":{"6003":1,"7002":1}
+}
+;Search.control.loadWordPairs(pairs);

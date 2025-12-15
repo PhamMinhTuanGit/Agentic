@@ -1,0 +1,22 @@
+var pairs =
+{
+"isis":{"messages":1,"nsm_msg_isis_bgp_down":1}
+,"messages":{"message":1}
+,"message":{"constant":1,"isis":1}
+,"constant":{"source":1}
+,"source":{"nsm_msg_isis_bgp_conv_done":1}
+,"nsm_msg_isis_bgp_conv_done":{"sent":1}
+,"sent":{"nsm":1,"protocol":1}
+,"nsm":{"protocol":1,"wait":1}
+,"protocol":{"send":1,"bgp":1,"nsm":1}
+,"send":{"bgp":1}
+,"bgp":{"converged":1,"down":1,"update":1,"message":1}
+,"converged":{"message":1}
+,"nsm_msg_isis_bgp_down":{"sent":1}
+,"down":{"update":1}
+,"update":{"nsm_msg_isis_bgp_up":1,"nsm_msg_isis_wait_bgp_set":1}
+,"nsm_msg_isis_bgp_up":{"sent":1}
+,"nsm_msg_isis_wait_bgp_set":{"sent":1}
+,"wait":{"bgp":1}
+}
+;Search.control.loadWordPairs(pairs);

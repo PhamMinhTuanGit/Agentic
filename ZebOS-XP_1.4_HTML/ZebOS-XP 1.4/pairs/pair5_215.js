@@ -1,0 +1,19 @@
+var pairs =
+{
+"port":{"mirroring":1,"mirror":1}
+,"mirroring":{"api":1,"functions":1,"interface":1}
+,"api":{"section":1}
+,"section":{"contains":1}
+,"contains":{"functions":1}
+,"functions":{"port":1,"description":1}
+,"description":{"port_add_mirror_interface":1}
+,"port_add_mirror_interface":{"adds":1}
+,"adds":{"port":1}
+,"interface":{"port":1}
+,"mirror":{"list":1}
+,"list":{"port_mirroring_list_dell":1,"entry":1}
+,"port_mirroring_list_dell":{"deletes":1}
+,"deletes":{"port-mirroring":1}
+,"port-mirroring":{"list":1}
+}
+;Search.control.loadWordPairs(pairs);

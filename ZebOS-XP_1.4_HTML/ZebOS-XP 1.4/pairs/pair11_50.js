@@ -1,0 +1,26 @@
+var pairs =
+{
+"switchport":{"customer-edge":1}
+,"customer-edge":{"vlan":1}
+,"vlan":{"registration":1}
+,"registration":{"command":1,"parameters":1,"word":1,"table":1,"customer1":1}
+,"command":{"configure":1,"delete":1,"syntax":1,"mode":1}
+,"configure":{"vlan":1,"terminal":1}
+,"parameters":{"parameter":1,"word":1}
+,"parameter":{"command":1}
+,"delete":{"mapping":1}
+,"mapping":{"interface":1}
+,"interface":{"command":1,"mode":1,"eth1":1}
+,"syntax":{"switchport":1}
+,"word":{"switchport":1,"name":1}
+,"name":{"cvlan":1}
+,"cvlan":{"registration":1}
+,"table":{"command":1}
+,"mode":{"interface":1,"example":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth1":{"(config-if)":1}
+,"(config-if)":{"switchport":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"bfd":{"session":1,"session\u2019s":1}
+,"session":{"discriminator":1}
+,"discriminator":{"mapping":1,"value":1,"object":1}
+,"mapping":{"table":1}
+,"table":{"bfd":1,"(bfdsessdiscmaptable)":1,"type":1}
+,"(bfdsessdiscmaptable)":{"maps":1}
+,"maps":{"local":1}
+,"local":{"discriminator":1}
+,"value":{"associated":1}
+,"associated":{"bfd":1}
+,"session\u2019s":{"bfdsessindextc":1,"local":1}
+,"bfdsessindextc":{"used":1}
+,"used":{"bfdsesstable":1,"bfd":1}
+,"bfdsesstable":{"index":1}
+,"index":{"used":1}
+,"object":{"table":1}
+,"type":{"read-only":1}
+,"read-only":{"therefore":1}
+,"therefore":{"operation":1}
+,"operation":{"allowed":1}
+}
+;Search.control.loadWordPairs(pairs);

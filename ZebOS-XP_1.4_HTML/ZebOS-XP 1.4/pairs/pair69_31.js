@@ -1,0 +1,23 @@
+var pairs =
+{
+"bit":{"error":1}
+,"error":{"rate":1,"bits":1}
+,"rate":{"(ber)":1}
+,"(ber)":{"ratio":1}
+,"ratio":{"error":1}
+,"bits":{"total":1,"transmitted":1,"error)":1}
+,"total":{"number":1}
+,"number":{"bits":1}
+,"transmitted":{"ber":1}
+,"ber":{"generally":1}
+,"generally":{"shown":1}
+,"shown":{"negative":1}
+,"negative":{"exponent":1}
+,"exponent":{"(for":1}
+,"(for":{"example":1}
+,"example":{"10-7":1}
+,"10-7":{"means":1}
+,"means":{"10,000,000":1}
+,"10,000,000":{"bits":1}
+}
+;Search.control.loadWordPairs(pairs);

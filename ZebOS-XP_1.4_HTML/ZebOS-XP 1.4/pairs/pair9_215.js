@@ -1,0 +1,22 @@
+var pairs =
+{
+"bind":{"pim":1,"ecmp":1,"ecmp-bundle":1}
+,"pim":{"ecmp":1,"routers":1,"domain":1,"bind":1}
+,"ecmp":{"bundle":1}
+,"bundle":{"bind":1,"interface":1}
+,"interface":{"pim":1,"eth1":1,"mode":1,"(config-if)":1}
+,"routers":{"inside":1}
+,"inside":{"pim":1}
+,"domain":{"configure":1}
+,"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"interface":1}
+,"mode":{"(config)":1,"(config-if)":1}
+,"(config)":{"interface":1}
+,"eth1":{"enter":1}
+,"(config-if)":{"pim":1,"exit":1}
+,"ecmp-bundle":{"ecmpbundle":1}
+,"ecmpbundle":{"bind":1}
+,"exit":{"exit":1,"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

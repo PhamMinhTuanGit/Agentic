@@ -1,0 +1,24 @@
+var pairs =
+{
+"virtual":{"links":1,"link":1}
+,"links":{"virtual":1,"used":1,"topology":1}
+,"used":{"connect":1,"transit":1}
+,"connect":{"temporarily-disjointed":1}
+,"temporarily-disjointed":{"non-backbone":1}
+,"non-backbone":{"area":1}
+,"area":{"backbone":1,"repair":1,"example":1,"turn":1,"virtual":1,"area":1,"used":1}
+,"backbone":{"area":1}
+,"repair":{"non-contiguous":1}
+,"non-contiguous":{"backbone":1}
+,"example":{"abr":1}
+,"abr":{"temporarily":1,"abr":1,"connects":1}
+,"temporarily":{"lost":1}
+,"lost":{"connection":1}
+,"connection":{"area":1}
+,"turn":{"disconnecting":1}
+,"disconnecting":{"area":1}
+,"link":{"abr":1}
+,"connects":{"area":1}
+,"transit":{"area":1}
+}
+;Search.control.loadWordPairs(pairs);

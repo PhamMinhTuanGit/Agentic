@@ -1,0 +1,26 @@
+var pairs =
+{
+"out-of-service":{"command":1,"testing":1,"lck-level":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"tesi":1}
+,"tesi":{"out-of-service":1}
+,"testing":{"command":1,"parameters":1}
+,"syntax":{"out-of-service":1}
+,"lck-level":{"<0-7>":1,"level":1,"testing":1}
+,"<0-7>":{"testing":1,"enter":1}
+,"parameters":{"lck-level":1}
+,"level":{"lck":1,"command":1}
+,"lck":{"frames":1,"level":1}
+,"frames":{"generated":1}
+,"generated":{"<0-7>":1}
+,"enter":{"lck":1}
+,"mode":{"ethernet":1,"example":1}
+,"ethernet":{"cfm":1}
+,"cfm":{"pbb-te":1}
+,"pbb-te":{"mep":1}
+,"mep":{"configuration":1}
+,"configuration":{"mode":1}
+,"example":{"(config-cfm-pbb-te-mep)":1}
+,"(config-cfm-pbb-te-mep)":{"out-of-service":1}
+}
+;Search.control.loadWordPairs(pairs);

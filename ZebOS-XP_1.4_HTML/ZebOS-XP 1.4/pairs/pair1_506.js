@@ -1,0 +1,22 @@
+var pairs =
+{
+"routing":{"information":1}
+,"information":{"protocol":1}
+,"protocol":{"authentication":1}
+,"authentication":{"support":1,"choose":1,"option":1}
+,"support":{"ripv2":1}
+,"ripv2":{"message":1}
+,"message":{"authentication":1}
+,"choose":{"plain":1}
+,"plain":{"text":1}
+,"text":{"md5":1}
+,"md5":{"authentication":1}
+,"option":{"single":1}
+,"single":{"key":1}
+,"key":{"multiple":1}
+,"multiple":{"keys":1}
+,"keys":{"different":1}
+,"different":{"modes":1}
+,"modes":{"stages":1}
+}
+;Search.control.loadWordPairs(pairs);

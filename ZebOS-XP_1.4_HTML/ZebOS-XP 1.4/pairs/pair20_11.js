@@ -1,0 +1,22 @@
+var pairs =
+{
+"capability":{"negotiation":1}
+,"negotiation":{"feature":1,"without":1}
+,"feature":{"introduces":1}
+,"introduces":{"optional":1}
+,"optional":{"parameter":1}
+,"parameter":{"called":1}
+,"called":{"capabilities":1}
+,"capabilities":{"facilitates":1}
+,"facilitates":{"introduction":1}
+,"introduction":{"new":1}
+,"new":{"features":1}
+,"features":{"bgp":1}
+,"bgp":{"providing":1,"peers":1}
+,"providing":{"graceful":1}
+,"graceful":{"capability":1}
+,"without":{"requiring":1}
+,"requiring":{"bgp":1}
+,"peers":{"terminated":1}
+}
+;Search.control.loadWordPairs(pairs);

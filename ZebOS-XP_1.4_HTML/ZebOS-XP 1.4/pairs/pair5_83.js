@@ -1,0 +1,25 @@
+var pairs =
+{
+"cvlan":{"svlan":1,"vlan_id":1,"specify":1,"<1-4094>":1,"registration":1}
+,"svlan":{"command":1,"forms":1,"vlan_id":1,"specify":1,"<1-4094>":1,"(config-cvlan-registration)":1}
+,"command":{"create":1,"delete":1,"syntax":1,"mode":1}
+,"create":{"mapping":1}
+,"mapping":{"cvlan":1,"command":1}
+,"forms":{"command":1}
+,"delete":{"mapping":1}
+,"syntax":{"cvlan":1}
+,"vlan_id":{"svlan":1,"cvlan":1,"parameters":1,"specify":1}
+,"parameters":{"cvlan":1}
+,"specify":{"cvlan":1,"svlan":1}
+,"<1-4094>":{"svlan":1,"command":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"cvlan":1}
+,"registration":{"table":1}
+,"table":{"customer1":1}
+,"customer1":{"(config-cvlan-registration)":1}
+,"(config-cvlan-registration)":{"cvlan":1}
+}
+;Search.control.loadWordPairs(pairs);

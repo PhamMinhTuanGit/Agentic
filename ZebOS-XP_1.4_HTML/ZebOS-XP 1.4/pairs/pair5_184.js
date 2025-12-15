@@ -1,0 +1,26 @@
+var pairs =
+{
+"cisco":{"switch":1}
+,"switch":{"switch":1,"(config)":1,"(config-if)":1}
+,"(config)":{"spanning-tree":1,"interface":1}
+,"spanning-tree":{"mode":1,"vlan":1}
+,"mode":{"rpvst":1,"switch":1,"interface":1}
+,"rpvst":{"configure":1,"switch":1}
+,"configure":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"mode":1,"switch":1}
+,"vlan":{"priority":1,"1-1000":1}
+,"priority":{"associate":1}
+,"associate":{"vlan\u2019s":1}
+,"vlan\u2019s":{"spanning":1,"trunk":1}
+,"interface":{"fastethernet0\u002F24":1,"mode":1}
+,"fastethernet0\u002F24":{"enter":1}
+,"enter":{"interface":1}
+,"(config-if)":{"switchport":1}
+,"switchport":{"trunk":1}
+,"trunk":{"allowed":1,"mode":1}
+,"allowed":{"vlan":1}
+,"1-1000":{"add":1}
+,"add":{"vlan\u2019s":1}
+}
+;Search.control.loadWordPairs(pairs);

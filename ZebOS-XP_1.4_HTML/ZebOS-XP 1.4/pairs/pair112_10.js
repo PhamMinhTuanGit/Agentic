@@ -1,0 +1,22 @@
+var pairs =
+{
+"rsvp_api_hello_disable":{"call":1,"(struct":1}
+,"call":{"disables":1}
+,"disables":{"sending":1}
+,"sending":{"hello":1}
+,"hello":{"messages":1}
+,"messages":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"rsvp_api_hello_disable":1}
+,"(struct":{"rsvp":1}
+,"rsvp":{"*rsvp)":1,"rsvp":1,"instance":1}
+,"*rsvp)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"rsvp":1,"none":1}
+,"instance":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

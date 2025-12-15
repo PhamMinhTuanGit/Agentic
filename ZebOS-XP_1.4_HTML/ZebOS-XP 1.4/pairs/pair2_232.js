@@ -1,0 +1,23 @@
+var pairs =
+{
+"topology":{"maximum":1,"configuration":1}
+,"maximum":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"topology":1}
+,"configuration":{"sample":1}
+,"sample":{"assumes":1}
+,"assumes":{"running":1}
+,"running":{"zebos-xp":1}
+,"zebos-xp":{"layer-2":1,"hybrid":1}
+,"layer-2":{"module":1,"mode":1}
+,"module":{"using":1,"run":1}
+,"using":{"zebos-xp":1}
+,"hybrid":{"layer-2\u002Flayer-3":1}
+,"layer-2\u002Flayer-3":{"module":1}
+,"run":{"switchport":1}
+,"switchport":{"command":1}
+,"command":{"port":1}
+,"port":{"change":1}
+,"change":{"layer-2":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"ptp_launch_recv":{"function":1,"(struct":1}
+,"function":{"sets":1}
+,"sets":{"threads":1}
+,"threads":{"receiving":1}
+,"receiving":{"ptp":1}
+,"ptp":{"messages":1,"interface":1}
+,"messages":{"syntax":1}
+,"syntax":{"include":1}
+,"include":{"ptpd\u002Fptp_utils.h":1}
+,"ptpd\u002Fptp_utils.h":{"void":1}
+,"void":{"ptp_launch_recv":1}
+,"(struct":{"ptp_ifp":1}
+,"ptp_ifp":{"*ptp_if)":1}
+,"*ptp_if)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ptp_if":1,"none":1}
+,"ptp_if":{"pointer":1}
+,"pointer":{"ptp":1}
+,"interface":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"lldp":{"command":1,"address":1}
+,"command":{"link":1,"remove":1,"syntax":1,"mode":1}
+,"link":{"layer":1}
+,"layer":{"discovery":1}
+,"discovery":{"protocol":1}
+,"protocol":{"address":1}
+,"address":{"used":1,"a.b.c.d":1,"parameters":1,"value":1,"1.1.1.1":1}
+,"used":{"chassis":1}
+,"chassis":{"management":1}
+,"management":{"form":1}
+,"form":{"command":1}
+,"remove":{"value":1}
+,"value":{"command":1}
+,"syntax":{"lldp":1}
+,"a.b.c.d":{"lldp":1,"enter":1}
+,"parameters":{"a.b.c.d":1}
+,"enter":{"address":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"lldp":1}
+,"1.1.1.1":{"(config)":1}
+}
+;Search.control.loadWordPairs(pairs);

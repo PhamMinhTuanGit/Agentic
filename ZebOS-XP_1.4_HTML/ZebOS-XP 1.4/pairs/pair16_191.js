@@ -1,0 +1,27 @@
+var pairs =
+{
+"detour":{"object":1,"lsp":1}
+,"object":{"detour":1,"carried":1,"acts":1}
+,"carried":{"rsvp":1}
+,"rsvp":{"path":1}
+,"path":{"messages":1}
+,"messages":{"signaling":1}
+,"signaling":{"backup":1}
+,"backup":{"lsps":1,"scenarios":1}
+,"lsps":{"one-to-one":1,"carries":1}
+,"one-to-one":{"backup":1}
+,"scenarios":{"object":1}
+,"acts":{"identifier":1}
+,"identifier":{"backup":1}
+,"carries":{"address":1}
+,"address":{"head":1,"immediate":1}
+,"head":{"end":1}
+,"end":{"detour":1}
+,"lsp":{"(plr)":1}
+,"(plr)":{"address":1}
+,"immediate":{"downstream":1}
+,"downstream":{"node":1}
+,"node":{"plr":1}
+,"plr":{"avoided":1}
+}
+;Search.control.loadWordPairs(pairs);

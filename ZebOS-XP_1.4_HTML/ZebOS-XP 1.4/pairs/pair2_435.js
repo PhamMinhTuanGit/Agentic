@@ -1,0 +1,19 @@
+var pairs =
+{
+"directory":{"structure":1,"implementation":1}
+,"structure":{"subdirectory":1}
+,"subdirectory":{"pal":1,"baseline":1}
+,"pal":{"directory":1,"specific":1}
+,"implementation":{"pal":1}
+,"specific":{"operating":1}
+,"operating":{"system":1}
+,"system":{"platform":1}
+,"platform":{"files":1}
+,"files":{"api":1,"directories":1}
+,"api":{"subdirectory":1}
+,"baseline":{"reference":1}
+,"reference":{"files":1}
+,"directories":{"provide":1}
+,"provide":{"implementation":1}
+}
+;Search.control.loadWordPairs(pairs);

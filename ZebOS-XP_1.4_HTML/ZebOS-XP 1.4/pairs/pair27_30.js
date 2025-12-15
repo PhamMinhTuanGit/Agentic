@@ -1,0 +1,23 @@
+var pairs =
+{
+"isis_lan_nsm_neighbor_up":{"function":1,"(struct":1}
+,"function":{"neighbor":1}
+,"neighbor":{"handler":1}
+,"handler":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"isis_lan_nsm_neighbor_up":1}
+,"(struct":{"isis_nbr_level":1}
+,"isis_nbr_level":{"*nl)":1}
+,"*nl)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*nl":1,"none":1}
+,"*nl":{"pointer":1}
+,"pointer":{"is-is":1}
+,"is-is":{"level":1}
+,"level":{"reg-lsp":1}
+,"reg-lsp":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

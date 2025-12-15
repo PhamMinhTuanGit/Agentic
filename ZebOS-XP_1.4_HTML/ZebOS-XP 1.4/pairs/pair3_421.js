@@ -1,0 +1,27 @@
+var pairs =
+{
+"nsm":{"message":1,"sends":1}
+,"message":{"handler":1}
+,"handler":{"(\u005Cpimd\u005Cpim_vif.h":1,"allocates":1}
+,"(\u005Cpimd\u005Cpim_vif.h":{"\u005Cpimd\u005Cpim_vif.c)":1}
+,"\u005Cpimd\u005Cpim_vif.c)":{"nsm":1}
+,"allocates":{"virtual":1}
+,"virtual":{"interface":1,"interfaces":1}
+,"interface":{"structure":1,"pim":1,"(vif)":1}
+,"structure":{"(vif)":1}
+,"(vif)":{"adds":1,"attaches":1}
+,"adds":{"virtual":1}
+,"interfaces":{"nsm":1}
+,"sends":{"pim":1}
+,"pim":{"event":1,"responds":1,"start":1}
+,"event":{"hardware":1}
+,"hardware":{"interface":1}
+,"responds":{"creating":1}
+,"creating":{"corresponding":1}
+,"corresponding":{"virtual":1}
+,"attaches":{"vif":1}
+,"vif":{"hardware":1}
+,"start":{"running":1}
+,"running":{"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

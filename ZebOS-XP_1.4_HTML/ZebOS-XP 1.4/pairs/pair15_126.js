@@ -1,0 +1,27 @@
+var pairs =
+{
+"vpls-ac-group":{"command":1,"groupname":1,"parameter":1,"new-ac":1}
+,"command":{"assign":1,"remove":1,"syntax":1,"mode":1}
+,"assign":{"attachment":1}
+,"attachment":{"circuit":1}
+,"circuit":{"(ac)":1}
+,"(ac)":{"group":1}
+,"group":{"vpls":1,"command":1}
+,"vpls":{"parameter":1,"mode":1,"test":1}
+,"parameter":{"command":1,"groupname":1}
+,"remove":{"group":1}
+,"syntax":{"vpls-ac-group":1}
+,"groupname":{"vpls-ac-group":1,"enter":1}
+,"enter":{"name":1}
+,"name":{"group":1}
+,"mode":{"vpls":1,"examples":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mpls":1}
+,"mpls":{"vpls":1}
+,"test":{"(config-vpls)":1}
+,"(config-vpls)":{"vpls-ac-group":1}
+,"new-ac":{"(config-vpls)":1}
+}
+;Search.control.loadWordPairs(pairs);

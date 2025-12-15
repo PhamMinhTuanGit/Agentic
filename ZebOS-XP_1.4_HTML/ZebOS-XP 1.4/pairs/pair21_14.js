@@ -1,0 +1,25 @@
+var pairs =
+{
+"ethernet":{"cfm":1}
+,"cfm":{"configure":1}
+,"configure":{"vlan":1,"mode":1,"terminal":1}
+,"vlan":{"command":1,"primary":1,"primary_vid":1,"specify":1,"bridge":1}
+,"command":{"add":1,"syntax":1,"mode":1}
+,"add":{"secondary":1}
+,"secondary":{"vlan":1}
+,"primary":{"vlan":1}
+,"syntax":{"ethernet":1}
+,"primary_vid":{"((bridge":1,"specify":1}
+,"((bridge":{"<1-32>":1}
+,"<1-32>":{"backbone)":1,"specify":1}
+,"backbone)":{"parameters":1}
+,"parameters":{"vlan":1}
+,"specify":{"vlan":1,"bridge":1}
+,"bridge":{"specify":1,"<1-32>":1,"backbone":1,"command":1,"(config-cfm-vlan)":1}
+,"backbone":{"backbone":1,"bridge":1}
+,"mode":{"configure":1,"example":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"ethernet":1}
+}
+;Search.control.loadWordPairs(pairs);

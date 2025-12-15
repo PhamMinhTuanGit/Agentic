@@ -1,0 +1,25 @@
+var pairs =
+{
+"pal_kernel_ipv4_forwarding_set":{"function":1,"(s_int32_t":1}
+,"function":{"sets":1}
+,"sets":{"ipv4":1}
+,"ipv4":{"forwarding":1}
+,"forwarding":{"state":1}
+,"state":{"kernel":1,"state":1,"non-zero":1}
+,"kernel":{"api":1}
+,"api":{"call":1}
+,"call":{"result_t":1}
+,"result_t":{"pal_kernel_ipv4_forwarding_set":1}
+,"(s_int32_t":{"state)":1}
+,"state)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"state":1,"none":1}
+,"non-zero":{"means":1}
+,"means":{"output":1}
+,"output":{"parameters":1}
+,"none":{"result":1}
+,"result":{"value":1}
+,"value":{"platform":1}
+,"platform":{"dependent":1}
+}
+;Search.control.loadWordPairs(pairs);

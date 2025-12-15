@@ -1,0 +1,25 @@
+var pairs =
+{
+"snmp":{"linkup":1}
+,"linkup":{"linkdown":1,"means":1}
+,"linkdown":{"traps":1,"means":1,"trap":1}
+,"traps":{"rfc":1,"linkup":1}
+,"rfc":{"2863":1}
+,"2863":{"defines":1}
+,"defines":{"linkup":1}
+,"means":{"communication":1}
+,"communication":{"link":1}
+,"link":{"left":1,"enter":1}
+,"left":{"down":1}
+,"down":{"state":1,"respectively":1}
+,"state":{"transitioned":1,"linkdown":1,"state":1,"nsm":1}
+,"transitioned":{"state":1}
+,"enter":{"down":1}
+,"nsm":{"sends":1}
+,"sends":{"linkup":1}
+,"trap":{"network":1}
+,"network":{"interface":1}
+,"interface":{"comes":1}
+,"comes":{"down":1}
+}
+;Search.control.loadWordPairs(pairs);

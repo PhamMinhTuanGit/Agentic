@@ -1,0 +1,19 @@
+var pairs =
+{
+"generic":{"attribute":1,"framework":1}
+,"attribute":{"registration":1}
+,"registration":{"protocol":1}
+,"protocol":{"(garp)":1,"(mrp)":1}
+,"(garp)":{"generic":1}
+,"framework":{"devices":1}
+,"devices":{"register":1}
+,"register":{"attributes":1}
+,"attributes":{"vlan":1}
+,"vlan":{"identifiers":1}
+,"identifiers":{"multicast":1}
+,"multicast":{"group":1}
+,"group":{"membership":1}
+,"membership":{"multiple":1}
+,"multiple":{"registration":1}
+}
+;Search.control.loadWordPairs(pairs);

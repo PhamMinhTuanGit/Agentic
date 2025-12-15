@@ -1,0 +1,26 @@
+var pairs =
+{
+"mpls":{"ingress-ttl":1}
+,"ingress-ttl":{"command":1,"<0-255>":1,"parameter":1}
+,"command":{"time":1,"unset":1,"syntax":1,"mode":1}
+,"time":{"live":1}
+,"live":{"(ttl)":1}
+,"(ttl)":{"value":1}
+,"value":{"lsps":1,"used":1,"command":1}
+,"lsps":{"lsr":1}
+,"lsr":{"ingress":1}
+,"ingress":{"parameter":1,"command":1}
+,"parameter":{"command":1,"<0-255>":1}
+,"unset":{"custom":1}
+,"custom":{"ttl":1}
+,"ttl":{"value":1}
+,"used":{"lsps":1}
+,"syntax":{"mpls":1}
+,"<0-255>":{"mpls":1,"ttl":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mpls":1}
+}
+;Search.control.loadWordPairs(pairs);

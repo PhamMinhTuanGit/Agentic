@@ -1,0 +1,22 @@
+var pairs =
+{
+"logout":{"command":1,"parameters":1,"[root@tsup-123":1}
+,"command":{"exit":1,"syntax":1,"mode":1,"logout":1}
+,"exit":{"imi":1}
+,"imi":{"shell":1}
+,"shell":{"exec":1}
+,"exec":{"modes":1,"mode":1}
+,"modes":{"command":1}
+,"syntax":{"logout":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"privilege":1,"examples":1}
+,"privilege":{"exec":1}
+,"examples":{"following":1,"show":1}
+,"following":{"examples":1}
+,"show":{"logout":1}
+,"[root@tsup-123":{"sbin]":1}
+,"sbin]":{"enable":1}
+,"enable":{"logout":1}
+}
+;Search.control.loadWordPairs(pairs);

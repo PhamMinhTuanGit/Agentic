@@ -1,0 +1,21 @@
+var pairs =
+{
+"path":{"tear":1,"message":1}
+,"tear":{"(ptear)":1}
+,"(ptear)":{"message":1}
+,"message":{"ptear":1,"may":1,"sent":1,"originally":1}
+,"ptear":{"message":1,"deletes":1}
+,"may":{"initiated":1}
+,"initiated":{"ingress":1}
+,"ingress":{"intermediate":1}
+,"intermediate":{"node":1}
+,"node":{"message":1}
+,"sent":{"towards":1,"ptear":1}
+,"towards":{"egress":1}
+,"egress":{"path":1}
+,"originally":{"sent":1}
+,"deletes":{"psb":1}
+,"psb":{"frees":1}
+,"frees":{"resources":1}
+}
+;Search.control.loadWordPairs(pairs);

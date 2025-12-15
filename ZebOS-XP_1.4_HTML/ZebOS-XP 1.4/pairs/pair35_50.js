@@ -1,0 +1,27 @@
+var pairs =
+{
+"fast-reroute":{"keep-all-paths":1}
+,"keep-all-paths":{"command":1,"fast-reroute":1,"parameters":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"fast":1}
+,"fast":{"rerouting":1}
+,"rerouting":{"ospf":1,"command":1,"disabled":1}
+,"ospf":{"interfaces":1,"200":1}
+,"interfaces":{"parameter":1}
+,"parameter":{"command":1}
+,"disable":{"fast":1}
+,"syntax":{"fast-reroute":1}
+,"parameters":{"none":1}
+,"none":{"defaults":1}
+,"defaults":{"fast":1}
+,"disabled":{"command":1}
+,"mode":{"router":1,"examples":1}
+,"router":{"mode":1,"ospf":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"200":{"(config-router)":1}
+,"(config-router)":{"fast-reroute":1}
+}
+;Search.control.loadWordPairs(pairs);

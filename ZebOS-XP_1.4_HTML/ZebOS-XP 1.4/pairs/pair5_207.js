@@ -1,0 +1,27 @@
+var pairs =
+{
+"mvrp":{"dynamic-vlan-creation":1,"switch":1}
+,"dynamic-vlan-creation":{"command":1,"enable":1,"disable":1}
+,"command":{"enable":1,"syntax":1,"mode":1}
+,"enable":{"disable":1,"bridge":1,"enables":1}
+,"disable":{"dynamic":1,"bridge":1,"disables":1}
+,"dynamic":{"vlan":1}
+,"vlan":{"creation":1}
+,"creation":{"default":1}
+,"default":{"bridge":1}
+,"bridge":{"instance":1,"bridge_name":1,"identifier":1,"(config)":1}
+,"instance":{"command":1}
+,"syntax":{"mvrp":1}
+,"bridge_name":{"mvrp":1,"parameters":1,"bridge":1}
+,"parameters":{"enable":1}
+,"enables":{"mvrp":1}
+,"switch":{"disable":1,"bridge_name":1}
+,"disables":{"mvrp":1}
+,"identifier":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mvrp":1}
+}
+;Search.control.loadWordPairs(pairs);

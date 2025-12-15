@@ -1,0 +1,24 @@
+var pairs =
+{
+"default":{"route":1}
+,"route":{"route":1,"used":1,"present":1,"sometimes":1,"last":1}
+,"used":{"forward":1}
+,"forward":{"internet":1}
+,"internet":{"protocol":1}
+,"protocol":{"(ip)":1}
+,"(ip)":{"packets":1}
+,"packets":{"specific":1}
+,"specific":{"route":1}
+,"present":{"routing":1}
+,"routing":{"information":1}
+,"information":{"base":1}
+,"base":{"(rib)":1}
+,"(rib)":{"often":1}
+,"often":{"represented":1}
+,"represented":{"0.0.0.0\u002F0":1}
+,"0.0.0.0\u002F0":{"default":1}
+,"sometimes":{"called":1}
+,"called":{"route":1}
+,"last":{"resort":1}
+}
+;Search.control.loadWordPairs(pairs);

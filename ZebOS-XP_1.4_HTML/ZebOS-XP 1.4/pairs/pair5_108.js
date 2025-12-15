@@ -1,0 +1,24 @@
+var pairs =
+{
+"uni":{"functional":1,"includes":1,"(demarcation)":1}
+,"functional":{"elements":1}
+,"elements":{"uni":1,"located":1}
+,"includes":{"two":1}
+,"two":{"functional":1}
+,"located":{"connected":1}
+,"connected":{"devices":1}
+,"devices":{"either":1}
+,"either":{"side":1}
+,"side":{"reference":1,"uni-n":1,"uni":1}
+,"reference":{"point":1}
+,"point":{"uni":1}
+,"(demarcation)":{"uni-c":1}
+,"uni-c":{"uni-n":1,"responsible":1}
+,"uni-n":{"uni-c":1,"responsible":1}
+,"responsible":{"execute":1}
+,"execute":{"processes":1}
+,"processes":{"customer":1,"network":1}
+,"customer":{"side":1}
+,"network":{"side":1}
+}
+;Search.control.loadWordPairs(pairs);

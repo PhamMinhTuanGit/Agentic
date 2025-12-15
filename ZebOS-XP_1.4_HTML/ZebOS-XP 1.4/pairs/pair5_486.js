@@ -1,0 +1,24 @@
+var pairs =
+{
+"copy":{"startup-config":1,"running":1}
+,"startup-config":{"(interactive)":1,"(ftp":1,"sftp":1}
+,"(interactive)":{"command":1}
+,"command":{"copy":1,"syntax":1,"mode":1}
+,"running":{"configuration":1}
+,"configuration":{"ftp":1}
+,"ftp":{"server":1,"destination":1}
+,"server":{"scp":1,"sftp":1,"tftp":1,"command":1}
+,"scp":{"server":1,"sftp)":1,"destination":1}
+,"sftp":{"server":1,"destination":1}
+,"tftp":{"server":1,"scp":1,"destination":1}
+,"syntax":{"copy":1}
+,"(ftp":{"tftp":1}
+,"sftp)":{"parameters":1}
+,"parameters":{"ftp":1}
+,"destination":{"ftp":1,"tftp":1,"scp":1,"sftp":1}
+,"mode":{"privileged":1,"examples":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"examples":{"copy":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"vlan":{"\u002Fmulticast":1}
+,"\u002Fmulticast":{"pruning":1}
+,"pruning":{"pruning":1,"prevent":1,"method":1}
+,"prevent":{"unnecessary":1}
+,"unnecessary":{"traffic":1}
+,"traffic":{"circulated":1}
+,"circulated":{"across":1}
+,"across":{"network":1}
+,"network":{"pruning":1}
+,"method":{"implemented":1}
+,"implemented":{"rbridges":1}
+,"rbridges":{"prune":1,"hosts":1}
+,"prune":{"vlans":1}
+,"vlans":{"going":1}
+,"going":{"rbridges":1}
+,"hosts":{"vlan":1}
+}
+;Search.control.loadWordPairs(pairs);

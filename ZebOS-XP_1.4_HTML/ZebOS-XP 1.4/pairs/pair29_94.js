@@ -1,0 +1,24 @@
+var pairs =
+{
+"trill_lan_nsm_event":{"function":1,"(struct":1}
+,"function":{"executes":1}
+,"executes":{"nsm":1}
+,"nsm":{"event":1}
+,"event":{"process":1}
+,"process":{"syntax":1}
+,"syntax":{"int":1}
+,"int":{"trill_lan_nsm_event":1}
+,"(struct":{"thread":1}
+,"thread":{"*thread)":1,"value":1}
+,"*thread)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*thread":1,"none":1}
+,"*thread":{"specifies":1}
+,"specifies":{"pointer":1}
+,"pointer":{"thread":1}
+,"value":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+}
+;Search.control.loadWordPairs(pairs);

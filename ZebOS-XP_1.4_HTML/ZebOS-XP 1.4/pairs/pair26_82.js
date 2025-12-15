@@ -1,0 +1,27 @@
+var pairs =
+{
+"pim":{"bind":1}
+,"bind":{"ecmp-bundle":1,"interfaces":1}
+,"ecmp-bundle":{"command":1,"word":1,"ebund1":1}
+,"command":{"bind":1,"unbind":1,"syntax":1,"mode":1}
+,"interfaces":{"ecmp":1}
+,"ecmp":{"bundles":1,"bundle":1}
+,"bundles":{"option":1,"command":1}
+,"option":{"command":1}
+,"unbind":{"interfaces":1}
+,"syntax":{"pim":1}
+,"word":{"pim":1,"parameter":1,"ecmp":1}
+,"parameter":{"word":1}
+,"bundle":{"name":1}
+,"name":{"command":1}
+,"mode":{"interface":1,"examples":1}
+,"interface":{"mode":1,"eth1":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth1":{"(config-if)":1}
+,"(config-if)":{"pim":1}
+,"ebund1":{"(config-if)":1}
+}
+;Search.control.loadWordPairs(pairs);

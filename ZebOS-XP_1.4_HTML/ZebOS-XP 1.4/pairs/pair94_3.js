@@ -1,0 +1,23 @@
+var pairs =
+{
+"hsl_ifmgr_l2_ethernet_unregister":{"function":1,"(struct":1}
+,"function":{"layer":1,"interface":1}
+,"layer":{"port":1}
+,"port":{"unregistration":1}
+,"unregistration":{"function":1}
+,"interface":{"syntax":1,"pointer":1}
+,"syntax":{"int":1}
+,"int":{"hsl_ifmgr_l2_ethernet_unregister":1}
+,"(struct":{"hsl_if":1}
+,"hsl_if":{"*ifp)":1}
+,"*ifp)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ifp":1,"none":1}
+,"ifp":{"interface":1}
+,"pointer":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

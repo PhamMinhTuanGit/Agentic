@@ -1,0 +1,23 @@
+var pairs =
+{
+"pim":{"sparse-dense":1}
+,"sparse-dense":{"mode":1}
+,"mode":{"configuration":1,"group":1,"interface":1}
+,"configuration":{"pim-smdm":1}
+,"pim-smdm":{"integrated":1,"supported":1}
+,"integrated":{"protocol":1}
+,"protocol":{"handles":1}
+,"handles":{"sparse":1}
+,"sparse":{"groups":1,"mode":1,"router":1}
+,"groups":{"dense":1,"time":1}
+,"dense":{"groups":1,"mode":1}
+,"time":{"sparse-dense":1}
+,"group":{"dense":1,"sparse":1,"pim-smdm":1}
+,"interface":{"treated":1}
+,"treated":{"dense":1,"sparse":1}
+,"router":{"knows":1}
+,"knows":{"group":1}
+,"supported":{"zebic":1}
+,"zebic":{"releases":1}
+}
+;Search.control.loadWordPairs(pairs);

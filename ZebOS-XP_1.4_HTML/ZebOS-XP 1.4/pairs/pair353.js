@@ -1,0 +1,23 @@
+var pairs =
+{
+"shortest":{"path":1}
+,"path":{"first":1}
+,"first":{"(spf)":1,"(ospf)":1}
+,"(spf)":{"algorithm":1}
+,"algorithm":{"used":1}
+,"used":{"intermediate":1}
+,"intermediate":{"system":1}
+,"system":{"intermediate":1,"(is-is)":1}
+,"(is-is)":{"open":1}
+,"open":{"shortest":1}
+,"(ospf)":{"routing":1}
+,"routing":{"decisions":1}
+,"decisions":{"based":1}
+,"based":{"state":1}
+,"state":{"network":1}
+,"network":{"links":1}
+,"links":{"called":1}
+,"called":{"dijkstra":1}
+,"dijkstra":{"algorithm":1}
+}
+;Search.control.loadWordPairs(pairs);

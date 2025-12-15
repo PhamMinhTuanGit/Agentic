@@ -1,0 +1,22 @@
+var pairs =
+{
+"physical":{"routers":1,"router":1}
+,"routers":{"without":1,"typical":1,"example":1}
+,"without":{"virtual":1}
+,"virtual":{"routers":1}
+,"typical":{"service-provider-to-customer":1}
+,"service-provider-to-customer":{"relationship":1}
+,"relationship":{"involves":1}
+,"involves":{"physical":1}
+,"router":{"(pr)":1,"functions":1}
+,"(pr)":{"services":1}
+,"services":{"vpn":1}
+,"vpn":{"service":1}
+,"service":{"provider":1}
+,"provider":{"virtual":1}
+,"example":{"router":1}
+,"functions":{"extension":1}
+,"extension":{"customer\u2019s":1}
+,"customer\u2019s":{"lan":1}
+}
+;Search.control.loadWordPairs(pairs);

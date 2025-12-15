@@ -1,0 +1,27 @@
+var pairs =
+{
+"interface":{"tracking":1,"state":1,"tracked":1,"per":1}
+,"tracking":{"vrrp":1,"feature":1,"interface":1}
+,"vrrp":{"interface":1,"group":1,"router":1}
+,"feature":{"allows":1}
+,"allows":{"tracking":1}
+,"state":{"alter":1}
+,"alter":{"priority":1}
+,"priority":{"level":1,"vrrp":1}
+,"level":{"virtual":1}
+,"virtual":{"router":1}
+,"router":{"vrrp":1,"become":1,"zebos-xp":1}
+,"group":{"example":1,"lowered":1,"master":1}
+,"example":{"interface":1}
+,"tracked":{"down":1}
+,"down":{"priority":1}
+,"lowered":{"may":1}
+,"may":{"allow":1}
+,"allow":{"vrrp":1}
+,"become":{"new":1}
+,"new":{"group":1}
+,"master":{"virtual":1}
+,"zebos-xp":{"allows":1}
+,"per":{"vrrp":1}
+}
+;Search.control.loadWordPairs(pairs);

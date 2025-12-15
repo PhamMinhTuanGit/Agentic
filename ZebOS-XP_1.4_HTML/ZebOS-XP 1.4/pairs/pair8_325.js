@@ -1,0 +1,20 @@
+var pairs =
+{
+"rsvp_api_delete_trunk":{"call":1,"(struct":1}
+,"call":{"deletes":1}
+,"deletes":{"specified":1}
+,"specified":{"trunk":1}
+,"trunk":{"syntax":1,"rsvp":1,"output":1,"return":1}
+,"syntax":{"void":1}
+,"void":{"rsvp_api_delete_trunk":1}
+,"(struct":{"rsvp_trunk":1}
+,"rsvp_trunk":{"*trunk)":1}
+,"*trunk)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"trunk":1}
+,"rsvp":{"trunk":1}
+,"output":{"parameters":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

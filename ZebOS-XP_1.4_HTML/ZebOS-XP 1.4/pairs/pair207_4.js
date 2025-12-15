@@ -1,0 +1,19 @@
+var pairs =
+{
+"keepalive":{"message":1}
+,"message":{"message":1,"sent":1}
+,"sent":{"devices":1}
+,"devices":{"data":1,"active":1}
+,"data":{"traffic":1}
+,"traffic":{"detected":1}
+,"detected":{"given":1}
+,"given":{"period":1}
+,"period":{"time":1}
+,"time":{"communication":1}
+,"communication":{"verifies":1}
+,"verifies":{"virtual":1}
+,"virtual":{"physical":1}
+,"physical":{"connection":1}
+,"connection":{"devices":1}
+}
+;Search.control.loadWordPairs(pairs);

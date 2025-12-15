@@ -1,0 +1,23 @@
+var pairs =
+{
+"multiple":{"registration":1}
+,"registration":{"protocol":1,"framework":1}
+,"protocol":{"(mrp)":1,"(garp)":1}
+,"(mrp)":{"generic":1}
+,"generic":{"registration":1,"attribute":1}
+,"framework":{"protocols":1}
+,"protocols":{"procedures":1}
+,"procedures":{"managed":1}
+,"managed":{"objects":1}
+,"objects":{"switches":1}
+,"switches":{"register":1,"lan":1}
+,"register":{"attributes":1}
+,"attributes":{"switches":1}
+,"lan":{"defined":1}
+,"defined":{"802.1ak":1}
+,"802.1ak":{"mrp":1}
+,"mrp":{"replaces":1}
+,"replaces":{"generic":1}
+,"attribute":{"registration":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"fault":{"alarm":1,"detected":1}
+,"alarm":{"notification":1,"notifications":1,"generated":1}
+,"notification":{"fault":1}
+,"notifications":{"transmitted":1}
+,"transmitted":{"mep":1}
+,"mep":{"fault":1,"priority":1}
+,"detected":{"mep":1}
+,"priority":{"highest":1,"qualified":1}
+,"highest":{"defect":1}
+,"defect":{"greater":1}
+,"greater":{"lowest":1}
+,"lowest":{"priority":1}
+,"qualified":{"notified":1}
+,"notified":{"fault":1}
+,"generated":{"highest":1}
+}
+;Search.control.loadWordPairs(pairs);

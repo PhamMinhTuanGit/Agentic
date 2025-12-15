@@ -1,0 +1,21 @@
+var pairs =
+{
+"pe3":{"-nsm":1}
+,"-nsm":{"(config)":1}
+,"(config)":{"interface":1}
+,"interface":{"eth1":1,"mode":1,"eth2":1,"enter":1,"192.168.0.3\u002F32":1}
+,"eth1":{"enter":1,"(config-if)":1}
+,"enter":{"interface":1}
+,"mode":{"(config-if)":1,"(config)":1}
+,"(config-if)":{"label-switching":1,"exit":1,"address":1}
+,"label-switching":{"enable":1}
+,"enable":{"label":1}
+,"label":{"switching":1}
+,"switching":{"interface":1}
+,"exit":{"exit":1,"interface":1}
+,"eth2":{"enter":1,"(config-if)":1}
+,"address":{"192.168.0.3\u002F32":1,"loopback":1}
+,"192.168.0.3\u002F32":{"address":1,"(config-if)":1}
+,"loopback":{"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

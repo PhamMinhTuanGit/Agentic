@@ -1,0 +1,21 @@
+var pairs =
+{
+"imi":{"shell":1}
+,"shell":{"commands":1}
+,"commands":{"chapter":1,"login":1}
+,"chapter":{"describes":1}
+,"describes":{"imi":1}
+,"login":{"logout":1}
+,"logout":{"mtrace":1}
+,"mtrace":{"mstat":1}
+,"mstat":{"ping":1}
+,"ping":{"privilege":1}
+,"privilege":{"level":1,"start-shell":1}
+,"level":{"show":1}
+,"show":{"privilege":1}
+,"start-shell":{"telnet":1}
+,"telnet":{"traceroute":1}
+,"traceroute":{"write":1}
+,"write":{"write":1,"terminal":1}
+}
+;Search.control.loadWordPairs(pairs);

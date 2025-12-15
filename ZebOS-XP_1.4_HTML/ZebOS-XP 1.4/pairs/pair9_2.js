@@ -1,0 +1,22 @@
+var pairs =
+{
+"compilation":{"requirements":1}
+,"requirements":{"build":1}
+,"build":{"zebos-xp":1}
+,"zebos-xp":{"need":1}
+,"need":{"following":1}
+,"following":{"versions":1}
+,"versions":{"linux":1}
+,"linux":{"development":1}
+,"development":{"tools":1}
+,"tools":{"autoconf":1}
+,"autoconf":{"version":1}
+,"version":{"2.69":1,"4.9.2":1,"2.25":1,"2.19":1}
+,"2.69":{"gcc":1}
+,"gcc":{"version":1}
+,"4.9.2":{"binutils":1}
+,"binutils":{"version":1}
+,"2.25":{"libc6":1}
+,"libc6":{"version":1}
+}
+;Search.control.loadWordPairs(pairs);

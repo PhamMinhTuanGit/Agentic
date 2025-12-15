@@ -1,0 +1,20 @@
+var pairs =
+{
+"spanning-tree":{"mst":1}
+,"mst":{"configuration":1}
+,"configuration":{"command":1,"mode":1,"parameters":1,"(config-mst)":1}
+,"command":{"enter":1,"syntax":1,"mode":1}
+,"enter":{"multiple":1}
+,"multiple":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"configuration":1}
+,"mode":{"command":1,"configure":1,"examples":1}
+,"syntax":{"spanning-tree":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"spanning-tree":1}
+}
+;Search.control.loadWordPairs(pairs);

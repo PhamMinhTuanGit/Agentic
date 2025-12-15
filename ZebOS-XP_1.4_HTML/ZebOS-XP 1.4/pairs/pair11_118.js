@@ -1,0 +1,23 @@
+var pairs =
+{
+"portal-name":{"command":1,"word":1,"parameters":1,"ipi-mlag-1":1}
+,"command":{"name":1,"remove":1,"syntax":1,"mode":1}
+,"name":{"portal":1,"command":1,"maximum":1}
+,"portal":{"form":1,"name":1}
+,"form":{"command":1}
+,"remove":{"portal":1}
+,"syntax":{"portal-name":1}
+,"word":{"portal-name":1,"portal":1}
+,"parameters":{"word":1}
+,"maximum":{"characters":1}
+,"characters":{"command":1}
+,"mode":{"mlag":1,"example":1}
+,"mlag":{"mode":1,"configuration":1}
+,"example":{"config":1}
+,"config":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mlag":1}
+,"configuration":{"(config-mlag)":1}
+,"(config-mlag)":{"portal-name":1}
+}
+;Search.control.loadWordPairs(pairs);

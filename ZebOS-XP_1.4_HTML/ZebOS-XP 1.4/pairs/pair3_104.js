@@ -1,0 +1,21 @@
+var pairs =
+{
+"enable":{"revertive":1,"(revertive":1}
+,"revertive":{"command":1,"behavior":1,"revertive":1}
+,"command":{"revertive":1,"syntax":1,"mode":1}
+,"behavior":{"ring":1,"non-revertive":1,"command":1}
+,"ring":{"node":1}
+,"node":{"command":1}
+,"syntax":{"enable":1}
+,"(revertive":{"non-revertive)":1}
+,"non-revertive)":{"parameters":1}
+,"parameters":{"revertive":1}
+,"non-revertive":{"non-revertive":1,"behavior":1}
+,"mode":{"g.8032":1,"examples":1}
+,"g.8032":{"profile":1}
+,"profile":{"configure":1}
+,"configure":{"mode":1}
+,"examples":{"(g8032-profile-config)":1}
+,"(g8032-profile-config)":{"enable":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"debug":{"command":1}
+,"command":{"whether":1,"persist":1,"executive":1,"configuration":1}
+,"whether":{"settings":1}
+,"settings":{"debug":1,"settings":1}
+,"persist":{"sessions":1}
+,"sessions":{"depends":1}
+,"depends":{"mode":1}
+,"mode":{"settings":1,"configuration":1}
+,"executive":{"mode":1}
+,"configuration":{"valid":1,"mode":1,"retained":1}
+,"valid":{"current":1}
+,"current":{"session":1}
+,"session":{"saved":1,"restarts":1}
+,"saved":{"zebos.conf":1}
+,"zebos.conf":{"file":1,"used":1}
+,"file":{"settings":1}
+,"retained":{"saved":1}
+,"used":{"even":1}
+,"even":{"session":1}
+}
+;Search.control.loadWordPairs(pairs);

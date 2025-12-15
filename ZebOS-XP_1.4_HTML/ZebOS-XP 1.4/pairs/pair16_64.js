@@ -1,0 +1,24 @@
+var pairs =
+{
+"arp":{"messages":1,"entry":1,"entries":1}
+,"messages":{"message":1}
+,"message":{"message":1,"hal_msg_arp_add":1}
+,"hal_msg_arp_add":{"add":1}
+,"add":{"arp":1}
+,"entry":{"hal_msg_arp_del":1,"hal_msg_arp_cache_get":1}
+,"hal_msg_arp_del":{"delete":1}
+,"delete":{"arp":1}
+,"hal_msg_arp_cache_get":{"arp":1}
+,"entries":{"takes":1}
+,"takes":{"care":1}
+,"care":{"cleaning":1}
+,"cleaning":{"data":1}
+,"data":{"structures":1}
+,"structures":{"protocol":1}
+,"protocol":{"level":1}
+,"level":{"information":1}
+,"information":{"during":1}
+,"during":{"time":1}
+,"time":{"exit":1}
+}
+;Search.control.loadWordPairs(pairs);

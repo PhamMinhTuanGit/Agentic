@@ -1,0 +1,24 @@
+var pairs =
+{
+"channel-protocol":{"command":1,"enable":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"channel":1,"channel-protocol":1,"parameters":1,"specify":1,"configure":1,"(config-rb)":1}
+,"channel":{"protocol":1}
+,"protocol":{"parameter":1,"command":1,"trill":1}
+,"parameter":{"command":1}
+,"disable":{"configuration":1}
+,"configuration":{"command":1}
+,"syntax":{"channel-protocol":1}
+,"parameters":{"enable":1}
+,"specify":{"enable":1}
+,"mode":{"rbridge":1,"example":1}
+,"rbridge":{"mode":1,"trill":1}
+,"example":{"enable":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"bridge":1,"rbridge":1}
+,"bridge":{"protocol":1}
+,"trill":{"(config)":1,"(config-rb)":1}
+,"(config-rb)":{"channel-protocol":1}
+}
+;Search.control.loadWordPairs(pairs);

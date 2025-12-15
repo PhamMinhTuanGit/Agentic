@@ -1,0 +1,21 @@
+var pairs =
+{
+"asbr":{"asbrs":1}
+,"asbrs":{"using":1,"connected":1}
+,"using":{"ebgp":1}
+,"ebgp":{"example":1,"configured":1}
+,"example":{"ebgp":1}
+,"configured":{"customer":1}
+,"customer":{"edge":1}
+,"edge":{"(ce)":1}
+,"(ce)":{"routers":1}
+,"routers":{"routers":1,"ibgp":1,"(asbrs)":1}
+,"ibgp":{"connection":1}
+,"connection":{"autonomous":1}
+,"autonomous":{"system":1}
+,"system":{"border":1}
+,"border":{"routers":1}
+,"(asbrs)":{"asbrs":1}
+,"connected":{"using":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,25 @@
+var pairs =
+{
+"cfm_remove_mip":{"function":1,"(struct":1}
+,"function":{"removes":1}
+,"removes":{"mip":1}
+,"mip":{"port":1,"mip":1,"output":1}
+,"port":{"syntax":1,"port":1,"mip":1}
+,"syntax":{"include":1}
+,"include":{"cfm_api.h":1}
+,"cfm_api.h":{"void":1}
+,"void":{"cfm_remove_mip":1}
+,"(struct":{"cfm_port":1}
+,"cfm_port":{"*port":1}
+,"*port":{"struct":1}
+,"struct":{"cfm_mip":1}
+,"cfm_mip":{"*mip)":1}
+,"*mip)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"port":1,"none":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

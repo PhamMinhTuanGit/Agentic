@@ -1,0 +1,27 @@
+var pairs =
+{
+"definition":{"struct":1}
+,"struct":{"nsm_hal_cp_data":1}
+,"nsm_hal_cp_data":{"{char":1}
+,"{char":{"*ifname":1}
+,"*ifname":{"u_char":1}
+,"u_char":{"cp_mac_addr":1}
+,"cp_mac_addr":{"[ether_addr_len]":1}
+,"[ether_addr_len]":{"u_int32_t":1}
+,"u_int32_t":{"cp_id":1,"qsp":1,"qlen":1,"qlenold":1,"samplebase":1,"transmitted_frames":1,"minhdroctet":1,"transmitted_cnms":1,"discarded_frames":1}
+,"cp_id":{"u_int32_t":1}
+,"qsp":{"u_int32_t":1}
+,"qlen":{"u_int32_t":1}
+,"qlenold":{"float":1}
+,"float":{"weight":1}
+,"weight":{"s_int32_t":1}
+,"s_int32_t":{"qoffset":1,"qdelta":1,"s_int32_t":1,"enqued":1}
+,"qoffset":{"s_int32_t":1}
+,"qdelta":{"s_int32_t":1}
+,"enqued":{"u_int32_t":1}
+,"samplebase":{"u_int32_t":1}
+,"transmitted_frames":{"u_int32_t":1}
+,"minhdroctet":{"u_int32_t":1}
+,"transmitted_cnms":{"u_int32_t":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,25 @@
+var pairs =
+{
+"lsp":{"established":1,"message":1}
+,"established":{"rsvp-te":1}
+,"rsvp-te":{"sends":1}
+,"sends":{"message":1}
+,"message":{"cspf":1,"sent":1}
+,"cspf":{"confirm":1,"(for":1}
+,"confirm":{"setup":1}
+,"setup":{"signaled":1,"using":1,"(without":1}
+,"signaled":{"lsp":1}
+,"sent":{"lsps":1}
+,"lsps":{"setup":1,"manually":1}
+,"using":{"cspf":1,"cspf)":1}
+,"(for":{"computation)":1}
+,"computation)":{"lsps":1}
+,"manually":{"setup":1}
+,"(without":{"using":1}
+,"cspf)":{"int":1}
+,"int":{"rsvp_cspf_lsp_established":1}
+,"rsvp_cspf_lsp_established":{"(struct":1}
+,"(struct":{"rsvp_session":1}
+,"rsvp_session":{"*session)":1}
+}
+;Search.control.loadWordPairs(pairs);

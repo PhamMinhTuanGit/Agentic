@@ -1,0 +1,24 @@
+var pairs =
+{
+"validation":{"ib-beb-1":1}
+,"ib-beb-1":{"ib-beb-1":1,"show":1,"ib-beb2":1}
+,"show":{"pbb-te":1}
+,"pbb-te":{"tesid":1}
+,"tesid":{"tesid":1,"cbp":1}
+,"cbp":{"interface":1}
+,"interface":{"cbp.1":1}
+,"cbp.1":{"esp":1}
+,"esp":{"smac":1}
+,"smac":{"dmac":1}
+,"dmac":{"esp-vid":1}
+,"esp-vid":{"ingress":1}
+,"ingress":{"multicast":1}
+,"multicast":{"000":1}
+,"000":{"0100.1111.1211":1,"0100.1111.1212":1}
+,"0100.1111.1211":{"0100.1111.1212":1,"001":1,"tesid":1,"ib-beb-2":1}
+,"0100.1111.1212":{"001":1,"tesid":1,"ib-beb-1":1,"0100.1111.1211":1}
+,"001":{"0100.1111.1211":1,"0100.1111.1212":1}
+,"ib-beb2":{"ib-beb-2":1}
+,"ib-beb-2":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

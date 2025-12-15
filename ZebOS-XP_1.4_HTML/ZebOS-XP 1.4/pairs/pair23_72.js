@@ -1,0 +1,26 @@
+var pairs =
+{
+"igmp":{"startup-query-count":1,"parameter":1}
+,"startup-query-count":{"command":1,"<2-10>":1,"parameters":1,"(config-if)":1}
+,"command":{"startup":1,"return":1,"syntax":1,"mode":1}
+,"startup":{"query":1}
+,"query":{"count":1}
+,"count":{"igmp":1,"value":1}
+,"parameter":{"command":1}
+,"return":{"default":1}
+,"default":{"version":1,"default":1,"value":1}
+,"version":{"command":1}
+,"syntax":{"igmp":1}
+,"<2-10>":{"igmp":1,"specify":1}
+,"parameters":{"<2-10>":1}
+,"specify":{"startup":1}
+,"value":{"default":1,"command":1}
+,"mode":{"interface":1,"example":1}
+,"interface":{"mode":1,"(config-if)":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"(config-if)":{"igmp":1}
+}
+;Search.control.loadWordPairs(pairs);

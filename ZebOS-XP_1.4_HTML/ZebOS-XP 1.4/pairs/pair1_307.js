@@ -1,0 +1,21 @@
+var pairs =
+{
+"static":{"vpls":1}
+,"vpls":{"configuration":1,"contains":1,"network":1}
+,"configuration":{"chapter":1}
+,"chapter":{"includes":1}
+,"includes":{"step-by-step":1}
+,"step-by-step":{"configurations":1}
+,"configurations":{"static":1}
+,"contains":{"overview":1}
+,"overview":{"concepts":1}
+,"concepts":{"static":1}
+,"network":{"services":1}
+,"services":{"module":1}
+,"module":{"command":1}
+,"command":{"reference":1}
+,"reference":{"details":1}
+,"details":{"commands":1}
+,"commands":{"used":1}
+}
+;Search.control.loadWordPairs(pairs);

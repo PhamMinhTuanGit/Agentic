@@ -1,0 +1,22 @@
+var pairs =
+{
+"show":{"ospf":1,"igp":1}
+,"ospf":{"igp-shortcut-lsp":1,"command":1}
+,"igp-shortcut-lsp":{"command":1,"parameters":1,"tunnel-endpoint":1}
+,"command":{"show":1,"syntax":1,"mode":1}
+,"igp":{"shortcut":1}
+,"shortcut":{"lsp":1}
+,"lsp":{"used":1}
+,"used":{"ospf":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"example":1}
+,"exec":{"mode":1}
+,"example":{"show":1}
+,"tunnel-endpoint":{"tunnel-id":1}
+,"tunnel-id":{"tunnel-metric":1}
+,"tunnel-metric":{"8.8.8.8":1}
+,"8.8.8.8":{"101":1}
+}
+;Search.control.loadWordPairs(pairs);

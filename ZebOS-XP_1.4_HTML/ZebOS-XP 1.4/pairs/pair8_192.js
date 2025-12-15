@@ -1,0 +1,19 @@
+var pairs =
+{
+"pe1":{"(oam)":1}
+,"(oam)":{"configure":1}
+,"configure":{"terminal":1,"mode":1,"bfd":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"mode":{"(config)":1}
+,"(config)":{"mpls-tp":1}
+,"mpls-tp":{"bfd":1}
+,"bfd":{"meg-name":1,"session":1}
+,"meg-name":{"meg-2":1}
+,"meg-2":{"me-name":1,"associated":1}
+,"me-name":{"me-2":1}
+,"me-2":{"configure":1}
+,"session":{"meg-2":1}
+,"associated":{"101":1}
+}
+;Search.control.loadWordPairs(pairs);

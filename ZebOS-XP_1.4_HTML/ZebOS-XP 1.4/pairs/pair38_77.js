@@ -1,0 +1,26 @@
+var pairs =
+{
+"agent":{"extensibility":1,"snmp":1,"handle":1}
+,"extensibility":{"(agentx)":1}
+,"(agentx)":{"protocol":1}
+,"protocol":{"used":1,"(snmp)":1,"details":1}
+,"used":{"implement":1}
+,"implement":{"simple":1}
+,"simple":{"network":1}
+,"network":{"management":1}
+,"management":{"protocol":1}
+,"(snmp)":{"defines":1}
+,"defines":{"communications":1}
+,"communications":{"snmp":1}
+,"snmp":{"agent":1,"client":1,"defined":1}
+,"client":{"agentx":1,"relies":1}
+,"agentx":{"directly":1}
+,"directly":{"communicate":1}
+,"communicate":{"snmp":1}
+,"relies":{"agent":1}
+,"handle":{"protocol":1}
+,"details":{"snmp":1}
+,"defined":{"rfc":1}
+,"rfc":{"2741":1}
+}
+;Search.control.loadWordPairs(pairs);

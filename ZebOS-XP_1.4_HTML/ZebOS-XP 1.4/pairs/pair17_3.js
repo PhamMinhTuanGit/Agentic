@@ -1,0 +1,23 @@
+var pairs =
+{
+"port":{"authentication":1}
+,"authentication":{"(authd)":1,"access":1}
+,"(authd)":{"zebos-xp":1}
+,"zebos-xp":{"layer":1}
+,"layer":{"802.1x":1}
+,"802.1x":{"module":1,"standard":1}
+,"module":{"provides":1}
+,"provides":{"port-based":1}
+,"port-based":{"network":1}
+,"network":{"access":1}
+,"access":{"control":1}
+,"control":{"lan":1,"user":1}
+,"lan":{"devices":1}
+,"devices":{"ieee":1}
+,"ieee":{"802.1x":1}
+,"standard":{"offers":1}
+,"offers":{"centralized":1}
+,"centralized":{"control":1}
+,"user":{"authentication":1}
+}
+;Search.control.loadWordPairs(pairs);

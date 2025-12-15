@@ -1,0 +1,19 @@
+var pairs =
+{
+"platform":{"abstraction":1}
+,"abstraction":{"layer":1}
+,"layer":{"chapter":1,"(pal)":1}
+,"chapter":{"describes":1}
+,"describes":{"plat":1}
+,"plat":{"abstraction":1}
+,"(pal)":{"functions":1}
+,"functions":{"update":1}
+,"update":{"forwarding":1}
+,"forwarding":{"information":1}
+,"information":{"base":1}
+,"base":{"(fib)":1}
+,"(fib)":{"operating":1}
+,"operating":{"system":1}
+,"system":{"kernel":1}
+}
+;Search.control.loadWordPairs(pairs);

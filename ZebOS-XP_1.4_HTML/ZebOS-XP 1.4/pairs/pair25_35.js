@@ -1,0 +1,25 @@
+var pairs =
+{
+"isis_restart_lan_tlv_check":{"syntax":1,"(struct":1}
+,"syntax":{"int":1}
+,"int":{"isis_restart_lan_tlv_check":1}
+,"(struct":{"isis_nbr_level":1}
+,"isis_nbr_level":{"*nl":1}
+,"*nl":{"struct":1,"pointer":1}
+,"struct":{"isis_packet":1}
+,"isis_packet":{"*pkt)":1}
+,"*pkt)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*nl":1,"none":1}
+,"pointer":{"is-is":1,"packet":1}
+,"is-is":{"level":1}
+,"level":{"reg-lsp":1}
+,"reg-lsp":{"*pkt":1}
+,"*pkt":{"pointer":1}
+,"packet":{"buffer":1}
+,"buffer":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

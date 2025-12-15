@@ -1,0 +1,23 @@
+var pairs =
+{
+"rbridge-ping":{"command":1,"name":1,"new-server":1}
+,"command":{"cli":1,"syntax":1,"mode":1}
+,"cli":{"ping":1}
+,"ping":{"rbridge":1}
+,"rbridge":{"command":1}
+,"syntax":{"rbridge-ping":1}
+,"name":{"parameters":1,"nickname":1}
+,"parameters":{"name":1}
+,"nickname":{"pinged":1,"hexadecimal":1}
+,"pinged":{"nickname":1}
+,"hexadecimal":{"range":1}
+,"range":{"<0x0001":1}
+,"<0x0001":{"-0xffc0>":1}
+,"-0xffc0>":{"command":1}
+,"mode":{"exec":1,"privilege":1,"examples":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"examples":{"enable":1}
+,"enable":{"rbridge-ping":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"switchport":{"beb":1}
+,"beb":{"customer-backbone":1}
+,"customer-backbone":{"command":1}
+,"command":{"map":1,"reference":1}
+,"map":{"customer":1}
+,"customer":{"service":1}
+,"service":{"instances":1}
+,"instances":{"(i-sids)":1}
+,"(i-sids)":{"backbone":1}
+,"backbone":{"vlan":1}
+,"vlan":{"whether":1}
+,"whether":{"i-sids":1}
+,"i-sids":{"receive":1}
+,"receive":{"transmit":1,"carrier":1}
+,"transmit":{"transmit":1,"receive":1}
+,"carrier":{"ethernet":1}
+,"ethernet":{"command":1}
+,"reference":{"details":1}
+,"details":{"command":1}
+}
+;Search.control.loadWordPairs(pairs);

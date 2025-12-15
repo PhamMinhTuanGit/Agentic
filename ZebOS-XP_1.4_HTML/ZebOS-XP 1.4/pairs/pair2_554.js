@@ -1,0 +1,26 @@
+var pairs =
+{
+"topology":{"spbv":1,"figure":1}
+,"spbv":{"topology":1}
+,"figure":{"4-1":1}
+,"4-1":{"uses":1}
+,"uses":{"generic":1}
+,"generic":{"terms":1}
+,"terms":{"refer":1}
+,"refer":{"network":1}
+,"network":{"devices":1}
+,"devices":{"means":1}
+,"means":{"edge":1,"core":1}
+,"edge":{"bridge":1}
+,"bridge":{"customer":1,"(ceb)":1,"(peb)":1,"(beb)":1,"(ccb)":1,"(pcb)":1,"(bcb)":1}
+,"customer":{"edge":1,"core":1}
+,"(ceb)":{"provider":1}
+,"provider":{"edge":1,"core":1}
+,"(peb)":{"backbone":1}
+,"backbone":{"edge":1,"core":1}
+,"(beb)":{"means":1}
+,"core":{"bridge":1}
+,"(ccb)":{"provider":1}
+,"(pcb)":{"backbone":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,21 @@
+var pairs =
+{
+"router":{"configure":1}
+,"configure":{"terminal":1,"mode":1,"ipv6":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"interface":1}
+,"mode":{"(config)":1,"eth1":1,"eth2":1}
+,"(config)":{"interface":1}
+,"interface":{"eth1":1,"mode":1,"eth2":1}
+,"eth1":{"enter":1,"(config-if)":1,"network":1}
+,"(config-if)":{"ipv6":1,"exit":1}
+,"ipv6":{"address":1}
+,"address":{"fe80":1,"interface":1}
+,"fe80":{":3037:a0ff:fea4:1111\u002F64":1,":3437:30ff:fe35:a6ac\u002F64":1}
+,":3037:a0ff:fea4:1111\u002F64":{"configure":1}
+,"network":{"(config-if)":1}
+,"exit":{"exit":1,"interface":1}
+,"eth2":{"enter":1,"(config-if)":1}
+,":3437:30ff:fe35:a6ac\u002F64":{"configure":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"t-pe1":{"(config)":1}
+,"(config)":{"mpls":1}
+,"mpls":{"l2-circuit":1,"l2-circuit-fib-entry":1}
+,"l2-circuit":{"100":1}
+,"100":{"2.3.4.5":1,"201":1}
+,"2.3.4.5":{"manual":1,"eth1":1}
+,"manual":{"configure":1}
+,"configure":{"static":1}
+,"static":{"pseudowire":1,"created":1}
+,"pseudowire":{"(config)":1}
+,"l2-circuit-fib-entry":{"100":1}
+,"201":{"101":1}
+,"101":{"2.3.4.5":1}
+,"eth1":{"eth2":1}
+,"eth2":{"adding":1}
+,"adding":{"fib":1}
+,"fib":{"entry":1}
+,"entry":{"static":1}
+,"created":{"binding":1}
+,"binding":{"access":1}
+,"access":{"interface":1}
+,"interface":{"(eth2)":1}
+}
+;Search.control.loadWordPairs(pairs);

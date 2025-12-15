@@ -1,0 +1,26 @@
+var pairs =
+{
+"remove":{"multiple-instance":1}
+,"multiple-instance":{"configuration":1,"capability":1}
+,"configuration":{"configure":1}
+,"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"mode":{"(config)":1,"return":1}
+,"(config)":{"router":1,"enable":1}
+,"router":{"ospf":1,"mode":1}
+,"ospf":{"identify":1,"instance":1}
+,"identify":{"ospf":1}
+,"instance":{"(config-router)":1}
+,"(config-router)":{"network":1,"exit":1}
+,"network":{"1.1.1.0\u002F24":1}
+,"1.1.1.0\u002F24":{"area":1}
+,"area":{"instance-id":1}
+,"instance-id":{"disable":1}
+,"disable":{"ospf":1,"multiple-instance":1}
+,"exit":{"exit":1,"router":1}
+,"return":{"configure":1}
+,"enable":{"ext-ospf-multi-inst":1}
+,"ext-ospf-multi-inst":{"disable":1}
+}
+;Search.control.loadWordPairs(pairs);

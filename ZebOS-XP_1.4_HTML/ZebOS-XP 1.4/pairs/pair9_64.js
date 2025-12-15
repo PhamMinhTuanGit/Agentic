@@ -1,0 +1,21 @@
+var pairs =
+{
+"physical-ring":{"command":1,"ringname":1,"ring1":1}
+,"command":{"associate":1,"syntax":1,"mode":1}
+,"associate":{"erp":1}
+,"erp":{"instance":1}
+,"instance":{"physical":1}
+,"physical":{"ring":1}
+,"ring":{"command":1,"name":1}
+,"syntax":{"physical-ring":1}
+,"ringname":{"parameters":1,"physical":1}
+,"parameters":{"ringname":1}
+,"name":{"command":1}
+,"mode":{"g.8032":1,"examples":1}
+,"g.8032":{"configure":1}
+,"configure":{"switch":1}
+,"switch":{"mode":1}
+,"examples":{"(g8032-config-switch)":1}
+,"(g8032-config-switch)":{"physical-ring":1}
+}
+;Search.control.loadWordPairs(pairs);

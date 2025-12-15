@@ -1,0 +1,21 @@
+var pairs =
+{
+"specify":{"rip":1}
+,"rip":{"version":1}
+,"version":{"configure":1,"version":1,"information":1,"topology":1}
+,"configure":{"router":1}
+,"router":{"receive":1,"configured":1}
+,"receive":{"send":1}
+,"send":{"specific":1,"rip":1}
+,"specific":{"versions":1}
+,"versions":{"packets":1}
+,"packets":{"interface":1}
+,"interface":{"example":1}
+,"example":{"router":1}
+,"configured":{"receive":1}
+,"information":{"eth1":1}
+,"eth1":{"eth2":1}
+,"eth2":{"interfaces":1}
+,"interfaces":{"rip":1}
+}
+;Search.control.loadWordPairs(pairs);

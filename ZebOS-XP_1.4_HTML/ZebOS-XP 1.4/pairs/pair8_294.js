@@ -1,0 +1,24 @@
+var pairs =
+{
+"bidirectional":{"pim":1}
+,"pim":{"bidirectional":1,"(bidir-pim)":1}
+,"(bidir-pim)":{"variant":1}
+,"variant":{"pim-sm":1}
+,"pim-sm":{"dispenses":1}
+,"dispenses":{"encapsulation":1}
+,"encapsulation":{"source":1}
+,"source":{"state":1,"using":1}
+,"state":{"allowing":1,"benefits":1}
+,"allowing":{"packets":1}
+,"packets":{"natively":1}
+,"natively":{"forwarded":1}
+,"forwarded":{"source":1}
+,"using":{"shared":1,"many-many":1}
+,"shared":{"tree":1}
+,"tree":{"state":1}
+,"benefits":{"observed":1}
+,"observed":{"using":1}
+,"many-many":{"multicast":1}
+,"multicast":{"deployment":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"rmon":{"debug":1,"parameter":1}
+,"debug":{"command":1,"options":1,"rmon":1,"parameters":1}
+,"command":{"specify":1,"disable":1,"syntax":1,"mode":1}
+,"specify":{"debug":1}
+,"options":{"rmon":1}
+,"parameter":{"command":1}
+,"disable":{"debugging":1}
+,"debugging":{"option":1}
+,"option":{"command":1}
+,"syntax":{"rmon":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"rmon":1}
+}
+;Search.control.loadWordPairs(pairs);

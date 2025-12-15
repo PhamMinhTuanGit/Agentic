@@ -1,0 +1,24 @@
+var pairs =
+{
+"automatic":{"protection":1}
+,"protection":{"switching":1,"channel":1}
+,"switching":{"(aps)":1,"(elps)":1,"(erps)":1}
+,"(aps)":{"means":1}
+,"means":{"detect":1}
+,"detect":{"signal":1}
+,"signal":{"failure":1,"degrade":1}
+,"failure":{"signal":1}
+,"degrade":{"working":1}
+,"working":{"channel":1}
+,"channel":{"switch":1,"two":1}
+,"switch":{"traffic":1}
+,"traffic":{"protection":1}
+,"two":{"types":1}
+,"types":{"aps":1}
+,"aps":{"ethernet":1}
+,"ethernet":{"linear":1,"ring":1}
+,"linear":{"protection":1}
+,"(elps)":{"ethernet":1}
+,"ring":{"protection":1}
+}
+;Search.control.loadWordPairs(pairs);

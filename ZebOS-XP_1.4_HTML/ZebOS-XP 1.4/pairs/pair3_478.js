@@ -1,0 +1,26 @@
+var pairs =
+{
+"segment-routing":{"mpls":1}
+,"mpls":{"command":1,"(ospf":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"mpls-based":1,"segment":1}
+,"mpls-based":{"segment":1}
+,"segment":{"routing":1}
+,"routing":{"globally":1,"command":1,"ospfv2":1}
+,"globally":{"device":1}
+,"device":{"form":1}
+,"form":{"command":1}
+,"disable":{"segment":1}
+,"syntax":{"segment-routing":1}
+,"(ospf":{"segment-routing":1,"parameters":1}
+,"parameters":{"ospf":1}
+,"ospf":{"enable":1}
+,"ospfv2":{"(default)":1}
+,"(default)":{"command":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"segment-routing":1}
+}
+;Search.control.loadWordPairs(pairs);

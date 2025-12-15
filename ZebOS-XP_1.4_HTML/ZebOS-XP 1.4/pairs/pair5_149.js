@@ -1,0 +1,20 @@
+var pairs =
+{
+"data":{"structures":1}
+,"structures":{"following":1,"hal":1,"used":1,"developer":1}
+,"following":{"subsection":1,"two":1}
+,"subsection":{"list":1}
+,"list":{"data":1}
+,"hal":{"following":1}
+,"two":{"data":1}
+,"used":{"multiple":1}
+,"multiple":{"zebos-xp":1}
+,"zebos-xp":{"modules":1}
+,"modules":{"documented":1}
+,"documented":{"common":1}
+,"common":{"data":1}
+,"developer":{"guide":1}
+,"guide":{"interface":1}
+,"interface":{"lib_globals":1}
+}
+;Search.control.loadWordPairs(pairs);

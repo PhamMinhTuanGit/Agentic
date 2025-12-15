@@ -1,0 +1,22 @@
+var pairs =
+{
+"nsm_mpls_ftn_msg_key_t":{"data":1,"{u_int32_t":1}
+,"data":{"structure":1}
+,"structure":{"defined":1}
+,"defined":{"nsm\u002Fmpls\u002Fha\u002Fnsm_mpls_cal.h":1}
+,"nsm\u002Fmpls\u002Fha\u002Fnsm_mpls_cal.h":{"file":1}
+,"file":{"member":1}
+,"member":{"description":1}
+,"description":{"vr_id":1}
+,"vr_id":{"identifier":1,"u_int32_t":1}
+,"identifier":{"ftn_ix":1}
+,"ftn_ix":{"fec-to-nhlfe":1,"nsm_mpls_ftn_msg_key_t":1}
+,"fec-to-nhlfe":{"index":1}
+,"index":{"definition":1}
+,"definition":{"typedef":1}
+,"typedef":{"struct":1}
+,"struct":{"nsm_mpls_ftn_msg_key_t":1}
+,"{u_int32_t":{"vr_id":1}
+,"u_int32_t":{"ftn_ix":1}
+}
+;Search.control.loadWordPairs(pairs);

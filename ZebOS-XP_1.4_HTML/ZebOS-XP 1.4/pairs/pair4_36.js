@@ -1,0 +1,22 @@
+var pairs =
+{
+"contents":{"document":1}
+,"document":{"contains":1}
+,"contains":{"chapters":1}
+,"chapters":{"appendices":1}
+,"appendices":{"chapter":1}
+,"chapter":{"command":1,"bgp":1,"bgp4":1}
+,"command":{"line":1}
+,"line":{"interface":1}
+,"interface":{"chapter":1}
+,"bgp":{"commands":1,"virtual":1,"show":1}
+,"commands":{"chapter":1,"appendix":1}
+,"bgp4":{"commands":1}
+,"virtual":{"private":1}
+,"private":{"network":1}
+,"network":{"commands":1}
+,"show":{"commands":1}
+,"appendix":{"regular":1}
+,"regular":{"expressions":1}
+}
+;Search.control.loadWordPairs(pairs);

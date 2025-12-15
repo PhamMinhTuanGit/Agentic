@@ -1,0 +1,22 @@
+var pairs =
+{
+"remote":{"authentication":1}
+,"authentication":{"dial":1,"authorization":1}
+,"dial":{"user":1}
+,"user":{"service":1}
+,"service":{"remote":1,"(radius)":1,"radius":1}
+,"(radius)":{"provides":1}
+,"provides":{"centralized":1}
+,"centralized":{"authentication":1}
+,"authorization":{"accounting":1}
+,"accounting":{"(aaa)":1}
+,"(aaa)":{"management":1}
+,"management":{"users":1}
+,"users":{"connect":1}
+,"connect":{"network":1}
+,"network":{"service":1}
+,"radius":{"specified":1}
+,"specified":{"rfc":1}
+,"rfc":{"2865":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,21 @@
+var pairs =
+{
+"management":{"information":1}
+,"information":{"base":1}
+,"base":{"api":1,"(mib)":1}
+,"api":{"zebos-xp":1}
+,"zebos-xp":{"supports":1}
+,"supports":{"tables":1}
+,"tables":{"defined":1}
+,"defined":{"rfc":1}
+,"rfc":{"3812":1}
+,"3812":{"multiprotocol":1}
+,"multiprotocol":{"label":1}
+,"label":{"switching":1}
+,"switching":{"(mpls)":1}
+,"(mpls)":{"traffic":1}
+,"traffic":{"engineering":1}
+,"engineering":{"(te)":1}
+,"(te)":{"management":1}
+}
+;Search.control.loadWordPairs(pairs);

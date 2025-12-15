@@ -1,0 +1,25 @@
+var pairs =
+{
+"alarm":{"indication":1}
+,"indication":{"signal":1}
+,"signal":{"(ais)":1,"transmitted":1,"maintain":1,"upstream":1}
+,"(ais)":{"signal":1}
+,"transmitted":{"instead":1}
+,"instead":{"normal":1}
+,"normal":{"signal":1}
+,"maintain":{"transmission":1}
+,"transmission":{"continuity":1,"interruption":1}
+,"continuity":{"indicate":1}
+,"indicate":{"receiving":1}
+,"receiving":{"device":1}
+,"device":{"transmission":1}
+,"interruption":{"(fault)":1}
+,"(fault)":{"occurred":1}
+,"occurred":{"either":1}
+,"either":{"equipment":1}
+,"equipment":{"originating":1}
+,"originating":{"ais":1}
+,"ais":{"signal":1}
+,"upstream":{"equipment":1}
+}
+;Search.control.loadWordPairs(pairs);

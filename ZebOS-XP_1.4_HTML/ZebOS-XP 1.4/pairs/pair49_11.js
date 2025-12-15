@@ -1,0 +1,22 @@
+var pairs =
+{
+"hal":{"messages":1}
+,"messages":{"following":1,"sent":1}
+,"following":{"hal":1}
+,"sent":{"hsl":1}
+,"hsl":{"hal_msg_dcb_init":1}
+,"hal_msg_dcb_init":{"hal_msg_dcb_deinit":1}
+,"hal_msg_dcb_deinit":{"hal_msg_dcb_enable":1}
+,"hal_msg_dcb_enable":{"hal_msg_dcb_disable":1}
+,"hal_msg_dcb_disable":{"hal_msg_dcb_ets_enable":1}
+,"hal_msg_dcb_ets_enable":{"hal_msg_dcb_ets_disable":1}
+,"hal_msg_dcb_ets_disable":{"hal_msg_dcb_if_enable":1}
+,"hal_msg_dcb_if_enable":{"hal_msg_dcb_if_disable":1}
+,"hal_msg_dcb_if_disable":{"hal_msg_dcb_ets_if_enable":1}
+,"hal_msg_dcb_ets_if_enable":{"hal_msg_dcb_ets_if_disable":1}
+,"hal_msg_dcb_ets_if_disable":{"hal_msg_dcb_ets_select_mode":1}
+,"hal_msg_dcb_ets_select_mode":{"hal_msg_dcb_ets_add_pri_to_tcg":1}
+,"hal_msg_dcb_ets_add_pri_to_tcg":{"hal_msg_dcb_ets_remove_pri_from_tcg":1}
+,"hal_msg_dcb_ets_remove_pri_from_tcg":{"hal_msg_dcb_ets_tcg_bw_set":1}
+}
+;Search.control.loadWordPairs(pairs);

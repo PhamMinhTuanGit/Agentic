@@ -1,0 +1,27 @@
+var pairs =
+{
+"1dm":{"receive":1}
+,"receive":{"command":1,"one-way":1,"duration":1}
+,"command":{"receive":1,"syntax":1,"mode":1}
+,"one-way":{"delay-measurement":1}
+,"delay-measurement":{"(1dm)":1}
+,"(1dm)":{"frames":1}
+,"frames":{"specify":1}
+,"specify":{"duration":1}
+,"duration":{"command":1,"duration":1,"parameters":1,"delay":1}
+,"syntax":{"1dm":1}
+,"parameters":{"duration":1}
+,"delay":{"measurements":1}
+,"measurements":{"seconds":1}
+,"seconds":{"<5-60>":1}
+,"<5-60>":{"command":1}
+,"mode":{"ethernet":1,"examples":1}
+,"ethernet":{"cfm":1}
+,"cfm":{"pbb":1}
+,"pbb":{"mep":1}
+,"mep":{"configuration":1}
+,"configuration":{"mode":1}
+,"examples":{"(config-cfm-pbb-mep)":1}
+,"(config-cfm-pbb-mep)":{"1dm":1}
+}
+;Search.control.loadWordPairs(pairs);

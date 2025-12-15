@@ -1,0 +1,20 @@
+var pairs =
+{
+"route_table":{"data":1,"{struct":1}
+,"data":{"structure":1}
+,"structure":{"routing":1,"defined":1}
+,"routing":{"table":1}
+,"table":{"top":1}
+,"top":{"structure":1}
+,"defined":{"lib\u002Ftable.h":1}
+,"lib\u002Ftable.h":{"file":1}
+,"file":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"route_table":1}
+,"{struct":{"route_node":1}
+,"route_node":{"*top":1}
+,"*top":{"\u002F*table":1}
+,"\u002F*table":{"identifier":1}
+,"identifier":{"*\u002Fu_int32_t":1}
+}
+;Search.control.loadWordPairs(pairs);

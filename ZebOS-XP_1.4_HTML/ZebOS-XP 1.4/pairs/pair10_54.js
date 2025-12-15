@@ -1,0 +1,26 @@
+var pairs =
+{
+"pbb":{"isid":1}
+,"isid":{"list":1}
+,"list":{"command":1,"parameters":1,"(pbb-isid)":1}
+,"command":{"switch":1,"syntax":1,"mode":1}
+,"switch":{"i-sid":1}
+,"i-sid":{"(ethernet":1}
+,"(ethernet":{"service":1}
+,"service":{"instance":1}
+,"instance":{"identifier)":1}
+,"identifier)":{"configuration":1}
+,"configuration":{"mode":1}
+,"mode":{"add":1,"configure":1,"examples":1}
+,"add":{"i-sids":1}
+,"i-sids":{"i-component":1}
+,"i-component":{"command":1}
+,"syntax":{"pbb":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"pbb":1}
+}
+;Search.control.loadWordPairs(pairs);

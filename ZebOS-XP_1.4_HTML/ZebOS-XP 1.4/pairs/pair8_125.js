@@ -1,0 +1,23 @@
+var pairs =
+{
+"is-is":{"ospf":1}
+,"ospf":{"commonalities":1,"several":1}
+,"commonalities":{"is-is":1}
+,"several":{"characteristics":1}
+,"characteristics":{"common":1}
+,"common":{"link":1}
+,"link":{"state":1}
+,"state":{"update":1,"database":1}
+,"update":{"link":1}
+,"database":{"hello":1}
+,"hello":{"adjacency":1}
+,"adjacency":{"classless":1}
+,"classless":{"protocol":1}
+,"protocol":{"areas":1}
+,"areas":{"hierarchical":1}
+,"hierarchical":{"topology":1}
+,"topology":{"ipv4":1}
+,"ipv4":{"ipv6":1}
+,"ipv6":{"routing":1}
+}
+;Search.control.loadWordPairs(pairs);

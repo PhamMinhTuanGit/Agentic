@@ -1,0 +1,27 @@
+var pairs =
+{
+"pim":{"master":1}
+,"master":{"structure":1}
+,"structure":{"pim":1,"carries":1}
+,"carries":{"per-vr":1}
+,"per-vr":{"level":1}
+,"level":{"instance":1}
+,"instance":{"information":1}
+,"information":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"pim_master":1}
+,"pim_master":{"{\u002F*pointer":1}
+,"{\u002F*pointer":{"*\u002Fstruct":1}
+,"*\u002Fstruct":{"ipi_vr":1,"lib_globals":1}
+,"ipi_vr":{"*vr":1}
+,"*vr":{"\u002F*pointer":1}
+,"\u002F*pointer":{"globals":1}
+,"globals":{"*\u002Fstruct":1}
+,"lib_globals":{"*zg":1}
+,"*zg":{"\u002F*pim":1}
+,"\u002F*pim":{"create":1}
+,"create":{"time":1}
+,"time":{"*\u002Fu_int32_t":1}
+,"*\u002Fu_int32_t":{"start_time":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"remote-link-id":{"command":1,"a.b.c.d":1,"(a.b.c.d":1,"172.1.2.3":1}
+,"command":{"configure":1,"remove":1,"syntax":1,"mode":1}
+,"configure":{"remote":1,"terminal":1}
+,"remote":{"link":1}
+,"link":{"link":1,"option":1,"command":1,"ipv4":1,"mode":1}
+,"option":{"command":1}
+,"remove":{"remote":1}
+,"syntax":{"remote-link-id":1}
+,"a.b.c.d":{"remote-link-id":1,"remote":1}
+,"(a.b.c.d":{"parameters":1}
+,"parameters":{"a.b.c.d":1}
+,"ipv4":{"address":1}
+,"address":{"format":1}
+,"format":{"command":1}
+,"mode":{"link":1,"examples":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"te-link":1}
+,"te-link":{"te1":1}
+,"te1":{"local-link-id":1}
+,"local-link-id":{"172.1.1.1":1}
+,"172.1.1.1":{"(config-te)":1}
+,"(config-te)":{"remote-link-id":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"interface":{"tunnel":1,"parameter":1,"command":1,"number":1}
+,"tunnel":{"command":1,"interface":1,"<0-2147483647>":1,"100":1}
+,"command":{"create":1,"syntax":1,"mode":1}
+,"create":{"new":1}
+,"new":{"tunnel":1}
+,"parameter":{"destroy":1,"<0-2147483647>":1}
+,"destroy":{"tunnel":1}
+,"syntax":{"interface":1}
+,"<0-2147483647>":{"interface":1,"parameter":1,"specify":1}
+,"specify":{"tunnel":1}
+,"number":{"default":1}
+,"default":{"disabled":1}
+,"disabled":{"command":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"100":{"(config-if)":1}
+}
+;Search.control.loadWordPairs(pairs);

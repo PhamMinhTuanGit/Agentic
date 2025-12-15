@@ -1,0 +1,23 @@
+var pairs =
+{
+"hold":{"timer":1}
+,"timer":{"configuration":1,"used":1}
+,"configuration":{"per-connection":1}
+,"per-connection":{"basis":1}
+,"basis":{"connect":1}
+,"connect":{"retry":1}
+,"retry":{"timer":1,"time":1}
+,"used":{"bgp":1,"connection":1}
+,"bgp":{"speaker":1,"neighbor":1}
+,"speaker":{"establish":1}
+,"establish":{"tcp":1}
+,"tcp":{"connection":1}
+,"connection":{"peer":1,"retry":1}
+,"peer":{"neighbor":1}
+,"neighbor":{"connection-retry-time":1}
+,"connection-retry-time":{"command":1}
+,"command":{"used":1}
+,"time":{"specific":1}
+,"specific":{"bgp":1}
+}
+;Search.control.loadWordPairs(pairs);

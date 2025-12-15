@@ -1,0 +1,20 @@
+var pairs =
+{
+"rsvp_api_neighbor_delete_by_prefix":{"call":1,"(struct":1}
+,"call":{"deletes":1}
+,"deletes":{"passed-in":1}
+,"passed-in":{"neighbor":1}
+,"neighbor":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"rsvp_api_neighbor_delete_by_prefix":1}
+,"(struct":{"prefix":1}
+,"prefix":{"*p)":1,"output":1}
+,"*p)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"prefix":1,"none":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

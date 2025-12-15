@@ -1,0 +1,26 @@
+var pairs =
+{
+"priority-flow-control":{"accept-peer-config":1}
+,"accept-peer-config":{"command":1,"priority-flow-control":1,"parameters":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"willing":1}
+,"willing":{"mode":1,"enabled":1}
+,"mode":{"pfc":1,"enabled":1,"command":1,"interface":1,"examples":1}
+,"pfc":{"interface":1}
+,"interface":{"willing":1,"mode":1,"eth1":1}
+,"enabled":{"default":1,"form":1}
+,"default":{"advertise":1}
+,"advertise":{"mode":1}
+,"form":{"command":1}
+,"disable":{"willing":1}
+,"syntax":{"priority-flow-control":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth1":{"(config-if)":1}
+,"(config-if)":{"priority-flow-control":1}
+}
+;Search.control.loadWordPairs(pairs);

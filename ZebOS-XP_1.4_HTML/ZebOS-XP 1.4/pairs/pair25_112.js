@@ -1,0 +1,27 @@
+var pairs =
+{
+"mtu-probe":{"command":1,"enable":1}
+,"command":{"enable":1,"reset":1,"syntax":1,"mode":1}
+,"enable":{"mtu":1,"mtu-probe":1,"parameters":1,"specify":1,"configure":1,"(config-rb)":1}
+,"mtu":{"probing":1}
+,"probing":{"parameter":1,"command":1,"disabled":1}
+,"parameter":{"command":1}
+,"reset":{"configuration":1}
+,"configuration":{"command":1}
+,"syntax":{"mtu-probe":1}
+,"parameters":{"enable":1}
+,"specify":{"enable":1}
+,"mode":{"rbridge":1,"default":1}
+,"rbridge":{"mode":1,"trill":1}
+,"default":{"mtu":1}
+,"disabled":{"example":1}
+,"example":{"enable":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"bridge":1,"rbridge":1}
+,"bridge":{"protocol":1}
+,"protocol":{"trill":1}
+,"trill":{"(config)":1,"(config-rb)":1}
+,"(config-rb)":{"mtu-probe":1}
+}
+;Search.control.loadWordPairs(pairs);

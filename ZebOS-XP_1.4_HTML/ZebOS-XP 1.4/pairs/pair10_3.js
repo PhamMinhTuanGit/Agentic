@@ -1,0 +1,19 @@
+var pairs =
+{
+"ldp":{"option":1,"daemon":1,"fec":1}
+,"option":{"flag":1}
+,"flag":{"description":1}
+,"description":{"--enable-ldpd":1}
+,"--enable-ldpd":{"build":1}
+,"build":{"ldp":1}
+,"daemon":{"(default)":1,"--enable-ldp-suppress-fec":1}
+,"(default)":{"--disable-ldpd":1,"--disable-ldp-suppress-fec":1}
+,"--disable-ldpd":{"build":1}
+,"--enable-ldp-suppress-fec":{"enable":1}
+,"enable":{"suppress":1}
+,"suppress":{"ldp":1}
+,"fec":{"(default)":1}
+,"--disable-ldp-suppress-fec":{"disable":1}
+,"disable":{"suppress":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"architecture":{"pbb-te":1,"supports":1,"zebos-xp":1}
+,"pbb-te":{"architecture":1,"pbb-te":1,"cfm":1,"protection":1}
+,"supports":{"ieee":1}
+,"ieee":{"802.1ay":1}
+,"802.1ay":{"pbb-te":1}
+,"cfm":{"pbb-te":1}
+,"protection":{"switching":1}
+,"switching":{"(ps)":1,"architecture":1}
+,"(ps)":{"figure":1}
+,"figure":{"5-1":1}
+,"5-1":{"shows":1}
+,"shows":{"high-level":1}
+,"high-level":{"zebos-xp":1}
+,"zebos-xp":{"layer":1}
+,"layer":{"switching":1,"architecture":1}
+}
+;Search.control.loadWordPairs(pairs);

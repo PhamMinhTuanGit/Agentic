@@ -1,0 +1,24 @@
+var pairs =
+{
+"conversation":{"alloc-mode":1,"identifier":1}
+,"alloc-mode":{"command":1,"(manual":1,"auto":1}
+,"command":{"conversation":1,"syntax":1,"mode":1}
+,"identifier":{"allocation":1}
+,"allocation":{"mode":1}
+,"mode":{"command":1,"auto":1,"mlag":1,"example":1}
+,"syntax":{"conversation":1}
+,"(manual":{"auto)":1}
+,"auto)":{"parameters":1}
+,"parameters":{"manual":1}
+,"manual":{"manual":1,"allocation":1}
+,"auto":{"automatic":1}
+,"automatic":{"allocation":1}
+,"mlag":{"mode":1,"configuration":1}
+,"example":{"config":1}
+,"config":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mlag":1}
+,"configuration":{"(config-mlag)":1}
+,"(config-mlag)":{"conversation":1}
+}
+;Search.control.loadWordPairs(pairs);

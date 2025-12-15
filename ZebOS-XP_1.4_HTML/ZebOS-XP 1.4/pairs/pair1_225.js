@@ -1,0 +1,22 @@
+var pairs =
+{
+"passive":{"interface":1}
+,"interface":{"passive":1,"feature":1,"advertises":1}
+,"feature":{"is-is":1}
+,"is-is":{"lets":1,"packets":1}
+,"lets":{"end":1}
+,"end":{"user":1}
+,"user":{"advertise":1}
+,"advertise":{"direct":1}
+,"direct":{"route":1}
+,"route":{"without":1}
+,"without":{"having":1}
+,"having":{"peer":1}
+,"peer":{"interface":1}
+,"advertises":{"address":1}
+,"address":{"lsps":1}
+,"lsps":{"send":1}
+,"send":{"receive":1}
+,"receive":{"is-is":1}
+}
+;Search.control.loadWordPairs(pairs);

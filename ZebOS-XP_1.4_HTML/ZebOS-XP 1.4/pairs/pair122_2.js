@@ -1,0 +1,19 @@
+var pairs =
+{
+"hal_if_set_sw_reset":{"function":1,"input":1}
+,"function":{"resets":1,"fails":1,"succeeds":1}
+,"resets":{"hsl":1}
+,"hsl":{"driver":1}
+,"driver":{"syntax":1}
+,"syntax":{"int":1}
+,"int":{"hal_if_set_sw_reset":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"value":1}
+,"value":{"function":1}
+,"fails":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

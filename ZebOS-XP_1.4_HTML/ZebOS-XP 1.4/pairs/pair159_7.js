@@ -1,0 +1,23 @@
+var pairs =
+{
+"flooding":{"forwarding":1}
+,"forwarding":{"frame":1}
+,"frame":{"onto":1}
+,"onto":{"ports":1}
+,"ports":{"except":1}
+,"except":{"port":1}
+,"port":{"upon":1}
+,"upon":{"arrived":1}
+,"arrived":{"open":1}
+,"open":{"shortest":1}
+,"shortest":{"path":1}
+,"path":{"first":1}
+,"first":{"(ospf)":1}
+,"(ospf)":{"distributing":1}
+,"distributing":{"synchronizing":1}
+,"synchronizing":{"link-state":1}
+,"link-state":{"database":1}
+,"database":{"(lsdb)":1}
+,"(lsdb)":{"routers":1}
+}
+;Search.control.loadWordPairs(pairs);

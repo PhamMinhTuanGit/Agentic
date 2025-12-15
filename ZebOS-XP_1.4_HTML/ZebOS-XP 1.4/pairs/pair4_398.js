@@ -1,0 +1,27 @@
+var pairs =
+{
+"functions":{"following":1,"details":1}
+,"following":{"summary":1,"subsections":1}
+,"summary":{"ospfv2":1}
+,"ospfv2":{"functions":1}
+,"details":{"provided":1}
+,"provided":{"following":1}
+,"subsections":{"function":1}
+,"function":{"description":1}
+,"description":{"ospf_get_router_id":1}
+,"ospf_get_router_id":{"gets":1}
+,"gets":{"unique":1,"number":1}
+,"unique":{"32-bit":1}
+,"32-bit":{"router":1}
+,"router":{"ospf_get_ext_lsdb_limit":1}
+,"ospf_get_ext_lsdb_limit":{"gets":1}
+,"number":{"represents":1,"non-default":1}
+,"represents":{"maximum":1}
+,"maximum":{"number":1}
+,"non-default":{"as-external-lsa":1}
+,"as-external-lsa":{"entries":1}
+,"entries":{"stored":1}
+,"stored":{"link-state":1}
+,"link-state":{"database":1}
+}
+;Search.control.loadWordPairs(pairs);

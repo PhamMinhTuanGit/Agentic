@@ -1,0 +1,25 @@
+var pairs =
+{
+"region":{"command":1,"default":1,"region_name":1,"ipi":1}
+,"command":{"create":1,"delete":1,"syntax":1,"mode":1}
+,"create":{"mst":1}
+,"mst":{"region":1,"configure":1,"configuration":1}
+,"default":{"bridge":1}
+,"bridge":{"specify":1}
+,"specify":{"name":1}
+,"name":{"parameter":1,"region":1}
+,"parameter":{"command":1}
+,"delete":{"region":1}
+,"syntax":{"region":1}
+,"region_name":{"region":1,"parameters":1,"specify":1}
+,"parameters":{"region_name":1}
+,"mode":{"mst":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"spanning-tree":1}
+,"spanning-tree":{"mst":1}
+,"configuration":{"(config-mst)":1}
+,"(config-mst)":{"region":1}
+}
+;Search.control.loadWordPairs(pairs);

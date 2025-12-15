@@ -1,0 +1,26 @@
+var pairs =
+{
+"nsm_get_rcvaddress_status":{"function":1,"(struct":1}
+,"function":{"gets":1}
+,"gets":{"rcvaddress":1}
+,"rcvaddress":{"status":1}
+,"status":{"syntax":1,"rcvaddr":1,"return":1}
+,"syntax":{"int":1}
+,"int":{"nsm_get_rcvaddress_status":1,"*status)":1}
+,"(struct":{"rcvaddr_index":1}
+,"rcvaddr_index":{"*rcvaddr":1,"structure":1}
+,"*rcvaddr":{"int":1}
+,"*status)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"rcvaddr":1,"status":1}
+,"rcvaddr":{"pointer":1,"status":1}
+,"pointer":{"rcvaddr_index":1}
+,"structure":{"output":1}
+,"output":{"parameters":1}
+,"return":{"values":1}
+,"values":{"nsm_api_get_success":1}
+,"nsm_api_get_success":{"result_error":1}
+,"result_error":{"nsm_bridge_err_not_bound":1}
+,"nsm_bridge_err_not_bound":{"nsm_api_get_error":1}
+}
+;Search.control.loadWordPairs(pairs);

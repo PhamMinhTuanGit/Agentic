@@ -1,0 +1,27 @@
+var pairs =
+{
+"spb":{"show":1,"adjacency":1,"bridge":1,"service":1}
+,"show":{"commands":1,"bridge":1,"isis-spb":1,"spb":1,"spbv":1}
+,"commands":{"chapter":1,"show":1}
+,"chapter":{"provides":1}
+,"provides":{"description":1}
+,"description":{"syntax":1}
+,"syntax":{"examples":1}
+,"examples":{"shortest":1}
+,"shortest":{"path":1}
+,"path":{"bridging":1}
+,"bridging":{"show":1}
+,"bridge":{"spb":1,"vlan":1,"show":1,"vid-translation-table":1}
+,"isis-spb":{"configuration":1,"fdb":1,"interface":1,"lsp":1,"neighbors":1,"topology":1}
+,"configuration":{"show":1}
+,"fdb":{"show":1}
+,"interface":{"show":1}
+,"lsp":{"show":1}
+,"neighbors":{"show":1}
+,"topology":{"show":1}
+,"adjacency":{"show":1}
+,"vlan":{"show":1}
+,"service":{"bridge":1}
+,"spbv":{"bridge":1}
+}
+;Search.control.loadWordPairs(pairs);

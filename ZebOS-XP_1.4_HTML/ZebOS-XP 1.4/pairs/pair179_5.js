@@ -1,0 +1,25 @@
+var pairs =
+{
+"hold":{"down":1}
+,"down":{"state":1,"period)":1,"used":1,"link":1}
+,"state":{"route":1}
+,"route":{"placed":1,"accept":1,"specific":1,"devices":1,"fails":1}
+,"placed":{"devices":1,"hold":1}
+,"devices":{"neither":1,"network":1}
+,"neither":{"advertise":1}
+,"advertise":{"route":1}
+,"accept":{"advertisements":1}
+,"advertisements":{"route":1}
+,"specific":{"length":1}
+,"length":{"time":1}
+,"time":{"(the":1}
+,"(the":{"hold":1}
+,"period)":{"hold":1}
+,"used":{"flush":1}
+,"flush":{"bad":1}
+,"bad":{"information":1}
+,"information":{"route":1}
+,"network":{"route":1}
+,"link":{"route":1}
+}
+;Search.control.loadWordPairs(pairs);

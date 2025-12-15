@@ -1,0 +1,22 @@
+var pairs =
+{
+"verification":{"xsupplicant":1}
+,"xsupplicant":{"able":1}
+,"able":{"ping":1}
+,"ping":{"radius":1,"10.10.10.40":1,"3.3.3.1":1}
+,"radius":{"server":1}
+,"server":{"[root@xsupplicant1":1}
+,"[root@xsupplicant1":{"root]":1}
+,"root]":{"ping":1}
+,"10.10.10.40":{"ping":1,"icmp_seq=1":1,"icmp_seq=2":1}
+,"3.3.3.1":{"(3.3.3.1)":1}
+,"(3.3.3.1)":{"(84)":1}
+,"(84)":{"bytes":1}
+,"bytes":{"data":1,"10.10.10.40":1}
+,"data":{"bytes":1}
+,"icmp_seq=1":{"ttl=64":1}
+,"ttl=64":{"time=0.606":1,"time=0.551":1}
+,"time=0.606":{"bytes":1}
+,"icmp_seq=2":{"ttl=64":1}
+}
+;Search.control.loadWordPairs(pairs);

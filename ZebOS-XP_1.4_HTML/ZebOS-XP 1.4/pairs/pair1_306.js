@@ -1,0 +1,20 @@
+var pairs =
+{
+"vpls":{"configuration":1}
+,"configuration":{"chapter":1}
+,"chapter":{"contains":1}
+,"contains":{"configurations":1}
+,"configurations":{"virtual":1}
+,"virtual":{"private":1}
+,"private":{"lan":1}
+,"lan":{"service":1}
+,"service":{"(vpls)":1}
+,"(vpls)":{"details":1}
+,"details":{"commands":1}
+,"commands":{"label":1}
+,"label":{"distribution":1}
+,"distribution":{"protocol":1}
+,"protocol":{"command":1}
+,"command":{"reference":1}
+}
+;Search.control.loadWordPairs(pairs);

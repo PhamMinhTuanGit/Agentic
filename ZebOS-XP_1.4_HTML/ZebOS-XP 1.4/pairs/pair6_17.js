@@ -1,0 +1,23 @@
+var pairs =
+{
+"bfd":{"gtsm":1}
+,"gtsm":{"command":1,"(generalized":1,"(enable":1,"protection":1,"enable":1}
+,"command":{"enable":1,"syntax":1,"mode":1}
+,"enable":{"disable":1,"enable":1,"gtsm":1}
+,"disable":{"bfd":1,"disable":1,"gtsm":1}
+,"(generalized":{"ttl":1}
+,"ttl":{"security":1}
+,"security":{"mechanism)":1}
+,"mechanism)":{"protection":1}
+,"protection":{"command":1,"enable":1}
+,"syntax":{"bfd":1}
+,"(enable":{"disable)":1}
+,"disable)":{"parameters":1}
+,"parameters":{"disable":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"bfd":1}
+}
+;Search.control.loadWordPairs(pairs);

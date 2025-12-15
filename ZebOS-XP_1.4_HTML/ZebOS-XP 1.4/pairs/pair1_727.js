@@ -1,0 +1,21 @@
+var pairs =
+{
+"troubleshooting":{"ospf":1}
+,"ospf":{"chapter":1,"issues":1}
+,"chapter":{"contains":1}
+,"contains":{"steps":1}
+,"steps":{"resolving":1}
+,"resolving":{"ospf":1}
+,"issues":{"refer":1}
+,"refer":{"open":1}
+,"open":{"shortest":1}
+,"shortest":{"path":1}
+,"path":{"first":1}
+,"first":{"command":1}
+,"command":{"reference":1}
+,"reference":{"details":1}
+,"details":{"commands":1}
+,"commands":{"used":1}
+,"used":{"chapter":1}
+}
+;Search.control.loadWordPairs(pairs);

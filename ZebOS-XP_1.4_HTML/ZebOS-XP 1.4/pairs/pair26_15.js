@@ -1,0 +1,20 @@
+var pairs =
+{
+"1:1":{"bidirectional":1,"bi-directional":1}
+,"bidirectional":{"protection":1}
+,"protection":{"switching":1,"switch":1}
+,"switching":{"mode":1}
+,"mode":{"1:1":1,"trunk":1}
+,"bi-directional":{"mode":1}
+,"trunk":{"dedicated":1,"data":1,"until":1}
+,"dedicated":{"working":1}
+,"working":{"trunk":1}
+,"data":{"traffic":1}
+,"traffic":{"flows":1}
+,"flows":{"protecting":1}
+,"protecting":{"trunk":1}
+,"until":{"protection":1}
+,"switch":{"takes":1}
+,"takes":{"place":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"clear":{"mpls":1,"vpls":1,"data":1}
+,"mpls":{"vpls":1}
+,"vpls":{"command":1,"data":1,"name":1,"instance":1,"vpls_123":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"data":{"command":1,"vpls":1}
+,"syntax":{"clear":1}
+,"name":{"mac-addresses":1,"clear":1,"given":1}
+,"mac-addresses":{"parameters":1,"flush":1}
+,"parameters":{"name":1}
+,"instance":{"name":1,"command":1}
+,"given":{"mac-addresses":1}
+,"flush":{"mac":1}
+,"mac":{"addresses":1}
+,"addresses":{"vpls":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"clear":1}
+,"vpls_123":{"mac-addresses":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"interface":{"policy":1,"unless":1,"mode":1,"command":1}
+,"policy":{"deny":1}
+,"deny":{"command":1,"access":1,"interface":1,"parameters":1,"(config-role-interface)":1}
+,"command":{"deny":1,"enters":1,"permit":1,"syntax":1,"mode":1}
+,"access":{"interface":1}
+,"unless":{"explicitly":1}
+,"explicitly":{"permitted":1}
+,"permitted":{"command":1}
+,"enters":{"role":1}
+,"role":{"interface":1,"mode":1,"name":1}
+,"mode":{"form":1,"role":1,"example":1}
+,"form":{"command":1}
+,"permit":{"access":1}
+,"syntax":{"interface":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"role":1}
+,"name":{"dearborn":1}
+,"dearborn":{"(config-role)":1}
+,"(config-role)":{"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

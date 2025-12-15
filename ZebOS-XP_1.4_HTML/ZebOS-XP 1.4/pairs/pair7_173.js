@@ -1,0 +1,27 @@
+var pairs =
+{
+"auth-mac":{"system-auth-ctrl":1}
+,"system-auth-ctrl":{"command":1,"auth-mac":1,"parameters":1,"(config)":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"mac":1}
+,"mac":{"authentication":1}
+,"authentication":{"globally":1,"enabled":1,"related":1}
+,"globally":{"mac":1,"command":1}
+,"enabled":{"mac":1}
+,"related":{"commands":1}
+,"commands":{"throw":1}
+,"throw":{"error":1}
+,"error":{"issued":1}
+,"issued":{"parameter":1}
+,"parameter":{"command":1}
+,"disable":{"mac":1}
+,"syntax":{"auth-mac":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"auth-mac":1}
+}
+;Search.control.loadWordPairs(pairs);

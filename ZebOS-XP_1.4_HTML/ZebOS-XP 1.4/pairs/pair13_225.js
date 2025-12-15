@@ -1,0 +1,24 @@
+var pairs =
+{
+"revertive":{"behavior":1,"mode":1}
+,"behavior":{"zebos-xp":1}
+,"zebos-xp":{"frr":1}
+,"frr":{"restores":1}
+,"restores":{"failed":1}
+,"failed":{"traffic":1,"lsp":1}
+,"traffic":{"engineered":1}
+,"engineered":{"lsp":1}
+,"lsp":{"full":1,"responsible":1}
+,"full":{"working":1}
+,"working":{"path":1}
+,"path":{"using":1}
+,"using":{"global":1}
+,"global":{"revertive":1}
+,"mode":{"mode":1,"head-end":1}
+,"head-end":{"failed":1}
+,"responsible":{"recomputing":1}
+,"recomputing":{"signaling":1}
+,"signaling":{"new":1}
+,"new":{"path":1}
+}
+;Search.control.loadWordPairs(pairs);

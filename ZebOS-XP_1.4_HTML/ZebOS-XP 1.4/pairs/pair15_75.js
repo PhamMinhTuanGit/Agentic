@@ -1,0 +1,21 @@
+var pairs =
+{
+"clear":{"isis":1,"system-wide":1}
+,"isis":{"counter":1}
+,"counter":{"command":1,"parameters":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"system-wide":{"is-is":1}
+,"is-is":{"counters":1}
+,"counters":{"(isissystemcounterentry":1}
+,"(isissystemcounterentry":{"rfc":1}
+,"rfc":{"4444)":1}
+,"4444)":{"command":1}
+,"syntax":{"clear":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

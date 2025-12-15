@@ -1,0 +1,26 @@
+var pairs =
+{
+"definition":{"struct":1}
+,"struct":{"prefix":1,"pal_in4_addr":1,"pal_in6_addr":1}
+,"prefix":{"{u_int8_t":1,"struct":1}
+,"{u_int8_t":{"family":1,"prefix":1}
+,"family":{"u_int8_t":1}
+,"u_int8_t":{"prefixlen":1,"prefix_style":1,"pad1":1,"val":1}
+,"prefixlen":{"u_int8_t":1}
+,"prefix_style":{"u_int8_t":1}
+,"pad1":{"union":1}
+,"union":{"{u_int8_t":1}
+,"pal_in4_addr":{"prefix4":1,"struct":1,"adv_router":1}
+,"prefix4":{"ifdef":1}
+,"ifdef":{"have_ipv6":1}
+,"have_ipv6":{"struct":1}
+,"pal_in6_addr":{"prefix6":1}
+,"prefix6":{"endif":1}
+,"endif":{"\u002F*have_ipv6":1}
+,"\u002F*have_ipv6":{"*\u002Fstruct":1}
+,"*\u002Fstruct":{"{struct":1}
+,"{struct":{"pal_in4_addr":1}
+,"adv_router":{"u_int8_t":1}
+,"val":{"[9]":1}
+}
+;Search.control.loadWordPairs(pairs);

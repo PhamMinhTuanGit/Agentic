@@ -1,0 +1,25 @@
+var pairs =
+{
+"ldp_update_fec_cb_lpm_entries_new_prefix":{"call":1,"(struct":1}
+,"call":{"disables":1}
+,"disables":{"multicast":1}
+,"multicast":{"hellos":1}
+,"hellos":{"specified":1}
+,"specified":{"interface":1}
+,"interface":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"ldp_update_fec_cb_lpm_entries_new_prefix":1}
+,"(struct":{"prefix":1}
+,"prefix":{"struct":1,"*nh":1}
+,"struct":{"ldp_ip_nh":1}
+,"ldp_ip_nh":{"*nh)":1}
+,"*nh)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"prefix":1,"none":1}
+,"*nh":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"isis":{"restart":1}
+,"restart":{"helper":1}
+,"helper":{"command":1,"mode":1,"isis":1,"parameters":1,"router":1,"configure":1,"(config)":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"router\u0027s":1,"mode":1,"terminal":1}
+,"router\u0027s":{"helper":1}
+,"mode":{"capability":1,"router":1,"configure":1,"example":1}
+,"capability":{"parameter":1}
+,"parameter":{"disable":1}
+,"disable":{"helper":1}
+,"router":{"command":1}
+,"syntax":{"isis":1}
+,"parameters":{"none":1}
+,"none":{"default":1}
+,"default":{"default":1,"routers":1}
+,"routers":{"restart":1}
+,"example":{"following":1,"enables":1}
+,"following":{"example":1}
+,"enables":{"disables":1}
+,"disables":{"isis":1}
+,"terminal":{"(config)":1}
+,"(config)":{"isis":1}
+}
+;Search.control.loadWordPairs(pairs);

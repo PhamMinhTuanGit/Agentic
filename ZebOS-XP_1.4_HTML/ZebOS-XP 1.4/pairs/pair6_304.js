@@ -1,0 +1,21 @@
+var pairs =
+{
+"configuring":{"igmp":1}
+,"igmp":{"version":1}
+,"version":{"configuration":1,"configured":1,"enable":1,"(config-if)":1}
+,"configuration":{"follows":1}
+,"follows":{"shows":1}
+,"shows":{"igmp":1}
+,"configured":{"configure":1}
+,"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"interface":1}
+,"mode":{"(config)":1,"(config-if)":1}
+,"(config)":{"interface":1,"exit":1}
+,"interface":{"eth1":1,"mode":1}
+,"eth1":{"enter":1}
+,"(config-if)":{"igmp":1,"exit":1}
+,"enable":{"igmp":1}
+,"exit":{"exit":1,"interface":1,"configure":1}
+}
+;Search.control.loadWordPairs(pairs);

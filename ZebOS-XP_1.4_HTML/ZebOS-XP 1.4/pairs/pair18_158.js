@@ -1,0 +1,26 @@
+var pairs =
+{
+"find_clock_api":{"function":1}
+,"function":{"returns":1}
+,"returns":{"pointer":1}
+,"pointer":{"ptp":1,"clock":1}
+,"ptp":{"clock":1}
+,"clock":{"installed":1,"successful":1}
+,"installed":{"default":1}
+,"default":{"bridge":1}
+,"bridge":{"syntax":1,"clock":1}
+,"syntax":{"include":1}
+,"include":{"ptpd\u002Fptp_cli.h":1}
+,"ptpd\u002Fptp_cli.h":{"struct":1}
+,"struct":{"ptp_clock*find_clock_api":1}
+,"ptp_clock*find_clock_api":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"values":1}
+,"values":{"pointer":1}
+,"successful":{"null":1}
+,"null":{"default":1}
+}
+;Search.control.loadWordPairs(pairs);

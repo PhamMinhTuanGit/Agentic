@@ -1,0 +1,24 @@
+var pairs =
+{
+"nsm_tlv_header":{"data":1,"{u_int16_t":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"nsm":1}
+,"nsm":{"tlv":1}
+,"tlv":{"headers":1}
+,"headers":{"defined":1}
+,"defined":{"lib\u002Fnsm_message.h":1}
+,"lib\u002Fnsm_message.h":{"file":1}
+,"file":{"member":1}
+,"member":{"description":1}
+,"description":{"type":1}
+,"type":{"message":1,"length":1,"u_int16_t":1}
+,"message":{"type":1,"length":1}
+,"length":{"message":1,"definition":1}
+,"definition":{"struct":1}
+,"struct":{"nsm_tlv_header":1}
+,"{u_int16_t":{"type":1}
+,"u_int16_t":{"length":1}
+}
+;Search.control.loadWordPairs(pairs);

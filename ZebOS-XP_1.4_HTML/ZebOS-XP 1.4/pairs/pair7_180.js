@@ -1,0 +1,24 @@
+var pairs =
+{
+"show":{"vlan":1}
+,"vlan":{"access-map":1,"access":1}
+,"access-map":{"command":1,"parameters":1,"parameter":1}
+,"command":{"display":1,"syntax":1,"mode":1,"using":1}
+,"display":{"information":1}
+,"information":{"vlan":1}
+,"access":{"maps":1}
+,"maps":{"command":1}
+,"syntax":{"show":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"following":1}
+,"following":{"sample":1}
+,"sample":{"output":1}
+,"output":{"command":1}
+,"using":{"access-map":1}
+,"parameter":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

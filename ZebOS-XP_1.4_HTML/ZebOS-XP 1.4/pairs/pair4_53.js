@@ -1,0 +1,25 @@
+var pairs =
+{
+"bgp_6pe_process":{"function":1}
+,"function":{"function":1,"handles":1,"ilm":1}
+,"handles":{"ipv6":1}
+,"ipv6":{"6pe":1}
+,"6pe":{"routes":1,"flag":1,"route":1}
+,"routes":{"6pe":1,"done":1}
+,"flag":{"enabled":1,"check":1,"peer_flag_6pe_enabled":1,"bgp_info_6pe_ftn_installed":1}
+,"enabled":{"peer":1,"value":1}
+,"peer":{"flag":1}
+,"check":{"peer":1}
+,"peer_flag_6pe_enabled":{"done":1}
+,"done":{"enabled":1,"flag":1}
+,"value":{"changed":1,"sent":1}
+,"changed":{"value":1}
+,"sent":{"bgp_announce_check":1}
+,"bgp_announce_check":{"function":1}
+,"ilm":{"installation":1}
+,"installation":{"required":1,"routes":1}
+,"required":{"ftn":1}
+,"ftn":{"installation":1}
+,"bgp_info_6pe_ftn_installed":{"6pe":1}
+}
+;Search.control.loadWordPairs(pairs);

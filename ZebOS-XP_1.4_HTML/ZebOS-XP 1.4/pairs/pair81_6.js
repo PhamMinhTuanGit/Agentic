@@ -1,0 +1,19 @@
+var pairs =
+{
+"ipv4":{"api":1,"interface":1}
+,"api":{"functions":1}
+,"functions":{"following":1,"ipv5":1,"functions":1,"description":1}
+,"following":{"table":1}
+,"table":{"subsection":1}
+,"subsection":{"includes":1}
+,"includes":{"ipv4":1}
+,"ipv5":{"api":1}
+,"description":{"hsl_ifmgr_ipv4_address_add":1}
+,"hsl_ifmgr_ipv4_address_add":{"adds":1}
+,"adds":{"ipv4":1}
+,"interface":{"address":1}
+,"address":{"hsl_ifmgr_ipv4_address_delete":1}
+,"hsl_ifmgr_ipv4_address_delete":{"deletes":1}
+,"deletes":{"ipv4":1}
+}
+;Search.control.loadWordPairs(pairs);

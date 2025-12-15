@@ -1,0 +1,22 @@
+var pairs =
+{
+"hal_apbf_group_status":{"structure":1,"{u_int32_t":1}
+,"structure":{"hal":1}
+,"hal":{"message":1}
+,"message":{"group":1}
+,"group":{"status":1}
+,"status":{"type":1}
+,"type":{"definition":1}
+,"definition":{"free_entry":1,"struct":1}
+,"free_entry":{"free":1,"u_int32_t":1}
+,"free":{"entries":1,"meters":1,"counters":1}
+,"entries":{"free_meter":1}
+,"free_meter":{"free":1,"u_int32_t":1}
+,"meters":{"free_count":1}
+,"free_count":{"free":1}
+,"counters":{"definition":1}
+,"struct":{"hal_apbf_group_status":1}
+,"{u_int32_t":{"free_entry":1}
+,"u_int32_t":{"free_meter":1,"free_count":1}
+}
+;Search.control.loadWordPairs(pairs);

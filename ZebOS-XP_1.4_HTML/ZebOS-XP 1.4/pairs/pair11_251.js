@@ -1,0 +1,20 @@
+var pairs =
+{
+"hold-priority":{"command":1,"<0-7>":1,"parameters":1,"(config-p2mp-lsp)":1}
+,"command":{"configure":1,"remove":1,"syntax":1,"mode":1}
+,"configure":{"hold":1}
+,"hold":{"priority":1}
+,"priority":{"p2mp":1,"command":1}
+,"p2mp":{"lsp":1}
+,"lsp":{"parameter":1,"command":1,"mode":1}
+,"parameter":{"command":1}
+,"remove":{"hold":1}
+,"syntax":{"hold-priority":1}
+,"<0-7>":{"hold-priority":1,"value":1}
+,"parameters":{"<0-7>":1}
+,"value":{"hold":1}
+,"mode":{"p2mp":1,"examples":1}
+,"examples":{"(config-p2mp-lsp)":1}
+,"(config-p2mp-lsp)":{"hold-priority":1}
+}
+;Search.control.loadWordPairs(pairs);

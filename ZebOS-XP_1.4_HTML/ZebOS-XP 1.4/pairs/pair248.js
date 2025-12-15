@@ -1,0 +1,24 @@
+var pairs =
+{
+"port":{"mirroring":1}
+,"mirroring":{"api":1,"functions":1,"hal_port_mirror_unset":1}
+,"api":{"following":1,"functions":1}
+,"following":{"subsection":1}
+,"subsection":{"includes":1}
+,"includes":{"port":1}
+,"functions":{"port":1,"functions":1,"description":1}
+,"description":{"hal_port_mirror_init":1}
+,"hal_port_mirror_init":{"function":1}
+,"function":{"initializes":1,"deinitializes":1,"sets":1,"unsets":1}
+,"initializes":{"port-mirroring":1}
+,"port-mirroring":{"hardware":1}
+,"hardware":{"layer":1}
+,"layer":{"hal_port_mirror_deinit":1,"hal_port_mirror_set":1}
+,"hal_port_mirror_deinit":{"function":1}
+,"deinitializes":{"port-mirroring":1}
+,"hal_port_mirror_set":{"function":1}
+,"sets":{"port":1}
+,"hal_port_mirror_unset":{"function":1}
+,"unsets":{"port":1}
+}
+;Search.control.loadWordPairs(pairs);

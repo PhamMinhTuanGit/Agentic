@@ -1,0 +1,24 @@
+var pairs =
+{
+"private":{"vlan":1,"port":1,"ports":1}
+,"vlan":{"(pvlan)":1}
+,"(pvlan)":{"switch":1}
+,"switch":{"ports":1,"traffic":1}
+,"ports":{"cannot":1}
+,"cannot":{"communicate":1}
+,"communicate":{"access":1}
+,"access":{"networks":1}
+,"networks":{"pvlan":1}
+,"pvlan":{"least":1}
+,"least":{"private":1}
+,"port":{"trunk":1,"traffic":1,"forwarded":1,"handled":1}
+,"trunk":{"port":1}
+,"traffic":{"received":1,"traffic":1,"communication":1}
+,"received":{"private":1,"trunk":1}
+,"forwarded":{"trunk":1}
+,"handled":{"normal":1}
+,"normal":{"switch":1}
+,"communication":{"occurs":1}
+,"occurs":{"private":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"customer":{"service":1}
+,"service":{"instance":1}
+,"instance":{"customer":1,"ethernet":1}
+,"ethernet":{"virtual":1,"island":1}
+,"virtual":{"connection":1}
+,"connection":{"(evc)":1}
+,"(evc)":{"identified":1}
+,"identified":{"s-vlan":1,"globally":1}
+,"s-vlan":{"(service":1}
+,"(service":{"vlan)":1}
+,"vlan)":{"within":1}
+,"within":{"ethernet":1}
+,"island":{"identified":1}
+,"globally":{"unique":1}
+,"unique":{"service":1}
+}
+;Search.control.loadWordPairs(pairs);

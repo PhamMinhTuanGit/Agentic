@@ -1,0 +1,23 @@
+var pairs =
+{
+"nssa":{"support":1}
+,"support":{"zebos-xp":1,"rfc":1}
+,"zebos-xp":{"provides":1}
+,"provides":{"partial":1}
+,"partial":{"support":1}
+,"rfc":{"4750":1}
+,"4750":{"private":1}
+,"private":{"mib":1}
+,"mib":{"defined":1,"defines":1}
+,"defined":{"ospf-private-mib.txt":1}
+,"ospf-private-mib.txt":{"object":1}
+,"object":{"identifier":1}
+,"identifier":{"1.3.6.1.4.1.36673.1.2.1":1}
+,"1.3.6.1.4.1.36673.1.2.1":{"(internet.private.enterprise.ipinfusion.mgmt.l3.ospf)":1}
+,"(internet.private.enterprise.ipinfusion.mgmt.l3.ospf)":{"mib":1}
+,"defines":{"complete":1}
+,"complete":{"ospfareaentry":1}
+,"ospfareaentry":{"group":1}
+,"group":{"rfc4750":1}
+}
+;Search.control.loadWordPairs(pairs);

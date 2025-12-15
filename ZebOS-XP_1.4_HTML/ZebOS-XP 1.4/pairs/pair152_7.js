@@ -1,0 +1,22 @@
+var pairs =
+{
+"explicit":{"route":1,"sequence":1}
+,"route":{"object":1}
+,"object":{"(ero)":1}
+,"(ero)":{"extension":1}
+,"extension":{"resource":1}
+,"resource":{"reservation":1}
+,"reservation":{"protocol":1}
+,"protocol":{"(rsvp)":1}
+,"(rsvp)":{"allows":1}
+,"allows":{"path":1}
+,"path":{"message":1}
+,"message":{"traverse":1}
+,"traverse":{"explicit":1}
+,"sequence":{"routers":1}
+,"routers":{"independent":1}
+,"independent":{"conventional":1}
+,"conventional":{"shortest-path":1}
+,"shortest-path":{"routing":1}
+}
+;Search.control.loadWordPairs(pairs);

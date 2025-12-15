@@ -1,0 +1,22 @@
+var pairs =
+{
+"segment":{"routing":1}
+,"routing":{"global":1,"node":1,"nodes":1}
+,"global":{"block":1,"segments":1}
+,"block":{"segment":1,"(srgb)":1}
+,"(srgb)":{"local":1}
+,"local":{"property":1,"labels":1,"label":1}
+,"property":{"segment":1}
+,"node":{"context":1}
+,"context":{"mpls":1}
+,"mpls":{"local":1}
+,"labels":{"global":1}
+,"segments":{"zebos-xp":1}
+,"zebos-xp":{"uses":1}
+,"uses":{"local":1}
+,"label":{"range":1}
+,"range":{"(1024000-1048319)":1}
+,"(1024000-1048319)":{"segment":1}
+,"nodes":{"srgb":1}
+}
+;Search.control.loadWordPairs(pairs);

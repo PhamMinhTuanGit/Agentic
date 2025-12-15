@@ -1,0 +1,22 @@
+var pairs =
+{
+"backbone":{"core":1,"vlan":1,"mac":1,"bridging":1}
+,"core":{"bridge":1}
+,"bridge":{"(bcb)":1}
+,"(bcb)":{"device":1}
+,"device":{"bridges":1}
+,"bridges":{"frames":1}
+,"frames":{"based":1}
+,"based":{"backbone":1}
+,"vlan":{"(b-vlan)":1}
+,"(b-vlan)":{"backbone":1}
+,"mac":{"address":1}
+,"address":{"(b-mac)":1}
+,"(b-mac)":{"information":1}
+,"information":{"provider":1}
+,"provider":{"backbone":1}
+,"bridging":{"(pbb)":1}
+,"(pbb)":{"network":1}
+,"network":{"core":1}
+}
+;Search.control.loadWordPairs(pairs);

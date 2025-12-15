@@ -1,0 +1,21 @@
+var pairs =
+{
+"unicast":{"reverse":1}
+,"reverse":{"path":1}
+,"path":{"forwarding":1}
+,"forwarding":{"chapter":1,"examples":1}
+,"chapter":{"contains":1}
+,"contains":{"basic":1}
+,"basic":{"ipv4":1}
+,"ipv4":{"ipv6":1}
+,"ipv6":{"unicast":1}
+,"examples":{"details":1,"network":1}
+,"details":{"commands":1}
+,"commands":{"used":1}
+,"used":{"examples":1}
+,"network":{"services":1}
+,"services":{"module":1}
+,"module":{"command":1}
+,"command":{"reference":1}
+}
+;Search.control.loadWordPairs(pairs);

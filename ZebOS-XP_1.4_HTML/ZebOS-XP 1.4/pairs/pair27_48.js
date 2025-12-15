@@ -1,0 +1,25 @@
+var pairs =
+{
+"mpls":{"local-packet-handling":1,"forwarder":1}
+,"local-packet-handling":{"command":1,"mpls":1,"parameters":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"labeling":1}
+,"labeling":{"locally":1}
+,"locally":{"generated":1}
+,"generated":{"tcp":1,"packets":1}
+,"tcp":{"packets":1}
+,"packets":{"locally":1,"looked":1,"command":1}
+,"looked":{"mpls":1}
+,"forwarder":{"parameter":1}
+,"parameter":{"command":1}
+,"disable":{"labeling":1}
+,"syntax":{"mpls":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mpls":1}
+}
+;Search.control.loadWordPairs(pairs);

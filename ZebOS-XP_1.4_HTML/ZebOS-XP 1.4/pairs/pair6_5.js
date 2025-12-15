@@ -1,0 +1,20 @@
+var pairs =
+{
+"location":{"default":1,"described":1}
+,"default":{"sample":1}
+,"sample":{"configuration":1}
+,"configuration":{"files":1,"file":1}
+,"files":{"sub-folders":1}
+,"sub-folders":{"respective":1}
+,"respective":{"module":1}
+,"module":{"however":1}
+,"however":{"start":1}
+,"start":{"daemon":1}
+,"daemon":{"load":1}
+,"load":{"configuration":1}
+,"file":{"different":1}
+,"different":{"location":1}
+,"described":{"loading":1}
+,"loading":{"configuration":1}
+}
+;Search.control.loadWordPairs(pairs);

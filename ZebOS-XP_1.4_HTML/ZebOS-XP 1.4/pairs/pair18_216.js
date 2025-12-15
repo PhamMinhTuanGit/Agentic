@@ -1,0 +1,22 @@
+var pairs =
+{
+"high":{"availability":1}
+,"availability":{"description":1,"separate":1}
+,"description":{"high-availability":1,"http:\u002F\u002Fwww.ipinfusion.com\u002Fproducts\u002Fhas\u002Fproducts_has.html":1}
+,"high-availability":{"mechanism":1}
+,"mechanism":{"implemented":1}
+,"implemented":{"please":1}
+,"please":{"following":1}
+,"following":{"link":1}
+,"link":{"product":1}
+,"product":{"description":1}
+,"http:\u002F\u002Fwww.ipinfusion.com\u002Fproducts\u002Fhas\u002Fproducts_has.html":{"zebos-xp":1}
+,"zebos-xp":{"support":1}
+,"support":{"high":1}
+,"separate":{"protocols":1}
+,"protocols":{"run":1}
+,"run":{"individual":1}
+,"individual":{"line":1}
+,"line":{"cards":1}
+}
+;Search.control.loadWordPairs(pairs);

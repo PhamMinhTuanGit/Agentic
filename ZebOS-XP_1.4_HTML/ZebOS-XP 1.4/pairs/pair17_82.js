@@ -1,0 +1,27 @@
+var pairs =
+{
+"mstp_nsm_recv_interface_delete":{"function":1,"(struct":1}
+,"function":{"receives":1}
+,"receives":{"interface":1}
+,"interface":{"name":1,"*ifp)":1,"structure":1}
+,"name":{"delete":1}
+,"delete":{"messages":1}
+,"messages":{"nsm":1}
+,"nsm":{"syntax":1}
+,"syntax":{"static":1}
+,"static":{"int":1}
+,"int":{"mstp_nsm_recv_interface_delete":1}
+,"(struct":{"interface":1}
+,"*ifp)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ifp":1,"none":1}
+,"ifp":{"reference":1}
+,"reference":{"interface":1}
+,"structure":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"result_ok":1}
+,"result_ok":{"always":1}
+}
+;Search.control.loadWordPairs(pairs);

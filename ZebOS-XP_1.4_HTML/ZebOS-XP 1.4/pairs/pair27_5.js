@@ -1,0 +1,20 @@
+var pairs =
+{
+"route":{"map":1,"maps":1}
+,"map":{"support":1}
+,"support":{"control":1}
+,"control":{"mechanism":1,"modify":1}
+,"mechanism":{"route":1}
+,"maps":{"used":1}
+,"used":{"bgp":1}
+,"bgp":{"control":1}
+,"modify":{"routing":1}
+,"routing":{"information":1,"processes":1}
+,"information":{"define":1}
+,"define":{"conditions":1}
+,"conditions":{"routes":1}
+,"routes":{"redistributed":1}
+,"redistributed":{"routers":1}
+,"routers":{"routing":1}
+}
+;Search.control.loadWordPairs(pairs);

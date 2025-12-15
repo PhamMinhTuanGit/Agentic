@@ -1,0 +1,25 @@
+var pairs =
+{
+"management":{"interface":1,"protocol":1}
+,"interface":{"zebos-xp":1,"includes":1,"simple":1,"language":1}
+,"zebos-xp":{"provides":1}
+,"provides":{"comprehensive":1}
+,"comprehensive":{"tools":1}
+,"tools":{"manage":1}
+,"manage":{"configure":1}
+,"configure":{"operate":1}
+,"operate":{"routing":1}
+,"routing":{"switching":1}
+,"switching":{"protocols":1}
+,"protocols":{"management":1}
+,"includes":{"command":1}
+,"command":{"line":1}
+,"line":{"interface":1}
+,"simple":{"network":1,"management":1}
+,"network":{"management":1}
+,"protocol":{"simple":1}
+,"language":{"application":1}
+,"application":{"programming":1}
+,"programming":{"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

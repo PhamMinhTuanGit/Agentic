@@ -1,0 +1,23 @@
+var pairs =
+{
+"notifications":{"zebos-xp":1,"mplstunnelup":1,"object":1}
+,"zebos-xp":{"generates":1}
+,"generates":{"notifications":1}
+,"mplstunnelup":{"mplstunneldown":1,"n\u002Fa":1}
+,"mplstunneldown":{"mplstunnelrerouted":1,"n\u002Fa":1}
+,"mplstunnelrerouted":{"notifications":1,"n\u002Fa":1}
+,"object":{"type":1}
+,"type":{"syntax":1}
+,"syntax":{"access":1}
+,"access":{"functions":1}
+,"functions":{"mplstunnelnotificationenable":1}
+,"mplstunnelnotificationenable":{"truthvalue":1}
+,"truthvalue":{"read-write":1}
+,"read-write":{"rsvp_snmp_get_tn_notify_en":1}
+,"rsvp_snmp_get_tn_notify_en":{"rsvp_snmp_set_tn_notify_en":1}
+,"rsvp_snmp_set_tn_notify_en":{"mplstunnelup":1}
+,"n\u002Fa":{"n\u002Fa":1,"rsvp_tn_up":1,"rsvp_tn_down":1,"rsvp_tn_reroute":1}
+,"rsvp_tn_up":{"mplstunneldown":1}
+,"rsvp_tn_down":{"mplstunnelrerouted":1}
+}
+;Search.control.loadWordPairs(pairs);

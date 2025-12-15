@@ -1,0 +1,24 @@
+var pairs =
+{
+"spanning-tree":{"te-msti":1}
+,"te-msti":{"configuration":1}
+,"configuration":{"command":1,"mode":1,"parameters":1,"(config-te-msti)":1}
+,"command":{"used":1,"enter":1,"syntax":1,"mode":1}
+,"used":{"put":1}
+,"put":{"terminal":1}
+,"terminal":{"te-msti":1,"(config)":1}
+,"mode":{"creating":1,"command":1,"configure":1,"examples":1}
+,"creating":{"bridge":1}
+,"bridge":{"instance":1}
+,"instance":{"adding":1,"command":1}
+,"adding":{"vlan":1}
+,"vlan":{"bridge":1}
+,"enter":{"te-msti":1}
+,"syntax":{"spanning-tree":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"(config)":{"spanning-tree":1}
+}
+;Search.control.loadWordPairs(pairs);

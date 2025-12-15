@@ -1,0 +1,22 @@
+var pairs =
+{
+"running":{"zebos-xp":1}
+,"zebos-xp":{"daemons":1}
+,"daemons":{"appendix":1,"table":1,"configuration":1,"may":1}
+,"appendix":{"instructions":1}
+,"instructions":{"starting":1}
+,"starting":{"stopping":1}
+,"stopping":{"configuring":1}
+,"configuring":{"zebos-xp":1}
+,"table":{"lists":1}
+,"lists":{"daemons":1}
+,"configuration":{"files":1}
+,"files":{"port":1}
+,"port":{"numbers":1}
+,"numbers":{"daemons":1}
+,"may":{"enabled":1}
+,"enabled":{"modules":1}
+,"modules":{"licensed":1}
+,"licensed":{"purchased":1}
+}
+;Search.control.loadWordPairs(pairs);

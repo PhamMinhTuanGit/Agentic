@@ -1,0 +1,22 @@
+var pairs =
+{
+"bfd":{"gtsm":1}
+,"gtsm":{"ttl":1}
+,"ttl":{"command":1,"(time":1,"<1-255>":1,"123":1}
+,"command":{"sets":1,"syntax":1,"mode":1}
+,"sets":{"bfd":1}
+,"(time":{"live)":1}
+,"live)":{"value":1}
+,"value":{"command":1}
+,"syntax":{"bfd":1}
+,"<1-255>":{"parameters":1,"allowed":1}
+,"parameters":{"<1-255>":1}
+,"allowed":{"range":1}
+,"range":{"ttl":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"bfd":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"hsl_ifmgr_deinit":{"function":1,"(void)":1}
+,"function":{"deinitializes":1}
+,"deinitializes":{"hsl":1}
+,"hsl":{"interface":1}
+,"interface":{"manager":1}
+,"manager":{"syntax":1}
+,"syntax":{"int":1}
+,"int":{"hsl_ifmgr_deinit":1}
+,"(void)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,22 @@
+var pairs =
+{
+"mpls_owner_fwd":{"data":1,"{\u002F*ipi_proto_xxx":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"mpls":1}
+,"mpls":{"owner":1}
+,"owner":{"functions":1}
+,"functions":{"defined":1}
+,"defined":{"hal\u002Fmpls\u002Fhal_mpls_types.h":1}
+,"hal\u002Fmpls\u002Fhal_mpls_types.h":{"definition":1}
+,"definition":{"struct":1}
+,"struct":{"mpls_owner_fwd":1}
+,"{\u002F*ipi_proto_xxx":{"*\u002Fu_char":1}
+,"*\u002Fu_char":{"protocol":1}
+,"protocol":{"union":1}
+,"union":{"{struct":1}
+,"{struct":{"rsvp_key_fwd":1}
+,"rsvp_key_fwd":{"r_key":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,22 @@
+var pairs =
+{
+"header":{"portion":1}
+,"portion":{"protocol":1}
+,"protocol":{"data":1}
+,"data":{"unit":1}
+,"unit":{"(pdu)":1}
+,"(pdu)":{"contains":1}
+,"contains":{"control":1}
+,"control":{"information":1}
+,"information":{"message":1}
+,"message":{"destination":1,"priority":1}
+,"destination":{"address":1}
+,"address":{"source":1,"input":1}
+,"source":{"address":1}
+,"input":{"sequence":1}
+,"sequence":{"number":1}
+,"number":{"type":1}
+,"type":{"message":1}
+,"priority":{"level":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,20 @@
+var pairs =
+{
+"memory":{"manager":1}
+,"manager":{"option":1}
+,"option":{"flag":1}
+,"flag":{"description":1}
+,"description":{"--enable-memmgr":1}
+,"--enable-memmgr":{"enable":1}
+,"enable":{"allocation":1}
+,"allocation":{"methods":1}
+,"methods":{"various":1}
+,"various":{"mtypes":1}
+,"mtypes":{"--disable-memmgr":1}
+,"--disable-memmgr":{"disable":1}
+,"disable":{"allows":1}
+,"allows":{"heap":1}
+,"heap":{"method":1}
+,"method":{"(default)":1}
+}
+;Search.control.loadWordPairs(pairs);

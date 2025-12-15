@@ -1,0 +1,19 @@
+var pairs =
+{
+"vrrp":{"snmp":1}
+,"snmp":{"api":1}
+,"api":{"chapter":1}
+,"chapter":{"describes":1}
+,"describes":{"virtual":1}
+,"virtual":{"router":1}
+,"router":{"redundancy":1}
+,"redundancy":{"protocol":1}
+,"protocol":{"(vrrp)":1}
+,"(vrrp)":{"management":1}
+,"management":{"information":1}
+,"information":{"base":1}
+,"base":{"(mib)":1}
+,"(mib)":{"implemented":1}
+,"implemented":{"zebos-xp":1}
+}
+;Search.control.loadWordPairs(pairs);

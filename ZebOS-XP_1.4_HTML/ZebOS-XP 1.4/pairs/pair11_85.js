@@ -1,0 +1,25 @@
+var pairs =
+{
+"elmi_nsm_recv_msg_done":{"api":1,"(struct":1}
+,"api":{"call":1}
+,"call":{"int":1}
+,"int":{"elmi_nsm_recv_msg_done":1}
+,"(struct":{"nsm_msg_header":1}
+,"nsm_msg_header":{"*header":1}
+,"*header":{"void":1}
+,"void":{"*arg":1,"*message)":1}
+,"*arg":{"void":1}
+,"*message)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"header":1,"none":1}
+,"header":{"pointer":1,"arg":1}
+,"pointer":{"nsm":1,"message":1}
+,"nsm":{"message":1,"connection":1}
+,"message":{"header":1,"pointer":1,"structure":1}
+,"arg":{"pointer":1}
+,"connection":{"handler":1}
+,"handler":{"message":1}
+,"structure":{"output":1}
+,"output":{"parameters":1}
+}
+;Search.control.loadWordPairs(pairs);

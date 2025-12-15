@@ -1,0 +1,23 @@
+var pairs =
+{
+"ethernet":{"cfm":1}
+,"cfm":{"pbb-te":1}
+,"pbb-te":{"traceroute":1}
+,"traceroute":{"cache":1}
+,"cache":{"command":1,"backbone":1,"bridge":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"traceroute":1}
+,"backbone":{"bridge":1,"ethernet":1,"parameters":1,"(config)":1}
+,"bridge":{"form":1,"backbone":1}
+,"form":{"command":1}
+,"disable":{"traceroute":1}
+,"syntax":{"ethernet":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"ethernet":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,23 @@
+var pairs =
+{
+"exit-me":{"command":1,"parameters":1,"(config-ietf-meg)":1}
+,"command":{"exit":1,"syntax":1,"mode":1}
+,"exit":{"ietf":1}
+,"ietf":{"mode":1,"meg":1}
+,"mode":{"return":1,"command":1,"ietf":1,"examples":1}
+,"return":{"ietf":1}
+,"meg":{"mode":1,"meg1":1}
+,"syntax":{"exit-me":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"examples":{"(config)":1}
+,"(config)":{"ietf":1}
+,"meg1":{"(config-ietf-meg)":1}
+,"(config-ietf-meg)":{"me1":1}
+,"me1":{"tunnel":1}
+,"tunnel":{"(config-ietf-me)":1,"tun1":1}
+,"(config-ietf-me)":{"service":1,"exit-me":1}
+,"service":{"tunnel":1}
+,"tun1":{"(config-ietf-me)":1}
+}
+;Search.control.loadWordPairs(pairs);

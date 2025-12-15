@@ -1,0 +1,26 @@
+var pairs =
+{
+"rsvp_api_if_ack_wait_timeout_set":{"call":1,"(struct":1}
+,"call":{"sets":1}
+,"sets":{"ack":1}
+,"ack":{"wait":1}
+,"wait":{"timeout":1}
+,"timeout":{"interface":1,"ack":1,"output":1}
+,"interface":{"syntax":1,"timeout":1}
+,"syntax":{"void":1}
+,"void":{"rsvp_api_if_ack_wait_timeout_set":1}
+,"(struct":{"rsvp_interface":1}
+,"rsvp_interface":{"*rsvpif":1}
+,"*rsvpif":{"u_int16_t":1}
+,"u_int16_t":{"timeout)":1}
+,"timeout)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"rsvpif":1,"none":1}
+,"rsvpif":{"rsvp":1}
+,"rsvp":{"interface":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

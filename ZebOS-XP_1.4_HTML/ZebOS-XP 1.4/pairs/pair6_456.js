@@ -1,0 +1,17 @@
+var pairs =
+{
+"ntp":{"enable":1,"form":1,"command":1,"enableg":1}
+,"enable":{"command":1,"ntp":1,"parameters":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"form":{"command":1}
+,"disable":{"ntp":1}
+,"syntax":{"ntp":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"ntp":1}
+}
+;Search.control.loadWordPairs(pairs);

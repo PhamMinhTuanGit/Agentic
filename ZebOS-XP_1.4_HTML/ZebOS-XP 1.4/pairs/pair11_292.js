@@ -1,0 +1,22 @@
+var pairs =
+{
+"clear":{"rbridge":1}
+,"rbridge":{"trill":1}
+,"trill":{"command":1,"instance":1,"(<1-32>":1,"process":1}
+,"command":{"reset":1,"syntax":1,"mode":1}
+,"reset":{"trill":1}
+,"instance":{"ids":1,"identifier":1}
+,"ids":{"command":1}
+,"syntax":{"clear":1}
+,"(<1-32>":{"process":1}
+,"process":{"parameters":1,"specify":1,"command":1}
+,"parameters":{"<1-32>":1}
+,"<1-32>":{"specify":1}
+,"specify":{"trill":1,"reset":1}
+,"identifier":{"process":1}
+,"mode":{"exec":1,"privilege":1,"examples":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"examples":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

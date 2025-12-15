@@ -1,0 +1,23 @@
+var pairs =
+{
+"maximum":{"transmission":1,"number":1}
+,"transmission":{"unit":1}
+,"unit":{"(mtu)":1}
+,"(mtu)":{"maximum":1}
+,"number":{"bytes":1}
+,"bytes":{"packet":1,"(data":1}
+,"packet":{"frame":1}
+,"frame":{"ethernet":1}
+,"ethernet":{"default":1,"mtu":1}
+,"default":{"mtu":1}
+,"mtu":{"1500":1,"defined":1}
+,"1500":{"bytes":1}
+,"(data":{"payload)":1}
+,"payload)":{"media":1}
+,"media":{"different":1}
+,"different":{"sizes":1}
+,"sizes":{"ethernet":1}
+,"defined":{"rfc":1}
+,"rfc":{"894":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,27 @@
+var pairs =
+{
+"msdp":{"mesh":1}
+,"mesh":{"group":1,"groups":1}
+,"group":{"msdp":1,"forwarded":1,"reduces":1}
+,"groups":{"used":1}
+,"used":{"inside":1}
+,"inside":{"pim-sm":1}
+,"pim-sm":{"domain":1}
+,"domain":{"ease":1,"messages":1}
+,"ease":{"rpf":1}
+,"rpf":{"checking":1}
+,"checking":{"forwarding":1}
+,"forwarding":{"within":1}
+,"within":{"domain":1}
+,"messages":{"received":1}
+,"received":{"peer":1}
+,"peer":{"mesh":1}
+,"forwarded":{"peers":1}
+,"peers":{"mesh":1}
+,"reduces":{"message":1}
+,"message":{"flooding":1}
+,"flooding":{"simplifies":1}
+,"simplifies":{"peer-rpf":1}
+,"peer-rpf":{"flooding":1}
+}
+;Search.control.loadWordPairs(pairs);

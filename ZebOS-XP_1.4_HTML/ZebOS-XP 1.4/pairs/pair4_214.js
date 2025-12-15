@@ -1,0 +1,21 @@
+var pairs =
+{
+"gvrp":{"applicant":1}
+,"applicant":{"command":1,"state":1}
+,"command":{"gvrp":1,"syntax":1,"mode":1}
+,"state":{"normal":1,"active":1,"if_name":1}
+,"normal":{"active":1,"if_name":1,"sets":1,"state":1}
+,"active":{"command":1,"if_name":1,"sets":1,"state":1,"eth0":1}
+,"syntax":{"gvrp":1}
+,"if_name":{"gvrp":1,"parameters":1,"name":1}
+,"parameters":{"active":1}
+,"sets":{"active":1,"normal":1}
+,"name":{"interface":1}
+,"interface":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"gvrp":1}
+}
+;Search.control.loadWordPairs(pairs);

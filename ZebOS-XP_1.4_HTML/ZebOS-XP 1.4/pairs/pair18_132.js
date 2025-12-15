@@ -1,0 +1,23 @@
+var pairs =
+{
+"proxy-arp":{"command":1,"proxy-arp":1,"parameters":1}
+,"command":{"enable":1,"syntax":1,"mode":1}
+,"enable":{"proxy":1}
+,"proxy":{"arp":1}
+,"arp":{"feature":1}
+,"feature":{"interface":1}
+,"interface":{"parameter":1,"command":1,"mode":1,"eth0":1}
+,"parameter":{"disable":1}
+,"disable":{"proxy":1}
+,"syntax":{"proxy-arp":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"interface":1,"example":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"proxy-arp":1}
+}
+;Search.control.loadWordPairs(pairs);

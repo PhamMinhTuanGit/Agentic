@@ -1,0 +1,26 @@
+var pairs =
+{
+"contents":{"document":1}
+,"document":{"contains":1}
+,"contains":{"chapters":1}
+,"chapters":{"appendices":1}
+,"appendices":{"chapter":1}
+,"chapter":{"building":1}
+,"building":{"zebos-xp":1}
+,"zebos-xp":{"fedora":1,"debian":1,"daemons":1,"wind":1}
+,"fedora":{"chapter":1}
+,"debian":{"appendix":1}
+,"appendix":{"build":1,"running":1,"install":1,"configure":1,"building":1,"information":1}
+,"build":{"configuration":1,"debian":1}
+,"configuration":{"options":1}
+,"options":{"appendix":1}
+,"running":{"zebos-xp":1}
+,"daemons":{"appendix":1}
+,"install":{"build":1}
+,"configure":{"snmp":1}
+,"snmp":{"appendix":1}
+,"wind":{"river":1}
+,"river":{"linux":1}
+,"linux":{"appendix":1}
+}
+;Search.control.loadWordPairs(pairs);

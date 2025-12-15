@@ -1,0 +1,24 @@
+var pairs =
+{
+"maximum-access-list":{"command":1,"<1-4294967294>":1,"parameters":1,"123":1}
+,"command":{"maximum":1,"command":1,"syntax":1,"mode":1}
+,"maximum":{"number":1}
+,"number":{"access-list":1,"access":1}
+,"access-list":{"entries":1}
+,"entries":{"parameter":1}
+,"parameter":{"disable":1}
+,"disable":{"command":1}
+,"syntax":{"maximum-access-list":1}
+,"<1-4294967294>":{"maximum-access-list":1,"specify":1}
+,"parameters":{"<1-4294967294>":1}
+,"specify":{"maximum":1}
+,"access":{"lists":1}
+,"lists":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"maximum-access-list":1}
+,"123":{"(config)":1}
+}
+;Search.control.loadWordPairs(pairs);

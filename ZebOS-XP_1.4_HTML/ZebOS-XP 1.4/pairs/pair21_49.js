@@ -1,0 +1,23 @@
+var pairs =
+{
+"host2":{"[[root@host-2":1}
+,"[[root@host-2":{"root]":1}
+,"root]":{"vconfig":1,"ifconfig":1}
+,"vconfig":{"add":1}
+,"add":{"eth0":1}
+,"eth0":{"configure":1}
+,"configure":{"tagged":1,"address":1}
+,"tagged":{"interface":1}
+,"interface":{"vlan":1,"[root@host-2":1}
+,"vlan":{"[root@host-2":1,"tagged":1}
+,"[root@host-2":{"root]":1}
+,"ifconfig":{"eth0.2":1,"eth0.3":1,"eth0.4":1}
+,"eth0.2":{"2.2.2.2":1}
+,"2.2.2.2":{"configure":1}
+,"address":{"vlan":1}
+,"eth0.3":{"3.3.3.2":1}
+,"3.3.3.2":{"configure":1}
+,"eth0.4":{"4.4.4.2":1}
+,"4.4.4.2":{"configure":1}
+}
+;Search.control.loadWordPairs(pairs);

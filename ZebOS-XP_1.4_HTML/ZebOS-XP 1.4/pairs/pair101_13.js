@@ -1,0 +1,26 @@
+var pairs =
+{
+"rsvp_snmp_get_tn_ix_next":{"function":1,"(u_int32_t":1}
+,"function":{"gets":1,"succeeds":1}
+,"gets":{"next":1}
+,"next":{"available":1}
+,"available":{"tunnel":1}
+,"tunnel":{"index":1}
+,"index":{"syntax":1,"return":1}
+,"syntax":{"u_int32_t":1}
+,"u_int32_t":{"rsvp_snmp_get_tn_ix_next":1}
+,"(u_int32_t":{"*ret)":1}
+,"*ret)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1,"ret":1}
+,"none":{"output":1}
+,"output":{"parameters":1}
+,"ret":{"next":1}
+,"return":{"value":1}
+,"value":{"rsvp_api_get_success":1}
+,"rsvp_api_get_success":{"function":1}
+,"succeeds":{"rsvp_api_get_error":1}
+,"rsvp_api_get_error":{"internal":1}
+,"internal":{"error":1}
+}
+;Search.control.loadWordPairs(pairs);

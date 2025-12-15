@@ -1,0 +1,26 @@
+var pairs =
+{
+"bgp":{"-mib":1}
+,"-mib":{"(get\u002Fset)":1}
+,"(get\u002Fset)":{"ipv4":1}
+,"ipv4":{"defines":1}
+,"defines":{"portion":1}
+,"portion":{"management":1}
+,"management":{"information":1,"protocols":1}
+,"information":{"base":1}
+,"base":{"(mib)":1}
+,"(mib)":{"network":1}
+,"network":{"management":1}
+,"protocols":{"internet":1}
+,"internet":{"community":1}
+,"community":{"describes":1}
+,"describes":{"managed":1}
+,"managed":{"objects":1}
+,"objects":{"used":1}
+,"used":{"managing":1}
+,"managing":{"border":1}
+,"border":{"gateway":1}
+,"gateway":{"protocol":1}
+,"protocol":{"version":1}
+}
+;Search.control.loadWordPairs(pairs);

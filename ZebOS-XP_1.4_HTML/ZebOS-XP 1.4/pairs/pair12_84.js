@@ -1,0 +1,23 @@
+var pairs =
+{
+"evb":{"reflective-relay":1}
+,"reflective-relay":{"command":1,"(enable":1,"disable":1}
+,"command":{"enable":1,"syntax":1,"mode":1}
+,"enable":{"disable":1,"enable":1,"reflective":1}
+,"disable":{"reflective":1,"disable":1}
+,"reflective":{"relay":1}
+,"relay":{"command":1,"disable":1}
+,"syntax":{"evb":1}
+,"(enable":{"disable)":1}
+,"disable)":{"parameters":1}
+,"parameters":{"enable":1}
+,"mode":{"interface":1,"examples":1}
+,"interface":{"mode":1,"eth0":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"evb":1}
+}
+;Search.control.loadWordPairs(pairs);

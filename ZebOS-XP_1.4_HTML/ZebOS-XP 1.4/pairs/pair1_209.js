@@ -1,0 +1,23 @@
+var pairs =
+{
+"integrated":{"management":1}
+,"management":{"interface":1,"plane":1}
+,"interface":{"integrated":1,"(imi)":1}
+,"(imi)":{"imi":1}
+,"imi":{"shell":1,"advanced":1}
+,"shell":{"(imish)":1}
+,"(imish)":{"support":1}
+,"support":{"layer":1}
+,"layer":{"layer":1,"components":1}
+,"components":{"imi":1,"key":1,"third-party":1}
+,"advanced":{"management":1}
+,"plane":{"integrating":1}
+,"integrating":{"features":1}
+,"features":{"zebos-xp":1}
+,"zebos-xp":{"layer":1}
+,"key":{"operating":1}
+,"operating":{"system":1}
+,"system":{"components":1}
+,"third-party":{"applications":1}
+}
+;Search.control.loadWordPairs(pairs);

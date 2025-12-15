@@ -1,0 +1,26 @@
+var pairs =
+{
+"configure":{"s-vlan":1}
+,"s-vlan":{"i-sid":1}
+,"i-sid":{"mapping":1}
+,"mapping":{"cnp":1,"provided":1}
+,"cnp":{"following":1,"service":1}
+,"following":{"figure":1}
+,"figure":{"displays":1}
+,"displays":{"flow":1}
+,"flow":{"followed":1}
+,"followed":{"s-vlan":1}
+,"provided":{"ports":1}
+,"ports":{"configured":1,"configure":1}
+,"configured":{"customer":1}
+,"customer":{"network":1}
+,"network":{"ports":1}
+,"service":{"instance-related":1}
+,"instance-related":{"provisioning":1}
+,"provisioning":{"requires":1}
+,"requires":{"nsm":1}
+,"nsm":{"internal":1}
+,"internal":{"table":1}
+,"table":{"update":1}
+}
+;Search.control.loadWordPairs(pairs);

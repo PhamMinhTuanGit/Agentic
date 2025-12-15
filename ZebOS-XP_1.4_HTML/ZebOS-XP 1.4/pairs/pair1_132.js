@@ -1,0 +1,21 @@
+var pairs =
+{
+"g.8032":{"(erps)":1,"ethernet":1}
+,"(erps)":{"version":1}
+,"version":{"chapter":1,"refers":1}
+,"chapter":{"describes":1}
+,"describes":{"zebos-xp":1}
+,"zebos-xp":{"implementation":1}
+,"implementation":{"itu-t":1}
+,"itu-t":{"g.8032":1,"recommendation":1}
+,"ethernet":{"ring":1}
+,"ring":{"protection":1}
+,"protection":{"switching":1}
+,"switching":{"(erps)":1}
+,"refers":{"itu-t":1}
+,"recommendation":{"g.8032\u002Fy.1344":1}
+,"g.8032\u002Fy.1344":{"published":1}
+,"published":{"february":1}
+,"february":{"2012":1}
+}
+;Search.control.loadWordPairs(pairs);

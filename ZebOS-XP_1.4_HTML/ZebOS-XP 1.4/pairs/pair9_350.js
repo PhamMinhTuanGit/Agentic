@@ -1,0 +1,21 @@
+var pairs =
+{
+"authentication":{"single":1}
+,"single":{"key":1}
+,"key":{"zebos-xp":1,"multiple":1}
+,"zebos-xp":{"rip":1}
+,"rip":{"provides":1}
+,"provides":{"choice":1}
+,"choice":{"configuring":1}
+,"configuring":{"authentication":1}
+,"multiple":{"keys":1}
+,"keys":{"example":1}
+,"example":{"shows":1}
+,"shows":{"authenticating":1}
+,"authenticating":{"routing":1}
+,"routing":{"information":1}
+,"information":{"exchange":1}
+,"exchange":{"using":1}
+,"using":{"single":1}
+}
+;Search.control.loadWordPairs(pairs);

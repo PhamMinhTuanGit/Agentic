@@ -1,0 +1,23 @@
+var pairs =
+{
+"clear":{"isis":1,"interface":1}
+,"isis":{"interface":1}
+,"interface":{"counter":1,"counters":1,"name":1}
+,"counter":{"command":1,"(ifname":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"counters":{"specify":1,"interfaces":1}
+,"specify":{"parameter":1}
+,"parameter":{"counters":1}
+,"interfaces":{"cleared":1}
+,"cleared":{"command":1}
+,"syntax":{"clear":1}
+,"(ifname":{"parameters":1}
+,"parameters":{"ifname":1}
+,"ifname":{"interface":1}
+,"name":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

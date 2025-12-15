@@ -1,0 +1,21 @@
+var pairs =
+{
+"prerequisites":{"interfaces":1}
+,"interfaces":{"running":1}
+,"running":{"open":1,"ldp":1}
+,"open":{"shortest":1}
+,"shortest":{"path":1}
+,"path":{"first":1}
+,"first":{"(ospf)":1}
+,"(ospf)":{"intermediate":1}
+,"intermediate":{"system-to-intermediate":1}
+,"system-to-intermediate":{"system":1}
+,"system":{"(is-is)":1}
+,"(is-is)":{"processes":1}
+,"processes":{"capable":1}
+,"capable":{"ldp-igp":1}
+,"ldp-igp":{"synchronization":1}
+,"synchronization":{"router":1}
+,"router":{"running":1}
+}
+;Search.control.loadWordPairs(pairs);

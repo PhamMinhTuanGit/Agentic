@@ -1,0 +1,21 @@
+var pairs =
+{
+"notation":{"used":1}
+,"used":{"multicast":1}
+,"multicast":{"enumerates":1,"group":1}
+,"enumerates":{"shortest":1}
+,"shortest":{"path":1}
+,"path":{"tree":1}
+,"tree":{"(spt)":1}
+,"(spt)":{"address":1}
+,"address":{"source":1,"identifies":1,"multicast":1}
+,"source":{"multicast":1,"192.1.1.1":1,"group":1}
+,"group":{"address":1,"224.1.1.1":1,"written":1}
+,"identifies":{"receivers":1}
+,"receivers":{"address":1}
+,"192.1.1.1":{"address":1}
+,"224.1.1.1":{"source":1}
+,"written":{"(192.1.1.1":1}
+,"(192.1.1.1":{"224.1.1.1)":1}
+}
+;Search.control.loadWordPairs(pairs);

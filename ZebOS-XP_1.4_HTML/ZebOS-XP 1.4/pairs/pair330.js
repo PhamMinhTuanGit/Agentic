@@ -1,0 +1,21 @@
+var pairs =
+{
+"resource":{"reservation":1}
+,"reservation":{"protocol":1}
+,"protocol":{"(rsvp)":1,"reserving":1,"traffic":1}
+,"(rsvp)":{"signalling":1}
+,"signalling":{"protocol":1}
+,"reserving":{"resources":1}
+,"resources":{"across":1}
+,"across":{"network":1}
+,"network":{"rsvp":1}
+,"rsvp":{"rarely":1}
+,"rarely":{"used":1}
+,"used":{"itself":1}
+,"itself":{"resource":1}
+,"traffic":{"engineering":1}
+,"engineering":{"(rsvp-te)":1}
+,"(rsvp-te)":{"widely":1}
+,"widely":{"used":1}
+}
+;Search.control.loadWordPairs(pairs);

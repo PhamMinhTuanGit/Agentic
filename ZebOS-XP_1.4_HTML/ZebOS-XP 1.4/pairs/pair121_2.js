@@ -1,0 +1,27 @@
+var pairs =
+{
+"hal_if_set_ether_type":{"function":1,"(unsigned":1}
+,"function":{"sets":1,"fails":1,"succeeds":1}
+,"sets":{"port":1}
+,"port":{"ethernet":1}
+,"ethernet":{"type":1}
+,"type":{"syntax":1,"output":1}
+,"syntax":{"int":1}
+,"int":{"hal_if_set_ether_type":1,"ifindex":1}
+,"(unsigned":{"int":1}
+,"ifindex":{"u_int16_t":1,"interface":1}
+,"u_int16_t":{"etype)":1}
+,"etype)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ifindex":1,"none":1}
+,"interface":{"index":1}
+,"index":{"etype":1}
+,"etype":{"ethernet":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"function":1}
+,"fails":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

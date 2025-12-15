@@ -1,0 +1,19 @@
+var pairs =
+{
+"source":{"routing":1}
+,"routing":{"technique":1}
+,"technique":{"sender":1}
+,"sender":{"protocol":1}
+,"protocol":{"data":1}
+,"data":{"unit":1}
+,"unit":{"(pdu)":1}
+,"(pdu)":{"partially":1}
+,"partially":{"completely":1}
+,"completely":{"specify":1}
+,"specify":{"route":1}
+,"route":{"pdu":1}
+,"pdu":{"network":1}
+,"network":{"segment":1}
+,"segment":{"routing":1}
+}
+;Search.control.loadWordPairs(pairs);

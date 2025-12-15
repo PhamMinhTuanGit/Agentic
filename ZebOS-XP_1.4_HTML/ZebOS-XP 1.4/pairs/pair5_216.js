@@ -1,0 +1,19 @@
+var pairs =
+{
+"port":{"protocol":1,"information":1}
+,"protocol":{"classification":1,"identification":1}
+,"classification":{"(802.1v)":1,"amendment":1,"based":1}
+,"(802.1v)":{"port":1}
+,"amendment":{"802.1q":1}
+,"802.1q":{"classify":1}
+,"classify":{"incoming":1}
+,"incoming":{"packets":1}
+,"packets":{"methods":1}
+,"methods":{"source":1}
+,"source":{"port":1}
+,"information":{"specifically":1}
+,"specifically":{"classification":1}
+,"based":{"data-link-layer":1}
+,"data-link-layer":{"protocol":1}
+}
+;Search.control.loadWordPairs(pairs);

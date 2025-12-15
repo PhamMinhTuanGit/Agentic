@@ -1,0 +1,21 @@
+var pairs =
+{
+"mpls":{"forwarder":1,"apis":1,"rib":1}
+,"forwarder":{"rsvp-te":1,"required":1}
+,"rsvp-te":{"uses":1,"forwarder":1}
+,"uses":{"mpls":1}
+,"apis":{"provided":1}
+,"provided":{"nsm":1}
+,"nsm":{"populate":1,"nsm":1,"may":1}
+,"populate":{"ilm":1}
+,"ilm":{"ftn":1}
+,"ftn":{"entries":1,"entry":1}
+,"entries":{"mpls":1}
+,"rib":{"mpls":1,"maintained":1}
+,"maintained":{"nsm":1}
+,"may":{"choose":1}
+,"choose":{"install":1}
+,"install":{"ilm":1}
+,"entry":{"rsvp-te":1}
+}
+;Search.control.loadWordPairs(pairs);

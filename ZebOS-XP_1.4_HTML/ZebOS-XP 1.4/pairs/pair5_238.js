@@ -1,0 +1,23 @@
+var pairs =
+{
+"ldp-igp":{"synchronization":1}
+,"synchronization":{"ospf":1,"enabled":1,"achieved":1}
+,"ospf":{"igp":1,"sends":1}
+,"igp":{"synchronization":1}
+,"enabled":{"ospf-enabled":1}
+,"ospf-enabled":{"interfaces":1}
+,"interfaces":{"ospf":1,"until":1}
+,"sends":{"maximum\u002Fnormal":1}
+,"maximum\u002Fnormal":{"cost":1}
+,"cost":{"based":1}
+,"based":{"ldp":1}
+,"ldp":{"session":1}
+,"session":{"down":1}
+,"down":{"state":1}
+,"state":{"messages":1}
+,"messages":{"interfaces":1}
+,"until":{"hold-down-timer":1}
+,"hold-down-timer":{"expires":1}
+,"expires":{"synchronization":1}
+}
+;Search.control.loadWordPairs(pairs);

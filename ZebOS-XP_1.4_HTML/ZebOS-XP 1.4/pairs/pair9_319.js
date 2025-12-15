@@ -1,0 +1,22 @@
+var pairs =
+{
+"show":{"username-remote":1}
+,"username-remote":{"command":1,"username":1,"fred":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"rsa":1}
+,"rsa":{"dsa":1}
+,"dsa":{"key":1}
+,"key":{"pair":1}
+,"pair":{"user":1}
+,"user":{"command":1,"identifier":1}
+,"syntax":{"show":1}
+,"username":{"keypair":1,"user":1}
+,"keypair":{"parameters":1}
+,"parameters":{"username":1}
+,"identifier":{"command":1}
+,"mode":{"exec":1,"examples":1}
+,"exec":{"mode":1}
+,"examples":{"show":1}
+,"fred":{"keypair":1}
+}
+;Search.control.loadWordPairs(pairs);

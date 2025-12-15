@@ -1,0 +1,24 @@
+var pairs =
+{
+"bgp_check_peer_convergence":{"function":1,"(struct":1}
+,"function":{"checks":1}
+,"checks":{"bgp":1}
+,"bgp":{"peers":1,"*bgp)":1,"main":1}
+,"peers":{"converged":1}
+,"converged":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"bgp_check_peer_convergence":1}
+,"(struct":{"bgp":1}
+,"*bgp)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"*bgp":1,"none":1}
+,"*bgp":{"represents":1}
+,"represents":{"bgp":1}
+,"main":{"structure":1}
+,"structure":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

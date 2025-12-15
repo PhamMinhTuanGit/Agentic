@@ -1,0 +1,24 @@
+var pairs =
+{
+"clear":{"isis":1}
+,"isis":{"process":1,"processes":1,"(word":1}
+,"process":{"command":1,"parameters":1}
+,"command":{"restart":1,"syntax":1,"mode":1}
+,"restart":{"isis":1}
+,"processes":{"specify":1,"restarted":1}
+,"specify":{"parameter":1}
+,"parameter":{"isis":1}
+,"restarted":{"command":1}
+,"syntax":{"clear":1}
+,"(word":{"process":1}
+,"parameters":{"word":1}
+,"word":{"routing":1}
+,"routing":{"area":1}
+,"area":{"tag":1}
+,"tag":{"command":1}
+,"mode":{"exec":1,"privileged":1,"example":1}
+,"exec":{"mode":1}
+,"privileged":{"exec":1}
+,"example":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

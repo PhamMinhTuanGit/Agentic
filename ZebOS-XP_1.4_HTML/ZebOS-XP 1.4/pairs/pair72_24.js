@@ -1,0 +1,19 @@
+var pairs =
+{
+"bridge":{"protocol":1}
+,"protocol":{"data":1,"(stp)":1}
+,"data":{"unit":1}
+,"unit":{"(bpdu)":1,"(pdu)":1}
+,"(bpdu)":{"protocol":1}
+,"(pdu)":{"sent":1}
+,"sent":{"switches":1}
+,"switches":{"running":1,"network":1}
+,"running":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"protocol":1}
+,"(stp)":{"learn":1}
+,"learn":{"switches":1}
+,"network":{"maintain":1}
+,"maintain":{"spanning":1}
+}
+;Search.control.loadWordPairs(pairs);

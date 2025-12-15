@@ -1,0 +1,23 @@
+var pairs =
+{
+"rfc":{"4760":1}
+,"4760":{"support":1,"accommodate":1}
+,"support":{"partitioning":1}
+,"partitioning":{"subsequent":1}
+,"subsequent":{"address":1}
+,"address":{"family":1}
+,"family":{"identifier":1}
+,"identifier":{"(si)":1}
+,"(si)":{"space":1}
+,"space":{"supported":1}
+,"supported":{"per":1}
+,"per":{"rfc":1}
+,"accommodate":{"6pe":1}
+,"6pe":{"6vpe":1}
+,"6vpe":{"ipv6-si-mpls_label":1}
+,"ipv6-si-mpls_label":{"ipv6-si_bgp_mpls_vpn":1}
+,"ipv6-si_bgp_mpls_vpn":{"i-si":1}
+,"i-si":{"combinations":1}
+,"combinations":{"supported":1}
+}
+;Search.control.loadWordPairs(pairs);

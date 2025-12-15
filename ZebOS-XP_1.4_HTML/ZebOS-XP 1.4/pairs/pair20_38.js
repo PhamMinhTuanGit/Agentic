@@ -1,0 +1,21 @@
+var pairs =
+{
+"pal_in6_addr":{"data":1}
+,"data":{"structure":1}
+,"structure":{"represents":1,"defined":1}
+,"represents":{"ipv6":1}
+,"ipv6":{"address":1}
+,"address":{"data":1,"16-byte":1,"8-byte-format":1,"4-byte-format":1}
+,"defined":{"pal\u002Fdummy\u002Fpal_types.h":1}
+,"pal\u002Fdummy\u002Fpal_types.h":{"file":1}
+,"file":{"type":1}
+,"type":{"definition":1}
+,"definition":{"u6_addr8":1}
+,"u6_addr8":{"ipv6":1}
+,"16-byte":{"format":1}
+,"format":{"u6_addr16":1}
+,"u6_addr16":{"ipv6":1}
+,"8-byte-format":{"u6_addr32":1}
+,"u6_addr32":{"ipv6":1}
+}
+;Search.control.loadWordPairs(pairs);

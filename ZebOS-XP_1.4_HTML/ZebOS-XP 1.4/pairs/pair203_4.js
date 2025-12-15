@@ -1,0 +1,26 @@
+var pairs =
+{
+"internet":{"security":1,"key":1,"protocol":1}
+,"security":{"association":1,"(ipsec)":1}
+,"association":{"key":1}
+,"key":{"management":1,"exchange":1}
+,"management":{"protocol":1}
+,"protocol":{"(isakmp)":1,"security":1}
+,"(isakmp)":{"framework":1}
+,"framework":{"authentication":1}
+,"authentication":{"key":1}
+,"exchange":{"actual":1,"(ike":1}
+,"actual":{"authenticated":1}
+,"authenticated":{"keying":1}
+,"keying":{"material":1}
+,"material":{"provided":1}
+,"provided":{"either":1}
+,"either":{"manual":1}
+,"manual":{"configuration":1}
+,"configuration":{"pre-shared":1}
+,"pre-shared":{"keys":1}
+,"keys":{"internet":1}
+,"(ike":{"ikev2)":1}
+,"ikev2)":{"internet":1}
+}
+;Search.control.loadWordPairs(pairs);

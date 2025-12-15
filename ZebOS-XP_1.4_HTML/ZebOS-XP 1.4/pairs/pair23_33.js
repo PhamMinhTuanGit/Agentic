@@ -1,0 +1,24 @@
+var pairs =
+{
+"l2mrib_bridge_instances":{"structure":1}
+,"structure":{"l2mrib.h":1}
+,"l2mrib.h":{"maintains":1}
+,"maintains":{"vlans":1}
+,"vlans":{"mstp\u002Fpvrst":1}
+,"mstp\u002Fpvrst":{"instance":1}
+,"instance":{"mapping":1}
+,"mapping":{"member":1}
+,"member":{"name":1}
+,"name":{"description":1}
+,"description":{"instance_id":1}
+,"instance_id":{"avl_tree":1,"ifdef":1}
+,"avl_tree":{"definition":1,"*vlan_table":1}
+,"definition":{"struct":1}
+,"struct":{"l2mrib_bridge_instance":1,"avl_tree":1}
+,"l2mrib_bridge_instance":{"{u_int16_t":1}
+,"{u_int16_t":{"instance_id":1}
+,"ifdef":{"have_vlan":1}
+,"have_vlan":{"struct":1}
+,"*vlan_table":{"endif":1}
+}
+;Search.control.loadWordPairs(pairs);

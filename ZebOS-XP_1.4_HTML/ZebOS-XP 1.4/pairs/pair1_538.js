@@ -1,0 +1,24 @@
+var pairs =
+{
+"fast":{"reroute":1}
+,"reroute":{"chapter":1,"(frr)":1,"terminology":1,"network":1,"commands":1}
+,"chapter":{"contains":1,"include":1}
+,"contains":{"architectural":1}
+,"architectural":{"overview":1}
+,"overview":{"zebos-xp":1}
+,"zebos-xp":{"rsvp-te":1}
+,"rsvp-te":{"fast":1,"protocol":1}
+,"(frr)":{"topics":1}
+,"topics":{"chapter":1}
+,"include":{"fast":1}
+,"terminology":{"local":1}
+,"local":{"repair":1}
+,"repair":{"techniques":1}
+,"techniques":{"rsvp-te":1}
+,"protocol":{"extensions":1}
+,"extensions":{"rsvp-te":1,"fast":1}
+,"network":{"services":1}
+,"services":{"module":1}
+,"module":{"extensions":1}
+}
+;Search.control.loadWordPairs(pairs);

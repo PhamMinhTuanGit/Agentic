@@ -1,0 +1,21 @@
+var pairs =
+{
+"mpls":{"support-diffserv-class":1}
+,"support-diffserv-class":{"command":1,"class":1,"af11":1}
+,"command":{"configure":1,"remove":1,"syntax":1,"mode":1}
+,"configure":{"diffserv":1,"mode":1,"terminal":1}
+,"diffserv":{"class":1}
+,"class":{"parameter":1,"configuration":1,"mpls":1,"diffserv":1,"mapped":1}
+,"parameter":{"command":1,"class":1}
+,"remove":{"diffserv":1}
+,"configuration":{"command":1}
+,"syntax":{"mpls":1}
+,"mapped":{"phb":1}
+,"phb":{"example":1}
+,"example":{"af11":1,"configure":1}
+,"af11":{"command":1}
+,"mode":{"configure":1,"example":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mpls":1}
+}
+;Search.control.loadWordPairs(pairs);

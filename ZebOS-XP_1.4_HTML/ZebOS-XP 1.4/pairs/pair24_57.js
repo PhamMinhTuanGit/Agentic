@@ -1,0 +1,20 @@
+var pairs =
+{
+"nsm_protocol_restart_state_data_t":{"data":1,"{\u002F*restart":1}
+,"data":{"structure":1}
+,"structure":{"defined":1}
+,"defined":{"nsm\u002Fmpls\u002Fha\u002Fnsm_mpls_cal.h":1}
+,"nsm\u002Fmpls\u002Fha\u002Fnsm_mpls_cal.h":{"file":1}
+,"file":{"member":1}
+,"member":{"description":1}
+,"description":{"restart_state":1}
+,"restart_state":{"restart":1,"nsm_protocol_restart_state_data_t":1}
+,"restart":{"state":1}
+,"state":{"definition":1,"*\u002Fu_char":1}
+,"definition":{"typedef":1}
+,"typedef":{"struct":1}
+,"struct":{"nsm_protocol_restart_state_data_t":1}
+,"{\u002F*restart":{"state":1}
+,"*\u002Fu_char":{"restart_state":1}
+}
+;Search.control.loadWordPairs(pairs);

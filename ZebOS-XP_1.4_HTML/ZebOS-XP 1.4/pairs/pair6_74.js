@@ -1,0 +1,27 @@
+var pairs =
+{
+"svlan":{"(preserve-cos":1,"specify":1,"command":1,"preserve-ovc-id":1}
+,"(preserve-cos":{"preserve-vlanid)":1}
+,"preserve-vlanid)":{"command":1,"ovc-id":1}
+,"command":{"sets":1,"removes":1,"syntax":1,"mode":1}
+,"sets":{"vlan":1}
+,"vlan":{"preservation":1,"ovc-id":1}
+,"preservation":{"ovc":1}
+,"ovc":{"command":1,"svlan":1}
+,"removes":{"vlan":1}
+,"syntax":{"svlan":1}
+,"ovc-id":{"ovc_id":1,"specify":1}
+,"ovc_id":{"(bridge":1}
+,"(bridge":{"<1-32>":1}
+,"<1-32>":{"svlan":1,"parameters":1}
+,"parameters":{"svlan":1}
+,"specify":{"service":1,"ovc":1}
+,"service":{"vlan":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"svlan":1}
+,"preserve-ovc-id":{"configure":1}
+}
+;Search.control.loadWordPairs(pairs);

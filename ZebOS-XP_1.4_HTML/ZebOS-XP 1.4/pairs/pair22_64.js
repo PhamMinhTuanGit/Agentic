@@ -1,0 +1,21 @@
+var pairs =
+{
+"(nsm)":{"configure":1}
+,"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"interface":1}
+,"mode":{"(config)":1,"(config-if)":1}
+,"(config)":{"interface":1}
+,"interface":{"eth2":1,"mode":1,"eth1":1}
+,"eth2":{"enter":1}
+,"(config-if)":{"shutdown":1}
+,"shutdown":{"bring":1}
+,"bring":{"down":1}
+,"down":{"physical":1}
+,"physical":{"interface":1}
+,"eth1":{"create":1}
+,"create":{"fault":1}
+,"fault":{"server":1}
+,"server":{"layer":1}
+}
+;Search.control.loadWordPairs(pairs);

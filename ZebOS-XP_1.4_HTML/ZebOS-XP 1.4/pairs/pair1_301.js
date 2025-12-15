@@ -1,0 +1,22 @@
+var pairs =
+{
+"rsvp-te":{"point-to-multipoint":1,"p2mp":1}
+,"point-to-multipoint":{"lsp":1,"(p2mp)":1}
+,"lsp":{"chapter":1,"brief":1}
+,"chapter":{"contains":1}
+,"contains":{"configurations":1}
+,"configurations":{"resource":1}
+,"resource":{"reservation":1}
+,"reservation":{"protocol":1}
+,"protocol":{"-traffic":1}
+,"-traffic":{"engineering":1}
+,"engineering":{"(rsvp-te)":1}
+,"(rsvp-te)":{"point-to-multipoint":1}
+,"(p2mp)":{"lsp":1}
+,"brief":{"overview":1}
+,"overview":{"zebos-xp":1}
+,"zebos-xp":{"rsvp-te":1}
+,"p2mp":{"basic":1}
+,"basic":{"concepts":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,19 @@
+var pairs =
+{
+"classful":{"addressing":1}
+,"addressing":{"older":1,"scheme":1}
+,"older":{"addressing":1}
+,"scheme":{"configuring":1}
+,"configuring":{"ratio":1}
+,"ratio":{"networks":1}
+,"networks":{"hosts":1}
+,"hosts":{"using":1}
+,"using":{"fixed":1}
+,"fixed":{"length":1}
+,"length":{"prefixes":1}
+,"prefixes":{"classless":1}
+,"classless":{"interdomain":1}
+,"interdomain":{"routing":1}
+,"routing":{"(cidr)":1}
+}
+;Search.control.loadWordPairs(pairs);

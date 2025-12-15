@@ -1,0 +1,24 @@
+var pairs =
+{
+"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"mode":{"(config)":1}
+,"(config)":{"router":1}
+,"router":{"bgp":1,"(config-router)":1}
+,"bgp":{"100":1}
+,"100":{"assign":1}
+,"assign":{"asn":1}
+,"asn":{"value":1}
+,"value":{"(100)":1}
+,"(100)":{"router":1}
+,"(config-router)":{"neighbor":1}
+,"neighbor":{"1.1.1.2":1}
+,"1.1.1.2":{"remote-as":1}
+,"remote-as":{"200":1}
+,"200":{"specify":1}
+,"specify":{"neighbor\u2019s":1}
+,"neighbor\u2019s":{"address":1}
+,"address":{"asn":1}
+}
+;Search.control.loadWordPairs(pairs);

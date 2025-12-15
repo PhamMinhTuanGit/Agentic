@@ -1,0 +1,23 @@
+var pairs =
+{
+"ospf":{"bfd":1,"neighbors":1}
+,"bfd":{"command":1,"option":1,"(disable":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"bfd":1}
+,"option":{"ospf":1,"neighbors":1}
+,"neighbors":{"interface":1}
+,"interface":{"form":1,"command":1,"mode":1,"eth1":1}
+,"form":{"command":1}
+,"disable":{"bfd":1,"disable":1}
+,"syntax":{"ospf":1}
+,"(disable":{"ospf":1,"parameter":1}
+,"parameter":{"disable":1}
+,"mode":{"interface":1,"example":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth1":{"(config-if)":1}
+,"(config-if)":{"ospf":1}
+}
+;Search.control.loadWordPairs(pairs);

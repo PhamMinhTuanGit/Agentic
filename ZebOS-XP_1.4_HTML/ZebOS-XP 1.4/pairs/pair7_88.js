@@ -1,0 +1,26 @@
+var pairs =
+{
+"point-to-point":{"esp":1}
+,"esp":{"point-to-point":1,"provisioned":1}
+,"provisioned":{"traffic-engineered":1}
+,"traffic-engineered":{"unidirectional":1}
+,"unidirectional":{"connectivity":1}
+,"connectivity":{"path":1}
+,"path":{"cbp":1,"identified":1}
+,"cbp":{"extends":1}
+,"extends":{"pbb":1}
+,"pbb":{"network":1}
+,"network":{"(pbbn)":1}
+,"(pbbn)":{"path":1}
+,"identified":{"3-tuple":1}
+,"3-tuple":{"<esp-mac":1}
+,"<esp-mac":{"esp-mac":1}
+,"esp-mac":{"esp-vid>":1,"individual":1}
+,"esp-vid>":{"esp-mac":1}
+,"individual":{"mac":1}
+,"mac":{"address":1}
+,"address":{"esp-mac":1,"esp-vid":1}
+,"esp-vid":{"allocated":1}
+,"allocated":{"te-mstid":1}
+}
+;Search.control.loadWordPairs(pairs);

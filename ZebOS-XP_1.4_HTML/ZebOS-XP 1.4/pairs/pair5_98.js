@@ -1,0 +1,23 @@
+var pairs =
+{
+"adding":{"deleting":1}
+,"deleting":{"bridge":1,"c-vlan":1}
+,"bridge":{"vlan":1}
+,"vlan":{"following":1,"added":1,"port":1}
+,"following":{"figure":1}
+,"figure":{"displays":1}
+,"displays":{"flow":1}
+,"flow":{"followed":1}
+,"followed":{"bridge":1}
+,"added":{"removed":1}
+,"removed":{"port":1}
+,"port":{"type":1,"module":1}
+,"type":{"adding":1}
+,"c-vlan":{"vlan":1}
+,"module":{"updates":1}
+,"updates":{"database":1}
+,"database":{"time":1}
+,"time":{"event":1}
+,"event":{"adding":1}
+}
+;Search.control.loadWordPairs(pairs);

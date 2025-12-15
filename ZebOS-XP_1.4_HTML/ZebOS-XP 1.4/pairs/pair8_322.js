@@ -1,0 +1,25 @@
+var pairs =
+{
+"backward":{"compatibility":1}
+,"compatibility":{"override-diffserv":1}
+,"override-diffserv":{"command":1}
+,"command":{"supports":1,"received":1}
+,"supports":{"backward-compatibility":1}
+,"backward-compatibility":{"give":1}
+,"give":{"override-diffserv":1}
+,"received":{"path":1}
+,"path":{"messages":1}
+,"messages":{"rsvp":1}
+,"rsvp":{"diffserv":1}
+,"diffserv":{"object":1}
+,"object":{"considered":1}
+,"considered":{"requests":1}
+,"requests":{"non-diffserv":1,"preconfigured":1}
+,"non-diffserv":{"lsp":1}
+,"lsp":{"flag":1}
+,"flag":{"reset":1}
+,"reset":{"using":1}
+,"using":{"override-diffserv":1}
+,"preconfigured":{"e-lsp":1}
+}
+;Search.control.loadWordPairs(pairs);

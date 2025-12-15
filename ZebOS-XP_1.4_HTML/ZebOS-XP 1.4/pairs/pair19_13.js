@@ -1,0 +1,27 @@
+var pairs =
+{
+"ipv6":{"islands":1,"provider":1}
+,"islands":{"ipv4":1}
+,"ipv4":{"mpls":1,"signaled":1}
+,"mpls":{"using":1,"cloud":1,"label":1}
+,"using":{"6pe":1}
+,"6pe":{"ipv6":1}
+,"provider":{"edge":1}
+,"edge":{"routers":1}
+,"routers":{"(6pe)":1}
+,"(6pe)":{"interconnect":1}
+,"interconnect":{"ipv6":1}
+,"cloud":{"dynamically":1}
+,"dynamically":{"established":1}
+,"established":{"ipv4":1}
+,"signaled":{"mpls":1}
+,"label":{"switched":1}
+,"switched":{"paths":1}
+,"paths":{"(lsps)":1}
+,"(lsps)":{"used":1}
+,"used":{"without":1}
+,"without":{"explicit":1}
+,"explicit":{"tunnel":1}
+,"tunnel":{"configuration":1}
+}
+;Search.control.loadWordPairs(pairs);

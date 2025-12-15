@@ -1,0 +1,21 @@
+var pairs =
+{
+"validation":{"lmi":1}
+,"lmi":{"parameters":1,"link":1}
+,"parameters":{"interface":1}
+,"interface":{"show":1,"eth2":1,"eth1":1}
+,"show":{"ethernet":1}
+,"ethernet":{"lmi":1}
+,"eth2":{"e-lmi":1,"ether":1}
+,"e-lmi":{"parameters":1}
+,"ether":{"lmi":1}
+,"link":{"status":1}
+,"status":{"mode":1}
+,"mode":{"t391":1}
+,"t391":{"n391":1}
+,"n391":{"360":1}
+,"360":{"n393":1}
+,"n393":{"show":1}
+,"eth1":{"e-lmi":1,"ether":1}
+}
+;Search.control.loadWordPairs(pairs);

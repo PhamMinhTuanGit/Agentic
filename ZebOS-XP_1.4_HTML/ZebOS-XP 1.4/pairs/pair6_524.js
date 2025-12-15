@@ -1,0 +1,20 @@
+var pairs =
+{
+"global":{"management":1}
+,"management":{"authority":1}
+,"authority":{"(gma)":1,"virtual":1}
+,"(gma)":{"virtual":1}
+,"virtual":{"router":1,"routers":1}
+,"router":{"handles":1,"resources":1}
+,"handles":{"physical":1}
+,"physical":{"connection":1,"router":1}
+,"connection":{"configuration":1}
+,"configuration":{"protocols":1}
+,"protocols":{"uses":1}
+,"uses":{"gma":1}
+,"gma":{"manages":1}
+,"manages":{"allocation":1}
+,"allocation":{"physical":1}
+,"resources":{"global":1}
+}
+;Search.control.loadWordPairs(pairs);

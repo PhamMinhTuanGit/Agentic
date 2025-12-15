@@ -1,0 +1,20 @@
+var pairs =
+{
+"validation":{"rbridge-ping":1}
+,"rbridge-ping":{"8001":1}
+,"8001":{"sending":1,"reply":1,"ping":1,"packet":1}
+,"sending":{"ping":1}
+,"ping":{"request":1,"statistic":1}
+,"request":{"rbridge:8001":1}
+,"rbridge:8001":{"reply":1}
+,"reply":{"rbridge":1}
+,"rbridge":{"8001":1}
+,"statistic":{"rbridge":1}
+,"packet":{"sent":1,"lost":1}
+,"sent":{"packets":1}
+,"packets":{"received":1}
+,"received":{"packet":1}
+,"lost":{"(percentage":1,"=0.00":1}
+,"(percentage":{"lost":1}
+}
+;Search.control.loadWordPairs(pairs);

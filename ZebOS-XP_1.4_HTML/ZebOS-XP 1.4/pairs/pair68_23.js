@@ -1,0 +1,23 @@
+var pairs =
+{
+"undebug":{"pim":1,"(vrf":1}
+,"pim":{"command":1,"debugging":1,"undebug":1,"parameter":1}
+,"command":{"disable":1,"syntax":1,"mode":1}
+,"disable":{"pim":1}
+,"debugging":{"configure":1}
+,"configure":{"mode":1}
+,"mode":{"command":1,"privileged":1,"exec":1,"example":1}
+,"syntax":{"undebug":1}
+,"(vrf":{"name":1}
+,"name":{"pim":1,"specify":1,"vpn":1}
+,"parameter":{"vrf":1}
+,"vrf":{"vpn":1}
+,"vpn":{"routing\u002Fforwarding":1}
+,"routing\u002Fforwarding":{"instance":1}
+,"instance":{"name":1,"command":1}
+,"specify":{"name":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"example":{"undebug":1}
+}
+;Search.control.loadWordPairs(pairs);

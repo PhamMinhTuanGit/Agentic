@@ -1,0 +1,21 @@
+var pairs =
+{
+"address":{"command":1,"interface":1,"a.b.c.d\u002Fm":1,"(a.b.c.d\u002Fm":1,"prefix":1,"10.10.10.50\u002F24":1}
+,"command":{"address":1,"remove":1,"syntax":1,"mode":1}
+,"interface":{"parameter":1,"command":1,"mode":1,"eth0":1}
+,"parameter":{"command":1}
+,"remove":{"address":1}
+,"syntax":{"address":1}
+,"a.b.c.d\u002Fm":{"address":1,"specify":1}
+,"(a.b.c.d\u002Fm":{"parameters":1}
+,"parameters":{"a.b.c.d\u002Fm":1}
+,"specify":{"address":1}
+,"prefix":{"length":1}
+,"length":{"interface":1}
+,"mode":{"interface":1,"examples":1}
+,"examples":{"(config)":1}
+,"(config)":{"interface":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"address":1}
+}
+;Search.control.loadWordPairs(pairs);

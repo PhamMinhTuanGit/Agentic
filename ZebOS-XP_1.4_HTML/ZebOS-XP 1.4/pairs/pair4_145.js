@@ -1,0 +1,20 @@
+var pairs =
+{
+"elmi_interface_add":{"callbacks":1,"(struct":1}
+,"callbacks":{"handle":1}
+,"handle":{"interface":1}
+,"interface":{"addition":1,"*ifp)":1,"structure":1}
+,"addition":{"deletion":1}
+,"deletion":{"api":1}
+,"api":{"call":1}
+,"call":{"int":1}
+,"int":{"elmi_interface_add":1}
+,"(struct":{"interface":1}
+,"*ifp)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ifp":1,"none":1}
+,"ifp":{"interface":1}
+,"structure":{"output":1}
+,"output":{"parameters":1}
+}
+;Search.control.loadWordPairs(pairs);

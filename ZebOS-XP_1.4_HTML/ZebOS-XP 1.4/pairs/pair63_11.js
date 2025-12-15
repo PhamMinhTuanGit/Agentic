@@ -1,0 +1,22 @@
+var pairs =
+{
+"pal_time_clock":{"function":1,"(void)":1}
+,"function":{"gets":1}
+,"gets":{"number":1}
+,"number":{"clock":1}
+,"clock":{"ticks":1,"syntax":1}
+,"ticks":{"system":1}
+,"system":{"started":1}
+,"started":{"call":1}
+,"call":{"replaces":1}
+,"replaces":{"clock":1}
+,"syntax":{"pal_clock_t":1}
+,"pal_clock_t":{"pal_time_clock":1}
+,"(void)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"values":1}
+}
+;Search.control.loadWordPairs(pairs);

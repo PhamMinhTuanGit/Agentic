@@ -1,0 +1,24 @@
+var pairs =
+{
+"show":{"igmp":1}
+,"igmp":{"ssm-map":1,"(vrf":1}
+,"ssm-map":{"command":1,"data":1,"show":1,"a.b.c.d":1,"123.12.3.123":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"igmp":1}
+,"data":{"command":1}
+,"syntax":{"show":1}
+,"a.b.c.d":{"show":1,"parameters":1,"address":1}
+,"(vrf":{"name":1}
+,"name":{"ssm-map":1,"a.b.c.d":1}
+,"parameters":{"vrf":1}
+,"vrf":{"specify":1,"name":1}
+,"specify":{"vrf":1}
+,"address":{"multicast":1}
+,"multicast":{"group":1}
+,"group":{"command":1}
+,"mode":{"exec":1,"example":1}
+,"exec":{"privileged":1,"mode":1}
+,"privileged":{"exec":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

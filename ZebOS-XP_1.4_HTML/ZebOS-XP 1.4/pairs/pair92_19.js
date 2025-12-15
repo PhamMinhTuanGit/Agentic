@@ -1,0 +1,22 @@
+var pairs =
+{
+"common":{"internal":1}
+,"internal":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"(cist)":1,"protocol":1,"fabric":1}
+,"(cist)":{"single":1}
+,"single":{"topology":1}
+,"topology":{"connecting":1,"words":1}
+,"connecting":{"spanning":1}
+,"protocol":{"(stp)":1,"(rstp)":1,"(mstp)":1}
+,"(stp)":{"rapid":1}
+,"rapid":{"spanning":1}
+,"(rstp)":{"multiple":1}
+,"multiple":{"spanning":1}
+,"(mstp)":{"switches":1}
+,"switches":{"active":1}
+,"active":{"topology":1}
+,"words":{"entire":1}
+,"entire":{"spanning":1}
+}
+;Search.control.loadWordPairs(pairs);

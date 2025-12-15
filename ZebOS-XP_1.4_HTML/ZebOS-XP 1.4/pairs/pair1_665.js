@@ -1,0 +1,19 @@
+var pairs =
+{
+"rip":{"chapter":1}
+,"chapter":{"contains":1}
+,"contains":{"basic":1}
+,"basic":{"router":1}
+,"router":{"information":1}
+,"information":{"protocol":1}
+,"protocol":{"(rip)":1,"command":1}
+,"(rip)":{"configuration":1}
+,"configuration":{"examples":1}
+,"examples":{"details":1,"routing":1}
+,"details":{"commands":1}
+,"commands":{"used":1}
+,"used":{"examples":1}
+,"routing":{"information":1}
+,"command":{"reference":1}
+}
+;Search.control.loadWordPairs(pairs);

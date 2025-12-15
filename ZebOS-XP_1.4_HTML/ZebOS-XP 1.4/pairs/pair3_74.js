@@ -1,0 +1,24 @@
+var pairs =
+{
+"enni":{"service":1,"point":1,"two":1,"frame":1}
+,"service":{"attributes":1}
+,"attributes":{"enni":1,"operator":1}
+,"point":{"demarcation":1,"map":1}
+,"demarcation":{"responsibilities":1}
+,"responsibilities":{"two":1}
+,"two":{"operators":1,"sets":1}
+,"operators":{"instance":1}
+,"instance":{"enni":1}
+,"sets":{"enni":1}
+,"operator":{"end":1,"men":1}
+,"end":{"point":1}
+,"map":{"specifies":1}
+,"specifies":{"s-tagged":1}
+,"s-tagged":{"enni":1}
+,"frame":{"associated":1}
+,"associated":{"ovc":1}
+,"ovc":{"endpoint":1}
+,"endpoint":{"within":1}
+,"within":{"operator":1}
+}
+;Search.control.loadWordPairs(pairs);

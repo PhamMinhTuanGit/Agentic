@@ -1,0 +1,25 @@
+var pairs =
+{
+"unified":{"l2vpn":1}
+,"l2vpn":{"commands":1,"auto-discovery":1}
+,"commands":{"chapter":1,"commands":1,"supported":1}
+,"chapter":{"provides":1}
+,"provides":{"reference":1}
+,"reference":{"unified":1}
+,"supported":{"bgp":1}
+,"bgp":{"l2vpn":1}
+,"auto-discovery":{"feature":1}
+,"feature":{"per":1}
+,"per":{"rfc6074":1}
+,"rfc6074":{"l2vpn-vpws":1}
+,"l2vpn-vpws":{"protocol":1}
+,"protocol":{"vc-id":1}
+,"vc-id":{"control-word":1}
+,"control-word":{"group-name":1}
+,"group-name":{"tunnel-id":1}
+,"tunnel-id":{"route-target":1}
+,"route-target":{"shutdown":1}
+,"shutdown":{"l2vpn-vpls":1}
+,"l2vpn-vpls":{"vpn-id":1}
+}
+;Search.control.loadWordPairs(pairs);

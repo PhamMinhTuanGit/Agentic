@@ -1,0 +1,22 @@
+var pairs =
+{
+"virtualization":{"technology":1}
+,"technology":{"abstracts":1}
+,"abstracts":{"physical":1}
+,"physical":{"characteristics":1}
+,"characteristics":{"machine":1}
+,"machine":{"creating":1,"(vm)":1}
+,"creating":{"logical":1}
+,"logical":{"version":1,"versions":1}
+,"version":{"including":1}
+,"including":{"creating":1}
+,"versions":{"entities":1}
+,"entities":{"operating":1}
+,"operating":{"systems":1}
+,"systems":{"network":1}
+,"network":{"resources":1}
+,"resources":{"hypervisor":1}
+,"hypervisor":{"virtual":1}
+,"virtual":{"machine":1}
+}
+;Search.control.loadWordPairs(pairs);

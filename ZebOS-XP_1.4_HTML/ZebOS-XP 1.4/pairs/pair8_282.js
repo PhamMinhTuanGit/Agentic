@@ -1,0 +1,27 @@
+var pairs =
+{
+"primary":{"multi-area":1,"link\u2019s":1,"interface":1,"adjacency":1}
+,"multi-area":{"adjacent":1,"adjacency":1}
+,"adjacent":{"ospf":1}
+,"ospf":{"interface":1}
+,"interface":{"packets":1,"down":1,"change":1,"primary":1}
+,"packets":{"associated":1}
+,"associated":{"multi-area":1,"primary":1}
+,"adjacency":{"primary":1,"corresponding":1,"interfaces":1,"disabled":1,"deleted":1}
+,"link\u2019s":{"area":1}
+,"area":{"transit":1,"therefore":1}
+,"transit":{"area":1}
+,"therefore":{"primary":1}
+,"down":{"multi-area":1,"properties":1}
+,"corresponding":{"interfaces":1}
+,"interfaces":{"using":1,"associated":1}
+,"using":{"primary":1}
+,"properties":{"associated":1,"applied":1}
+,"change":{"properties":1}
+,"applied":{"multi-area":1}
+,"disabled":{"(using":1}
+,"(using":{"network":1}
+,"network":{"command)":1}
+,"command)":{"multi-area":1}
+}
+;Search.control.loadWordPairs(pairs);

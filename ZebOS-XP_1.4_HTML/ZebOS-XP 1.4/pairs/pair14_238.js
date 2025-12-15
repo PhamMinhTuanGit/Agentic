@@ -1,0 +1,22 @@
+var pairs =
+{
+"show":{"trill":1}
+,"trill":{"esadi-statistics":1,"esadi":1}
+,"esadi-statistics":{"command":1,"(vlan":1,"vlan":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"statistics":1,"vlan":1}
+,"statistics":{"trill":1}
+,"esadi":{"command":1}
+,"syntax":{"show":1}
+,"(vlan":{"<1-4094>":1}
+,"<1-4094>":{"parameters":1,"display":1}
+,"parameters":{"<1-4094>":1}
+,"vlan":{"range":1,"123":1}
+,"range":{"command":1}
+,"mode":{"exec":1,"privilege":1,"examples":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"examples":{"show":1}
+,"123":{"**********esadi-statistics**********#":1}
+}
+;Search.control.loadWordPairs(pairs);

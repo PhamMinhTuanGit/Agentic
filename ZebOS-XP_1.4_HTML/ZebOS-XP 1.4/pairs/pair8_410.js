@@ -1,0 +1,19 @@
+var pairs =
+{
+"switch":{"lsr":1}
+,"lsr":{"command":1,"default":1}
+,"command":{"switch":1,"used":1,"syntax":1,"mode":1}
+,"default":{"lsr":1}
+,"used":{"default":1}
+,"syntax":{"switch-lsr":1}
+,"switch-lsr":{"lsr-name":1,"test-lsr":1}
+,"lsr-name":{"parameters":1,"name":1}
+,"parameters":{"lsr-name":1}
+,"name":{"lsr":1}
+,"mode":{"privileged":1,"example":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"example":{"switch-lsr":1}
+,"test-lsr":{"test-lsr-zebos":1}
+}
+;Search.control.loadWordPairs(pairs);

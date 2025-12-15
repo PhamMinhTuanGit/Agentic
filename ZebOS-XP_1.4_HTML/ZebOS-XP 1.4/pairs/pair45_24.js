@@ -1,0 +1,23 @@
+var pairs =
+{
+"ldp_api_get_fec_last_change":{"call":1,"(struct":1}
+,"call":{"gets":1}
+,"gets":{"last":1}
+,"last":{"change":1}
+,"change":{"time":1}
+,"time":{"fec":1}
+,"fec":{"syntax":1,"last":1}
+,"syntax":{"s_int32_t":1}
+,"s_int32_t":{"ldp_api_get_fec_last_change":1}
+,"(struct":{"ldp":1}
+,"ldp":{"*ldp)":1,"ldp":1,"instance":1}
+,"*ldp)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ldp":1,"none":1}
+,"instance":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+,"values":{"fec":1}
+}
+;Search.control.loadWordPairs(pairs);

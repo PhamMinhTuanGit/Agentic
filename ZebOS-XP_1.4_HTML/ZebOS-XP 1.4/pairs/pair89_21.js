@@ -1,0 +1,22 @@
+var pairs =
+{
+"collision":{"domain":1}
+,"domain":{"network":1,"arbitrate":1}
+,"network":{"segment":1}
+,"segment":{"data":1}
+,"data":{"frames":1}
+,"frames":{"collide":1}
+,"collide":{"sent":1}
+,"sent":{"shared":1}
+,"shared":{"medium":1}
+,"medium":{"ethernet":1}
+,"ethernet":{"hosts":1}
+,"hosts":{"collision":1}
+,"arbitrate":{"among":1}
+,"among":{"themselves":1}
+,"themselves":{"using":1}
+,"using":{"access":1}
+,"access":{"control":1}
+,"control":{"mechanism":1}
+}
+;Search.control.loadWordPairs(pairs);

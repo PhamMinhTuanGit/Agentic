@@ -1,0 +1,23 @@
+var pairs =
+{
+"vrrp":{"commands":1,"accept-mode":1,"disable":1,"show":1,"snmp":1,"v2-compatible":1,"vrrp":1,"vmac":1}
+,"commands":{"chapter":1,"vrrp":1}
+,"chapter":{"describes":1}
+,"describes":{"commands":1}
+,"accept-mode":{"advertisement-interval":1}
+,"advertisement-interval":{"circuit-failover":1}
+,"circuit-failover":{"debug":1}
+,"debug":{"vrrp":1}
+,"disable":{"enable":1}
+,"enable":{"preempt-mode":1}
+,"preempt-mode":{"router":1}
+,"router":{"vrrp":1}
+,"show":{"debugging":1,"running-config":1}
+,"debugging":{"vrrp":1}
+,"snmp":{"restart":1}
+,"restart":{"vrrp":1}
+,"v2-compatible":{"virtual-ip":1}
+,"virtual-ip":{"show":1}
+,"running-config":{"router":1}
+}
+;Search.control.loadWordPairs(pairs);

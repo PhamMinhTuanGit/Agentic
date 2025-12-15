@@ -1,0 +1,22 @@
+var pairs =
+{
+"clear":{"cores":1,"tftp":1}
+,"cores":{"command":1,"parameters":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"tftp":{"server":1}
+,"server":{"previously":1}
+,"previously":{"uploaded":1}
+,"uploaded":{"core":1}
+,"core":{"files":1}
+,"files":{"command":1}
+,"syntax":{"clear":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1}
+,"examples":{"config":1}
+,"config":{"term":1}
+,"term":{"(config)":1}
+,"(config)":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

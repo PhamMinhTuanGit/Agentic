@@ -1,0 +1,24 @@
+var pairs =
+{
+"network":{"functions":1,"services":1}
+,"functions":{"virtualization":1}
+,"virtualization":{"(nfv)":1}
+,"(nfv)":{"ability":1}
+,"ability":{"decouple":1}
+,"decouple":{"network":1}
+,"services":{"dedicated":1,"control":1,"performed":1}
+,"dedicated":{"hardware":1}
+,"hardware":{"devices":1}
+,"devices":{"hosted":1}
+,"hosted":{"virtual":1}
+,"virtual":{"machine":1}
+,"machine":{"(vm)":1}
+,"(vm)":{"once":1}
+,"once":{"network":1}
+,"control":{"hypervisor":1}
+,"hypervisor":{"services":1}
+,"performed":{"standard":1}
+,"standard":{"x86":1}
+,"x86":{"servers":1}
+}
+;Search.control.loadWordPairs(pairs);

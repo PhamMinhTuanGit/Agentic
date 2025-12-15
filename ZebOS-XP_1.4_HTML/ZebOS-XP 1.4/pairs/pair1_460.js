@@ -1,0 +1,24 @@
+var pairs =
+{
+"passive":{"interface":1}
+,"interface":{"passive":1,"feature":1}
+,"feature":{"simplifies":1}
+,"simplifies":{"configuration":1}
+,"configuration":{"distribution":1}
+,"distribution":{"routers":1}
+,"routers":{"allows":1}
+,"allows":{"network":1}
+,"network":{"managers":1}
+,"managers":{"obtain":1}
+,"obtain":{"routing":1}
+,"routing":{"information":1}
+,"information":{"interfaces":1}
+,"interfaces":{"large":1}
+,"large":{"internet":1}
+,"internet":{"service":1}
+,"service":{"provider":1}
+,"provider":{"(isp)":1}
+,"(isp)":{"enterprise":1}
+,"enterprise":{"networks":1}
+}
+;Search.control.loadWordPairs(pairs);

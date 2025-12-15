@@ -1,0 +1,22 @@
+var pairs =
+{
+"considerations":{"capability":1}
+,"capability":{"message":1,"code":1,"length":1,"value":1,"removing":1,"zebos-xp":1}
+,"message":{"contains":1,"capability":1}
+,"contains":{"following":1}
+,"following":{"tuples":1,"values":1}
+,"tuples":{"action":1}
+,"action":{"octet)":1,"field":1}
+,"octet)":{"capability":1}
+,"code":{"octet)":1,"message":1,"capability":1}
+,"length":{"octet)":1}
+,"value":{"(variable)":1,"action":1}
+,"(variable)":{"value":1}
+,"field":{"advertising":1}
+,"advertising":{"capability":1}
+,"removing":{"capability":1}
+,"zebos-xp":{"uses":1}
+,"uses":{"following":1}
+,"values":{"capability":1}
+}
+;Search.control.loadWordPairs(pairs);

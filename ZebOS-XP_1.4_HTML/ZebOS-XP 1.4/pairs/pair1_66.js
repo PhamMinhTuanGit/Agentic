@@ -1,0 +1,27 @@
+var pairs =
+{
+"next-hop":{"tracking":1}
+,"tracking":{"zebos-xp":1,"(nht)":1}
+,"zebos-xp":{"bgp":1,"supports":1}
+,"bgp":{"next-hop":1,"asynchronously":1,"routes":1}
+,"(nht)":{"notifies":1}
+,"notifies":{"bgp":1}
+,"asynchronously":{"whenr":1}
+,"whenr":{"change":1}
+,"change":{"igp":1}
+,"igp":{"routes":1}
+,"routes":{"nht":1,"igp":1,"changed":1}
+,"nht":{"reduces":1}
+,"reduces":{"convergence":1}
+,"convergence":{"time":1}
+,"time":{"bgp":1}
+,"changed":{"zebos-xp":1}
+,"supports":{"address":1}
+,"address":{"family":1}
+,"family":{"indicator\u002Fsubsequent":1,"indicator":1}
+,"indicator\u002Fsubsequent":{"address":1}
+,"indicator":{"(i-si)":1}
+,"(i-si)":{"ipv4-unicast":1}
+,"ipv4-unicast":{"ipv6-unicast":1}
+}
+;Search.control.loadWordPairs(pairs);

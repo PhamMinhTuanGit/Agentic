@@ -1,0 +1,21 @@
+var pairs =
+{
+"backbone":{"vlan":1,"bridging":1}
+,"vlan":{"(b-vlan)":1,"identifier":1,"(s-vlan)":1}
+,"(b-vlan)":{"field":1}
+,"field":{"provider":1}
+,"provider":{"backbone":1}
+,"bridging":{"(pbb)":1}
+,"(pbb)":{"header":1}
+,"header":{"carries":1}
+,"carries":{"backbone":1}
+,"identifier":{"information":1}
+,"information":{"format":1}
+,"format":{"service":1}
+,"service":{"vlan":1}
+,"(s-vlan)":{"tag":1}
+,"tag":{"called":1,"b-tag":1}
+,"called":{"b-vid":1}
+,"b-vid":{"tag":1}
+}
+;Search.control.loadWordPairs(pairs);

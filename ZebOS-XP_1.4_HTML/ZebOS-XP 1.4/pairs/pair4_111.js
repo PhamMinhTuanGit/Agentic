@@ -1,0 +1,22 @@
+var pairs =
+{
+"operational":{"modes":1}
+,"modes":{"zebos-xp":1,"transmit-only":1}
+,"zebos-xp":{"lldp":1}
+,"lldp":{"supports":1}
+,"supports":{"operational":1}
+,"transmit-only":{"mode":1}
+,"mode":{"agent":1}
+,"agent":{"transmit":1,"receive":1}
+,"transmit":{"information":1,"receive":1,"local":1}
+,"information":{"capabilities":1,"receive":1,"remote":1}
+,"capabilities":{"current":1,"status":1}
+,"current":{"status":1}
+,"status":{"local":1,"information":1}
+,"local":{"system":1}
+,"system":{"receive-only":1,"transmit":1,"capabilities":1}
+,"receive-only":{"mode":1}
+,"receive":{"information":1,"mode":1}
+,"remote":{"system":1}
+}
+;Search.control.loadWordPairs(pairs);

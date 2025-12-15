@@ -1,0 +1,26 @@
+var pairs =
+{
+"update":{"messages":1,"message":1}
+,"messages":{"four-byte":1}
+,"four-byte":{"two-byte":1,"bgp":1,"asn":1}
+,"two-byte":{"bgp":1,"bgps":1,"asn":1}
+,"bgp":{"speakers":1,"configured":1}
+,"speakers":{"following":1}
+,"following":{"lists":1}
+,"lists":{"information":1}
+,"information":{"update":1}
+,"bgps":{"adjacency":1}
+,"adjacency":{"formed":1}
+,"formed":{"four-byte":1}
+,"configured":{"two-byte":1,"unmappable":1}
+,"asn":{"sends":1,"prepended":1,"as4_path\u002Fas4_aggregator":1}
+,"sends":{"update":1}
+,"message":{"asn":1}
+,"prepended":{"as_path\u002Faggregator":1}
+,"as_path\u002Faggregator":{"attribute":1}
+,"attribute":{"four-byte":1}
+,"unmappable":{"four-byte":1}
+,"as4_path\u002Fas4_aggregator":{"as_trans":1}
+,"as_trans":{"as_path\u002Faggregator":1}
+}
+;Search.control.loadWordPairs(pairs);

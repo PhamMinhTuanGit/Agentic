@@ -1,0 +1,19 @@
+var pairs =
+{
+"-nsm":{"enable":1}
+,"enable":{"multipath":1}
+,"multipath":{"support":1}
+,"support":{"maximum":1}
+,"maximum":{"number":1}
+,"number":{"paths":1}
+,"paths":{"installed":1}
+,"installed":{"forwarding":1}
+,"forwarding":{"information":1}
+,"information":{"base":1}
+,"base":{"(fib)":1}
+,"(fib)":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"maximum-paths":1}
+}
+;Search.control.loadWordPairs(pairs);

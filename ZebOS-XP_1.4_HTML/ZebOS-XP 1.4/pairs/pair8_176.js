@@ -1,0 +1,26 @@
+var pairs =
+{
+"router":{"show":1}
+,"show":{"ospf":1}
+,"ospf":{"neighbor":1,"process":1}
+,"neighbor":{"ospf":1,"pri":1}
+,"process":{"100":1}
+,"100":{"neighbor":1}
+,"pri":{"state":1}
+,"state":{"dead":1}
+,"dead":{"time":1}
+,"time":{"address":1}
+,"address":{"interface":1}
+,"interface":{"instanceid":1}
+,"instanceid":{"1.2.3.4":1}
+,"1.2.3.4":{"full\u002Fbackup":1}
+,"full\u002Fbackup":{"00:00:37":1}
+,"00:00:37":{"100.1.1.1":1}
+,"100.1.1.1":{"eth1":1}
+,"eth1":{"3.4.5.6":1}
+,"3.4.5.6":{"full\u002Fdr":1}
+,"full\u002Fdr":{"00:00:34":1}
+,"00:00:34":{"200.1.1.2":1}
+,"200.1.1.2":{"eth2":1}
+}
+;Search.control.loadWordPairs(pairs);

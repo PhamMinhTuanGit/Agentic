@@ -1,0 +1,21 @@
+var pairs =
+{
+"lldp":{"agt-circuit-id":1,"global":1}
+,"agt-circuit-id":{"command":1,"value":1,"sample":1}
+,"command":{"configure":1,"syntax":1,"mode":1}
+,"configure":{"lldp":1}
+,"syntax":{"lldp":1}
+,"value":{"parameters":1,"specify":1}
+,"parameters":{"value":1}
+,"specify":{"lldp":1}
+,"global":{"agt-circuit":1}
+,"agt-circuit":{"command":1}
+,"mode":{"interface":1,"examples":1}
+,"interface":{"mode":1}
+,"examples":{"(config)":1}
+,"(config)":{"int":1}
+,"int":{"eth0":1}
+,"eth0":{"(config-if)":1}
+,"(config-if)":{"lldp":1}
+}
+;Search.control.loadWordPairs(pairs);

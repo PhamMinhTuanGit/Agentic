@@ -1,0 +1,19 @@
+var pairs =
+{
+"aggregation":{"zebos-xp":1}
+,"zebos-xp":{"performs":1}
+,"performs":{"as_path":1}
+,"as_path":{"related":1,"segment":1}
+,"related":{"checks":1}
+,"checks":{"confederation":1}
+,"confederation":{"appending":1,"identifier":1,"boundary":1}
+,"appending":{"aggregating":1}
+,"aggregating":{"as_confed_*related":1}
+,"as_confed_*related":{"segments":1}
+,"segments":{"adds":1}
+,"adds":{"confederation":1}
+,"identifier":{"value":1}
+,"value":{"as_path":1}
+,"segment":{"confederation":1}
+}
+;Search.control.loadWordPairs(pairs);

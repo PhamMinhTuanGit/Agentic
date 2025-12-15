@@ -1,0 +1,25 @@
+var pairs =
+{
+"capability":{"vrf-lite":1,"ospf":1}
+,"vrf-lite":{"command":1,"capability":1,"parameters":1,"(config)":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"vrf-lite":1}
+,"ospf":{"instance":1,"100":1}
+,"instance":{"parameter":1,"command":1}
+,"parameter":{"command":1}
+,"disable":{"ospf":1}
+,"syntax":{"capability":1}
+,"parameters":{"none":1}
+,"none":{"default":1}
+,"default":{"disabled":1}
+,"disabled":{"command":1}
+,"mode":{"router":1,"example":1}
+,"router":{"mode":1,"ospf":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"100":{"(config-router)":1}
+,"(config-router)":{"capability":1}
+}
+;Search.control.loadWordPairs(pairs);

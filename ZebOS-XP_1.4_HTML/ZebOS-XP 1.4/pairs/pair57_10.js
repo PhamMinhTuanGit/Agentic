@@ -1,0 +1,27 @@
+var pairs =
+{
+"hal_bridge_set_ageing_time":{"function":1,"(char":1}
+,"function":{"sets":1,"succeeds":1}
+,"sets":{"ageing":1}
+,"ageing":{"time":1}
+,"time":{"bridge":1,"seconds":1}
+,"bridge":{"syntax":1,"name":1}
+,"syntax":{"int":1}
+,"int":{"hal_bridge_set_ageing_time":1}
+,"(char":{"*name":1}
+,"*name":{"u_int32_t":1}
+,"u_int32_t":{"ageing_time)":1}
+,"ageing_time)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"name":1,"none":1}
+,"name":{"bridge":1,"ageing_time":1}
+,"ageing_time":{"ageing":1}
+,"seconds":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"hal_err_bridge_not_exists":1}
+,"hal_err_bridge_not_exists":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

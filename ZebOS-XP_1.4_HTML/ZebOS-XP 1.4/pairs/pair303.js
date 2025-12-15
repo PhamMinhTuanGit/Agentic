@@ -1,0 +1,21 @@
+var pairs =
+{
+"policy-based":{"routing":1}
+,"routing":{"(pbr)":1}
+,"(pbr)":{"classifying":1}
+,"classifying":{"packets":1}
+,"packets":{"determine":1}
+,"determine":{"forwarding":1}
+,"forwarding":{"path":1,"(fbf)":1}
+,"path":{"within":1}
+,"within":{"device":1}
+,"device":{"pbr":1}
+,"pbr":{"used":1}
+,"used":{"redirect":1}
+,"redirect":{"traffic":1}
+,"traffic":{"analysis":1}
+,"analysis":{"called":1}
+,"called":{"filter-based":1}
+,"filter-based":{"forwarding":1}
+}
+;Search.control.loadWordPairs(pairs);

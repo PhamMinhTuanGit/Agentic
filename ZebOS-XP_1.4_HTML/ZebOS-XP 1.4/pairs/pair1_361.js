@@ -1,0 +1,20 @@
+var pairs =
+{
+"data":{"structures":1,"structure":1}
+,"structures":{"chapter":1,"used":1,"mpls":1,"mpls-tp":1}
+,"chapter":{"describes":1}
+,"describes":{"data":1}
+,"used":{"mpls":1}
+,"mpls":{"apis":1,"data":1,"pseudowire":1}
+,"apis":{"includes":1}
+,"includes":{"following":1}
+,"following":{"data":1}
+,"structure":{"types":1,"mpls-nsf":1}
+,"types":{"common":1}
+,"common":{"data":1}
+,"pseudowire":{"data":1}
+,"mpls-nsf":{"data":1}
+,"mpls-tp":{"data":1,"lps":1}
+,"lps":{"data":1}
+}
+;Search.control.loadWordPairs(pairs);

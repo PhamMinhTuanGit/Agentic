@@ -1,0 +1,23 @@
+var pairs =
+{
+"contents":{"guide":1}
+,"guide":{"contains":1}
+,"contains":{"chapters":1}
+,"chapters":{"chapter":1}
+,"chapter":{"tacacs":1,"user":1,"radius":1,"ssh":1,"syslog":1,"dns":1,"dhcp":1,"ntp":1}
+,"tacacs":{"server":1}
+,"server":{"host":1}
+,"host":{"configuration":1}
+,"configuration":{"chapter":1}
+,"user":{"configuration":1}
+,"radius":{"server":1}
+,"ssh":{"client":1}
+,"client":{"server":1,"configuration":1}
+,"syslog":{"configuration":1}
+,"dns":{"client":1}
+,"dhcp":{"client":1,"relay":1}
+,"relay":{"agent":1}
+,"agent":{"configuration":1}
+,"ntp":{"client":1}
+}
+;Search.control.loadWordPairs(pairs);

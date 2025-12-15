@@ -1,0 +1,26 @@
+var pairs =
+{
+"rsvp-trunk-restart":{"command":1,"parameters":1}
+,"command":{"restart":1,"kills":1,"syntax":1,"mode":1}
+,"restart":{"rsvp":1}
+,"rsvp":{"trunk":1}
+,"trunk":{"command":1,"mode":1}
+,"kills":{"existing":1}
+,"existing":{"lsp":1}
+,"lsp":{"restarts":1,"setup":1}
+,"restarts":{"lsp":1}
+,"setup":{"process":1}
+,"process":{"command":1}
+,"syntax":{"rsvp-trunk-restart":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"trunk":1,"examples":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"rsvp-trunk":1}
+,"rsvp-trunk":{"mytrunk":1}
+,"mytrunk":{"(config-trunk)":1}
+,"(config-trunk)":{"rsvp-trunk-restart":1}
+}
+;Search.control.loadWordPairs(pairs);

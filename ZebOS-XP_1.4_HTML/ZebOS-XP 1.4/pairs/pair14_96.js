@@ -1,0 +1,24 @@
+var pairs =
+{
+"portal-topology":{"command":1,"(2-portal":1,"2-portal":1}
+,"command":{"portal":1,"syntax":1,"mode":1}
+,"portal":{"topology":1}
+,"topology":{"command":1,"3-portal":1}
+,"syntax":{"portal-topology":1}
+,"(2-portal":{"3-portal)":1}
+,"3-portal)":{"parameters":1}
+,"parameters":{"2-portal":1}
+,"2-portal":{"two-node":1}
+,"two-node":{"topology":1}
+,"3-portal":{"three-node":1}
+,"three-node":{"topology":1}
+,"mode":{"mlag":1,"example":1}
+,"mlag":{"mode":1,"configuration":1}
+,"example":{"config":1}
+,"config":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"mlag":1}
+,"configuration":{"(config-mlag)":1}
+,"(config-mlag)":{"portal-topology":1}
+}
+;Search.control.loadWordPairs(pairs);

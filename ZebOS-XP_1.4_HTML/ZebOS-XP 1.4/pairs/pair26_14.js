@@ -1,0 +1,27 @@
+var pairs =
+{
+"nsm_vlan_port_add_pnp":{"function":1,"(struct":1}
+,"function":{"called":1}
+,"called":{"add":1}
+,"add":{"bvid":1}
+,"bvid":{"pnp":1,"vid":1}
+,"pnp":{"port":1}
+,"port":{"syntax":1}
+,"syntax":{"nsm_vlan_port_add_pnp":1}
+,"(struct":{"interface":1}
+,"interface":{"*ifp":1,"bvid":1}
+,"*ifp":{"nsm_vid_t":1}
+,"nsm_vid_t":{"bvid)":1}
+,"bvid)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ifp":1,"none":1}
+,"ifp":{"pointer":1}
+,"pointer":{"interface":1}
+,"vid":{"b-vlan":1}
+,"b-vlan":{"output":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"result_success":1}
+}
+;Search.control.loadWordPairs(pairs);

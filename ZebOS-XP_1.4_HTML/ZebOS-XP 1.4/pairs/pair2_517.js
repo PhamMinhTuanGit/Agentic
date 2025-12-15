@@ -1,0 +1,22 @@
+var pairs =
+{
+"rsvp-te":{"architecture":1,"signaling":1,"interaction":1}
+,"architecture":{"rsvp-te":1}
+,"signaling":{"protocol":1}
+,"protocol":{"supports":1}
+,"supports":{"explicit":1}
+,"explicit":{"routing":1}
+,"routing":{"capabilities":1}
+,"capabilities":{"establish":1}
+,"establish":{"label-switched":1}
+,"label-switched":{"paths":1}
+,"paths":{"(lsps)":1}
+,"(lsps)":{"mpls":1}
+,"mpls":{"(multi-protocol":1}
+,"(multi-protocol":{"label":1}
+,"label":{"switching)":1}
+,"switching)":{"network":1}
+,"network":{"rsvp-te":1}
+,"interaction":{"nsm":1}
+}
+;Search.control.loadWordPairs(pairs);

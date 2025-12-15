@@ -1,0 +1,24 @@
+var pairs =
+{
+"hardware":{"services":1,"system-related":1}
+,"services":{"layer":1}
+,"layer":{"hardware":1,"(hsl)":1,"implements":1}
+,"(hsl)":{"socket":1}
+,"socket":{"back-end":1}
+,"back-end":{"layer":1}
+,"implements":{"hardware":1}
+,"system-related":{"functionality":1}
+,"functionality":{"chapter":1}
+,"chapter":{"includes":1}
+,"includes":{"overview":1}
+,"overview":{"hsl":1}
+,"hsl":{"lists":1}
+,"lists":{"data":1}
+,"data":{"structures":1}
+,"structures":{"defines":1}
+,"defines":{"api":1}
+,"api":{"callbacks":1,"functions":1}
+,"callbacks":{"describes":1}
+,"describes":{"api":1}
+}
+;Search.control.loadWordPairs(pairs);

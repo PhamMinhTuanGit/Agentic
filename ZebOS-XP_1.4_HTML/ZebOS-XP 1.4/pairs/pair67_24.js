@@ -1,0 +1,19 @@
+var pairs =
+{
+"snmp":{"restart":1,"(pim)":1}
+,"restart":{"pim":1,"snmp":1}
+,"pim":{"command":1,"daemon":1,"parameters":1}
+,"command":{"restart":1,"restarts":1,"syntax":1,"mode":1}
+,"(pim)":{"command":1}
+,"restarts":{"ipv4":1}
+,"ipv4":{"ipv6":1}
+,"ipv6":{"pim":1}
+,"daemon":{"command":1}
+,"syntax":{"snmp":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1}
+,"examples":{"snmp":1}
+}
+;Search.control.loadWordPairs(pairs);

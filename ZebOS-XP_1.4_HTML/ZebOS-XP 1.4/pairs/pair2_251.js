@@ -1,0 +1,24 @@
+var pairs =
+{
+"clear":{"drcpdu-statistics":1,"drcpdu":1}
+,"drcpdu-statistics":{"command":1,"parameters":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"drcpdu":{"(distributed":1}
+,"(distributed":{"relay":1}
+,"relay":{"control":1}
+,"control":{"protocol":1}
+,"protocol":{"data":1}
+,"data":{"unit)":1}
+,"unit)":{"statistics":1}
+,"statistics":{"portal":1}
+,"portal":{"system":1}
+,"system":{"command":1}
+,"syntax":{"clear":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"privileged":1,"examples":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"examples":{"clear":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,26 @@
+var pairs =
+{
+"bootstrap":{"router":1}
+,"router":{"mechanism":1,"(bsr)":1}
+,"mechanism":{"bootstrap":1,"used":1}
+,"(bsr)":{"mechanism":1}
+,"used":{"pim-capable":1}
+,"pim-capable":{"routers":1}
+,"routers":{"dynamically":1}
+,"dynamically":{"obtain":1}
+,"obtain":{"information":1}
+,"information":{"select":1}
+,"select":{"rendezvous":1}
+,"rendezvous":{"points":1}
+,"points":{"(rps)":1}
+,"(rps)":{"multicast":1}
+,"multicast":{"groups":1}
+,"groups":{"instead":1}
+,"instead":{"requiring":1}
+,"requiring":{"administrators":1}
+,"administrators":{"manually":1}
+,"manually":{"key":1}
+,"key":{"rp-group":1}
+,"rp-group":{"mappings":1}
+}
+;Search.control.loadWordPairs(pairs);

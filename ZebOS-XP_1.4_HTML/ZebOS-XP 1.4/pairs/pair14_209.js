@@ -1,0 +1,27 @@
+var pairs =
+{
+"disable-igp-shortcut":{"command":1,"parameters":1}
+,"command":{"disable":1,"syntax":1,"mode":1}
+,"disable":{"interior":1}
+,"interior":{"gateway":1}
+,"gateway":{"protocol":1}
+,"protocol":{"(igp)":1}
+,"(igp)":{"shortcut":1}
+,"shortcut":{"enable-igp-shortcut":1,"command":1}
+,"enable-igp-shortcut":{"enable":1}
+,"enable":{"igp":1}
+,"igp":{"shortcut":1}
+,"syntax":{"disable-igp-shortcut":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"trunk":1,"example":1}
+,"trunk":{"mode":1}
+,"example":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"rsvp-trunk":1}
+,"rsvp-trunk":{"mytrunk":1}
+,"mytrunk":{"(config-trunk)":1}
+,"(config-trunk)":{"disable-igp-shortcut":1}
+}
+;Search.control.loadWordPairs(pairs);

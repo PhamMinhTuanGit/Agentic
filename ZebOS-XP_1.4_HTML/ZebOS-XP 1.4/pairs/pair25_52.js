@@ -1,0 +1,26 @@
+var pairs =
+{
+"mtu-s":{"redundancy":1,"pe1":1,"pe2":1,"configure":1}
+,"redundancy":{"follow":1,"configure":1}
+,"follow":{"basic":1}
+,"basic":{"configuration":1}
+,"configuration":{"steps":1}
+,"steps":{"mtu-s":1}
+,"configure":{"vlan":1,"pw1":1,"vpls":1}
+,"vlan":{"pseudowires":1}
+,"pseudowires":{"pw1":1}
+,"pw1":{"pw2":1,"primary":1,"pe1":1}
+,"pw2":{"mtu-s":1,"secondary":1,"pe2":1}
+,"pe1":{"mtu-s":1,"vpls":1}
+,"pe2":{"configure":1,"pe3":1,"mtu-s":1}
+,"primary":{"pw2":1}
+,"secondary":{"mode":1}
+,"mode":{"revertive":1}
+,"revertive":{"mtu-s":1}
+,"vpls":{"peer":1,"spoke":1}
+,"peer":{"pe1and":1}
+,"pe1and":{"pe3":1}
+,"pe3":{"pe2":1,"configure":1}
+,"spoke":{"pw1":1,"pw2":1}
+}
+;Search.control.loadWordPairs(pairs);

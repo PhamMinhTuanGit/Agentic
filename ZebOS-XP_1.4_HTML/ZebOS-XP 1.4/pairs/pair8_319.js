@@ -1,0 +1,23 @@
+var pairs =
+{
+"show":{"rsvp":1}
+,"rsvp":{"control-adjacency":1,"specific":1}
+,"control-adjacency":{"command":1,"show":1,"caname":1}
+,"command":{"display":1,"syntax":1,"mode":1}
+,"display":{"rsvp":1,"name":1}
+,"specific":{"information":1}
+,"information":{"control":1}
+,"control":{"adjacency":1}
+,"adjacency":{"command":1}
+,"syntax":{"show":1}
+,"caname":{"parameters":1,"parameter":1}
+,"parameters":{"caname":1}
+,"parameter":{"display":1}
+,"name":{"control-adjacency":1}
+,"mode":{"exec":1}
+,"exec":{"privileged":1,"modes":1}
+,"privileged":{"exec":1}
+,"modes":{"example":1}
+,"example":{"rsvp":1}
+}
+;Search.control.loadWordPairs(pairs);

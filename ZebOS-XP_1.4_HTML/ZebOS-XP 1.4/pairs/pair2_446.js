@@ -1,0 +1,24 @@
+var pairs =
+{
+"features":{"graceful":1}
+,"graceful":{"restart":1}
+,"restart":{"constrained":1}
+,"constrained":{"shortest":1}
+,"shortest":{"path":1}
+,"path":{"first":1}
+,"first":{"optimization":1}
+,"optimization":{"multiple":1}
+,"multiple":{"instances":1}
+,"instances":{"pe-ce":1}
+,"pe-ce":{"bgp\u002Fmpls":1}
+,"bgp\u002Fmpls":{"vpns":1}
+,"vpns":{"passive":1}
+,"passive":{"interface":1}
+,"interface":{"multi-area":1}
+,"multi-area":{"adjacency":1}
+,"adjacency":{"loop-free":1}
+,"loop-free":{"alternate":1}
+,"alternate":{"fast":1}
+,"fast":{"reroute":1}
+}
+;Search.control.loadWordPairs(pairs);

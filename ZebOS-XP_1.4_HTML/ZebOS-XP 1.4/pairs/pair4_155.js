@@ -1,0 +1,19 @@
+var pairs =
+{
+"socket":{"mechanisms":1,"mechanism":1,"implementation":1}
+,"mechanisms":{"zebos-xp":1}
+,"zebos-xp":{"provides":1}
+,"provides":{"proprietary":1}
+,"proprietary":{"socket":1}
+,"mechanism":{"full":1}
+,"full":{"af_hsl":1}
+,"af_hsl":{"family":1}
+,"family":{"socket":1}
+,"implementation":{"registered":1}
+,"registered":{"serves":1}
+,"serves":{"best":1}
+,"best":{"performance":1}
+,"performance":{"communication":1}
+,"communication":{"interface":1}
+}
+;Search.control.loadWordPairs(pairs);

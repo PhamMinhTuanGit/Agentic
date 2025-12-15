@@ -1,0 +1,25 @@
+var pairs =
+{
+"evb":{"bridge":1}
+,"bridge":{"cdcp":1,"<1-32>":1,"identifier":1}
+,"cdcp":{"channel-capacity":1,"(s-channel":1,"channels":1}
+,"channel-capacity":{"command":1,"<1-167>":1}
+,"command":{"number":1,"syntax":1,"mode":1}
+,"number":{"cdcp":1}
+,"(s-channel":{"discovery":1}
+,"discovery":{"configuration":1}
+,"configuration":{"protocol)":1}
+,"protocol)":{"channels":1}
+,"channels":{"command":1}
+,"syntax":{"evb":1}
+,"<1-32>":{"cdcp":1,"bridge":1}
+,"<1-167>":{"parameters":1,"number":1}
+,"parameters":{"<1-32>":1}
+,"identifier":{"<1-167>":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"evb":1}
+}
+;Search.control.loadWordPairs(pairs);

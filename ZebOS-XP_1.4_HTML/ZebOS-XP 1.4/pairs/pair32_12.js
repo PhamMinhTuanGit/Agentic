@@ -1,0 +1,22 @@
+var pairs =
+{
+"pbb-te-aps":{"load":1}
+,"load":{"sharing":1}
+,"sharing":{"zebos-xp":1,"specified":1}
+,"zebos-xp":{"supports":1}
+,"supports":{"provider":1}
+,"provider":{"backbone":1}
+,"backbone":{"bridge":1}
+,"bridge":{"-traffic":1}
+,"-traffic":{"engineering":1}
+,"engineering":{"(pbb-te)":1}
+,"(pbb-te)":{"aps":1}
+,"aps":{"(automatic":1}
+,"(automatic":{"protection":1}
+,"protection":{"switching)":1}
+,"switching)":{"load":1}
+,"specified":{"ieee":1}
+,"ieee":{"802.1qay":1}
+,"802.1qay":{"requirements":1}
+}
+;Search.control.loadWordPairs(pairs);

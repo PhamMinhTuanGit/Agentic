@@ -1,0 +1,22 @@
+var pairs =
+{
+"garp":{"api":1}
+,"api":{"following":1,"functions":1}
+,"following":{"subsection":1}
+,"subsection":{"includes":1}
+,"includes":{"(garp)":1}
+,"(garp)":{"generic":1}
+,"generic":{"attribute":1}
+,"attribute":{"registration":1}
+,"registration":{"protocol":1}
+,"protocol":{"functions":1}
+,"functions":{"garp":1,"functions":1,"description":1}
+,"description":{"hal_garp_set_bridge_type":1}
+,"hal_garp_set_bridge_type":{"function":1}
+,"function":{"sets":1}
+,"sets":{"bridge":1}
+,"bridge":{"gmrp\u002Fgvrp":1}
+,"gmrp\u002Fgvrp":{"enabled":1}
+,"enabled":{"disabled":1}
+}
+;Search.control.loadWordPairs(pairs);

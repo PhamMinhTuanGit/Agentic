@@ -1,0 +1,24 @@
+var pairs =
+{
+"nsm":{"module":1}
+,"module":{"nsm":1,"handles":1}
+,"handles":{"following":1}
+,"following":{"tasks":1}
+,"tasks":{"maximum-path":1}
+,"maximum-path":{"value":1}
+,"value":{"configuration":1}
+,"configuration":{"updating":1}
+,"updating":{"igp":1}
+,"igp":{"next-hops":1}
+,"next-hops":{"corresponding":1,"recursive":1}
+,"corresponding":{"bgp":1}
+,"bgp":{"recursive":1,"nexthop":1}
+,"recursive":{"nexthop":1,"bgp":1}
+,"nexthop":{"nexthop":1,"down":1,"rib":1}
+,"down":{"keeping":1}
+,"keeping":{"track":1}
+,"track":{"multiple":1}
+,"multiple":{"igp":1}
+,"rib":{"table":1}
+}
+;Search.control.loadWordPairs(pairs);

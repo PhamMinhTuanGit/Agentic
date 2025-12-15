@@ -1,0 +1,19 @@
+var pairs =
+{
+"bgp":{"md5":1,"security":1}
+,"md5":{"verification":1,"digest":1}
+,"verification":{"enhance":1}
+,"enhance":{"bgp":1}
+,"security":{"md5":1}
+,"digest":{"carried":1}
+,"carried":{"tcp":1}
+,"tcp":{"segment":1}
+,"segment":{"acts":1,"incorporate":1}
+,"acts":{"signature":1}
+,"signature":{"segment":1}
+,"incorporate":{"information":1}
+,"information":{"known":1}
+,"known":{"connection":1}
+,"connection":{"end-points":1}
+}
+;Search.control.loadWordPairs(pairs);

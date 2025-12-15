@@ -1,0 +1,25 @@
+var pairs =
+{
+"ssh":{"server":1,"command":1}
+,"server":{"port":1,"listens":1,"disabled":1}
+,"port":{"command":1,"number":1,"ssh":1,"<1-65535>":1,"parameters":1,"720":1}
+,"command":{"port":1,"ssh":1,"form":1,"default":1,"syntax":1,"mode":1}
+,"number":{"ssh":1,"(22)":1,"command":1}
+,"listens":{"connections":1,"give":1}
+,"connections":{"default":1}
+,"default":{"port":1}
+,"give":{"command":1}
+,"disabled":{"feature":1}
+,"feature":{"ssh":1}
+,"form":{"command":1}
+,"(22)":{"command":1}
+,"syntax":{"ssh":1}
+,"<1-65535>":{"ssh":1,"port":1}
+,"parameters":{"<1-65535>":1}
+,"mode":{"configure":1,"examples":1}
+,"configure":{"mode":1,"terminal":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"ssh":1}
+}
+;Search.control.loadWordPairs(pairs);

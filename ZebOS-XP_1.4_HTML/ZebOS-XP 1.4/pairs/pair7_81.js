@@ -1,0 +1,23 @@
+var pairs =
+{
+"level":{"command":1,"(mel)":1,"<0-7>":1}
+,"command":{"maintenance":1,"syntax":1,"mode":1}
+,"maintenance":{"entity":1}
+,"entity":{"group":1}
+,"group":{"(meg)":1}
+,"(meg)":{"level":1}
+,"(mel)":{"carry":1}
+,"carry":{"r-aps":1}
+,"r-aps":{"messages":1}
+,"messages":{"command":1}
+,"syntax":{"level":1}
+,"<0-7>":{"parameters":1,"level":1}
+,"parameters":{"<0-7>":1}
+,"mode":{"g.8032":1,"examples":1}
+,"g.8032":{"configure":1}
+,"configure":{"switch":1}
+,"switch":{"mode":1}
+,"examples":{"(g8032-config-switch)":1}
+,"(g8032-config-switch)":{"level":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"pe2":{"(nsm)":1}
+,"(nsm)":{"configure":1}
+,"configure":{"terminal":1,"mode":1,"ipv4":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1}
+,"mode":{"(config)":1}
+,"(config)":{"mpls":1}
+,"mpls":{"map-route":1}
+,"map-route":{"100.1.1.0\u002F24":1}
+,"100.1.1.0\u002F24":{"tp-tunnel":1}
+,"tp-tunnel":{"tn2":1}
+,"tn2":{"configure":1}
+,"ipv4":{"traffic":1}
+,"traffic":{"map":1}
+,"map":{"based":1}
+,"based":{"destination":1}
+,"destination":{"address":1}
+,"address":{"packet":1}
+,"packet":{"mpls-tp":1}
+,"mpls-tp":{"tunnel":1}
+}
+;Search.control.loadWordPairs(pairs);

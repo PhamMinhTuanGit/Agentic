@@ -1,0 +1,23 @@
+var pairs =
+{
+"msdp":{"configuration":1,"routers":1}
+,"configuration":{"multicast":1}
+,"multicast":{"source":1}
+,"source":{"discovery":1,"information":1,"different":1}
+,"discovery":{"protocol":1}
+,"protocol":{"(msdp)":1}
+,"(msdp)":{"used":1}
+,"used":{"exchange":1}
+,"exchange":{"multicast":1}
+,"information":{"bgp-enabled":1}
+,"bgp-enabled":{"pim-sm":1}
+,"pim-sm":{"domains":1,"domain":1}
+,"domains":{"using":1}
+,"using":{"msdp":1}
+,"routers":{"pim-sm":1}
+,"domain":{"rely":1}
+,"rely":{"reach":1}
+,"reach":{"source":1}
+,"different":{"pim-sm":1}
+}
+;Search.control.loadWordPairs(pairs);

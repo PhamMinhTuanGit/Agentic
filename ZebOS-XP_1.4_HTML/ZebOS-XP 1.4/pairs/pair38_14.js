@@ -1,0 +1,20 @@
+var pairs =
+{
+"elmi_frame_send":{"api":1,"(u_char":1}
+,"api":{"s_int32_t":1}
+,"s_int32_t":{"elmi_frame_send":1}
+,"(u_char":{"*src_addr":1}
+,"*src_addr":{"const":1}
+,"const":{"u_char":1}
+,"u_char":{"*dest_addr":1,"*data":1}
+,"*dest_addr":{"u_int32_t":1}
+,"u_int32_t":{"ifindex":1,"length)":1}
+,"ifindex":{"u_char":1}
+,"*data":{"u_int32_t":1}
+,"length)":{"input":1}
+,"input":{"parameter":1}
+,"parameter":{"none":1}
+,"none":{"output":1}
+,"output":{"parameter":1}
+}
+;Search.control.loadWordPairs(pairs);

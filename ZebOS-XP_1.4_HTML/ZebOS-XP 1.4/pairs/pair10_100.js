@@ -1,0 +1,26 @@
+var pairs =
+{
+"start-shell":{"command":1,"parameters":1,"[root@tsup40":1}
+,"command":{"execute":1,"linux":1,"back":1,"syntax":1,"mode":1}
+,"execute":{"commands":1}
+,"commands":{"underlying":1,"linux":1}
+,"underlying":{"kernel":1,"operating":1}
+,"kernel":{"example":1}
+,"example":{"using":1,"start-shell":1}
+,"using":{"command":1}
+,"linux":{"commands":1,"underlying":1}
+,"operating":{"system":1}
+,"system":{"exit":1}
+,"exit":{"command":1,"exit":1}
+,"back":{"imish":1}
+,"imish":{"command":1}
+,"syntax":{"start-shell":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"privileged":1,"example":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"[root@tsup40":{"sbin]":1}
+,"sbin]":{"exit":1}
+}
+;Search.control.loadWordPairs(pairs);

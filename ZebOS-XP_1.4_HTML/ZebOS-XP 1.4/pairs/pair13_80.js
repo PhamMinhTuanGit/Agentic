@@ -1,0 +1,27 @@
+var pairs =
+{
+"link":{"aggregation":1}
+,"aggregation":{"messages":1,"hal_msg_lacp_deinit":1,"hal_msg_lacp_add_aggregator":1,"interface":1}
+,"messages":{"message":1}
+,"message":{"message":1,"hal_msg_lacp_init":1}
+,"hal_msg_lacp_init":{"initialize":1}
+,"initialize":{"link":1}
+,"hal_msg_lacp_deinit":{"deinit":1}
+,"deinit":{"link":1}
+,"hal_msg_lacp_add_aggregator":{"add":1}
+,"add":{"aggregator":1,"port":1}
+,"aggregator":{"interface":1,"hal_msg_lacp_detach_mux_from_aggregator":1,"hal_msg_lacp_psc_set":1}
+,"interface":{"hal_msg_lacp_delete_aggregator":1,"hal_msg_lacp_attach_mux_to_aggregator":1}
+,"hal_msg_lacp_delete_aggregator":{"remove":1}
+,"remove":{"aggregation":1,"port":1}
+,"hal_msg_lacp_attach_mux_to_aggregator":{"add":1}
+,"port":{"aggregator":1,"selection":1}
+,"hal_msg_lacp_detach_mux_from_aggregator":{"remove":1}
+,"hal_msg_lacp_psc_set":{"outgoing":1}
+,"outgoing":{"port":1}
+,"selection":{"criteria":1}
+,"criteria":{"hal_msg_lacp_collecting":1}
+,"hal_msg_lacp_collecting":{"hal_msg_lacp_distributing":1}
+,"hal_msg_lacp_distributing":{"hal_msg_lacp_collecting_distributing":1}
+}
+;Search.control.loadWordPairs(pairs);

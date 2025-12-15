@@ -1,0 +1,20 @@
+var pairs =
+{
+"validation":{"nsm":1}
+,"nsm":{"trill":1}
+,"trill":{"appointed-forwarder":1}
+,"appointed-forwarder":{"appointed":1}
+,"appointed":{"forwarder":1}
+,"forwarder":{"vlan":1}
+,"vlan":{"designated":1,"ifname":1}
+,"designated":{"vlan":1}
+,"ifname":{"ifidx":1}
+,"ifidx":{"snpa":1}
+,"snpa":{"dvlan":1}
+,"dvlan":{"af_vlans":1}
+,"af_vlans":{"eth1":1}
+,"eth1":{"0003":1}
+,"0003":{"52:54:00:d0:29:82":1}
+,"52:54:00:d0:29:82":{"0002":1}
+}
+;Search.control.loadWordPairs(pairs);

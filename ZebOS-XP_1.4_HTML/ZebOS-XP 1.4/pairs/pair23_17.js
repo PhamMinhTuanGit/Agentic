@@ -1,0 +1,25 @@
+var pairs =
+{
+"experimental":{"oam":1}
+,"oam":{"experimental":1,"(exm)":1}
+,"(exm)":{"functionality":1}
+,"functionality":{"used":1}
+,"used":{"within":1}
+,"within":{"administrative":1}
+,"administrative":{"domain":1}
+,"domain":{"temporary":1}
+,"temporary":{"basis":1}
+,"basis":{"zebos-xp":1}
+,"zebos-xp":{"exm":1}
+,"exm":{"implementation":1,"frame":1}
+,"implementation":{"handles":1}
+,"handles":{"message":1}
+,"message":{"part":1}
+,"part":{"frame":1}
+,"frame":{"means":1,"handle":1}
+,"means":{"capable":1}
+,"capable":{"identifying":1}
+,"identifying":{"exm":1}
+,"handle":{"payload":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"vlan":{"registration":1}
+,"registration":{"protocol":1}
+,"protocol":{"chapter":1,"(vrp)":1,"(mvrp)":1,"(gvrp)":1}
+,"chapter":{"describes":1}
+,"describes":{"vlan":1}
+,"(vrp)":{"implementation":1}
+,"implementation":{"zebos-xp":1}
+,"zebos-xp":{"including":1}
+,"including":{"multiple":1}
+,"multiple":{"vlan":1}
+,"(mvrp)":{"garp":1}
+,"garp":{"vlan":1}
+,"(gvrp)":{"section":1}
+,"section":{"includes":1}
+,"includes":{"overview":1}
+,"overview":{"list":1}
+,"list":{"features":1}
+,"features":{"description":1}
+,"description":{"supported":1}
+,"supported":{"functions":1}
+}
+;Search.control.loadWordPairs(pairs);

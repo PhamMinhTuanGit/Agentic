@@ -1,0 +1,22 @@
+var pairs =
+{
+"port":{"authentication":1,"auth_mac":1}
+,"authentication":{"function":1,"api":1,"hal_auth_deinit":1,"hal_auth_mac_set_port_state":1}
+,"function":{"api":1,"initializes":1,"deinitializes":1,"sets":1}
+,"api":{"following":1,"functions":1}
+,"following":{"subsection":1}
+,"subsection":{"includes":1}
+,"includes":{"port":1}
+,"functions":{"hal":1,"functions":1,"description":1}
+,"hal":{"api":1,"802.1x":1}
+,"description":{"hal_auth_init":1}
+,"hal_auth_init":{"function":1}
+,"initializes":{"hal":1}
+,"802.1x":{"port":1}
+,"hal_auth_deinit":{"function":1}
+,"deinitializes":{"hal":1}
+,"hal_auth_mac_set_port_state":{"function":1}
+,"sets":{"port":1}
+,"auth_mac":{"state":1}
+}
+;Search.control.loadWordPairs(pairs);

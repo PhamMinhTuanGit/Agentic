@@ -1,0 +1,26 @@
+var pairs =
+{
+"prerequisites":{"dvd":1}
+,"dvd":{"iso":1}
+,"iso":{"images":1}
+,"images":{"debian":1}
+,"debian":{"gnu\u002Flinux":1}
+,"gnu\u002Flinux":{"8.2":1}
+,"8.2":{"(jessie)":1}
+,"(jessie)":{"processor":1}
+,"processor":{"architectures":1,"smp":1}
+,"architectures":{"bit":1}
+,"bit":{"(amd64)":1,"bit":1,"(i386)":1,"download":1}
+,"(amd64)":{"required":1}
+,"required":{"processor":1}
+,"smp":{"bit":1}
+,"(i386)":{"required":1}
+,"download":{"https:\u002F\u002Fwww.debian.org\u002Fcd\u002Fhttp-ftp":1}
+,"https:\u002F\u002Fwww.debian.org\u002Fcd\u002Fhttp-ftp":{"zebos-xp":1}
+,"zebos-xp":{"tar":1}
+,"tar":{"ball":1}
+,"ball":{"(zebos.tar.gz)":1}
+,"(zebos.tar.gz)":{"delivered":1}
+,"delivered":{"infusion":1}
+}
+;Search.control.loadWordPairs(pairs);

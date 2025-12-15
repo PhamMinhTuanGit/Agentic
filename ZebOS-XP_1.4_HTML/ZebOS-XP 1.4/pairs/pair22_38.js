@@ -1,0 +1,25 @@
+var pairs =
+{
+"l2mrib_port_instances":{"structure":1}
+,"structure":{"l2mrib.h":1}
+,"l2mrib.h":{"maintains":1}
+,"maintains":{"port":1}
+,"port":{"states":1}
+,"states":{"member":1}
+,"member":{"name":1}
+,"name":{"description":1}
+,"description":{"instance_id":1}
+,"instance_id":{"definition":1,"u_char":1}
+,"definition":{"struct":1}
+,"struct":{"l2mrib_port_instance":1}
+,"l2mrib_port_instance":{"{u_int16_t":1}
+,"{u_int16_t":{"instance_id":1}
+,"u_char":{"state":1}
+,"state":{"define":1}
+,"define":{"l2mrib_port_state_disabled":1,"l2mrib_port_state_listening":1,"l2mrib_port_state_learning":1,"l2mrib_port_state_forwarding":1,"l2mrib_port_state_discarding":1}
+,"l2mrib_port_state_disabled":{"define":1}
+,"l2mrib_port_state_listening":{"define":1}
+,"l2mrib_port_state_learning":{"define":1}
+,"l2mrib_port_state_forwarding":{"define":1}
+}
+;Search.control.loadWordPairs(pairs);

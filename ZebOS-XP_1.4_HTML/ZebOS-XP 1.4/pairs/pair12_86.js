@@ -1,0 +1,21 @@
+var pairs =
+{
+"hal_port_map":{"data":1,"{u_int32_t":1}
+,"data":{"structure":1}
+,"structure":{"helps":1}
+,"helps":{"manage":1}
+,"manage":{"port":1}
+,"port":{"bit":1}
+,"bit":{"map":1}
+,"map":{"function":1}
+,"function":{"defined":1}
+,"defined":{"hal\u002Fhal_if.h":1}
+,"hal\u002Fhal_if.h":{"type":1}
+,"type":{"definition":1}
+,"definition":{"bitmap":1,"struct":1}
+,"bitmap":{"[hal_bit_map_max]":1}
+,"[hal_bit_map_max]":{"definition":1}
+,"struct":{"hal_port_map":1}
+,"{u_int32_t":{"bitmap":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"bpdu":{"handling":1}
+,"handling":{"trill":1}
+,"trill":{"supports":1,"rbridges":1}
+,"supports":{"backwardly":1}
+,"backwardly":{"compatible":1}
+,"compatible":{"existing":1}
+,"existing":{"ieee":1}
+,"ieee":{"802.1":1}
+,"802.1":{"devices":1}
+,"devices":{"hubs":1}
+,"hubs":{"bridges":1}
+,"bridges":{"chapter":1}
+,"chapter":{"shows":1}
+,"shows":{"configuration":1}
+,"configuration":{"required":1}
+,"required":{"trill":1}
+,"rbridges":{"handle":1}
+,"handle":{"bpdus":1}
+,"bpdus":{"intermediate":1}
+,"intermediate":{"bridges":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,24 @@
+var pairs =
+{
+"esadi":{"enable":1,"protocol":1,"disable)":1}
+,"enable":{"command":1,"esadi":1,"parameters":1,"configure":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"protocol":{"esabi":1,"(refer":1,"trill":1}
+,"esabi":{"disable":1}
+,"disable":{"command":1,"esadi":1}
+,"(refer":{"esadi":1}
+,"disable)":{"command":1}
+,"syntax":{"esadi":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"rbridge":1,"examples":1}
+,"rbridge":{"mode":1,"trill":1}
+,"examples":{"enable":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"bridge":1,"rbridge":1}
+,"bridge":{"protocol":1}
+,"trill":{"(config)":1,"(config-rb)":1}
+,"(config-rb)":{"esadi":1}
+}
+;Search.control.loadWordPairs(pairs);

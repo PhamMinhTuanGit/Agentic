@@ -1,0 +1,27 @@
+var pairs =
+{
+"bridge":{"(config)":1,"enter":1,"g8031":1}
+,"(config)":{"g8031":1,"bridge":1}
+,"g8031":{"configure":1,"ethernet":1,"mode":1,"eps-id":1}
+,"configure":{"switching":1}
+,"switching":{"eps-id":1,"mode":1}
+,"eps-id":{"bridge":1,"delete":1}
+,"enter":{"g8031":1}
+,"mode":{"(config)":1,"reconfigure":1,"g8031":1,"(g8031-config-switching)":1}
+,"ethernet":{"md-name":1}
+,"md-name":{"test":1}
+,"test":{"service-id":1}
+,"service-id":{"eps":1}
+,"eps":{"remove":1,"group":1,"protection":1}
+,"remove":{"association":1}
+,"association":{"eps":1}
+,"group":{"cfm":1}
+,"cfm":{"domain":1}
+,"domain":{"(g8031-config-switching)":1}
+,"(g8031-config-switching)":{"g8031":1,"exit":1}
+,"reconfigure":{"switching":1}
+,"exit":{"exit":1,"g8031":1}
+,"delete":{"eps":1}
+,"protection":{"group":1}
+}
+;Search.control.loadWordPairs(pairs);

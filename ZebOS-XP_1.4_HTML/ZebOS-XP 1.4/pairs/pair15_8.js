@@ -1,0 +1,27 @@
+var pairs =
+{
+"debug":{"bfd":1,"debug":1}
+,"bfd":{"command":1,"form":1,"(all":1,"(event":1,"debug":1,"event":1,"ipc-error":1,"ipc-event":1,"nsm":1,"packet":1,"session":1}
+,"command":{"enable":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"debugging":1,"bfd":1}
+,"debugging":{"bfd":1,"event":1,"ipc-error":1,"ipc-event":1,"nsm":1,"packet":1,"session":1,"command":1}
+,"form":{"command":1}
+,"disable":{"debugging":1}
+,"syntax":{"debug":1}
+,"(all":{"debug":1}
+,"(event":{"ipc-error":1}
+,"ipc-error":{"ipc-event":1,"enable":1,"debugging":1,"debug":1}
+,"ipc-event":{"nsm":1,"enable":1,"debugging":1,"debug":1}
+,"nsm":{"packet":1,"enable":1,"debugging":1,"debug":1}
+,"packet":{"session)":1,"enable":1,"debugging":1,"debug":1}
+,"session)":{"debug":1,"parameters":1}
+,"parameters":{"enable":1}
+,"event":{"enable":1,"debugging":1,"debug":1}
+,"session":{"enable":1,"debugging":1}
+,"mode":{"exec":1,"examples":1}
+,"exec":{"privileged":1,"configure":1}
+,"privileged":{"exec":1}
+,"configure":{"mode":1}
+,"examples":{"debug":1}
+}
+;Search.control.loadWordPairs(pairs);

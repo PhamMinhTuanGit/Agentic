@@ -1,0 +1,23 @@
+var pairs =
+{
+"static":{"routing":1,"routes":1}
+,"routing":{"method":1,"protocols":1}
+,"method":{"network":1}
+,"network":{"administrator":1}
+,"administrator":{"programs":1,"reprogram":1}
+,"programs":{"connecting":1}
+,"connecting":{"paths":1}
+,"paths":{"networks":1}
+,"networks":{"router":1}
+,"router":{"connection":1,"new":1}
+,"connection":{"fails":1}
+,"fails":{"administrator":1}
+,"reprogram":{"router":1}
+,"new":{"path":1}
+,"path":{"static":1}
+,"routes":{"precedence":1,"chosen":1}
+,"precedence":{"routes":1}
+,"chosen":{"dynamic":1}
+,"dynamic":{"routing":1}
+}
+;Search.control.loadWordPairs(pairs);

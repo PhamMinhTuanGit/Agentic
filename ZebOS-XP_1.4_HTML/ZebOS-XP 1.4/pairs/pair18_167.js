@@ -1,0 +1,25 @@
+var pairs =
+{
+"a.b.c.d":{"command":1,"a.b.c.d":1,"parameters":1}
+,"command":{"specify":1,"remove":1,"syntax":1,"mode":1}
+,"specify":{"ipv4":1}
+,"ipv4":{"address":1}
+,"address":{"tunnel":1}
+,"tunnel":{"ingress":1,"egress":1}
+,"ingress":{"parameter":1}
+,"parameter":{"command":1}
+,"remove":{"ipv4":1}
+,"egress":{"command":1}
+,"syntax":{"a.b.c.d":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"bypass":1,"examples":1}
+,"bypass":{"mode":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"rsvp-bypass":1}
+,"rsvp-bypass":{"(config-bypass)":1}
+,"(config-bypass)":{"10.10.0.5":1}
+}
+;Search.control.loadWordPairs(pairs);

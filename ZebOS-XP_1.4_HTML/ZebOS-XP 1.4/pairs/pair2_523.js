@@ -1,0 +1,26 @@
+var pairs =
+{
+"initialization":{"rsvp-te":1}
+,"rsvp-te":{"initializes":1}
+,"initializes":{"label":1}
+,"label":{"object":1,"pool":1}
+,"object":{"establishes":1}
+,"establishes":{"connection":1}
+,"connection":{"label":1}
+,"pool":{"manager":1}
+,"manager":{"struct":1}
+,"struct":{"rsvp_label":1,"prefix":1,"rsvp_label*old_label":1}
+,"rsvp_label":{"*rsvp_label_init":1}
+,"*rsvp_label_init":{"(u_int32_t":1}
+,"(u_int32_t":{"out_label":1}
+,"out_label":{"u_int16_t":1}
+,"u_int16_t":{"label_space":1}
+,"label_space":{"struct":1}
+,"prefix":{"*fec":1}
+,"*fec":{"session_role_t":1}
+,"session_role_t":{"session_role":1}
+,"session_role":{"struct":1}
+,"rsvp_label*old_label":{"u_char":1}
+,"u_char":{"php_in_use)":1}
+}
+;Search.control.loadWordPairs(pairs);

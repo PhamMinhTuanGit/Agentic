@@ -1,0 +1,25 @@
+var pairs =
+{
+"exiting":{"restart":1}
+,"restart":{"mode":1,"signaling":1}
+,"mode":{"restart":1,"exited":1}
+,"signaling":{"mode":1,"synchronization":1}
+,"exited":{"lan-id":1}
+,"lan-id":{"changes":1}
+,"changes":{"broadcast":1}
+,"broadcast":{"interface":1}
+,"interface":{"during":1}
+,"during":{"restart":1}
+,"synchronization":{"restarting":1,"timer":1}
+,"restarting":{"router\u2019s":1}
+,"router\u2019s":{"lsp":1}
+,"lsp":{"database":1}
+,"database":{"finished":1}
+,"finished":{"synchronization":1}
+,"timer":{"(t2)":1}
+,"(t2)":{"expires":1}
+,"expires":{"(refer":1}
+,"(refer":{"timers":1}
+,"timers":{"information)":1}
+}
+;Search.control.loadWordPairs(pairs);

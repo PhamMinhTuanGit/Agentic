@@ -1,0 +1,27 @@
+var pairs =
+{
+"shutdown":{"command":1,"shutdown":1,"parameters":1,"(config)":1}
+,"command":{"mpls":1,"syntax":1,"mode":1}
+,"mpls":{"layer":1}
+,"layer":{"virtual":1}
+,"virtual":{"circuit\u002Fvpls":1}
+,"circuit\u002Fvpls":{"instance":1}
+,"instance":{"administratively":1}
+,"administratively":{"down":1,"command":1}
+,"down":{"command":1}
+,"syntax":{"shutdown":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"vpws":1,"vpls":1,"example":1}
+,"vpws":{"mode":1}
+,"vpls":{"mode":1}
+,"example":{"(config)":1}
+,"(config)":{"l2vpn-vpws":1,"l2vpn-vpls":1}
+,"l2vpn-vpws":{"vpws2":1}
+,"vpws2":{"(config-vpws)":1}
+,"(config-vpws)":{"shutdown":1}
+,"l2vpn-vpls":{"vpls2":1}
+,"vpls2":{"(config-vpls)":1}
+,"(config-vpls)":{"shutdown":1}
+}
+;Search.control.loadWordPairs(pairs);

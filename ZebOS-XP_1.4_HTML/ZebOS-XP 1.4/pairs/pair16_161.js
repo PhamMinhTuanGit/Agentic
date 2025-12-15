@@ -1,0 +1,22 @@
+var pairs =
+{
+"clear":{"ospf":1,"restart":1}
+,"ospf":{"command":1,"routing":1,"(<0-65535>":1,"process":1,"555":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"restart":{"ospf":1}
+,"routing":{"processes":1,"process":1}
+,"processes":{"given":1}
+,"given":{"ospf":1}
+,"process":{"command":1,"parameter":1,"clear":1}
+,"syntax":{"clear":1}
+,"(<0-65535>":{"process":1}
+,"parameter":{"<0-65535>":1}
+,"<0-65535>":{"specify":1}
+,"specify":{"process":1}
+,"mode":{"privileged":1,"examples":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"examples":{"clear":1}
+,"555":{"process":1}
+}
+;Search.control.loadWordPairs(pairs);

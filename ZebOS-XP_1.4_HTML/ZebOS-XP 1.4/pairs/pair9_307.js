@@ -1,0 +1,22 @@
+var pairs =
+{
+"zebos3":{"verify":1}
+,"verify":{"synchronous":1,"output":1}
+,"synchronous":{"ethernet":1}
+,"ethernet":{"details":1}
+,"details":{"show":1,"clock":1}
+,"show":{"synce":1}
+,"synce":{"details":1,"output-sources":1}
+,"clock":{"state":1}
+,"state":{"free-run":1}
+,"free-run":{"verify":1}
+,"output":{"source":1}
+,"source":{"show":1}
+,"output-sources":{"interface":1}
+,"interface":{"name":1}
+,"name":{"eth6":1}
+,"eth6":{"esmc":1}
+,"esmc":{"status":1}
+,"status":{"ql_ssu_a":1}
+}
+;Search.control.loadWordPairs(pairs);

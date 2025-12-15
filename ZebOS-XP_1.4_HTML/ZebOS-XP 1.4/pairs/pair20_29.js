@@ -1,0 +1,27 @@
+var pairs =
+{
+"nsm_vlan_port_beb_del_cnp_portbased":{"function":1,"(struct":1}
+,"function":{"called":1}
+,"called":{"delete":1}
+,"delete":{"portbased":1}
+,"portbased":{"cnp":1}
+,"cnp":{"instance":1}
+,"instance":{"syntax":1}
+,"syntax":{"nsm_vlan_port_beb_del_cnp_portbased":1}
+,"(struct":{"interface":1}
+,"interface":{"*ifp":1,"isid":1}
+,"*ifp":{"u_int32_t":1}
+,"u_int32_t":{"isid)":1}
+,"isid)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ifp":1,"none":1}
+,"ifp":{"pointer":1}
+,"pointer":{"interface":1}
+,"isid":{"isis":1}
+,"isis":{"value":1}
+,"value":{"output":1,"result_success":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+}
+;Search.control.loadWordPairs(pairs);

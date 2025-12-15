@@ -1,0 +1,27 @@
+var pairs =
+{
+"multiple":{"vlan":1}
+,"vlan":{"registration":1,"mvrp":1,"information":1}
+,"registration":{"protocol":1,"vlans":1}
+,"protocol":{"(mvrp)":1,"manages":1,"(gvrp)":1}
+,"(mvrp)":{"protocol":1}
+,"manages":{"registration":1}
+,"vlans":{"tracking":1,"router":1}
+,"tracking":{"routers":1}
+,"routers":{"members":1,"interfaces":1}
+,"members":{"vlans":1}
+,"router":{"interfaces":1}
+,"interfaces":{"vlan":1}
+,"mvrp":{"removes":1,"improves":1}
+,"removes":{"routers":1}
+,"information":{"become":1}
+,"become":{"unavailable":1}
+,"unavailable":{"mvrp":1}
+,"improves":{"convergence":1}
+,"convergence":{"time":1}
+,"time":{"garp":1}
+,"garp":{"vlan":1}
+,"(gvrp)":{"defined":1}
+,"defined":{"802.1ak":1}
+}
+;Search.control.loadWordPairs(pairs);

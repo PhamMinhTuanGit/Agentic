@@ -1,0 +1,20 @@
+var pairs =
+{
+"extract":{"zebos-xp":1}
+,"zebos-xp":{"modules":1,"source":1,".tar":1}
+,"modules":{"change":1}
+,"change":{"directory":1}
+,"directory":{"want":1}
+,"want":{"store":1}
+,"store":{"zebos-xp":1}
+,"source":{"\u002Fmyzebospath":1,"software":1}
+,"\u002Fmyzebospath":{"extract":1}
+,"software":{".tar":1}
+,".tar":{"file":1}
+,"file":{"tar":1}
+,"tar":{"-xvzf":1}
+,"-xvzf":{"tarfile":1}
+,"tarfile":{"tarfile":1,"name":1}
+,"name":{"zebos-xp":1}
+}
+;Search.control.loadWordPairs(pairs);

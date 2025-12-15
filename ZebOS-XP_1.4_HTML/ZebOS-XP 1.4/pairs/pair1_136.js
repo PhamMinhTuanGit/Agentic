@@ -1,0 +1,24 @@
+var pairs =
+{
+"user":{"network":1}
+,"network":{"interface":1,"(men)":1}
+,"interface":{"zebos-xp":1,"(uni)":1}
+,"zebos-xp":{"user":1}
+,"(uni)":{"provides":1}
+,"provides":{"demarcation":1}
+,"demarcation":{"point":1}
+,"point":{"responsibility":1,"ethernet":1}
+,"responsibility":{"service":1,"subscribers":1}
+,"service":{"provider":1,"delivery":1}
+,"provider":{"responsibility":1}
+,"subscribers":{"offers":1}
+,"offers":{"reference":1}
+,"reference":{"point":1}
+,"ethernet":{"service":1,"network":1}
+,"delivery":{"establishing":1}
+,"establishing":{"standards-based":1}
+,"standards-based":{"connection":1}
+,"connection":{"metro":1}
+,"metro":{"ethernet":1}
+}
+;Search.control.loadWordPairs(pairs);

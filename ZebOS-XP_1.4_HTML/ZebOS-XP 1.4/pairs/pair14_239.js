@@ -1,0 +1,20 @@
+var pairs =
+{
+"show":{"nsm":1}
+,"nsm":{"trill":1}
+,"trill":{"appointed-forwarder":1,"appointed":1,"adjacency":1}
+,"appointed-forwarder":{"command":1}
+,"command":{"view":1,"syntax":1,"mode":1}
+,"view":{"nsm":1}
+,"appointed":{"forwarder":1}
+,"forwarder":{"command":1}
+,"syntax":{"show":1}
+,"adjacency":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"exec":1,"privilege":1,"example":1}
+,"exec":{"mode":1}
+,"privilege":{"exec":1}
+,"example":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

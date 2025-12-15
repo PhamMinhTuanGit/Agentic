@@ -1,0 +1,27 @@
+var pairs =
+{
+"ack-wait-timeout":{"command":1,"<1-65535>":1,"parameter":1,"(config)":1}
+,"command":{"configure":1,"revert":1,"syntax":1,"mode":1}
+,"configure":{"acknowledgement":1,"terminal":1}
+,"acknowledgement":{"wait":1}
+,"wait":{"timeout":1}
+,"timeout":{"rsvp-te":1,"command":1,"seconds":1,"value":1}
+,"rsvp-te":{"neighbors":1}
+,"neighbors":{"parameter":1}
+,"parameter":{"command":1,"<1-65535>":1}
+,"revert":{"default":1}
+,"default":{"acknowledgement":1,"timeout":1}
+,"syntax":{"ack-wait-timeout":1}
+,"<1-65535>":{"ack-wait-timeout":1,"specify":1}
+,"specify":{"value":1}
+,"value":{"acknowledgement":1,"seconds":1}
+,"seconds":{"default":1,"command":1}
+,"mode":{"router":1,"examples":1}
+,"router":{"mode":1,"rsvp":1}
+,"examples":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"router":1}
+,"rsvp":{"(config-router)":1}
+,"(config-router)":{"ack-wait-timeout":1}
+}
+;Search.control.loadWordPairs(pairs);

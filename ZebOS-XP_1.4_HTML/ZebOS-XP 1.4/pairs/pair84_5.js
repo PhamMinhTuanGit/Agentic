@@ -1,0 +1,23 @@
+var pairs =
+{
+"hal_igmp_snooping_init":{"function":1,"(void)":1}
+,"function":{"initializes":1,"fails":1,"succeeds":1}
+,"initializes":{"reception":1}
+,"reception":{"igmp":1}
+,"igmp":{"packets":1,"snooping":1}
+,"packets":{"igmp":1}
+,"snooping":{"syntax":1}
+,"syntax":{"int":1}
+,"int":{"hal_igmp_snooping_init":1}
+,"(void)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"value":1}
+,"value":{"hal_err_igmp_snooping_init":1}
+,"hal_err_igmp_snooping_init":{"function":1}
+,"fails":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

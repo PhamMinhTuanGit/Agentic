@@ -1,0 +1,26 @@
+var pairs =
+{
+"pack-affinity":{"command":1,"pack-affinity":1,"parameters":1,"(config-p2mp-lsp)":1}
+,"command":{"enable":1,"used":1,"disable":1,"syntax":1,"mode":1}
+,"enable":{"affinity":1}
+,"affinity":{"packing":1,"information":1}
+,"packing":{"session":1}
+,"session":{"attribute":1,"attributes":1}
+,"attribute":{"information":1,"object":1}
+,"information":{"command":1,"packed":1}
+,"used":{"affinity":1}
+,"packed":{"session":1}
+,"object":{"parameter":1}
+,"parameter":{"command":1}
+,"disable":{"affinity":1}
+,"attributes":{"command":1}
+,"syntax":{"pack-affinity":1}
+,"parameters":{"none":1}
+,"none":{"command":1}
+,"mode":{"p2mp":1,"examples":1}
+,"p2mp":{"lsp":1}
+,"lsp":{"mode":1}
+,"examples":{"(config-p2mp-lsp)":1}
+,"(config-p2mp-lsp)":{"pack-affinity":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,22 @@
+var pairs =
+{
+"hop-limit":{"command":1,"<1-255>":1,"parameters":1,"(config-p2mp-lsp)":1}
+,"command":{"hop":1,"remove":1,"syntax":1,"mode":1}
+,"hop":{"limit":1}
+,"limit":{"p2mp":1,"command":1}
+,"p2mp":{"lsp":1}
+,"lsp":{"parameter":1,"mode":1}
+,"parameter":{"command":1}
+,"remove":{"configured":1}
+,"configured":{"hop":1}
+,"syntax":{"hop-limit":1}
+,"<1-255>":{"hop-limit":1,"number":1}
+,"parameters":{"<1-255>":1}
+,"number":{"acceptable":1}
+,"acceptable":{"hops":1}
+,"hops":{"command":1}
+,"mode":{"p2mp":1,"examples":1}
+,"examples":{"(config-p2mp-lsp)":1}
+,"(config-p2mp-lsp)":{"hop-limit":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,22 @@
+var pairs =
+{
+"vsm":{"command":1,"unicast":1}
+,"command":{"enable":1,"syntax":1,"mode":1}
+,"enable":{"transmission":1}
+,"transmission":{"(tx)":1}
+,"(tx)":{"vendor-specific":1}
+,"vendor-specific":{"oam":1}
+,"oam":{"messages":1}
+,"messages":{"(vsm)":1}
+,"(vsm)":{"mep":1}
+,"mep":{"remote":1,"command":1}
+,"remote":{"mep":1}
+,"syntax":{"vsm":1}
+,"unicast":{"rmepid":1}
+,"rmepid":{"rmepid":1,"parameters":1,"remote":1}
+,"parameters":{"rmepid":1}
+,"mode":{"examples":1}
+,"examples":{"(config-cfm-pbb-mep)":1}
+,"(config-cfm-pbb-mep)":{"vsm":1}
+}
+;Search.control.loadWordPairs(pairs);

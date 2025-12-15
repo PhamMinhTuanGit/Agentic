@@ -1,0 +1,19 @@
+var pairs =
+{
+"redistribute":{"routes":1}
+,"routes":{"ospf":1,"imported":1}
+,"ospf":{"example":1,"routing":1}
+,"example":{"configuration":1}
+,"configuration":{"causes":1}
+,"causes":{"bgp":1}
+,"bgp":{"routes":1}
+,"imported":{"ospf":1}
+,"routing":{"table":1}
+,"table":{"advertised":1}
+,"advertised":{"type":1}
+,"type":{"external":1}
+,"external":{"lsas":1}
+,"lsas":{"area":1}
+,"area":{"redistribute":1}
+}
+;Search.control.loadWordPairs(pairs);

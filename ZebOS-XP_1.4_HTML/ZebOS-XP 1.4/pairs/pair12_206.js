@@ -1,0 +1,24 @@
+var pairs =
+{
+"clear":{"ipv6":1,"restart":1}
+,"ipv6":{"ospf":1}
+,"ospf":{"process":1,"(word":1,"ipi":1}
+,"process":{"command":1,"parameters":1,"tag":1}
+,"command":{"clear":1,"syntax":1,"mode":1}
+,"restart":{"ospfv3":1}
+,"ospfv3":{"routing":1,"process":1}
+,"routing":{"processes":1,"process":1}
+,"processes":{"given":1}
+,"given":{"ospfv3":1}
+,"syntax":{"clear":1}
+,"(word":{"process":1}
+,"parameters":{"word":1}
+,"word":{"ospfv3":1}
+,"tag":{"command":1}
+,"mode":{"privileged":1,"examples":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"examples":{"clear":1}
+,"ipi":{"process":1}
+}
+;Search.control.loadWordPairs(pairs);

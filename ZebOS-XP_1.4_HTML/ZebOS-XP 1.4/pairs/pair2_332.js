@@ -1,0 +1,23 @@
+var pairs =
+{
+"l2vpn-vpws":{"command":1,"name":1,"identifying":1,"vpws1":1}
+,"command":{"create":1,"syntax":1,"mode":1}
+,"create":{"instance":1}
+,"instance":{"mpls":1}
+,"mpls":{"layer":1,"layer-2":1}
+,"layer":{"virtual":1}
+,"virtual":{"circuit":1}
+,"circuit":{"command":1,"name":1}
+,"syntax":{"l2vpn-vpws":1}
+,"name":{"parameters":1,"specifying":1,"command":1}
+,"parameters":{"l2vpn-vpws":1}
+,"identifying":{"string":1}
+,"string":{"mpls":1}
+,"layer-2":{"virtual":1}
+,"specifying":{"string":1}
+,"mode":{"configuration":1,"example":1}
+,"configuration":{"mode":1}
+,"example":{"(config)":1}
+,"(config)":{"l2vpn-vpws":1}
+}
+;Search.control.loadWordPairs(pairs);

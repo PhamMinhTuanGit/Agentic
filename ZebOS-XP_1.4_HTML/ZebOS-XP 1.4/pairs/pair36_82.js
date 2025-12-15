@@ -1,0 +1,23 @@
+var pairs =
+{
+"advanced":{"encryption":1}
+,"encryption":{"standard":1}
+,"standard":{"(aes)":1}
+,"(aes)":{"cryptographic":1}
+,"cryptographic":{"algorithm":1}
+,"algorithm":{"u.s":1}
+,"u.s":{"government":1}
+,"government":{"organizations":1}
+,"organizations":{"protect":1}
+,"protect":{"sensitive":1}
+,"sensitive":{"(unclassified)":1}
+,"(unclassified)":{"information":1}
+,"information":{"defined":1,"processing":1}
+,"defined":{"federal":1}
+,"federal":{"information":1}
+,"processing":{"standards":1}
+,"standards":{"(fips)":1}
+,"(fips)":{"pub":1}
+,"pub":{"197":1}
+}
+;Search.control.loadWordPairs(pairs);

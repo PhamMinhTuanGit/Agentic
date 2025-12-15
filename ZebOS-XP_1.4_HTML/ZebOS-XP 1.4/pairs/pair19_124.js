@@ -1,0 +1,27 @@
+var pairs =
+{
+"match":{"tag":1,"specified":1}
+,"tag":{"command":1,"value":1,"<0-4294967295>":1,"(<0-4294967295>":1,"100":1}
+,"command":{"match":1,"turn":1,"syntax":1,"mode":1}
+,"specified":{"tag":1}
+,"value":{"parameter":1,"default":1}
+,"parameter":{"command":1}
+,"turn":{"declaration":1}
+,"declaration":{"command":1}
+,"syntax":{"match":1}
+,"<0-4294967295>":{"match":1,"tag":1}
+,"(<0-4294967295>":{"parameters":1}
+,"parameters":{"<0-4294967295>":1}
+,"default":{"disabled":1}
+,"disabled":{"command":1}
+,"mode":{"route-map":1,"examples":1}
+,"route-map":{"mode":1,"mymap1":1}
+,"examples":{"configure":1}
+,"configure":{"terminal":1}
+,"terminal":{"(config)":1}
+,"(config)":{"route-map":1}
+,"mymap1":{"permit":1}
+,"permit":{"(config-route-map)":1}
+,"(config-route-map)":{"match":1}
+}
+;Search.control.loadWordPairs(pairs);

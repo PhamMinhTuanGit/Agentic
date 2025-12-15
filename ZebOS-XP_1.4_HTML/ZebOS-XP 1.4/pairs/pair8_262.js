@@ -1,0 +1,23 @@
+var pairs =
+{
+"show":{"running-config":1,"running":1}
+,"running-config":{"te-link":1}
+,"te-link":{"command":1,"configurations":1,"show":1,"tlname":1,"new-te-123":1}
+,"command":{"show":1,"syntax":1,"mode":1}
+,"running":{"system":1}
+,"system":{"status":1}
+,"status":{"te-link":1}
+,"configurations":{"command":1}
+,"syntax":{"show":1}
+,"tlname":{"parameters":1,"display":1}
+,"parameters":{"tlname":1}
+,"display":{"link":1}
+,"link":{"name":1}
+,"name":{"command":1}
+,"mode":{"privileged":1,"example":1}
+,"privileged":{"exec":1}
+,"exec":{"mode":1}
+,"example":{"enable":1}
+,"enable":{"show":1}
+}
+;Search.control.loadWordPairs(pairs);

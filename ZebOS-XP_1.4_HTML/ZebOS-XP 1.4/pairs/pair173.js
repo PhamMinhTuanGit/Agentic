@@ -1,0 +1,23 @@
+var pairs =
+{
+"hal_ipv6_mc_get_max_vifs":{"function":1,"(int":1}
+,"function":{"gets":1,"fails":1,"succeeds":1}
+,"gets":{"maximum":1}
+,"maximum":{"number":1,"vifs":1}
+,"number":{"vifs":1}
+,"vifs":{"supported":1,"maximum":1,"output":1}
+,"supported":{"syntax":1}
+,"syntax":{"int":1}
+,"int":{"hal_ipv6_mc_get_max_vifs":1}
+,"(int":{"*vifs)":1}
+,"*vifs)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"vifs":1,"none":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"value":1}
+,"value":{"function":1}
+,"fails":{"hal_success":1}
+,"hal_success":{"function":1}
+}
+;Search.control.loadWordPairs(pairs);

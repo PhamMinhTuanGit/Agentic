@@ -1,0 +1,20 @@
+var pairs =
+{
+"provider":{"edge":1,"core":1}
+,"edge":{"(pe)":1,"enterprise":1,"(ce)":1}
+,"(pe)":{"device":1}
+,"device":{"edge":1}
+,"enterprise":{"service":1}
+,"service":{"provider":1}
+,"core":{"network":1}
+,"network":{"offers":1,"traffic":1}
+,"offers":{"initial":1}
+,"initial":{"first":1}
+,"first":{"level":1}
+,"level":{"network":1}
+,"traffic":{"aggregation":1}
+,"aggregation":{"customer":1}
+,"customer":{"edge":1}
+,"(ce)":{"devices":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,25 @@
+var pairs =
+{
+"ipv4":{"tunnel":1,"tunneling":1}
+,"tunnel":{"zebos-xp":1,"mode":1,"configuration":1}
+,"zebos-xp":{"ipv4":1}
+,"tunneling":{"implementation":1,"section":1,"configuring":1}
+,"implementation":{"supports":1}
+,"supports":{"generic":1}
+,"generic":{"routing":1}
+,"routing":{"encapsulation":1}
+,"encapsulation":{"(gre)":1}
+,"(gre)":{"(ipip)":1}
+,"(ipip)":{"tunneling":1}
+,"section":{"includes":1}
+,"includes":{"configuration":1}
+,"configuration":{"gre":1,"specify":1}
+,"gre":{"tunneling":1,"ipv4":1}
+,"configuring":{"ipip":1}
+,"ipip":{"tunnels":1,"instead":1}
+,"tunnels":{"configuration":1}
+,"specify":{"tunnel":1}
+,"mode":{"ipip":1}
+,"instead":{"gre":1}
+}
+;Search.control.loadWordPairs(pairs);

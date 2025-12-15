@@ -1,0 +1,26 @@
+var pairs =
+{
+"topology":{"basic":1,"bfd-isis":1}
+,"basic":{"topology":1}
+,"bfd-isis":{"configuration":1}
+,"configuration":{"configure":1}
+,"configure":{"terminal":1,"mode":1}
+,"terminal":{"enter":1}
+,"enter":{"configure":1,"router":1}
+,"mode":{"(config)":1,"is-is":1}
+,"(config)":{"router":1}
+,"router":{"isis":1,"mode":1}
+,"isis":{"enter":1}
+,"is-is":{"(config-router)":1}
+,"(config-router)":{"net":1,"bfd":1}
+,"net":{"10.0000.0000.0001.00":1,"10.0000.0000.0002.00":1}
+,"10.0000.0000.0001.00":{"advertise":1,"is-is":1}
+,"advertise":{"network":1}
+,"network":{"10.0000.0000.0001.00":1}
+,"bfd":{"all-interface":1,"neighbors":1}
+,"all-interface":{"enable":1}
+,"enable":{"bfd":1}
+,"neighbors":{"configuration":1}
+,"10.0000.0000.0002.00":{"advertise":1}
+}
+;Search.control.loadWordPairs(pairs);

@@ -1,0 +1,22 @@
+var pairs =
+{
+"differentiated":{"services":1}
+,"services":{"code":1,"(diffserv)":1}
+,"code":{"point":1}
+,"point":{"(dscp)":1}
+,"(dscp)":{"six-bit":1}
+,"six-bit":{"field":1}
+,"field":{"header":1}
+,"header":{"enables":1}
+,"enables":{"service":1}
+,"service":{"providers":1}
+,"providers":{"allocate":1}
+,"allocate":{"resources":1}
+,"resources":{"per-packet":1}
+,"per-packet":{"basis":1}
+,"basis":{"meet":1}
+,"meet":{"customer":1}
+,"customer":{"requirements":1}
+,"requirements":{"differentiated":1}
+}
+;Search.control.loadWordPairs(pairs);

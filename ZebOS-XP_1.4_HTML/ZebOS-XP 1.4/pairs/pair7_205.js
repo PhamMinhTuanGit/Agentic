@@ -1,0 +1,20 @@
+var pairs =
+{
+"ldp_snmp_stop":{"call":1,"(void)":1}
+,"call":{"stops":1}
+,"stops":{"ldp":1}
+,"ldp":{"snmp":1}
+,"snmp":{"support":1}
+,"support":{"code":1}
+,"code":{"syntax":1}
+,"syntax":{"void":1}
+,"void":{"ldp_snmp_stop":1}
+,"(void)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"none":1}
+,"none":{"output":1,"return":1}
+,"output":{"parameters":1}
+,"return":{"value":1}
+,"value":{"none":1}
+}
+;Search.control.loadWordPairs(pairs);

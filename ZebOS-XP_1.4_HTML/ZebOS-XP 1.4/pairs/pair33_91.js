@@ -1,0 +1,24 @@
+var pairs =
+{
+"address":{"resolution":1,"address":1,"arp":1}
+,"resolution":{"protocol":1}
+,"protocol":{"(arp)":1,"(tcp\u002Fip)":1,"(ndp)":1}
+,"(arp)":{"transmission":1}
+,"transmission":{"control":1}
+,"control":{"protocol\u002Finternet":1}
+,"protocol\u002Finternet":{"protocol":1}
+,"(tcp\u002Fip)":{"mechanism":1}
+,"mechanism":{"maps":1}
+,"maps":{"mac":1}
+,"mac":{"address":1}
+,"arp":{"cache":1}
+,"cache":{"data":1}
+,"data":{"structure":1}
+,"structure":{"defined":1}
+,"defined":{"rfc":1}
+,"rfc":{"826":1}
+,"826":{"neighbor":1}
+,"neighbor":{"discovery":1}
+,"discovery":{"protocol":1}
+}
+;Search.control.loadWordPairs(pairs);

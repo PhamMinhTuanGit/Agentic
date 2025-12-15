@@ -1,0 +1,19 @@
+var pairs =
+{
+"address":{"family":1}
+,"family":{"specific":1,"identifier":1}
+,"specific":{"type":1}
+,"type":{"network":1}
+,"network":{"addressing":1}
+,"addressing":{"supported":1}
+,"supported":{"routing":1}
+,"routing":{"protocol":1}
+,"protocol":{"examples":1}
+,"examples":{"ipv4":1}
+,"ipv4":{"unicast":1,"multicast":1}
+,"unicast":{"ipv4":1}
+,"multicast":{"subsequent":1}
+,"subsequent":{"address":1}
+,"identifier":{"(safi)":1}
+}
+;Search.control.loadWordPairs(pairs);

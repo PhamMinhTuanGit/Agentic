@@ -1,0 +1,1 @@
+This file is here because CVS does not play well with empty directories.

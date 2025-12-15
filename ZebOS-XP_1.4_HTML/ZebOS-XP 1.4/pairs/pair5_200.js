@@ -1,0 +1,23 @@
+var pairs =
+{
+"bridge":{"protocol":1,"command":1,"<1-32>":1,"group":1}
+,"protocol":{"rpvst":1}
+,"rpvst":{"command":1,"parameter":1}
+,"command":{"enable":1,"syntax":1,"mode":1}
+,"enable":{"rapid":1}
+,"rapid":{"per-vlan":1}
+,"per-vlan":{"spanning":1}
+,"spanning":{"tree":1}
+,"tree":{"bridge":1}
+,"syntax":{"bridge":1}
+,"<1-32>":{"protocol":1,"specify":1}
+,"parameter":{"<1-32>":1}
+,"specify":{"bridge":1}
+,"group":{"command":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"bridge":1}
+}
+;Search.control.loadWordPairs(pairs);

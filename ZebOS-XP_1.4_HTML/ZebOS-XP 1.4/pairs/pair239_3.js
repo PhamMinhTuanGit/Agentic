@@ -1,0 +1,27 @@
+var pairs =
+{
+"maintenance":{"association":1,"domain":1}
+,"association":{"(ma)":1,"end":1,"identifier)":1}
+,"(ma)":{"connectivity":1}
+,"connectivity":{"fault":1}
+,"fault":{"management":1}
+,"management":{"(cfm)":1}
+,"(cfm)":{"maintenance":1}
+,"end":{"point":1}
+,"point":{"(mep)":1}
+,"(mep)":{"instances":1}
+,"instances":{"configured":1}
+,"configured":{"maid":1}
+,"maid":{"(maintenance":1}
+,"(maintenance":{"association":1}
+,"identifier)":{"maintenance":1}
+,"domain":{"(md)":1}
+,"(md)":{"level":1}
+,"level":{"established":1}
+,"established":{"verify":1}
+,"verify":{"integrity":1}
+,"integrity":{"single":1}
+,"single":{"service":1}
+,"service":{"instance":1}
+}
+;Search.control.loadWordPairs(pairs);

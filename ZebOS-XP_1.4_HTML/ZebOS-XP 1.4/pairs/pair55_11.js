@@ -1,0 +1,25 @@
+var pairs =
+{
+"hsl_ifmgr_lookup_by_index":{"function":1}
+,"function":{"finds":1,"syntax":1}
+,"finds":{"interface":1}
+,"interface":{"index":1,"reference":1}
+,"index":{"interface":1,"output":1}
+,"reference":{"count":1}
+,"count":{"decremented":1}
+,"decremented":{"calling":1}
+,"calling":{"function":1}
+,"syntax":{"struct":1}
+,"struct":{"hsl_if":1}
+,"hsl_if":{"*hsl_ifmgr_lookup_by_index":1}
+,"*hsl_ifmgr_lookup_by_index":{"(hsl_ifindex_t":1}
+,"(hsl_ifindex_t":{"ifindex)":1}
+,"ifindex)":{"input":1}
+,"input":{"parameters":1}
+,"parameters":{"ifindex":1,"none":1}
+,"ifindex":{"interface":1}
+,"output":{"parameters":1}
+,"none":{"return":1}
+,"return":{"values":1}
+}
+;Search.control.loadWordPairs(pairs);

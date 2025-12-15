@@ -1,0 +1,25 @@
+var pairs =
+{
+"lsp":{"database":1,"databases":1}
+,"database":{"lsp":1,"core":1}
+,"core":{"is-is":1}
+,"is-is":{"routing":1,"instance":1}
+,"routing":{"link-state":1}
+,"link-state":{"information":1}
+,"information":{"advertised":1}
+,"advertised":{"neighbors":1}
+,"neighbors":{"domain":1}
+,"domain":{"area":1}
+,"area":{"stored":1}
+,"stored":{"database":1}
+,"databases":{"level-1":1}
+,"level-1":{"level-2":1}
+,"level-2":{"structures":1}
+,"structures":{"separately":1}
+,"separately":{"maintained":1}
+,"maintained":{"belong":1}
+,"belong":{"is-is":1}
+,"instance":{"level":1}
+,"level":{"structure":1}
+}
+;Search.control.loadWordPairs(pairs);

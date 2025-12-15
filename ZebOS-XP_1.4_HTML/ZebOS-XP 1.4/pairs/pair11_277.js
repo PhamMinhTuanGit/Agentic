@@ -1,0 +1,27 @@
+var pairs =
+{
+"ntp":{"trusted-key":1,"packets":1}
+,"trusted-key":{"command":1,"<1-65534>":1,"234676":1}
+,"command":{"define":1,"remove":1,"syntax":1,"mode":1}
+,"define":{"trusted":1}
+,"trusted":{"authentication":1,"device":1,"key":1}
+,"authentication":{"key":1}
+,"key":{"key":1,"trusted":1,"ntp":1,"command":1,"number":1}
+,"device":{"synchronize":1}
+,"synchronize":{"system":1}
+,"system":{"specifies":1}
+,"specifies":{"key":1}
+,"packets":{"option":1}
+,"option":{"command":1}
+,"remove":{"trusted":1}
+,"syntax":{"ntp":1}
+,"<1-65534>":{"ntp":1,"parameter":1,"authentication":1}
+,"parameter":{"<1-65534>":1}
+,"number":{"command":1}
+,"mode":{"configure":1,"example":1}
+,"configure":{"mode":1,"terminal":1}
+,"example":{"configure":1}
+,"terminal":{"(config)":1}
+,"(config)":{"ntp":1}
+}
+;Search.control.loadWordPairs(pairs);

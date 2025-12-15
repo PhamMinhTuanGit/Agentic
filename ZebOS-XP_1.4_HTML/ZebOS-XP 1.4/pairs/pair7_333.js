@@ -1,0 +1,22 @@
+var pairs =
+{
+"regular":{"areas":1,"area":1}
+,"areas":{"shown":1,"addresses":1,"connect":1}
+,"shown":{"figure":1}
+,"figure":{"1-2":1}
+,"1-2":{"regular":1}
+,"area":{"addresses":1,"regular":1}
+,"addresses":{"areas":1,"external":1,"regular":1}
+,"external":{"routes":1}
+,"routes":{"(learned":1}
+,"(learned":{"routing":1}
+,"routing":{"protocols":1}
+,"protocols":{"rip":1}
+,"rip":{"bgp)":1}
+,"bgp)":{"injected":1}
+,"injected":{"summary":1}
+,"summary":{"addresses":1}
+,"connect":{"backbone":1}
+,"backbone":{"area":1}
+}
+;Search.control.loadWordPairs(pairs);
