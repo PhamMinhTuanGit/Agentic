@@ -14,6 +14,7 @@ and understanding network devices running the ZebOS operating system.
 
 You are provided with reference documentation.
 Use the information from the provided context.
+Combine your networking expertise with the documentation to answer user questions accurately.
 If the answer is not found in the context, say:
 "Not found in the documents."
 
@@ -33,6 +34,48 @@ Reference documentation:
 
 <|im_start|>user
 {user_question}
+<|im_end|>
+
+<|im_start|>assistant
+"""
+
+RERANK_PROMPT = """<|im_start|>system
+You are a strict technical reranker for a Retrieval-Augmented Generation (RAG) system.
+Your task is to evaluate candidate context chunks for answering network configuration
+questions related to devices running the ZebOS operating system.
+
+Evaluation rules (VERY IMPORTANT):
+1. Prefer chunks that contain VALID and REALISTIC ZebOS CLI commands.
+3. Prefer chunks that:
+   - Include both configuration commands and verification ("show") commands.
+   - Follow the correct CLI flow (enable → configure terminal → feature config).
+4. If a chunk is ambiguous or partially incorrect, rank it lower instead of rejecting it.
+5. Do NOT invent or correct commands. Only judge relevance and correctness.
+
+Scoring:
+- Score each chunk from 0 to 100.
+- 100 = highly relevant, correct, and safe for production use.
+- 0 = irrelevant or clearly incorrect.
+
+Output format:
+You must return ONLY a JSON array.
+Each element must contain:
+{
+  "chunk_id": <number>,
+  "score": <number>,
+  "reason": "<short explanation>"
+}
+
+Do NOT include any additional text outside the JSON.
+Default language for reasons: English.
+<|im_end|>
+
+<|im_start|>user
+User question:
+{user_question}
+
+Candidate context chunks:
+{candidate_chunks}
 <|im_end|>
 
 <|im_start|>assistant
@@ -177,6 +220,78 @@ class PromptTemplate:
         
         return prompt
 
+class RerankPromptTemplate(PromptTemplate):
+    """
+    Prompt template for reranking retrieved chunks.
+    Evaluates and scores candidate context chunks for relevance.
+    """
+    
+    def __init__(self):
+        """Initialize rerank prompt template."""
+        super().__init__(RERANK_PROMPT)
+    
+    def create_rerank_prompt(
+        self,
+        user_question: str,
+        candidate_chunks: List[Dict]
+    ) -> str:
+        """
+        Create a prompt for reranking candidate chunks.
+        
+        Args:
+            user_question: The user's question
+            candidate_chunks: List of candidate chunks to evaluate
+                Each chunk should have: {'chunk_id': int, 'text': str, ...}
+        
+        Returns:
+            Complete rerank prompt ready for the model
+        """
+        # Format candidate chunks for the prompt
+        chunks_text = []
+        for chunk in candidate_chunks:
+            chunk_id = chunk.get('chunk_id', chunk.get('id', 0))
+            text = chunk.get('text', chunk.get('content', ''))
+            doc_name = chunk.get('doc_name', 'Unknown')
+            
+            chunks_text.append(
+                f"Chunk ID: {chunk_id}\n"
+                f"Source: {doc_name}\n"
+                f"Content:\n{text}\n"
+            )
+        
+        formatted_chunks = "\n---\n".join(chunks_text)
+        
+        # Replace placeholders
+        prompt = self.system_prompt
+        prompt = prompt.replace("{user_question}", user_question)
+        prompt = prompt.replace("{candidate_chunks}", formatted_chunks)
+        
+        return prompt
+    
+    def format(self, **kwargs) -> str:
+        """
+        Format rerank template with provided parameters.
+        
+        Args:
+            **kwargs: Parameters to format the template
+                - user_question: User's question
+                - candidate_chunks: List of chunks to rerank
+        
+        Returns:
+            Formatted rerank prompt
+        """
+        if 'user_question' in kwargs and 'candidate_chunks' in kwargs:
+            return self.create_rerank_prompt(
+                kwargs['user_question'],
+                kwargs['candidate_chunks']
+            )
+        
+        # Fallback to simple replacement
+        prompt = self.system_prompt
+        for key, value in kwargs.items():
+            prompt = prompt.replace(f"{{{key}}}", str(value))
+        
+        return prompt
 
 # Utility functions
 def build_prompt(
