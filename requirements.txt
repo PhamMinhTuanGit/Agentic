@@ -1,4 +1,38 @@
+
+# Core LLM & Retrieval
 llama-index
 chromadb
 llama-index-retrievers-bm25
-dotenv
+python-dotenv
+
+# Web & API
+Flask
+Flask-CORS
+
+# Database
+SQLAlchemy
+psycopg2-binary
+pymysql
+
+# LLM & AI
+ollama
+tiktoken
+
+# Reranking
+transformers
+torch
+
+# Search & Retrieval
+faiss-cpu
+rank-bm25
+numpy
+
+# NLP & Parsing
+beautifulsoup4
+trafilatura
+
+# Utilities
+python-dotenv
+
+# Optional: For reranker and agent modules
+cffi
