@@ -335,6 +335,55 @@ def build_search_prompt(
     template = PromptTemplate(system_prompt)
     return template.create_search_augmented_prompt(query, search_results, max_results)
 
+def build_summarize_prompt(
+    messages: List[str],
+    system_prompt: Optional[str] = None
+) -> str:
+    """
+    Quick utility function to create a prompt for summarizing chat history.
+    Focuses on the 5 most recent messages.
+    
+    Args:
+        messages: List of messages to summarize (will use last 5)
+        system_prompt: Custom system prompt (optional)
+    
+    Returns:
+        Complete prompt for summarizing chat history
+    """
+    # Take only the last 5 messages
+    recent_messages = messages[-5:] if len(messages) > 5 else messages
+    
+    # Custom system prompt for summarization
+    if system_prompt is None:
+        system_prompt = """<|im_start|>system
+You are a helpful assistant that summarizes chat conversations.
+Create a concise summary of the chat history, focusing on:
+- Main topics discussed
+- Key technical questions asked
+- Important configurations or commands mentioned
+Keep the summary brief and informative.
+<|im_end|>
+
+<|im_start|>user
+{user_question}
+<|im_end|>
+
+<|im_start|>assistant
+"""
+    
+    # Format messages for context
+    formatted_messages = []
+    for i, msg in enumerate(recent_messages, 1):
+        formatted_messages.append(f"Message {i}: {msg}")
+    
+    summary_context = "\n".join(formatted_messages)
+    
+    template = PromptTemplate(system_prompt)
+    return template.create_query_prompt(
+        f"Summarize the following {len(recent_messages)} most recent chat messages:\n\n{summary_context}",
+        context=None
+    )
+
 
 if __name__ == "__main__":
     # Example usage

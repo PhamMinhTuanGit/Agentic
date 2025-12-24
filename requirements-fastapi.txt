@@ -1,0 +1,16 @@
+# FastAPI requirements
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+pydantic-settings
+python-multipart
+email-validator
+
+# Testing
+pytest
+pytest-asyncio
+httpx
+
+# Development
+python-dotenv

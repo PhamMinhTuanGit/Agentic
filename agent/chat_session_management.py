@@ -6,9 +6,10 @@ from sqlalchemy import String
 from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship 
 from sqlalchemy.orm import sessionmaker
-
+from agent.retriever import model_response
+from agent.prompt_template import build_summarize_prompt
 class Base(DeclarativeBase):
     pass
 
@@ -117,7 +118,56 @@ def get_recent_messages(user_id: int, session_id: int) -> List[Dict]:
 
         return [dict(r) for r in rows]
 
+def summarize_5_latest_messages(user_id: Optional[int], session_id: int) -> Optional[str]:
+    """
+    Summarize the latest 5 messages in a chat session for a given user.
 
+    Args:
+        user_id (int): The ID of the user requesting the summary.
+        session_id (int): The ID of the chat session.
+
+    Returns:
+        Optional[str]: The summary of the latest 5 messages, or None if there are no messages.
+
+    Raises:
+        Exception: If the session_id does not belong to the user_id.
+    """
+    with engine.begin() as c:
+        # 2) Fetch latest 5 messages
+        rows = c.execute(
+            text(
+                """
+                SELECT message
+                FROM chat_message
+                WHERE session_id = :sid
+                ORDER BY created_at DESC
+                LIMIT 5
+                """
+            ),
+            {"sid": session_id},
+        ).scalars().all()
+        if not rows:
+            return None
+        # 3) Create summary (simple concatenation for demonstration)
+        else:
+            prompt = build_summarize_prompt(rows)
+            summary = model_response(prompt)
+        return summary
+
+def is_user_existed(username: str) -> bool:
+    session = Session()
+    user = session.query(User).filter(User.name == username).first()
+    session.close()
+    return user is not None
+
+def create_user(username: str) -> int:
+    session = Session()
+    new_user = User(name=username)
+    session.add(new_user)
+    session.commit()
+    user_id = new_user.id
+    session.close()
+    return user_id
 
 def handle_api_query(request: Dict) -> Dict:
     """
@@ -170,31 +220,33 @@ if __name__ == "__main__":
     
     Session = sessionmaker(bind=engine)
 
-    with Session(engine) as session:
-        new_user = User(name="Alice")
-        session.add(new_user)
-        session.commit()
+    # with Session(engine) as session:
+    #     new_user = User(name="Alice")
+    #     session.add(new_user)
+    #     session.commit()
 
-        new_session = ChatSession(title="Support Chat", user=new_user)
-        session.add(new_session)
-        session.commit()
+    #     new_session = ChatSession(title="Support Chat", user=new_user)
+    #     session.add(new_session)
+    #     session.commit()
 
-        msg1 = ChatMessage(
-            content="Hello, I need help with my account.",
-            role="user",
-            session=new_session
-        )
-        msg2 = ChatMessage(
-            content="Sure, I'd be happy to assist you.",
-            role="assistant",
-            session=new_session
-        )
-        session.add_all([msg1, msg2])
-        session.commit()
+    #     msg1 = ChatMessage(
+    #         content="Hello, I need help with my account.",
+    #         role="user",
+    #         session=new_session
+    #     )
+    #     msg2 = ChatMessage(
+    #         content="Sure, I'd be happy to assist you.",
+    #         role="assistant",
+    #         session=new_session
+    #     )
+    #     session.add_all([msg1, msg2])
+    #     session.commit()
 
-        for user in session.query(User).all():
-            print(user)
-            for chat_session in user.chat_sessions:
-                print(f"  {chat_session}")
-                for message in chat_session.messages:
-                    print(f"    {message}")
+    #     for user in session.query(User).all():
+    #         print(user)
+    #         for chat_session in user.chat_sessions:
+    #             print(f"  {chat_session}")
+    #             for message in chat_session.messages:
+    #                 print(f"    {message}")
+    create_user("tuanpm")
+    is_user_existed("tuanpm")
