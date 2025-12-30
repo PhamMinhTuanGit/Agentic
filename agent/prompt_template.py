@@ -4,7 +4,6 @@ Provides prompt templates for AI-powered network engineering support system
 """
 
 from typing import Optional, Dict, List
-from sqlalchemy.orm import Session as DBSession
 
 
 # System prompt template
@@ -26,18 +25,11 @@ You must:
 - Provide realistic examples with concrete interface names and IP addresses.
 - Always include verification commands (show commands).
 - If the question is generic, provide a common example using Ethernet interfaces.
-- Keep the reasoning under 200 words.
 <|im_end|>
 
 <|im_start|>system
 Reference documentation:
 {retrieved_context}
-<|im_end|>
-
-<|im_start|>system
-Historical conversation (if any) is below:
-{history_stm_context}
-{history_ltm_context}
 <|im_end|>
 
 <|im_start|>user
@@ -198,7 +190,6 @@ class PromptTemplate:
         
         return self.create_query_prompt(query, context)
     
-    
     def format(self, **kwargs) -> str:
         """
         Format template with provided parameters.
@@ -301,46 +292,6 @@ class RerankPromptTemplate(PromptTemplate):
             prompt = prompt.replace(f"{{{key}}}", str(value))
         
         return prompt
-
-
-class FullPromptTemplate(PromptTemplate):
-    """
-    Full prompt template including both query and search context.
-    Combines user question with retrieved documents for comprehensive prompts.
-    """
-    def __init__(self, db: DBSession, max_stm: int = 6, system_prompt: str = SYSTEM_PROMPT, max_results: int = 3):
-        """
-        Initialize full prompt template with database session.
-        
-        Args:
-            db: Database session for retrieval
-        """
-        super().__init__(SYSTEM_PROMPT)
-        self.db = db
-    def create_full_prompt(
-        self,
-        query: str,
-        search_results: List[Dict],
-        max_results: int = 3,
-
-    ) -> str:
-        """
-        Create a full prompt with search-augmented context.
-        
-        Args:
-            query: User question
-            search_results: List of search results from hybrid search
-            max_results: Maximum number of results to include
-        
-        Returns:
-            Complete prompt with integrated search context
-        """
-        return self.create_search_augmented_prompt(
-            query,
-            search_results,
-            max_results
-        )
-
 
 # Utility functions
 def build_prompt(

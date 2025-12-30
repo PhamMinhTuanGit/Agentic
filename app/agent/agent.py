@@ -1,11 +1,8 @@
 from sqlalchemy.orm import Session as DBSession
-from agent.retriever import retriever_with_rerank
 from app.agent.db_models import Session, STM, LTM
 from app.llm.ollama import call_ollama
-from agent.prompt_template import *
 from app.agent.schemas import MemoryItem, LongTermMemory
 from typing import List, Generator
-from agent.prompt_template import *
 import requests
 import json
 
@@ -51,11 +48,20 @@ class MirixAgentDB:
         """Stream tokens from the agent's response"""
         session = self._get_or_create_session(session_id)
 
-        # 1️⃣ Build prompt using _build_prompt method
-        prompt = self._build_prompt(user_message, session)
-        messages = [{"role": "user", "content": prompt}]
+        # 1️⃣ Lấy LTM liên quan
+        ltm_context = self._retrieve_ltm(session, user_message)
 
-        # 2️⃣ Stream from Ollama and collect full response
+        # 2️⃣ Lấy STM
+        stm_msgs = [{"role": s.role, "content": s.content} for s in session.stm]
+
+        # 3️⃣ Build prompt
+        messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+        if ltm_context:
+            messages.append({"role": "system", "content": "Long-term memory:\n" + "\n".join(ltm_context)})
+        messages.extend(stm_msgs)
+        messages.append({"role": "user", "content": user_message})
+
+        # 4️⃣ Stream from Ollama and collect full response
         full_reply = ""
         full_thinking = ""
         try:
@@ -76,12 +82,14 @@ class MirixAgentDB:
                                 if "thinking" in msg and msg["thinking"]:
                                     thinking = msg["thinking"]
                                     full_thinking += thinking
-                                    yield thinking
+                                    # Yield thinking with marker
+                                    yield f"{thinking}"
                                 # Capture content
                                 if "content" in msg and msg["content"]:
                                     content = msg["content"]
                                     full_reply += content
-                                    yield content
+                                    # Yield content with marker
+                                    yield f"{content}"
                         except json.JSONDecodeError:
                             continue
         except Exception as e:
@@ -90,11 +98,11 @@ class MirixAgentDB:
             full_reply = error_msg
             return
 
-        # 3️⃣ Lưu STM (after streaming completes)
+        # 5️⃣ Lưu STM (after streaming completes)
         self._add_stm(session, "user", user_message)
         self._add_stm(session, "assistant", full_reply)
 
-        # 4️⃣ Summarize STM → LTM nếu cần
+        # 6️⃣ Summarize STM → LTM nếu cần
         if len(session.stm) >= self.max_stm:
             self._summarize_to_ltm(session)
 
@@ -104,8 +112,18 @@ class MirixAgentDB:
         """Stream tokens from the agent's response without thinking markers"""
         session = self._get_or_create_session(session_id)
 
-        prompt = self._build_prompt(user_message, session)
-        messages = [{"role": "user", "content": prompt}]
+        # 1️⃣ Lấy LTM liên quan
+        ltm_context = self._retrieve_ltm(session, user_message)
+
+        # 2️⃣ Lấy STM
+        stm_msgs = [{"role": s.role, "content": s.content} for s in session.stm]
+
+        # 3️⃣ Build prompt
+        messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+        if ltm_context:
+            messages.append({"role": "system", "content": "Long-term memory:\n" + "\n".join(ltm_context)})
+        messages.extend(stm_msgs)
+        messages.append({"role": "user", "content": user_message})
 
         # 4️⃣ Stream from Ollama and collect full response
         full_reply = ""
@@ -180,32 +198,3 @@ class MirixAgentDB:
         self.db.add(LTM(session_id=session.id, content=summary, tags="auto-summary"))
         # Xóa STM
         self.db.query(STM).filter_by(session_id=session.id).delete()
-    def _build_prompt(self, query: str, session: Session) -> str:
-        # Build context
-        retrieved_context = retriever_with_rerank(query, top_k=25, rerank_top_k=10)
-        
-        # Create prompt template instance and build prompt
-        prompt_template = PromptTemplate()
-        prompt_no_history = prompt_template.create_search_augmented_prompt(
-            query, retrieved_context, max_results=10
-        )
-        
-        ltm = self._retrieve_ltm(session, query)
-        stm = [{"role": s.role, "content": s.content} for s in session.stm]
-        prompt = prompt_no_history.replace("{history_stm_context}", str(stm))
-        prompt = prompt.replace("{history_ltm_context}", str(ltm))
-        return prompt
-
-    def _add_cache_docs(self, session: Session, cache_docs: str):
-        self.db.add(Session(session_id=session.id, cache_docs=cache_docs))
-        # Giới hạn số STM
-    
-    def _topic_detect(self, text: str) -> List[str]:
-        prompt = [
-            {"role": "system", "content": "Extract key topics from the following text. Return as a comma-separated list."},
-            {"role": "user", "content": text}
-        ]
-        response = call_ollama(prompt)
-        topics = [t.strip() for t in response.split(",")]
-        return topics
-

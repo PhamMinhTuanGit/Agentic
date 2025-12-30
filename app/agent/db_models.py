@@ -25,8 +25,7 @@ class Session(Base):
     __tablename__ = "sessions"
     id = Column(Integer, primary_key=True)
     session_id = Column(String(64), unique=True, nullable=False)
-    cache_docs = Column(Text, nullable=True)
-    ext_dir = Column(String(256), nullable=True)
+
     stm = relationship("STM", back_populates="session", cascade="all, delete-orphan")
     ltm = relationship("LTM", back_populates="session", cascade="all, delete-orphan")
 
