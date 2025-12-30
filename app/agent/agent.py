@@ -1,16 +1,13 @@
 from sqlalchemy.orm import Session as DBSession
 from agent.retriever import retriever_with_rerank
 from app.agent.db_models import Session, STM, LTM
-from app.llm.ollama import call_ollama
+from app.llm.ollama import call_ollama, stream_ollama_with_collection
 from agent.prompt_template import *
 from app.agent.schemas import MemoryItem, LongTermMemory
 from typing import List, Generator
-from agent.prompt_template import *
-import requests
 import json
 
 SYSTEM_PROMPT = "You are a helpful assistant. Answer concisely."
-OLLAMA_API = "http://localhost:11434/api/chat"
 
 class MirixAgentDB:
     def __init__(self, db: DBSession, max_stm: int = 6):
@@ -55,50 +52,30 @@ class MirixAgentDB:
         prompt = self._build_prompt(user_message, session)
         messages = [{"role": "user", "content": prompt}]
 
-        # 2️⃣ Stream from Ollama and collect full response
-        full_reply = ""
-        full_thinking = ""
+        # 2️⃣ Stream from Ollama using centralized function
+        stream_generator, get_full_response = stream_ollama_with_collection(
+            messages=messages,
+            include_thinking=True
+        )
+        
+        # Yield all tokens from stream
         try:
-            with requests.post(
-                OLLAMA_API,
-                json={"model": "qwen3:4b", "messages": messages, "stream": True},
-                stream=True,
-                timeout=120
-            ) as r:
-                r.raise_for_status()
-                for line in r.iter_lines():
-                    if line:
-                        try:
-                            data = json.loads(line.decode("utf-8"))
-                            if "message" in data:
-                                msg = data["message"]
-                                # Capture thinking
-                                if "thinking" in msg and msg["thinking"]:
-                                    thinking = msg["thinking"]
-                                    full_thinking += thinking
-                                    yield thinking
-                                # Capture content
-                                if "content" in msg and msg["content"]:
-                                    content = msg["content"]
-                                    full_reply += content
-                                    yield content
-                        except json.JSONDecodeError:
-                            continue
-        except Exception as e:
-            error_msg = f"Error: {str(e)}"
-            yield f"[ERROR] {error_msg}"
-            full_reply = error_msg
-            return
+            for token in stream_generator:
+                yield token
+        finally:
+            # This runs after generator is consumed or closed
+            # 3️⃣ Get full response after streaming
+            full_reply = get_full_response()
 
-        # 3️⃣ Lưu STM (after streaming completes)
-        self._add_stm(session, "user", user_message)
-        self._add_stm(session, "assistant", full_reply)
+            # 4️⃣ Lưu STM (after streaming completes)
+            self._add_stm(session, "user", user_message)
+            self._add_stm(session, "assistant", full_reply)
 
-        # 4️⃣ Summarize STM → LTM nếu cần
-        if len(session.stm) >= self.max_stm:
-            self._summarize_to_ltm(session)
+            # 5️⃣ Summarize STM → LTM nếu cần
+            if len(session.stm) >= self.max_stm:
+                self._summarize_to_ltm(session)
 
-        self.db.commit()
+            self.db.commit()
 
     def chat_stream_nothink(self, session_id: str, user_message: str) -> Generator[str, None, None]:
         """Stream tokens from the agent's response without thinking markers"""
@@ -107,41 +84,31 @@ class MirixAgentDB:
         prompt = self._build_prompt(user_message, session)
         messages = [{"role": "user", "content": prompt}]
 
-        # 4️⃣ Stream from Ollama and collect full response
-        full_reply = ""
+        # Stream from Ollama without thinking tokens
+        stream_generator, get_full_response = stream_ollama_with_collection(
+            messages=messages,
+            include_thinking=False  # Skip thinking tokens
+        )
+        
+        # Yield all content tokens
         try:
-            with requests.post(
-                OLLAMA_API,
-                json={"model": "qwen3:4b", "messages": messages, "stream": True},
-                stream=True,
-                timeout=120
-            ) as r:
-                r.raise_for_status()
-                for line in r.iter_lines():
-                    if line:
-                        try:
-                            data = json.loads(line.decode("utf-8"))
-                            if "message" in data:
-                                msg = data["message"]
-                                # Only yield content, skip thinking
-                                if "content" in msg and msg["content"]:
-                                    content = msg["content"]
-                                    full_reply += content
-                                    yield content
-                        except json.JSONDecodeError:
-                            continue
+            for token in stream_generator:
+                yield token
+        finally:
+            # Get full response after streaming
+            full_reply = get_full_response()
 
-        except Exception as e:
-            error_msg = f"Error: {str(e)}"
-            yield error_msg
-            full_reply = error_msg
-            return
+            # Lưu STM (after streaming completes)
+            self._add_stm(session, "user", user_message)
+            self._add_stm(session, "assistant", full_reply)
 
-        # 5️⃣ Lưu STM (after streaming completes)
-        self._add_stm(session, "user", user_message)
-        self._add_stm(session, "assistant", full_reply)
+            # Summarize STM → LTM nếu cần
+            if len(session.stm) >= self.max_stm:
+                self._summarize_to_ltm(session)
 
-        # 6️⃣ Summarize STM → LTM nếu cần
+            self.db.commit()
+
+        # Summarize STM → LTM nếu cần
         if len(session.stm) >= self.max_stm:
             self._summarize_to_ltm(session)
 
@@ -196,16 +163,8 @@ class MirixAgentDB:
         prompt = prompt.replace("{history_ltm_context}", str(ltm))
         return prompt
 
-    def _add_cache_docs(self, session: Session, cache_docs: str):
-        self.db.add(Session(session_id=session.id, cache_docs=cache_docs))
-        # Giới hạn số STM
     
-    def _topic_detect(self, text: str) -> List[str]:
-        prompt = [
-            {"role": "system", "content": "Extract key topics from the following text. Return as a comma-separated list."},
-            {"role": "user", "content": text}
-        ]
-        response = call_ollama(prompt)
-        topics = [t.strip() for t in response.split(",")]
-        return topics
+    
+    
+    
 

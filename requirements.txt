@@ -1,38 +1,72 @@
+# ============================================
+# ZebOS Expert - Complete Requirements
+# ============================================
 
-# Core LLM & Retrieval
-llama-index
-chromadb
-llama-index-retrievers-bm25
-python-dotenv
+# Core Dependencies
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+typing-extensions>=4.7.0
 
-# Web & API
-Flask
-Flask-CORS
+# FastAPI & Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+starlette>=0.27.0
+python-multipart>=0.0.6
+email-validator>=2.1.0
 
-# Database
-SQLAlchemy
-psycopg2-binary
-pymysql
+# Flask (for client app)
+Flask>=3.0.0
+Flask-CORS>=4.0.0
+Werkzeug>=3.0.0
 
-# LLM & AI
-ollama
-tiktoken
+# Database & ORM
+SQLAlchemy>=2.0.0
+pymysql>=1.1.0
+psycopg2-binary>=2.9.9  # For PostgreSQL support
 
-# Reranking
-transformers
-torch
+# LLM & AI Models
+ollama>=0.1.0
+transformers==4.36.2  # Compatible with torch 2.2.0+
+torch>=2.2.0  # Minimum version for Apple Silicon
+tiktoken>=0.5.0
+accelerate>=0.25.0  # Required for transformers
 
 # Search & Retrieval
-faiss-cpu
-rank-bm25
-numpy
+faiss-cpu>=1.7.4
+rank-bm25>=0.2.2
+llama-index>=0.9.0
+llama-index-retrievers-bm25>=0.1.0
+chromadb>=0.4.0
 
-# NLP & Parsing
-beautifulsoup4
-trafilatura
+# NLP & Text Processing
+beautifulsoup4>=4.12.0
+trafilatura>=1.6.0
+numpy==1.24.3  # Pinned to avoid OpenMP conflicts on macOS
+
+# HTTP & API Clients
+requests>=2.31.0
+httpx>=0.25.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+
+# Logging & Monitoring
+python-json-logger>=2.0.0
 
 # Utilities
-python-dotenv
+cffi>=1.16.0  # For reranker
+setuptools>=68.0.0
+wheel>=0.41.0
 
-# Optional: For reranker and agent modules
-cffi
+# Production Server
+gunicorn>=21.2.0
+gevent>=23.9.0
+
+
+# Development
+black>=23.0.0
+flake8>=6.0.0
+isort>=5.13.0
