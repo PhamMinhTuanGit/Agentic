@@ -1,5 +1,4 @@
 from sqlalchemy.orm import Session as DBSession
-from agent.retriever import retriever_with_rerank
 from app.agent.db_models import Session, STM, LTM
 from app.llm.ollama import call_ollama, stream_ollama_with_collection
 from agent.prompt_template import *
@@ -48,9 +47,18 @@ class MirixAgentDB:
         """Stream tokens from the agent's response"""
         session = self._get_or_create_session(session_id)
 
-        # 1️⃣ Build prompt using _build_prompt method
-        prompt = self._build_prompt(user_message, session)
-        messages = [{"role": "user", "content": prompt}]
+        # 1️⃣ Lấy LTM liên quan
+        ltm_context = self._retrieve_ltm(session, user_message)
+
+        # 2️⃣ Lấy STM
+        stm_msgs = [{"role": s.role, "content": s.content} for s in session.stm]
+
+        # 3️⃣ Build prompt
+        messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+        if ltm_context:
+            messages.append({"role": "system", "content": "Long-term memory:\n" + "\n".join(ltm_context)})
+        messages.extend(stm_msgs)
+        messages.append({"role": "user", "content": user_message})
 
         # 2️⃣ Stream from Ollama using centralized function
         stream_generator, get_full_response = stream_ollama_with_collection(
