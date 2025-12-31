@@ -3,6 +3,10 @@
 # FastAPI Startup Script
 # Cài đặt dependencies và chạy server
 
+# Fix OpenMP duplicate library error on macOS
+export KMP_DUPLICATE_LIB_OK=TRUE
+export OMP_NUM_THREADS=1
+
 echo "Installing dependencies..."
 pip install -r requirements-fastapi.txt
 

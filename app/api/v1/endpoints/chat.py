@@ -12,9 +12,14 @@ router = APIRouter()
 def chat_stream(req: ChatRequest, db: Session = Depends(get_db)):
     """Stream tokens from the agent with memory management"""
     agent = MirixAgentDB(db)
+    
+    def generate():
+        for token in agent.chat_stream(str(req.session_id), req.message):
+            yield token
+    
     return StreamingResponse(
-        agent.chat_stream(str(req.session_id), req.message),
-        media_type="text/plain"
+        generate(),
+        media_type="text/event-stream"
     )
 
 
@@ -28,9 +33,14 @@ def chat(req: ChatRequest, db: Session = Depends(get_db)):
 def chat_stream_nothink(req: ChatRequest, db: Session = Depends(get_db)):
     """Stream tokens from the agent without thinking markers"""
     agent = MirixAgentDB(db)
+    
+    def generate():
+        for token in agent.chat_stream_nothink(str(req.session_id), req.message):
+            yield token
+    
     return StreamingResponse(
-        agent.chat_stream_nothink(str(req.session_id), f"{req.message}"),
-        media_type="text/plain"
+        generate(),
+        media_type="text/event-stream"
     )
 
 
