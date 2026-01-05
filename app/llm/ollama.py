@@ -3,12 +3,12 @@ import json
 from typing import Generator, Optional, Dict, Any
 
 OLLAMA_API = "http://localhost:11434/api/chat"
-DEFAULT_MODEL = "qwen3:4b"
+DEFAULT_MODEL = "qwen3:8b"
 DEFAULT_OPTIONS = {
     "repeat_penalty": 2.0,
     "top_k": 20,
     "temperature": 0.3,
-    "top_p": 0.9,
+    "top_p": 0.9
 }
 
 

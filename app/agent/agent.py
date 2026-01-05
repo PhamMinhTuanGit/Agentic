@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session as DBSession
 from app.agent.db_models import Session, STM, LTM
 from app.llm.ollama import call_ollama, stream_ollama_with_collection
+from agent.retriever import retriever_with_rerank
 from agent.prompt_template import *
 from app.agent.schemas import MemoryItem, LongTermMemory
 from typing import List, Generator
@@ -48,17 +49,8 @@ class MirixAgentDB:
         session = self._get_or_create_session(session_id)
 
         # 1️⃣ Lấy LTM liên quan
-        ltm_context = self._retrieve_ltm(session, user_message)
-
-        # 2️⃣ Lấy STM
-        stm_msgs = [{"role": s.role, "content": s.content} for s in session.stm]
-
-        # 3️⃣ Build prompt
-        messages = [{"role": "system", "content": SYSTEM_PROMPT}]
-        if ltm_context:
-            messages.append({"role": "system", "content": "Long-term memory:\n" + "\n".join(ltm_context)})
-        messages.extend(stm_msgs)
-        messages.append({"role": "user", "content": user_message})
+        prompt = self._build_prompt(user_message, session)
+        messages = [{"role": "user", "content": prompt}]
 
         # 2️⃣ Stream from Ollama using centralized function
         stream_generator, get_full_response = stream_ollama_with_collection(
@@ -171,8 +163,34 @@ class MirixAgentDB:
         prompt = prompt.replace("{history_ltm_context}", str(ltm))
         return prompt
 
-    
-    
-    
-    
 
+    def full_configuration(self, answer) -> str:
+        """Return full configuration as JSON string for debugging"""
+        prompt = EXTRACT_CONFIG_PROMPT
+        prompt = prompt.replace("{full_configuration}", answer)
+        config =  call_ollama(prompt=prompt, model = "qwen2.5-coder:1.5b-base")
+        return config
+    
+        
+class AgentOrchestration:
+    def __init__(self, db: DBSession):
+        self.db = db
+        self.agent_db = MirixAgentDB(db)
+
+    def _intent_parsed(self, user_message: str) -> str:
+        prompt = INTENT_PARSING_PROMPT.replace("{user_query}", user_message)
+        print("Optimizing tool selection")
+        intent = call_ollama([{"role": "user", "content": prompt}])
+        print("Tool selection result:", intent["intent"])
+        return intent["intent"]
+
+
+if __name__ == "__main__":
+    query = "Configure OSPF on router with ID 10"
+    # print("Testing AgentOrchestration intent parsing...")
+    # agent = AgentOrchestration(None)  # Assuming None for DBSession for testing
+    # intent = agent._intent_parsed(query)
+    # print(intent)
+    
+    agent = MirixAgentDB(db=)  # Assuming None for DBSession for testing
+    print(agent._build_prompt(query, Session(id=1, session_id="test")))
