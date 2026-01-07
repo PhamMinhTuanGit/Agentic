@@ -164,33 +164,61 @@ class MirixAgentDB:
         return prompt
 
 
-    def full_configuration(self, answer) -> str:
-        """Return full configuration as JSON string for debugging"""
-        prompt = EXTRACT_CONFIG_PROMPT
-        prompt = prompt.replace("{full_configuration}", answer)
-        config =  call_ollama(prompt=prompt, model = "qwen2.5-coder:1.5b-base")
-        return config
-    
+    def full_configuration(self, session_id, user_message) -> Generator[str, None, None]:
+        session = self._get_or_create_session(session_id)
+        prompt = self._build_prompt(user_message, session)
+        yield "Starting configuration...\n"
+        stream_generator, get_full_response = stream_ollama_with_collection(
+            messages=[{"role": "user", "content": prompt}],
+            include_thinking=True,  # Skip thinking tokens
+            model="qwen3:8b"
+        )     
+        try:
+            for token in stream_generator:
+                yield token
+        except:
+            yield "[ERROR] Failed to extract configuration."
         
-class AgentOrchestration:
-    def __init__(self, db: DBSession):
-        self.db = db
-        self.agent_db = MirixAgentDB(db)
+        # Get full response after streaming
+        full_answer = get_full_response()
+        config_prompt = EXTRACT_CONFIG_PROMPT.replace("{full_configuration_guide}", full_answer)
+        # config = call_ollama([{"role": "user", "content": config_prompt}])
+        print("Thinking Done. Extracting configuration...")
+        messages = [{"role": "user", "content": config_prompt}]
 
-    def _intent_parsed(self, user_message: str) -> str:
-        prompt = INTENT_PARSING_PROMPT.replace("{user_query}", user_message)
-        print("Optimizing tool selection")
-        intent = call_ollama([{"role": "user", "content": prompt}])
-        print("Tool selection result:", intent["intent"])
-        return intent["intent"]
+        # Stream from Ollama without thinking tokens
+        stream_generator, get_full_response = stream_ollama_with_collection(
+            messages=messages,
+            include_thinking=False,  # Skip thinking tokens
+            model="qwen3:4b"
+        )
+        
+        # Yield all content tokens
+        try:
+            for token in stream_generator:
+                yield token
+        except:
+            yield "[ERROR] Failed to extract configuration."
+        
+# class AgentOrchestration:
+#     def __init__(self, db: DBSession):
+#         self.db = db
+#         self.agent_db = MirixAgentDB(db)
+
+#     def _intent_parsed(self, user_message: str) -> str:
+#         prompt = INTENT_PARSING_PROMPT.replace("{user_query}", user_message)
+#         print("Optimizing tool selection")
+#         intent = call_ollama([{"role": "user", "content": prompt}])
+#         print("Tool selection result:", intent["intent"])
+#         return intent["intent"]
 
 
 if __name__ == "__main__":
     query = "Configure OSPF on router with ID 10"
+    agent_db = MirixAgentDB()  # Assuming None for DBSession for testing
     # print("Testing AgentOrchestration intent parsing...")
     # agent = AgentOrchestration(None)  # Assuming None for DBSession for testing
     # intent = agent._intent_parsed(query)
     # print(intent)
     
-    agent = MirixAgentDB(db=)  # Assuming None for DBSession for testing
-    print(agent._build_prompt(query, Session(id=1, session_id="test")))
+    

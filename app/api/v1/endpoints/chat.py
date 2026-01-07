@@ -48,10 +48,10 @@ def chat_stream_nothink(req: ChatRequest, db: Session = Depends(get_db)):
 def chat_only_config(req: ChatRequest, db: Session = Depends(get_db)):
     agent = MirixAgentDB(db)
     def generate():
-        for token in agent.chat(str(req.session_id), req.message):
+        for token in agent.full_configuration(str(req.session_id), req.message):
             yield token
-
     return StreamingResponse(
         generate(),
         media_type="text/event-stream"
     )
+    

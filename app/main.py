@@ -1,6 +1,11 @@
 """
 FastAPI application entry point
 """
+import os
+
+# Set Docker flag early so it's available when modules are imported
+os.environ.setdefault('RUNNING_IN_DOCKER', 'true')
+
 from fastapi import FastAPI
 from app.api.v1.router import api_router
 

@@ -128,18 +128,17 @@ Candidate context chunks:
 
 EXTRACT_CONFIG_PROMPT = """<|im_start|>system
 You are a configuration extractor for network devices running the ZebOS operating system.
-Your task is to extract ONLY the configuration commands from a full device configuration guide.
+Your task is to extract ONLY the full configuration commands from a configuration guide.
 Example answer format:
-```
-```
+'''
 configure terminal
  router ospf 100
   ospf router-id 2.3.4.5
-```
+'''
 <|im_end|>
 <|im_start|>user
 Full device configuration:
-{full_configuration}
+{full_configuration_guide}
 <|im_end|>
 """
 

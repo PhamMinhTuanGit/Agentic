@@ -8,10 +8,14 @@ services:
       - "8000:8000"
     environment:
       - DATABASE_URL=mysql+pymysql://root:123456@mysql:3306/chat_history_db
+      - RUNNING_IN_DOCKER=true
+      - OLLAMA_HOST=http://ollama:11434
     depends_on:
       mysql:
         condition: service_healthy
-    command: /bin/sh -c "sleep 15 && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+      ollama:
+        condition: service_started
+    command: /bin/sh -c "python init_ollama.py && sleep 10 && uvicorn app.main:app --host 0.0.0.0 --port 8000"
     volumes:
       - .:/app
 
@@ -36,11 +40,20 @@ services:
     image: ollama/ollama:latest
     ports:
       - "11435:11434"
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
     volumes:
       - ollama_data:/data
-    entrypoint: ["/bin/sh", "-c", "ollama serve & sleep 10 && (ollama list | grep 'qwen3:4b' || ollama pull qwen3:4b) && (ollama list | grep 'nomic-embed-text' || ollama pull nomic-embed-text) && wait"]
+      - ollama_models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 volumes:
   mysql_data:
     driver: local
   ollama_data:
+    driver: local
+  ollama_models:
     driver: local

@@ -3,7 +3,17 @@ from bm25.bm25 import tokenize_en
 import re
 from typing import List, Dict
 import numpy as np
+import os
+
 # filepath: /home/tuanpm/work/Agentic/bm25/embedding.py
+
+# Configure Ollama client for Docker environment
+OLLAMA_HOST = os.getenv('OLLAMA_HOST', 'http://localhost:11434')
+if os.getenv('RUNNING_IN_DOCKER', 'false').lower() == 'true':
+    OLLAMA_HOST = 'http://ollama:11434'
+
+# Create client instance
+ollama_client = ollama.Client(host=OLLAMA_HOST)
 
 
 # ============ CHUNKING FUNCTIONS ============
@@ -172,8 +182,8 @@ def embed_text(text):
     Returns:
         list: Embedding vector
     """
-    response = ollama.embeddings(
-        model='nomic-embed-text',
+    response = ollama_client.embeddings(
+        model='nomic-embed-text:latest',
         prompt=text
     )
     return response['embedding']

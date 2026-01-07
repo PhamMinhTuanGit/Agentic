@@ -1,7 +1,13 @@
 from bm25.search import hybrid_search_en, search_with_indexes
 import ollama
+import os
 from agent.prompt_template import SYSTEM_PROMPT, PromptTemplate
 from agent.reranker import Reranker
+
+# Configure Ollama client for Docker environment
+OLLAMA_HOST = os.getenv('OLLAMA_HOST', 'http://localhost:11434')
+if os.getenv('RUNNING_IN_DOCKER', 'false').lower() == 'true':
+    OLLAMA_HOST = 'http://ollama:11434'
 
 def retriever(query, top_k=25):
     results = search_with_indexes(
@@ -22,7 +28,7 @@ def construct_prompt(query, results):
     return prompt
 
 def model_response(prompt):
-    model = ollama.Client()
+    model = ollama.Client(host=OLLAMA_HOST)
     response = model.generate(prompt=prompt, model='qwen3:4b')    
     return response
 
