@@ -6,7 +6,8 @@ from agent.prompt_template import *
 from app.agent.schemas import MemoryItem, LongTermMemory
 from typing import List, Generator
 import json
-
+from telnet.parse_and_telnet import parse_config
+from telnet.connect import connect_zebos_multihop
 SYSTEM_PROMPT = "You are a helpful assistant. Answer concisely."
 
 class MirixAgentDB:
@@ -156,11 +157,12 @@ class MirixAgentDB:
         prompt_no_history = prompt_template.create_search_augmented_prompt(
             query, retrieved_context, max_results=10
         )
-        
+        print("Prompt without history:", prompt_no_history)
         ltm = self._retrieve_ltm(session, query)
         stm = [{"role": s.role, "content": s.content} for s in session.stm]
         prompt = prompt_no_history.replace("{history_stm_context}", str(stm))
         prompt = prompt.replace("{history_ltm_context}", str(ltm))
+        print(prompt)
         return prompt
 
 
@@ -168,37 +170,30 @@ class MirixAgentDB:
         session = self._get_or_create_session(session_id)
         prompt = self._build_prompt(user_message, session)
         yield "Starting configuration...\n"
-        stream_generator, get_full_response = stream_ollama_with_collection(
-            messages=[{"role": "user", "content": prompt}],
-            include_thinking=True,  # Skip thinking tokens
-            model="qwen3:8b"
-        )     
+        
         try:
+            # Use streaming to avoid timeout and get immediate feedback
+            stream_generator, get_full_response = stream_ollama_with_collection(
+                messages=[{"role": "user", "content": prompt}],
+                model="qwen3:8b",
+                include_thinking=True
+            )
+            
+            # Yield tokens as they arrive
             for token in stream_generator:
                 yield token
-        except:
-            yield "[ERROR] Failed to extract configuration."
-        
-        # Get full response after streaming
-        full_answer = get_full_response()
-        config_prompt = EXTRACT_CONFIG_PROMPT.replace("{full_configuration_guide}", full_answer)
-        # config = call_ollama([{"role": "user", "content": config_prompt}])
-        print("Thinking Done. Extracting configuration...")
-        messages = [{"role": "user", "content": config_prompt}]
-
-        # Stream from Ollama without thinking tokens
-        stream_generator, get_full_response = stream_ollama_with_collection(
-            messages=messages,
-            include_thinking=False,  # Skip thinking tokens
-            model="qwen3:4b"
-        )
-        
-        # Yield all content tokens
-        try:
-            for token in stream_generator:
-                yield token
-        except:
-            yield "[ERROR] Failed to extract configuration."
+            
+            # Get full response after streaming completes
+            full_answer = get_full_response()
+            
+            print("Thinking Done. Extracting configuration...")
+            parsed_config = parse_config(full_answer)
+            print("Parsed configuration:", parsed_config)
+            connect_zebos_multihop(parsed_config)
+            
+        except Exception as e:
+            yield f"\n[ERROR] Configuration failed: {str(e)}\n"
+            print(f"Error in full_configuration: {e}")
         
 # class AgentOrchestration:
 #     def __init__(self, db: DBSession):

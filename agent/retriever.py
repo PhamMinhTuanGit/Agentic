@@ -90,6 +90,7 @@ def pipeline(query):
 if __name__ == "__main__":
     query = "How do I configure multiple OSPF processes on ZebOS?"
     results = retriever_with_rerank(query)
+    print(results)
     prompt = construct_prompt(query, results)
     print("=== Prompt ===")
     print(prompt)

@@ -1,18 +1,12 @@
-from sqlalchemy import Column, Integer, String, Text, Float, ForeignKey
+from sqlalchemy import Column, Integer, String, Text, Float, ForeignKey, DateTime, func
 from sqlalchemy.orm import declarative_base, relationship
 from datetime import datetime
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from app.db.session import engine, SessionLocal
 from app.core.config import settings
 
-DATABASE_URL = settings.DATABASE_URL
-
-engine = create_engine(DATABASE_URL, echo=True)
-SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
-
-# Tạo bảng
-
-
+def utc_now_no_microseconds():
+    """Return current UTC datetime without microseconds"""
+    return datetime.utcnow().replace(microsecond=0)
 
 Base = declarative_base()
 
@@ -32,26 +26,32 @@ class Session(Base):
 class STM(Base):
     __tablename__ = "stm"
     id = Column(Integer, primary_key=True)
-    session_id = Column(Integer, ForeignKey("sessions.id"))
-    role = Column(String(16))
-    content = Column(Text)
-    ts = Column(Float, default=datetime.utcnow().timestamp)
+    session_id = Column(Integer, ForeignKey("sessions.id"), nullable=False)
+    role = Column(String(16), nullable=False)
+    content = Column(Text, nullable=False)
+    ts = Column(DateTime, default=utc_now_no_microseconds, nullable=False)
 
     session = relationship("Session", back_populates="stm")
 
 class LTM(Base):
     __tablename__ = "ltm"
     id = Column(Integer, primary_key=True)
-    session_id = Column(Integer, ForeignKey("sessions.id"))
-    content = Column(Text)
+    session_id = Column(Integer, ForeignKey("sessions.id"), nullable=False)
+    content = Column(Text, nullable=False)
     tags = Column(String(256))
-    ts = Column(Float, default=datetime.utcnow().timestamp)
+    ts = Column(DateTime, default=utc_now_no_microseconds, nullable=False)
 
     session = relationship("Session", back_populates="ltm")
 
 
+def init_db():
+    """Initialize database tables if they don't exist"""
+    Base.metadata.create_all(bind=engine)
+    print("✅ Database tables initialized successfully")
 
-init_db()
+
+if __name__ == "__main__":
+    init_db()
 
 
 

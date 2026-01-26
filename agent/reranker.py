@@ -27,19 +27,40 @@ class Reranker:
         
         # Auto-detect device if not specified
         if device is None:
-            self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            # Check if CUDA is available
+            if torch.cuda.is_available():
+                try:
+                    # Try to allocate small memory on GPU to verify it works
+                    torch.zeros(1).cuda()
+                    self.device = 'cuda'
+                except Exception as e:
+                    print(f"Warning: CUDA available but error occurred: {e}. Falling back to CPU.")
+                    self.device = 'cpu'
+            else:
+                self.device = 'cpu'
         else:
             self.device = device
         
         print(f"Loading reranker model: {model_name} on {self.device}...")
         
-        # Load model and tokenizer
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
-        self.model.to(self.device)
-        self.model.eval()
-        
-        print(f"Reranker loaded successfully!")
+        try:
+            # Load model and tokenizer
+            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+            self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
+            self.model.to(self.device)
+            self.model.eval()
+            
+            print(f"Reranker loaded successfully on {self.device}!")
+        except Exception as e:
+            print(f"Error loading model on {self.device}: {e}")
+            if self.device == 'cuda':
+                print("Retrying with CPU...")
+                self.device = 'cpu'
+                self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+                self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
+                self.model.to(self.device)
+                self.model.eval()
+                print(f"Reranker loaded successfully on CPU!")
     
     def _compute_score(self, query: str, document: str) -> float:
         """
@@ -149,37 +170,64 @@ class Reranker:
         
         scored_docs = []
         
+        # Reduce batch size if on GPU to avoid memory issues
+        if self.device == 'cuda':
+            batch_size = min(batch_size, 4)
+        
         # Process in batches
         for i in range(0, len(documents), batch_size):
             batch = documents[i:i + batch_size]
             
-            # Prepare pairs for batch processing
-            pairs = []
-            for doc in batch:
-                text = doc.get(text_key, '')
-                if len(text) > 1000:
-                    text = text[:1000] + "..."
-                pairs.append([query, text])
-            
-            # Tokenize batch
-            inputs = self.tokenizer(
-                pairs,
-                padding=True,
-                truncation=True,
-                max_length=512,
-                return_tensors='pt'
-            ).to(self.device)
-            
-            # Get scores
-            with torch.no_grad():
-                scores = self.model(**inputs, return_dict=True).logits.view(-1).float()
-            
-            # Add scores to documents
-            for idx, (doc, score) in enumerate(zip(batch, scores)):
-                doc_copy = doc.copy()
-                doc_copy['rerank_score'] = round(float(score.cpu().item()), 4)
-                doc_copy['original_rank'] = i + idx + 1
-                scored_docs.append(doc_copy)
+            try:
+                # Prepare pairs for batch processing
+                pairs = []
+                for doc in batch:
+                    text = doc.get(text_key, '')
+                    if len(text) > 1000:
+                        text = text[:1000] + "..."
+                    pairs.append([query, text])
+                
+                # Tokenize batch
+                inputs = self.tokenizer(
+                    pairs,
+                    padding=True,
+                    truncation=True,
+                    max_length=512,
+                    return_tensors='pt'
+                ).to(self.device)
+                
+                # Get scores
+                with torch.no_grad():
+                    scores = self.model(**inputs, return_dict=True).logits.view(-1).float()
+                
+                # Add scores to documents
+                for idx, (doc, score) in enumerate(zip(batch, scores)):
+                    doc_copy = doc.copy()
+                    doc_copy['rerank_score'] = round(float(score.cpu().item()), 4)
+                    doc_copy['original_rank'] = i + idx + 1
+                    scored_docs.append(doc_copy)
+                    
+            except RuntimeError as e:
+                if "out of memory" in str(e).lower() or "cuda" in str(e).lower():
+                    print(f"Memory error during reranking batch: {e}")
+                    print("Falling back to smaller batch size or CPU processing")
+                    # Fallback: score documents individually
+                    for doc in batch:
+                        text = doc.get(text_key, '')
+                        if len(text) > 1000:
+                            text = text[:1000] + "..."
+                        try:
+                            score = self._compute_score(query, text)
+                            doc_copy = doc.copy()
+                            doc_copy['rerank_score'] = round(score, 4)
+                            doc_copy['original_rank'] = i + batch.index(doc) + 1
+                            scored_docs.append(doc_copy)
+                        except:
+                            doc_copy = doc.copy()
+                            doc_copy['rerank_score'] = 0.0
+                            scored_docs.append(doc_copy)
+                else:
+                    raise
         
         # Sort by rerank score
         scored_docs.sort(key=lambda x: x['rerank_score'], reverse=True)
