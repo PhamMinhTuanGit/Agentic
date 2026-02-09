@@ -71,3 +71,5 @@ gevent>=23.9.0
 black>=23.0.0
 flake8>=6.0.0
 isort>=5.13.0
+
+netmiko

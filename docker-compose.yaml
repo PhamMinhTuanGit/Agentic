@@ -15,7 +15,7 @@ services:
         condition: service_healthy
       ollama:
         condition: service_started
-    command: /bin/sh -c "python init_ollama.py && sleep 10 && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    command: /bin/sh -c "python init_db.py && python init_ollama.py && sleep 10 && uvicorn app.main:app --host 0.0.0.0 --port 8000"
     volumes:
       - .:/app
 
@@ -49,7 +49,8 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
       interval: 5s
       timeout: 5s
-      retries: 10
+      retries: 30
+
 volumes:
   mysql_data:
     driver: local

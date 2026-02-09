@@ -256,6 +256,13 @@ curl http://localhost:8000/health
 
 ---
 
+
+docker compose exec ollama bash -c '
+ollama list | grep -q qwen3:4b || ollama pull qwen3:4b
+ollama list | grep -q nomic-embed-text || ollama pull nomic-embed-text
+'
+
+
 ## Production Configuration
 
 ### Nginx Configuration
