@@ -14,14 +14,7 @@
 - **Memory Management**: Hệ thống quản lý phiên chat với STM/LTM
 - **Docker**: Deployment đơn giản với Docker Compose
 
-### 🎯 Tính Năng Chính
 
-✅ **Chỉ hỗ trợ ZebOS** - Không cung cấp lệnh cho Cisco IOS, Juniper, hay các platform khác  
-✅ **CLI Commands** - Sinh CLI commands thực thi được, không có placeholder  
-✅ **Context-Aware** - Dùng tài liệu ZebOS để trả lời chính xác  
-✅ **Session Management** - Quản lý nhiều phiên chat với lịch sử  
-✅ **Hybrid Search** - Kết hợp semantic search (FAISS) và keyword search (BM25)  
-✅ **Intelligent Reranking** - Sắp xếp lại kết quả theo độ liên quan  
 
 ---
 
@@ -150,7 +143,7 @@ Agentic/
 
 ```bash
 # 1. Clone repository
-git clone <repository-url>
+git clone https://github.com/PhamMinhTuanGit/Agentic.git
 cd Agentic
 
 # 2. Build và start services
@@ -320,7 +313,7 @@ print(response['response'])
 
 ---
 
-## 🧠 Các Module Chính (Core Modules)
+## Các Module Chính (Core Modules)
 
 ### 1. **Agent Module** (`agent/`)
 
@@ -558,7 +551,7 @@ Body: {
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Test Database Connection
 ```bash
@@ -581,7 +574,7 @@ Truy cập: `http://localhost:8000/docs`
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### 1. Ollama Connection Error
 ```bash
@@ -625,7 +618,7 @@ bash fix_openmp.sh
 
 ---
 
-## 📊 Performance Tuning
+## Performance Tuning
 
 ### 1. Search Performance
 
@@ -669,7 +662,7 @@ MODELS = ["qwen3:8b"]
 
 ---
 
-## 🔐 Security Considerations
+## Security Considerations
 
 1. **Database Credentials**: Đổi mật khẩu mặc định trong production
    ```yaml
@@ -691,62 +684,4 @@ MODELS = ["qwen3:8b"]
        message: str = Field(..., max_length=1000)
    ```
 
----
 
-## 📈 Roadmap
-
-- [ ] Add authentication & authorization
-- [ ] Support multi-language (English + Vietnamese)
-- [ ] Add more network device platforms
-- [ ] Implement caching for search results
-- [ ] Add telnet integration for live device testing
-- [ ] WebSocket support for real-time chat
-- [ ] Add monitoring & logging (Prometheus + Grafana)
-- [ ] CLI tool for administration
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-## 👥 Authors
-
-- **Tuan PM** - Initial work
-
----
-
-## 🙏 Acknowledgments
-
-- **Ollama** - Local LLM runtime
-- **FAISS** - Vector similarity search by Facebook AI
-- **Sentence Transformers** - Cross-encoder models
-- **FastAPI** - Modern web framework
-- **SQLAlchemy** - Python SQL toolkit
-
----
-
-## 📞 Support
-
-For issues and questions:
-- GitHub Issues: [Create an issue]
-- Email: support@example.com
-- Documentation: `/docs/`
-
----
-
-**Built with ❤️ for Network Engineers**
