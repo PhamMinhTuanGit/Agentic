@@ -4,6 +4,7 @@ from app.llm.ollama import call_ollama, stream_ollama_with_collection
 from agent.retriever import retriever_with_rerank
 from agent.prompt_template import *
 from app.agent.schemas import MemoryItem, LongTermMemory
+from app.core.config import settings
 from typing import List, Generator
 import json
 from telnet.parse_and_telnet import parse_config
@@ -11,9 +12,9 @@ from telnet.connect import connect_zebos_multihop
 SYSTEM_PROMPT = "You are a helpful assistant. Answer concisely."
 
 class MirixAgentDB:
-    def __init__(self, db: DBSession, max_stm: int = 6):
+    def __init__(self, db: DBSession, max_stm: int = None):
         self.db = db
-        self.max_stm = max_stm
+        self.max_stm = max_stm or settings.AGENT_MAX_STM
 
     def chat(self, session_id: str, user_message: str) -> str:
         session = self._get_or_create_session(session_id)
@@ -32,7 +33,7 @@ class MirixAgentDB:
         messages.append({"role": "user", "content": user_message})
 
         # 4️⃣ Call Ollama
-        reply = call_ollama(messages)
+        reply = call_ollama(messages, model=settings.OLLAMA_MODEL)
 
         # 5️⃣ Lưu STM
         self._add_stm(session, "user", user_message)
@@ -56,6 +57,7 @@ class MirixAgentDB:
         # 2️⃣ Stream from Ollama using centralized function
         stream_generator, get_full_response = stream_ollama_with_collection(
             messages=messages,
+            model=settings.OLLAMA_MODEL,
             include_thinking=True
         )
         
@@ -88,6 +90,7 @@ class MirixAgentDB:
         # Stream from Ollama without thinking tokens
         stream_generator, get_full_response = stream_ollama_with_collection(
             messages=messages,
+            model=settings.OLLAMA_MODEL,
             include_thinking=False  # Skip thinking tokens
         )
         
@@ -141,9 +144,9 @@ class MirixAgentDB:
 
     def _summarize_to_ltm(self, session: Session):
         stm_msgs = [{"role": s.role, "content": s.content} for s in session.stm]
-        prompt = [{"role": "system", "content": "Summarize important info to long-term memory. MAXIMUM 50 WORDS."}]
+        prompt = [{"role": "system", "content": f"Summarize important info to long-term memory. MAXIMUM {settings.SUMMARY_MAX_WORDS} WORDS."}]
         prompt.extend(stm_msgs)
-        summary = call_ollama(prompt)
+        summary = call_ollama(prompt, model=settings.OLLAMA_MODEL)
 
         self.db.add(LTM(session_id=session.id, content=summary, tags="auto-summary"))
         # Xóa STM
@@ -175,7 +178,7 @@ class MirixAgentDB:
             # Use streaming to avoid timeout and get immediate feedback
             stream_generator, get_full_response = stream_ollama_with_collection(
                 messages=[{"role": "user", "content": prompt}],
-                model="qwen3:8b",
+                model=settings.OLLAMA_CONFIG_MODEL,
                 include_thinking=True
             )
             

@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - "**"
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python-quality:
+    name: Python Quality (3.11)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate Python syntax
+        run: |
+          python -m compileall agent app bm25 telnet client
+
+      - name: Install lightweight test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest
+
+      - name: Run tests (if memory module exists)
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          if [ -f app/memory/agent.py ] && [ -f app/memory/store.py ] && [ -f app/memory/schemas.py ]; then
+            pytest -q app/tests/test_memory.py
+          else
+            echo "Skipping app/tests/test_memory.py because app/memory modules are missing."
+          fi

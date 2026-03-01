@@ -1,6 +1,7 @@
 import requests
 import json
 from typing import Generator, Optional, Dict, Any
+from app.core.config import settings
 
 OLLAMA_API = "http://ollama:11434/api/chat"
 DEFAULT_MODEL = "qwen3:4b"
@@ -10,12 +11,14 @@ DEFAULT_OPTIONS = {
     "temperature": 0.3,
     "top_p": 0.9
 }
+DEFAULT_TIMEOUT = settings.OLLAMA_TIMEOUT
 
 
 def call_ollama(
     messages: list[dict], 
     model: str = DEFAULT_MODEL,
-    options: Optional[Dict[str, Any]] = None
+    options: Optional[Dict[str, Any]] = None,
+    timeout: Optional[int] = None
 ) -> str:
     """
     Non-streaming call to Ollama API
@@ -39,7 +42,7 @@ def call_ollama(
             "stream": False,
             "options": options
         },
-        timeout=120
+        timeout=timeout or DEFAULT_TIMEOUT
     )
     resp.raise_for_status()
     
@@ -54,7 +57,8 @@ def call_ollama_stream(
     messages: list[dict],
     model: str = DEFAULT_MODEL,
     options: Optional[Dict[str, Any]] = None,
-    include_thinking: bool = True
+    include_thinking: bool = True,
+    timeout: Optional[int] = None
 ) -> Generator[str, None, None]:
     """
     Streaming call to Ollama API - yields tokens only
@@ -81,7 +85,7 @@ def call_ollama_stream(
                 "options": options
             },
             stream=True,
-            timeout=120
+            timeout=timeout or DEFAULT_TIMEOUT
         ) as r:
             r.raise_for_status()
             
@@ -111,7 +115,8 @@ def stream_ollama_with_collection(
     messages: list[dict],
     model: str = DEFAULT_MODEL,
     options: Optional[Dict[str, Any]] = None,
-    include_thinking: bool = True
+    include_thinking: bool = True,
+    timeout: Optional[int] = None
 ) -> tuple[Generator[str, None, None], callable]:
     """
     Streaming call to Ollama API that yields tokens and collects full response
@@ -142,7 +147,7 @@ def stream_ollama_with_collection(
                     "options": options
                 },
                 stream=True,
-                timeout=120
+                timeout=timeout or DEFAULT_TIMEOUT
             ) as r:
                 r.raise_for_status()
                 
