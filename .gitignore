@@ -1,4 +1,6 @@
 *.html
 *.pdf
 .venv
-*.pyc
+*pyc
+__pycache__
+agent/__pycache__/retriever.cpython-310.pyc

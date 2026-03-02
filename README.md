@@ -1,10 +1,8 @@
 # ZebOS Expert System - RAG Chatbot
 
-[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com/)
-[![Docker](https://img.shields.io/badge/Docker-Enabled-blue.svg)](https://www.docker.com/)
 
-## 📋 Tổng Quan (Overview)
+
+## Tổng Quan (Overview)
 
 **ZebOS Expert System** là một hệ thống AI chatbot chuyên biệt cho cấu hình và vận hành mạng ZebOS. Hệ thống sử dụng kiến trúc RAG (Retrieval-Augmented Generation) kết hợp với:
 
@@ -18,7 +16,7 @@
 
 ---
 
-## 🏗️ Kiến Trúc Hệ Thống (System Architecture)
+## Kiến Trúc Hệ Thống (System Architecture)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -62,7 +60,7 @@
 
 ---
 
-## 📂 Cấu Trúc Thư Mục (Directory Structure)
+## Cấu Trúc Thư Mục (Directory Structure)
 
 ```
 Agentic/
@@ -130,7 +128,7 @@ Agentic/
 
 ---
 
-## 🚀 Cài Đặt & Chạy (Installation & Setup)
+## Cài Đặt & Chạy (Installation & Setup)
 
 ### Yêu Cầu Hệ Thống (Prerequisites)
 
@@ -153,10 +151,10 @@ docker-compose up -d
 docker-compose logs -f app
 
 # 4. Truy cập API
-# API: http://localhost:8000
-# Docs: http://localhost:8000/docs
-# MySQL: localhost:3306
-# Ollama: localhost:11435
+API: http://localhost:8000
+Docs: http://localhost:8000/docs
+MySQL: localhost:3306
+Ollama: localhost:11435
 ```
 
 **Services được khởi chạy:**
@@ -281,16 +279,8 @@ curl -X POST "http://localhost:8000/api/v1/chat/query" \
 curl "http://localhost:8000/api/v1/chat/sessions/1/messages?limit=10"
 ```
 
-### 2. Qua Web Client (Flask)
 
-```bash
-cd client/
-pip install -r requirements.txt
-python app.py
-# Truy cập: http://localhost:5000
-```
-
-### 3. Qua Python Code
+### 2. Qua Python Code
 
 ```python
 from agent.retriever import retriever_with_rerank

@@ -43,6 +43,7 @@ chromadb>=0.4.0
 beautifulsoup4>=4.12.0
 trafilatura>=1.6.0
 numpy==1.24.3  # Pinned to avoid OpenMP conflicts on macOS
+pypdf>=4.0.0
 
 # HTTP & API Clients
 requests>=2.31.0
