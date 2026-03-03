@@ -20,3 +20,14 @@ class ChatRequest(BaseModel):
                 "message": "How to configure OSPF?"
             }
         }
+
+
+class MessageRequest(BaseModel):
+    message: str
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "message": "How to configure OSPF?"
+            }
+        }
